@@ -1,0 +1,34 @@
+# DecapCMS Configuration for Gritsa Technologies Blog
+
+# Backend configuration - Using test mode for local development
+# Switch to github backend when ready to deploy with OAuth
+backend:
+  name: test-repo
+
+# For production with GitHub Pages, use:
+# backend:
+#   name: github
+#   repo: your-username/gritsa  # Update with your GitHub repo
+#   branch: main  # or master, depending on your default branch
+
+# Media files configuration
+media_folder: "images/blog"  # Where uploaded images will be saved
+public_folder: "/images/blog"  # URL path for uploaded images
+
+# Collections configuration
+collections:
+  # Blog posts collection
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "Gritsa Technologies" }
+      - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

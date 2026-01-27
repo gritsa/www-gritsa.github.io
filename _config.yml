@@ -1,0 +1,37 @@
+# Site settings
+title: Gritsa Technologies
+email: info@gritsa.com
+description: >-
+  Fullstack Development, Developers as a Service, and Gen AI Solutions.
+  LLM-powered Data Pipelines, Fine-tuning, Autonomous Agents, and AI-augmented Web Experiences.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.gritsa.com"
+phone: "+1 (424) 250-2424"
+address: "Unit A-132, Logix Technova, Sector-132, NOIDA (UP) 201301, India"
+
+# Social media
+facebook_url: "https://www.facebook.com/GritsaTech/"
+linkedin_url: "https://in.linkedin.com/company/gritsa-technologies"
+twitter_url: "https://x.com/gritsa"
+
+# Build settings
+markdown: kramdown
+exclude:
+  - template/
+  - download_site.py
+  - download_log.txt
+  - mcp-shell.log
+  - jiva-directive.md
+  - Gritsa-Logo-V2-Subtle.svg
+
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /services/:title/
+  projects:
+    output: true
+    permalink: /projects/:title/
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
