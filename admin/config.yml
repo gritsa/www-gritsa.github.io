@@ -5,11 +5,11 @@
 backend:
   name: test-repo
 
-# For production with GitHub Pages, use:
+# For production with GitHub Pages (requires OAuth setup), use:
 # backend:
 #   name: github
-#   repo: your-username/gritsa  # Update with your GitHub repo
-#   branch: main  # or master, depending on your default branch
+#   repo: gritsa/www-gritsa.github.io
+#   branch: main
 
 # Media files configuration
 media_folder: "images/blog"  # Where uploaded images will be saved
