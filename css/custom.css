@@ -2776,7 +2776,7 @@ header.main-header .header-sticky.active{
 }
 
 .service-entry h2{
-    font-size: 48px;
+	font-size: 68px;
 	font-weight: 600;
     margin-bottom: 20px;
 }
@@ -3020,7 +3020,7 @@ header.main-header .header-sticky.active{
 }
 
 .service-tool-counter h2{
-	font-size: 92px;
+	font-size: 68px;
 	margin-bottom: 10px;
 }
 
@@ -4906,7 +4906,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.service-entry h2{
-		font-size: 38px;
+		font-size: 52px;
 		margin-bottom: 15px;
 	}
 
@@ -5690,7 +5690,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.service-entry h2{
-		font-size: 26px;
+		font-size: 36px;
 	}
 
 	.service-entry ul li{
