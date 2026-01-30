@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -1091,30 +1094,36 @@
             </div>
 
             <div class="row">
+                {% for post in site.posts limit: 3 %}
                 <div class="col-lg-4 col-md-6">
                     <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp">
+                    <div class="post-item wow fadeInUp" {% if forloop.index > 1 %}data-wow-delay="{{ forloop.index | minus: 1 | times: 0.2 }}s"{% endif %}>
                         <!-- Post Featured Image Start-->
+                        {% if post.featured_image %}
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="{{ post.url | relative_url }}" data-cursor-text="View">
                                 <figure class="image-anime">
-                                    <img src="images/post-1.jpg" alt="">
-                                </figure>    
-                            </a>                            
+                                    <img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
+                                </figure>
+                            </a>
                         </div>
+                        {% endif %}
                         <!-- Post Featured Image End -->
 
                         <!-- Post Item Body Start -->
                         <div class="post-item-body">
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Natural Language Processing The AI Frontier</a></h2>
+                                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                                {% if post.excerpt %}
+                                <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+                                {% endif %}
                             </div>
                             <!-- Post Item Content End -->
 
                             <!-- Post Item Readmore Button Start-->
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="btn-default">read more</a>
+                                <a href="{{ post.url | relative_url }}" class="btn-default">read more</a>
                             </div>
                             <!-- Post Item Readmore Button End-->
                         </div>
@@ -1122,70 +1131,16 @@
                     </div>
                     <!-- Post Item End -->
                 </div>
+                {% endfor %}
 
-                <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-2.jpg" alt="">
-                                </figure>    
-                            </a>                            
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h2><a href="blog-single.html">AI in Healthcare Transforming Patient Care</a></h2>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="blog-single.html" class="btn-default">read more</a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
+                {% if site.posts.size == 0 %}
+                <div class="col-lg-12">
+                    <div class="no-posts">
+                        <h3>No blog posts yet</h3>
+                        <p>Check back soon for insights on full-stack development, AI agents, and data engineering.</p>
                     </div>
-                    <!-- Post Item End -->
                 </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Post Item Start -->
-                    <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Post Featured Image Start-->
-                        <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/post-3.jpg" alt="">
-                                </figure>    
-                            </a>                            
-                        </div>
-                        <!-- Post Featured Image End -->
-
-                        <!-- Post Item Body Start -->
-                        <div class="post-item-body">
-                            <!-- Post Item Content Start -->
-                            <div class="post-item-content">
-                                <h2><a href="blog-single.html">Unlocking the Power of Predictive Analytics</a></h2>
-                            </div>
-                            <!-- Post Item Content End -->
-
-                            <!-- Post Item Readmore Button Start-->
-                            <div class="post-item-btn">
-                                <a href="blog-single.html" class="btn-default">read more</a>
-                            </div>
-                            <!-- Post Item Readmore Button End-->
-                        </div>
-                        <!-- Post Item Body End -->
-                    </div>
-                    <!-- Post Item End -->
-                </div>
+                {% endif %}
             </div>
         </div>
     </div>
