@@ -69,7 +69,7 @@
                                         <li class="nav-item"><a class="nav-link" href="../services/data-engineering/">Data Engineering</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="../projects/">Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../projects/">Case Studies</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../blog/">Blog</a></li>
                                 <li class="nav-item"><a class="nav-link" href="../contact/">Contact</a></li>
                             </ul>
@@ -126,8 +126,8 @@
                             </div>
                             <div class="contact-info-content">
                                 <h3>contact us</h3>
-                                <p><a href="tel:+123254963">(+00) 123-254-963</a></p>
-                                <p><a href="tel:+761852339">(+12) 761 852 339</a></p>
+                                <p><a href="tel:+447436855207">UK: +44 7436 855207</a></p>
+                                <p><a href="tel:+919650209304">India: +91 96502 09304</a></p>
                             </div>
                         </div>
                         <!-- Contact Info Item End -->
@@ -139,8 +139,8 @@
                             </div>
                             <div class="contact-info-content">
                                 <h3>Make a quote</h3>
-                                <p><a href="mailto:info@domain.com">info@domainname.com</a></p>
-                                <p><a href="mailto:support@domain.com">support@domain.com</a></p>
+                                <p><a href="mailto:info@gritsa.com">info@gritsa.com</a></p>
+                                <p><a href="mailto:support@gritsa.com">support@gritsa.com</a></p>
                             </div>
                         </div>
                         <!-- Contact Info Item End -->
@@ -148,12 +148,11 @@
                         <!-- Contact Info Item Start -->
                         <div class="contact-info-item wow fadeInUp" data-wow-delay="0.4s">
                             <div class="icon-box">
-                                <img src="../images/icon-clock.svg" alt="">
+                                <img src="../images/icon-location.svg" alt="">
                             </div>
                             <div class="contact-info-content">
-                                <h3>Working hours</h3>
-                                <p>Mon-Fri : 08am - 10pm</p>
-                                <p>sat-sun : close</p>
+                                <h3>India Location</h3>
+                                <p>Unit A-132, Logix Technova<br>Sector-132, NOIDA (UP) 201301</p>
                             </div>
                         </div>
                         <!-- Contact Info Item End -->
@@ -164,8 +163,8 @@
                                 <img src="../images/icon-location.svg" alt="">
                             </div>
                             <div class="contact-info-content">
-                                <h3>location</h3>
-                                <p>123 Lorem Street Suite 5B, Ipsum UK</p>
+                                <h3>UK Location</h3>
+                                <p>3rd Floor, 86-90 Paul Street, London, England, United Kingdom, EC2A 4NE</p>
                             </div>
                         </div>
                         <!-- Contact Info Item End -->
@@ -192,7 +191,7 @@
                             <!-- Section Title End -->
                             
                             <!-- Contact Form Start -->
-                            <form id="contactForm" action="contact.html#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.4s">
+                            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.4s">
                                 <div class="row">
                                     <div class="form-group col-md-6 mb-4">
                                         <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" required>
@@ -221,8 +220,9 @@
             
                                     <div class="col-lg-12">
                                         <div class="contact-form-btn">
-                                            <button type="submit" class="btn-default"><span>submit now</span></button>
+                                            <button type="submit" class="btn-default" id="submit-btn"><span>submit now</span></button>
                                             <div id="msgSubmit" class="h3 hidden"></div>
+                                            <div id="formStatus" class="status"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -405,5 +405,134 @@
     <script src="../js/flowmap-effect.min.js"></script>
     <!-- Main Custom js file -->
     <script src="../js/function.js"></script>
+        <script>
+// ============================================
+// GOOGLE FORM CONFIGURATION - PRODUCTION READY
+// ============================================
+const FORM_CONFIG = {
+    formId: '1FAIpQLSf9uUwiWrb8YHNYBc9tPiXVnt8tV0YoU7rVQN88mReRAeBs-Q',
+    fields: {
+        email: 'emailAddress',
+        name: 'entry.171502400',
+        phone: 'entry.276375443',
+        purpose: 'entry.90230932',
+        purposeOther: 'entry.90230932.other_option_response',
+        purposeSentinel: 'entry.90230932_sentinel'
+    },
+    purposeOptions: {
+        other: '__other_option__'
+    }
+};
+
+// ============================================
+// VALIDATION FUNCTIONS
+// ============================================
+function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+function validatePhone(phone) {
+    const regex = /^[\+]?[0-9\s\-\(\)\.]{10,17}$/;
+    return regex.test(phone);
+}
+
+function validateForm(formData) {
+    const errors = [];
+
+    if (!formData.firstName.trim()) errors.push('First name is required');
+    if (!formData.lastName.trim()) errors.push('Last name is required');
+    if (!validatePhone(formData.phone)) errors.push('Please enter a valid phone number (10-17 digits)');
+    if (!validateEmail(formData.email)) errors.push('Please enter a valid email address');
+    if (!formData.message.trim()) errors.push('Message is required');
+
+    return { isValid: errors.length === 0, errors };
+}
+
+// ============================================
+// SUBMISSION FUNCTION
+// ============================================
+async function submitToGoogleForm(websiteFormData) {
+    try {
+        const { firstName, lastName, phone, email, message } = websiteFormData;
+        const fullName = `${firstName} ${lastName}`.trim();
+
+        const formData = new URLSearchParams();
+        formData.append(FORM_CONFIG.fields.email, email);
+        formData.append(FORM_CONFIG.fields.name, fullName);
+        formData.append(FORM_CONFIG.fields.phone, phone);
+        formData.append(FORM_CONFIG.fields.purpose, FORM_CONFIG.purposeOptions.other);
+        formData.append(FORM_CONFIG.fields.purposeOther, message);
+        formData.append(FORM_CONFIG.fields.purposeSentinel, '');
+        formData.append('fvv', '1');
+        formData.append('pageHistory', '0');
+
+        const url = `https://docs.google.com/forms/d/e/${FORM_CONFIG.formId}/formResponse`;
+        await fetch(url, {
+            method: 'POST',
+            body: formData,
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+        });
+
+        return {
+            success: true,
+            message: 'Thanks for reaching out! Your details have been submitted. We’ll get back to you within 24 hours.'
+        };
+    } catch (error) {
+        console.error('Form submission error:', error);
+        return {
+            success: false,
+            message: 'Oops! Something went wrong. Please try again.'
+        };
+    }
+}
+
+// ============================================
+// FORM HANDLER
+// ============================================
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = {
+        firstName: document.getElementById('fname').value,
+        lastName: document.getElementById('lname').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    };
+
+    const validation = validateForm(formData);
+    if (!validation.isValid) {
+        showStatus('error', validation.errors.join('. '));
+        return;
+    }
+
+    const submitButton = document.getElementById('submit-btn');
+    const originalText = submitButton.textContent;
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+
+    const statusDiv = document.getElementById('formStatus');
+    statusDiv.classList.remove('show', 'success', 'error');
+
+    const result = await submitToGoogleForm(formData);
+    showStatus(result.success ? 'success' : 'error', result.message);
+
+    if (result.success) e.target.reset();
+    submitButton.disabled = false;
+    submitButton.textContent = originalText;
+});
+
+function showStatus(type, message) {
+    const statusDiv = document.getElementById('formStatus');
+    const icon = type === 'success' ? '✅' : '❌';
+    statusDiv.textContent = `${icon} ${message}`;
+    statusDiv.className = `status ${type} show`;
+    setTimeout(() => {
+        statusDiv.classList.remove('show');
+    }, 5000);
+}
+        </script>
 </body>
 </html>
