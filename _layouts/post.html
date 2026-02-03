@@ -14,6 +14,14 @@ layout: default
                             <li class="breadcrumb-item active" aria-current="page">{{ page.title | truncate: 30 }}</li>
                         </ol>
                     </nav>
+                    <div class="post-meta post-meta-header wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="post-author">
+                            <span>By {{ page.author | default: "Gritsa Technologies" }}</span>
+                        </div>
+                        <div class="post-date">
+                            <span>{{ page.date | date: "%B %d, %Y" }}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -29,12 +37,6 @@ layout: default
                 <div class="blog-single-content">
                     <!-- Post Meta Start -->
                     <div class="post-meta">
-                        <div class="post-author">
-                            <span>By {{ page.author | default: "Gritsa Technologies" }}</span>
-                        </div>
-                        <div class="post-date">
-                            <span>{{ page.date | date: "%B %d, %Y" }}</span>
-                        </div>
                         {% if page.tags %}
                         <div class="post-tags">
                             {% for tag in page.tags %}
