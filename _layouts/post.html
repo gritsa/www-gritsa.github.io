@@ -10,17 +10,14 @@ layout: default
                     <nav class="wow fadeInUp" data-wow-delay="0.2s">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ site.baseurl }}/">home</a></li>
-                            <li class="breadcrumb-item"><a href="{{ site.baseurl }}/blog/">blog</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">{{ page.title | truncate: 30 }}</li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="{{ site.baseurl }}/blog/">blog</a></li>
                         </ol>
                     </nav>
-                    <div class="post-meta post-meta-header wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="post-author">
-                            <span>By {{ page.author | default: "Gritsa Technologies" }}</span>
-                        </div>
-                        <div class="post-date">
-                            <span>{{ page.date | date: "%B %d, %Y" }}</span>
-                        </div>
+                    <div class="post-single-meta wow fadeInUp" data-wow-delay="0.3s" style="margin-top: 50px;">
+                        <ol class="breadcrumb">
+                            <li><i class="fa-regular fa-user"></i>{{ page.author | default: "Gritsa Technologies" }}</li>
+                            <li><i class="fa-regular fa-clock"></i>{{ page.date | date: "%d %B, %Y" }}</li>
+                        </ol>
                     </div>
                 </div>
             </div>
@@ -29,27 +26,15 @@ layout: default
 </div>
 
 <!-- Blog Single Start -->
-<div class="page-blog-single">
+<div class="page-single-post">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <!-- Blog Single Content Start -->
                 <div class="blog-single-content">
-                    <!-- Post Meta Start -->
-                    <div class="post-meta">
-                        {% if page.tags %}
-                        <div class="post-tags">
-                            {% for tag in page.tags %}
-                            <span class="tag">{{ tag }}</span>
-                            {% endfor %}
-                        </div>
-                        {% endif %}
-                    </div>
-                    <!-- Post Meta End -->
-
                     {% if page.featured_image %}
                     <!-- Post Featured Image Start -->
-                    <div class="post-featured-image">
+                    <div class="post-image">
                         <figure class="image-anime reveal">
                             <img src="{{ page.featured_image }}" alt="{{ page.title }}">
                         </figure>
@@ -59,7 +44,40 @@ layout: default
 
                     <!-- Post Content Start -->
                     <div class="post-content">
-                        {{ content }}
+                        <div class="post-entry wow fadeInUp">
+                            {{ content }}
+                        </div>
+
+                        <!-- Post Meta Footer Start -->
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <!-- Post Tags Start -->
+                                {% if page.tags %}
+                                <div class="post-tags wow fadeInUp" data-wow-delay="0.2s">
+                                    <span class="tag-links">
+                                        Tags:
+                                        {% for tag in page.tags %}
+                                        <a href="{{ site.baseurl }}/blog/#{{ tag | slugify }}">{{ tag }}</a>
+                                        {% endfor %}
+                                    </span>
+                                </div>
+                                {% endif %}
+                                <!-- Post Tags End -->
+                            </div>
+
+                            <div class="col-lg-4">
+                                <!-- Post Social Sharing Start -->
+                                <div class="post-social-sharing wow fadeInUp" data-wow-delay="0.2s">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener" aria-label="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- Post Social Sharing End -->
+                            </div>
+                        </div>
+                        <!-- Post Meta Footer End -->
                     </div>
                     <!-- Post Content End -->
 
