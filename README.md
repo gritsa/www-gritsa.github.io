@@ -62,6 +62,6 @@ The site will be generated in the `_site` directory.
 
 ## Contact
 
-- **Phone:** +1 (424) 250-2424
+- **Phone:** zero seven four three six eight five five two o seven, add plus four four
 - **Email:** info@gritsa.com
 - **Address:** Unit A-132, Logix Technova, Sector-132, NOIDA (UP) 201301, India
