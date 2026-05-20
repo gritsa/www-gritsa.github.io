@@ -16,6 +16,7 @@ twitter_url: "https://x.com/gritsa"
 
 # Build settings
 markdown: kramdown
+future: true  # publish posts regardless of their date/time vs build time
 exclude:
   - template/
   - download_site.py
