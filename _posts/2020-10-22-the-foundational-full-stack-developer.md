@@ -7,7 +7,7 @@ featured_image: "https://static.wixstatic.com/media/5fdde1_4a112b5d91eb4022b3b78
 excerpt: "Full Stack Developers are all the hype, but is the hype worth it?"
 ---
 
-Full Stack Developer - haven't we heard about these supposed code ninjas for a while now? Yes. Are they any good? Sure! But I need a backend Node JS person... (faceslap) What did you think Full Stack was? Another framework?
+A [Full Stack Developer](/services/fullstack-development/) - haven't we heard about these supposed code ninjas for a while now? Yes. Are they any good? Sure! But I need a backend Node JS person... (faceslap) What did you think Full Stack was? Another framework?
 
 **Who is a Full Stack Developer?**
 
@@ -37,8 +37,8 @@ Are you caught by surprise having learnt that a single Full Stack Developer can 
 
 **Foundational Full Stack Developers @ Gritsa**
 
-Identifying this need in the industry, where we as an agency can hire smart entry level engineers and train them on Full Stack Foundations for companies like yours to hire. They are trained on  Ionic Framework, ElectronJS Framework and Angular/React Frameworks. This gives you low-cost high-return resources who can then work with your team to build great products. If you are interested in trying out a Foundational Full Stack Developer from Gritsa, head over to our [Developer-as-a-service](https://www.gritsa.com/developer-as-a-service-model) page and schedule an appointment with us.
+Identifying this need in the industry, where we as an agency can hire smart entry level engineers and train them on Full Stack Foundations for companies like yours to hire. They are trained on  Ionic Framework, ElectronJS Framework and Angular/React Frameworks. This gives you low-cost high-return resources who can then work with your team to build great products. If you are interested in trying out a Foundational Full Stack Developer from Gritsa, head over to our [Full-Stack Development](/services/fullstack-development/) page and schedule an appointment with us.
 
 **Cross-Functional Teams @ Gritsa**
 
-Now let us take all of this and look at building a team. If we take three Foundational Full Stack Developers each with one specialised area, we can have a full blown product development team ready for you to hire and churn out fantastic product features. If you are interested in trying out a Cross-Functional Team from Gritsa, head over to our [Development-as-a-service](https://www.gritsa.com/development-as-a-service-model) page and schedule a consultation with us.
+Now let us take all of this and look at building a team. If we take three Foundational Full Stack Developers each with one specialised area, we can have a full blown product development team ready for you to hire and churn out fantastic product features. If you are interested in trying out a Cross-Functional Team from Gritsa, [get in touch with us](/contact/) and schedule a consultation.

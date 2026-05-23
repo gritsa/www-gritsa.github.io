@@ -51,4 +51,6 @@ Some vector databases, for instance, PostGIS and PostgreSQL, are open-source dat
 
 ## Conclusion:
 
-There is little doubt that the collaboration between AI and vector databases will only consolidate in the future. For AI applications to keep innovating and have a transformative impact on our lives, they will continue to depend on harnessing the intrinsic abilities of vector databases in data management and turning data into actionable insight. While the AI industry can rely on other alternative databases, vector databases will certainly provide the robust foundation on which the next generation of AI-driven solutions will be created.
+There is little doubt that the collaboration between AI and vector databases will only consolidate in the future. For AI applications to keep innovating and have a transformative impact on our lives, they will continue to depend on harnessing the intrinsic abilities of vector databases in data management and turning data into actionable insight. While the AI industry can rely on other alternative databases, vector databases will certainly provide the robust foundation on which the next generation of AI-driven solutions will be created. If you're just getting started, read our primer on [What is a Vector Database and Why is it Gaining Importance?](/blog/2023/11/15/what-is-vector-database-and-why-is-it-gaining-importance/)
+
+Gritsa's [data engineering service](/services/data-engineering/) includes vector database integration and retrieval-augmented generation (RAG) pipelines. [Get in touch](/contact/) to build yours.

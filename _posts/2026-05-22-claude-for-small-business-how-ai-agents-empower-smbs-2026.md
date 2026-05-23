@@ -54,7 +54,7 @@ For Gritsa Technologies, this development reinforces our belief that **agentic A
 ## Conclusion
 Claude for Small Business marks a pivotal moment for the SMB sector. By bundling powerful AI agents with the everyday tools that businesses already use, Anthropic is democratizing automation and setting the stage for a new wave of productivity gains. As the ecosystem matures, we anticipate a surge of creative use‑cases that will reshape how small businesses operate.
 
-If you’re ready to explore how AI agents can transform your organization, visit **[Gritsa Technologies](https://www.gritsa.com)** for insights, consulting, and custom solutions built on frameworks like **[Jiva](https://github.com/KarmaloopAI/Jiva)**.
+If you’re ready to explore how [AI agents](/services/ai-agents/) can transform your organization, visit **[Gritsa Technologies](/)** for insights, consulting, and custom solutions built on frameworks like **[Jiva](https://github.com/KarmaloopAI/Jiva)**. [Contact us](/contact/) to get started.
 
 ---
 *Published on May 13, 2026.*

@@ -7,7 +7,7 @@ featured_image: "https://static.wixstatic.com/media/1854f5_f4c9c215683e4d24b8206
 excerpt: "Businesses today function around data. It has become easy and convenient to collect and store data at all levels of business operations...."
 ---
 
-Businesses today function around data. It has become easy and convenient to collect and store data at all levels of business operations. It would be, therefore, unwise for businesses, to not leverage this data for their benefit. Unfortunately, data remains to be an untapped asset for small and medium businesses.
+Businesses today function around data. It has become easy and convenient to collect and store data at all levels of business operations. It would be, therefore, unwise for businesses, to not leverage this data for their benefit. Unfortunately, [data engineering](/services/data-engineering/) remains an untapped asset for most small and medium businesses.
 
 Most small and medium businesses do not realize the importance of the data that they have collected.
 
@@ -72,3 +72,5 @@ People are the most important part of any organization. As every employee has mo
 ## Conclusion
 
 [According to McKinsey Global Institute](https://www.mckinsey.com/business-functions/marketing-and-sales/our-insights/five-facts-how-customer-analytics-boosts-corporate-performance), data-driven organizations are twenty-three times more likely to acquire customers, six times as likely to retain customers and nineteen times more likely to be profitable. Data analytics not only eliminates the risk of the guesswork from business decision making but increases revenues and decreases costs. It helps to provide a good user experience and a unified supply chain. Data analytics is vital to be included in all business aspects for a small business to succeed in the long run.
+
+Gritsa builds [Gen AI data pipelines](/services/data-engineering/) that make your data work for you automatically. [Reach out to us](/contact/) to explore what's possible.

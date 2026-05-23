@@ -74,3 +74,5 @@ After the end of each sprint, the team needs to sit down and review the progress
 ![Conclusion - A guide to building an MVP in Agile Methodology](https://static.wixstatic.com/media/1854f5_ce1731da48e142c59bdd09ea0856f0bc~mv2.png/v1/fill/w_179,h_176,al_c,lg_1,q_85/1854f5_ce1731da48e142c59bdd09ea0856f0bc~mv2.png)
 
 Building a minimum viable product through Agile methodology offers overwhelming advantages to companies across the board. The biggest benefit is that it helps companies to launch a product without investing large capital. This invariably helps companies in reducing their risk capital and prevents them from putting undue stress on their balance sheet. Due to such intrinsic advantages, most companies will continue to use MVP and Agile methodology in the foreseeable future.
+
+Looking to build your MVP? Gritsa's [full-stack development team](/services/fullstack-development/) turns ideas into production-ready products at speed. [Get in touch](/contact/) to get started.

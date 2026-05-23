@@ -63,4 +63,4 @@ By treating Claude’s session caps as a **first‑class constraint**—much lik
 
 ---
 
-*Curious how Gritsa Technologies can help you build resilient agentic systems? Visit our [website](https://www.gritsa.com) or explore the open‑source [Jiva framework](https://github.com/KarmaloopAI/Jiva).*
+*Curious how Gritsa can help you build resilient [autonomous AI agents](/services/ai-agents/) that handle quota constraints gracefully? [Talk to our team](/contact/) or explore the open‑source [Jiva framework](https://github.com/KarmaloopAI/Jiva).*

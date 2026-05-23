@@ -29,7 +29,7 @@ Digital transformation takes small local businesses to a global stage. It opens 
 
 ### 3. Digital transformation promotes data culture within the organization
 
-Businesses are increasingly leveraging data-driven decision making with the help of digital transformations. As cloud-based data solutions are becoming increasingly and easily available, small businesses do not have to make decisions based on gut instinct and assumptions anymore. Valuable data insights help track relevant KPIs efficiently and have a major bearing on improving customer experience. This data helps in identifying weaknesses and tackling threats before they present themselves.
+Businesses are increasingly leveraging data-driven decision making with the help of digital transformations. As [Gen AI data pipelines](/services/data-engineering/) and cloud-based solutions become more accessible, small businesses no longer have to make decisions based on gut instinct and assumptions. Valuable data insights help track relevant KPIs efficiently and have a major bearing on improving customer experience. This data helps in identifying weaknesses and tackling threats before they present themselves.
 
 ### 4. Digital transformation is cost-effective for small and medium businesses
 
@@ -62,3 +62,5 @@ Some critical issues faced by small businesses on the digital transformation roa
 ## Conclusion
 
 A quick fix by Small and Medium Enterprises has helped them sail through the pandemic. However, the transition for these firms is not yet complete and comes bearing quite a few risks. These small and medium companies need expert advice and guidance to select the right digital systems, build interactive digital platforms, develop the right protection and security, and fully customize and understand the potential of these new tools. The problems of every business are distinctive and should be dealt with exclusively.
+
+If you're looking to accelerate your SMB's digital transformation with [AI agents](/services/ai-agents/) or [data-driven tooling](/services/data-engineering/), [speak to our team at Gritsa](/contact/).

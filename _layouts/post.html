@@ -49,8 +49,8 @@ layout: default
                         </div>
 
                         <!-- Post Meta Footer Start -->
-                        <div class="row align-items-center">
-                            <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-12">
                                 <!-- Post Tags Start -->
                                 {% if page.tags %}
                                 <div class="post-tags wow fadeInUp" data-wow-delay="0.2s">
@@ -64,18 +64,6 @@ layout: default
                                 {% endif %}
                                 <!-- Post Tags End -->
                             </div>
-
-                            <div class="col-lg-4">
-                                <!-- Post Social Sharing Start -->
-                                <div class="post-social-sharing wow fadeInUp" data-wow-delay="0.2s">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener" aria-label="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                        <li><a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                    </ul>
-                                </div>
-                                <!-- Post Social Sharing End -->
-                            </div>
                         </div>
                         <!-- Post Meta Footer End -->
                     </div>
@@ -84,14 +72,10 @@ layout: default
                     <!-- Post Navigation Start -->
                     <div class="post-navigation">
                         {% if page.previous.url %}
-                        <div class="prev-post">
-                            <a href="{{ page.previous.url }}" class="btn-default">← Previous Post</a>
-                        </div>
+                        <a href="{{ page.previous.url }}" class="btn-nav">← Previous Post</a>
                         {% endif %}
                         {% if page.next.url %}
-                        <div class="next-post">
-                            <a href="{{ page.next.url }}" class="btn-default">Next Post →</a>
-                        </div>
+                        <a href="{{ page.next.url }}" class="btn-nav">Next Post →</a>
                         {% endif %}
                     </div>
                     <!-- Post Navigation End -->

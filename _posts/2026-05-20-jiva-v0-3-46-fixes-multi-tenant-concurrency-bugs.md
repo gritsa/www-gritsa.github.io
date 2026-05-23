@@ -44,6 +44,4 @@ With these changes, you can safely run dozens of tenants on a single Jiva instan
 
 ---
 
-*Ready to power your own multi‑tenant AI platform? Explore Jiva’s open‑source framework at [Jiva](https://github.com/KarmaloopAI/Jiva).*
-
-[Gritsa Technologies](https://www.gritsa.com)
+*Ready to power your own multi‑tenant AI platform? Explore Jiva’s open‑source framework at [Jiva](https://github.com/KarmaloopAI/Jiva) or see how Gritsa delivers [autonomous AI agents](/services/ai-agents/) for production. [Get in touch](/contact/).*

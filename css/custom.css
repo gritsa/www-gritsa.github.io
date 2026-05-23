@@ -3362,6 +3362,31 @@ header.main-header .header-sticky.active{
     color: inherit;
 }
 
+.post-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.btn-nav {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid var(--accent-color);
+    border-radius: 100px;
+    color: var(--accent-color);
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-nav:hover {
+    background: var(--accent-color);
+    color: var(--white-color);
+}
+
 /************************************/
 /*** 	20. Projects Page css	  ***/
 /************************************/

@@ -60,3 +60,5 @@ A cross-platform app shares a unified code. This single code base has high reusa
 Since a cross-platform app uses a single code base, they are easier to maintain. It uses a unified code base which makes it easier to install upgrades or fix bugs. This ensures a higher quality experience.
 
 In conclusion, if reaching a broader audience, as fast as possible with low development costs is your goal, we believe a cross-platform app is better than a native app for an MVP. It will provide a quality experience and with the “write once, run anywhere” approach performance issues can be fixed easily during the testing phase.
+
+Gritsa's [full-stack development team](/services/fullstack-development/) specializes in cross-platform builds using React Native and Flutter. [Get in touch](/contact/) to discuss your MVP.

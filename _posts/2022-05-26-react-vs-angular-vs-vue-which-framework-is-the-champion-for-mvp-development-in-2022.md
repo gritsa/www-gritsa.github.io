@@ -7,7 +7,7 @@ featured_image: "https://static.wixstatic.com/media/1854f5_113d38e3497c41afb98f1
 excerpt: "Today React, Angular and Vue are among the most widely used and popular JavaScript frontend frameworks. They are mostly used for building..."
 ---
 
-Today React, Angular and Vue are among the most widely used and popular JavaScript frontend frameworks. They are mostly used for building just about any web and mobile applications that most of us see on the internet. Software developers usually end up choosing from any one of these popular frameworks for creating a dedicated and scalable app. In case your company is confused about choosing the right framework for developing an MVP (Minimum viable product), here are some points that can help you make the right call.
+Today React, Angular and Vue are among the most widely used and popular JavaScript frontend frameworks. They are mostly used for building just about any web and mobile applications that most of us see on the internet. Software developers usually end up choosing from any one of these popular frameworks for creating a dedicated and scalable app. In case your company is confused about choosing the right framework for developing an MVP (Minimum viable product), here are some points that can help you make the right call. Also see our guide on [building an MVP in Agile methodology](/blog/2022/05/05/a-guide-to-building-an-mvp-in-agile-methodology/).
 
 ## Should you choose Angular?
 
@@ -78,3 +78,5 @@ Over the years Vue has earned the reputation of being a ‘progressive framework
 Angular, React and Vue each have unique characteristics and, therefore, bring their own pros and cons on the board. However, we’d like to conclude that the nature of your MVP project should eventually determine the choice of your JavaScript frontend framework. For instance, MVP projects that don’t involve too many complex features and steep learning can opt for React or Vue. On the other hand, companies wanting to build enterprise-grade applications with a lot of complex functionalities should conventionally choose to work with the Angular framework.
 
 Lastly, other important criteria like ‘learning curve’ and ‘time taken to complete the project’ must be equally taken into consideration. On both these accounts, React & Vue outweigh Angular. Since the latter is a full-fledged framework, not only is the learning curve arduous but the time taken for completing the project is also more. Nonetheless, it is critical to reiterate again that Angular’s proficiency in implementing complex projects is praiseworthy.
+
+Gritsa’s [full-stack engineers](/services/fullstack-development/) work across React, Angular, and Vue. [Contact us](/contact/) to find the right fit for your project.

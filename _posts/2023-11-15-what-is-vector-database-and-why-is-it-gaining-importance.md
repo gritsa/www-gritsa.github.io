@@ -53,4 +53,6 @@ Vector databases also stand out for their sheer versatility. Its ability to adap
 
 ## Conclusion
 
-As the world continues to generate and overwhelmingly depend on an ever-increasing puddle of complex datasets, the significance of vector databases in leveraging and harnessing the potential of data is only set to grow. Owing to their many exceptional features, they will continue to be an indispensable component of the data management ecosystem in the foreseeable future.
+As the world continues to generate and overwhelmingly depend on an ever-increasing puddle of complex datasets, the significance of vector databases in leveraging and harnessing the potential of data is only set to grow. Owing to their many exceptional features, they will continue to be an indispensable component of the data management ecosystem in the foreseeable future. For a deeper look at how vector databases are powering AI, see [The Rise of Vector Databases for AI Applications](/blog/2023/11/23/the-rise-of-vector-databases-for-ai-applications/).
+
+Gritsa builds [Gen AI data pipelines](/services/data-engineering/) that leverage vector databases and modern retrieval architectures. [Speak to our team](/contact/) to see what's possible for your use case.

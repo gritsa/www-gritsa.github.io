@@ -75,4 +75,4 @@ Explore the full release notes on GitHub and try it out today:
 
 ---
 
-*Stay tuned for more advances in agentic AI. Follow us at [Gritsa Technologies](https://www.gritsa.com) to keep up with the latest.*
+*Stay tuned for more advances in agentic AI. Follow us at [Gritsa Technologies](/) to keep up with the latest. Interested in deploying [autonomous AI agents](/services/ai-agents/) for your business? [Get in touch](/contact/).*
