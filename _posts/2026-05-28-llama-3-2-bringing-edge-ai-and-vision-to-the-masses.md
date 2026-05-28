@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "Llama 3.2: Bringing Edge AI and Vision to the Masses"
-date: 2026-05-28 14:31:30 +0000
+date: 2026-05-28 14:31:35 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic ai, autonomous agents, LLM"
 excerpt: "Meta's Llama 3.2 introduces lightweight, vision-enabled models that run on mobile and edge devices, unlocking new possibilities for on‑device AI."
 description: "Explore Meta's Llama 3.2 release—small text‑only and multimodal models that run locally, boost privacy, and enable new edge AI applications."
 keywords: "Llama 3.2, edge AI, vision LLM, on‑device AI, open‑source LLM, multimodal models, privacy, low latency"
+featured_image: "/assets/img/posts/2026-05-28-llama-3-2-bringing-edge-ai-and-vision-to-the-masses.png"
 ---
 
 Meta's latest open‑source release, **Llama 3.2**, is a game‑changer for developers who need powerful language models that can run directly on phones, tablets, and other edge devices. Announced on October 28, 2024, the new family includes four models: two ultra‑lightweight text‑only models (1 B and 3 B parameters) and two multimodal vision models (11 B and 90 B parameters). All are available under the same permissive license that made Llama 3 a favorite in the community.
