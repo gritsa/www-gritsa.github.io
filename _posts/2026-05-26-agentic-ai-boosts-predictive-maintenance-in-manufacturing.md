@@ -8,6 +8,7 @@ tags: "agentic ai, autonomous agents, manufacturing, predictive maintenance, AI"
 excerpt: "Discover how autonomous AI agents are revolutionizing predictive maintenance, cutting downtime and boosting efficiency in modern factories."
 description: "Explore the impact of agentic AI on predictive maintenance in manufacturing, with real-world examples and future trends."
 keywords: "agentic AI, predictive maintenance, manufacturing, autonomous agents, AI-driven operations"
+featured_image: "/assets/img/posts/2026-05-26-agentic-ai-boosts-predictive-maintenance-in-manufacturing.png"
 ---
 
 ## Introduction
