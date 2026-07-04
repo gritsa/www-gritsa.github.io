@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "From Tool‑Calling Loops to Self‑Improving Agents"
-date: 2026-07-04 18:31:57 +0000
+date: 2026-07-04 18:32:13 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, LLM"
