@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jiva v0.3.48: A Benchmark Suite for Code‑Mode AI"
-date: 2026-07-04 10:42:20 +0000
+date: 2026-07-04 10:42:38 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, LLM"
