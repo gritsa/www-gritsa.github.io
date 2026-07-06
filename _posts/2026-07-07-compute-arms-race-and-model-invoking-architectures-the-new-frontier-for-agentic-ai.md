@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Compute Arms Race and Model‑Invoking Architectures: The New Frontier for Agentic AI"
-date: 2026-07-06 18:32:31 +0000
+date: 2026-07-06 18:32:41 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, LLM, compute infrastructure, model‑invoking"
