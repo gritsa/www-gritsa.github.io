@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Speed‑First Agentic AI: Google’s 3.5 Flash, Antigravity, and the Open‑Source Counter‑Wave"
-date: 2026-07-07 18:32:06 +0000
+date: 2026-07-07 18:32:19 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, LLM"
