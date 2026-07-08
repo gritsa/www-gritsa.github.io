@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Storage Gets a Promotion: Why Agentic AI Is Redefining Infrastructure"
-date: 2026-07-08 18:31:43 +0000
+date: 2026-07-08 18:32:31 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, LLM"
