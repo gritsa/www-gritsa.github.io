@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Agentic AI Goes Mainstream: New Models, Tools, Security"
-date: 2026-07-19 18:32:17 +0000
+date: 2026-07-19 18:32:39 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, LLM"
