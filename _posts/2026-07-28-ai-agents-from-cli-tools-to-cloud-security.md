@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Agents: From CLI Tools to Cloud Security"
-date: 2026-07-27 18:32:53 +0000
+date: 2026-07-27 18:33:30 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, LLM"
