@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Agentic AI: New Models, Guardrails, and Tools"
-date: 2026-08-01 20:32:36 +0000
+date: 2026-08-01 20:32:57 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, LLM"
