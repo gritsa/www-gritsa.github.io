@@ -1,14 +1,13 @@
 ---
 layout: post
 title: "Agentic AI Goes Production: Safety, Scale, and Real‑World Tests"
-date: 2026-08-06 18:38:21 +0000
+date: 2026-08-06 18:38:40 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, LLM"
 excerpt: "From Microsoft’s Orchard framework to AprielGuard, the latest August releases show how agentic AI is scaling up and tightening safety."
 description: "Explore how new agentic AI frameworks, guardrails, and real‑world incidents in early August 2026 reveal the push toward production‑grade autonomous agents."
 keywords: "agentic AI, autonomous agents, LLM, safety, scalability, production AI, guardrails, Microsoft Orchard, AprielGuard"
-featured_image: "/assets/img/posts/2026-08-07-agentic-ai-goes-production-safety-scale-and-real-world-tests.png"
 ---
 
 I’ve been watching the agentic AI space closely, and the first week of August 2026 feels like a turning point. Three headlines landed almost back‑to‑back, each pointing to the same story: autonomous agents are moving from research labs into real products, and the industry is scrambling to keep safety and scale in step.
