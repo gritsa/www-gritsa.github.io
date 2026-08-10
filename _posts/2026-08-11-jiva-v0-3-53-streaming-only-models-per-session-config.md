@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jiva v0.3.53: Streaming‑Only Models & Per‑Session Config"
-date: 2026-08-10 18:31:36 +0000
+date: 2026-08-10 18:32:42 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic ai, autonomous agents, Jiva, LLM, streaming models"
