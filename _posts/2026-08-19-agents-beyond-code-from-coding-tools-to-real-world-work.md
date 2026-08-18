@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Agents Beyond Code: From Coding Tools to Real‑World Work"
-date: 2026-08-18 18:32:05 +0000
+date: 2026-08-18 18:32:27 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, AI agents, coding agents, knowledge work"
