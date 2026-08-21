@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Agentic AI Takes the Wheel: From Robotics to Governance"
-date: 2026-08-21 20:34:25 +0000
+date: 2026-08-21 20:34:35 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, robotics, AI governance"
