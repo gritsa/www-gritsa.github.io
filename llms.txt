@@ -4,7 +4,7 @@ sitemap: false
 ---
 # Gritsa Technologies
 
-> Gritsa builds production AI for businesses: autonomous AI agents that automate whole job functions, Gen AI data pipelines that keep those agents fed with reliable data, and full-stack engineering that turns AI-built prototypes into products that scale. Founded in 2010, with teams in Noida (India) and London (UK).
+> Gritsa builds production AI for businesses: autonomous AI agents that automate whole job functions, Gen AI data pipelines that keep those agents fed with reliable data, and full-stack engineering that turns AI-built prototypes into products that scale. Based in Noida, India.
 
 Gritsa's agents are built on Jiva, an open-source (MIT) autonomous agent framework that works with any OpenAI-compatible model provider and connects to tools through MCP (Model Context Protocol). Gritsa's engineering approach is shaped by the problem it calls "catastrophic forgetting": AI-assisted code that loses coherence as a system grows.
 
