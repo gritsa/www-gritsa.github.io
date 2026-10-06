@@ -1,0 +1,7 @@
+# gritsa.com
+# Everyone is welcome to crawl this site, including AI assistants and answer engines.
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://gritsa.com/sitemap.xml

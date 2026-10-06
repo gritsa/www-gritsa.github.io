@@ -5,7 +5,7 @@ description: >-
   Fullstack Development, Developers as a Service, and Gen AI Solutions.
   LLM-powered Data Pipelines, Fine-tuning, Autonomous Agents, and AI-augmented Web Experiences.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.gritsa.com"
+url: "https://gritsa.com" # apex is canonical; www 301-redirects here
 phone: "+1 (424) 250-2424"
 address: "Unit A-132, Logix Technova, Sector-132, NOIDA (UP) 201301, India"
 
@@ -24,6 +24,30 @@ exclude:
   - mcp-shell.log
   - jiva-directive.md
   - Gritsa-Logo-V2-Subtle.svg
+  - README.md
+  - BLOG_SETUP_COMPLETE.md
+  - JEKYLL_MIGRATION.md
+  - STANDARDIZATION_COMPLETE.md
+  - update_footers.py
+  - update_pages.py
+  - Gemfile
+  - Gemfile.lock
+
+# Plugins (classic GitHub Pages only runs plugins listed here)
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Keep non-public pages out of sitemap.xml
+defaults:
+  - scope:
+      path: "admin"
+    values:
+      sitemap: false
+  - scope:
+      path: "downloads/designs"
+    values:
+      sitemap: false
 
 # Collections
 collections:

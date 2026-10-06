@@ -11,16 +11,17 @@
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-    <meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.url }}{{ site.baseurl }}/images/Gritsa-Logo-2026.png{% endif %}">
+    <meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image | absolute_url }}{% else %}{{ site.url }}{{ site.baseurl }}/images/Gritsa-Logo-2026.png{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:image" content="{% if page.featured_image %}{{ page.featured_image }}{% else %}{{ site.url }}{{ site.baseurl }}/images/Gritsa-Logo-2026.png{% endif %}">
+    <meta name="twitter:image" content="{% if page.featured_image %}{{ page.featured_image | absolute_url }}{% else %}{{ site.url }}{{ site.baseurl }}/images/Gritsa-Logo-2026.png{% endif %}">
     <meta name="twitter:site" content="@gritsa">
     <!-- Canonical -->
     <link rel="canonical" href="{{ page.url | absolute_url }}">
+    {% feed_meta %}
     <!-- Page Title -->
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} - AI & Fullstack Development | Hire. Build. Launch.{% endif %}</title>
     <!-- Favicon Icon -->
