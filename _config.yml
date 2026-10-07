@@ -35,6 +35,7 @@ exclude:
 
 # Plugins (classic GitHub Pages only runs plugins listed here)
 plugins:
+  - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-feed
 
