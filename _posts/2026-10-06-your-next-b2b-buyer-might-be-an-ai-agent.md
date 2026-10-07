@@ -40,7 +40,7 @@ None of that is new. It's the work good marketers always meant to get around to.
 
 Today most of these agents read. More of them will soon act. Last year Stripe and OpenAI released the [Agentic Commerce Protocol](https://stripe.com/newsroom/news/stripe-openai-instant-checkout), an open standard that lets an assistant complete a purchase inside the chat. The Model Context Protocol already gives any agent a standard way to call into a company's systems: check stock, request a quote, book a meeting.
 
-Follow that line and a company's MCP server starts to look like its storefront for machines. Not a chatbot bolted onto the homepage. A real interface, with rules about what an outside agent may see and do, sitting on data that is accurate at the moment it's asked. For a B2B services firm it will start small. An agent that can pull your case studies, check when a team is free, ask for a ballpark. I suspect that's closer than most roadmaps assume.
+Follow that line and a company's MCP server starts to look like its storefront for machines. Not a chatbot bolted onto the homepage. A real interface, with rules about what an outside agent may see and do (I wrote up [what tends to break first](/blog/2026/10/07/mcp-servers-in-production-what-breaks-first/) when you build one), sitting on data that is accurate at the moment it's asked. For a B2B services firm it will start small. An agent that can pull your case studies, check when a team is free, ask for a ballpark. I suspect that's closer than most roadmaps assume.
 
 ## The same work pays twice
 
