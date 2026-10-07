@@ -15,7 +15,7 @@ layout: default
                     </nav>
                     <div class="post-single-meta wow fadeInUp" data-wow-delay="0.3s" style="margin-top: 50px;">
                         <ol class="breadcrumb">
-                            <li><i class="fa-regular fa-user"></i>{{ page.author | default: "Gritsa Technologies" }}</li>
+                            <li><i class="fa-regular fa-user"></i>{% if page.author == "Amy Loomis" %}<a href="{{ site.baseurl }}/authors/amy-loomis/">Amy Loomis</a>{% else %}{{ page.author | default: "Gritsa Technologies" }}{% endif %}</li>
                             <li><i class="fa-regular fa-clock"></i>{{ page.date | date: "%d %B, %Y" }}</li>
                         </ol>
                     </div>
@@ -86,3 +86,18 @@ layout: default
     </div>
 </div>
 <!-- Blog Single End -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: page.excerpt | strip_html | strip | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+  "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+  {% if page.featured_image %}"image": {{ page.featured_image | absolute_url | jsonify }},{% endif %}
+  {% if page.author == "Amy Loomis" %}"author": {"@type": "Person", "name": "Amy Loomis", "url": "{{ '/authors/amy-loomis/' | absolute_url }}"},{% else %}"author": {"@type": "Organization", "name": "Gritsa Technologies"},{% endif %}
+  "publisher": {"@type": "Organization", "name": "Gritsa Technologies", "url": "https://gritsa.com"}
+}
+</script>
