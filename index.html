@@ -50,6 +50,54 @@ layout: none
 	<link rel="stylesheet" href="css/mousecursor.css">
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What kinds of companies get the most from AI agents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Companies with repeatable, rule-heavy work that crosses several systems. Our agent work so far has centered on supply chain and procurement, customer success and sales, and healthcare and pharma data. If a person does the same multi-step job every week and the inputs live in more than one tool, that job is a candidate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between an AI agent and a chatbot?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A chatbot answers questions. An agent does a job: it plans the steps, uses tools to carry them out, and has its output checked before anyone relies on it. We build agents on Jiva, an open-source framework that splits planning from execution and works with any OpenAI-compatible model provider, so you are not locked to one vendor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does an AI agent project cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI agent projects start at about $15,000. Data engineering engagements for AI-ready pipelines usually run 8 to 12 weeks. Dedicated developers start at $800 a month for junior engineers and run $3,000 to $5,000 for senior ones. The cost estimator gives a rough range for your project."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do so many AI prototypes stall, and can you fix that?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI-assisted coding tends to lose coherence as a prototype grows, a problem we call catastrophic forgetting. The fix is ordinary engineering discipline: clear structure, tests and review. We take AI-built prototypes and turn them into products that can be maintained. Our full-stack development page explains how."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my data need to be ready before I start with AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually the data comes first. Agents are only as reliable as the pipelines feeding them. Our data engineering work builds pipelines that check data before it is published, using the Write-Audit-Publish pattern, so bad records are caught before an agent acts on them."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -1015,13 +1063,13 @@ layout: none
                         <!-- FAQ Item Start -->
                         <div class="accordion-item wow fadeInUp">
                             <h2 class="accordion-header" id="heading1">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                    What industries can benefit from AI solutions?
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    What kinds of companies get the most from AI agents?
                                 </button>
                             </h2>
                             <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                                    <p>We monitor system performance in real-time, identifying and addressing any issues to ensure that your AI solution runs smoothly at all times.</p>
+                                    <p>Companies with repeatable, rule-heavy work that crosses several systems. Our agent work so far has centered on supply chain and procurement, customer success and sales, and healthcare and pharma data. If a person does the same multi-step job every week and the inputs live in more than one tool, that job is a candidate.</p>
                                 </div>
                             </div>
                         </div>
@@ -1030,13 +1078,13 @@ layout: none
                         <!-- FAQ Item Start -->
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
                             <h2 class="accordion-header" id="heading2">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    How do you customize AI solutions for my needs?
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    What is the difference between an AI agent and a chatbot?
                                 </button>
                             </h2>
                             <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                                    <p>We monitor system performance in real-time, identifying and addressing any issues to ensure that your AI solution runs smoothly at all times.</p>
+                                    <p>A chatbot answers questions. An agent does a job: it plans the steps, uses tools to carry them out, and has its output checked before anyone relies on it. We build agents on Jiva, an open-source framework that splits planning from execution and works with any OpenAI-compatible model provider, so you are not locked to one vendor.</p>
                                 </div>
                             </div>
                         </div>
@@ -1046,12 +1094,12 @@ layout: none
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
                             <h2 class="accordion-header" id="heading3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    What kind of support do you provide post-deployment?
+                                    How much does an AI agent project cost?
                                 </button>
                             </h2>
                             <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                                    <p>We monitor system performance in real-time, identifying and addressing any issues to ensure that your AI solution runs smoothly at all times.</p>
+                                    <p>AI agent projects start at about $15,000. Data engineering engagements for AI-ready pipelines usually run 8 to 12 weeks. Dedicated developers start at $800 a month for junior engineers and run $3,000 to $5,000 for senior ones. The <a href="/estimator/">cost estimator</a> gives a rough range for your project.</p>
                                 </div>
                             </div>
                         </div>
@@ -1061,12 +1109,12 @@ layout: none
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
                             <h2 class="accordion-header" id="heading4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    How secure is the AI technology you use?
+                                    Why do so many AI prototypes stall, and can you fix that?
                                 </button>
                             </h2>
                             <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                                    <p>We monitor system performance in real-time, identifying and addressing any issues to ensure that your AI solution runs smoothly at all times.</p>
+                                    <p>AI-assisted coding tends to lose coherence as a prototype grows, a problem we call catastrophic forgetting. The fix is ordinary engineering discipline: clear structure, tests and review. We take AI-built prototypes and turn them into products that can be maintained. Our <a href="/services/fullstack-development/">full-stack development</a> page explains how.</p>
                                 </div>
                             </div>
                         </div>
@@ -1076,12 +1124,12 @@ layout: none
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
                             <h2 class="accordion-header" id="heading5">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    How long does it take to see results?
+                                    Does my data need to be ready before I start with AI?
                                 </button>
                             </h2>
                             <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordion">
                                 <div class="accordion-body">
-                                    <p>We monitor system performance in real-time, identifying and addressing any issues to ensure that your AI solution runs smoothly at all times.</p>
+                                    <p>Usually the data comes first. Agents are only as reliable as the pipelines feeding them. Our <a href="/services/data-engineering/">data engineering</a> work builds pipelines that check data before it is published, using the Write-Audit-Publish pattern, so bad records are caught before an agent acts on them.</p>
                                 </div>
                             </div>
                         </div>
