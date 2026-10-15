@@ -1,71 +1,61 @@
 ---
 layout: post
-title: "Agentic AI in Production: Multi‑Agent Architectures and the Rise of the Sandbox"
+title: "Multi-agent architectures: when two agents beat one, and when one loop wins"
 date: 2026-05-25 20:31:57 +0000
-author: "Gritsa"
+last_modified_at: 2026-10-15 16:30:00 +0530
+author: "Amy Loomis"
 categories: "AI Technology"
-tags: "agentic ai, autonomous agents, LLM"
-excerpt: "Exploring how 2026 is turning agentic AI from hype into real‑world production systems."
-description: "A deep dive into multi‑agent architectures, sandbox environments, and business adoption trends shaping agentic AI in 2026."
-keywords: "agentic AI, multi-agent systems, sandbox, production AI, autonomous agents, LLM, business adoption"
+tags:
+  - AI agents
+  - Agent architecture
+  - Multi-tenant
+excerpt: "Splitting an agent in two is a cost you pay for a benefit. Here is when the benefit shows up, and the production bug that taught us where the real boundary sits."
+description: "When a multi-agent architecture is worth it and when a single loop is better, using the manager and worker design in Jiva and a real multi-tenant isolation bug as the examples."
+keywords: "multi-agent architecture, manager worker agents, single agent loop, agent isolation, multi-tenant AI agents"
 featured_image: "/assets/img/posts/2026-05-25-agentic-ai-in-production-multi-agent-architectures-and-the-rise-of-the-sandbox.png"
 ---
 
-## From Prototype to Production
+# Multi-agent architectures: when two agents beat one, and when one loop wins
 
-The buzz around agentic AI has been loud, but 2026 is the year it finally steps out of research labs and into production pipelines. Recent surveys show that **67 % of developers and product leaders are already shipping agentic workflows**, and companies like ClickUp are running thousands of internal agents across sales, marketing, support, and engineering. The shift is no longer theoretical—it's measurable, observable, and, most importantly, trustworthy.
+*Updated 15 October 2026. This post was first published in May 2026 as a survey of agent trends. I rewrote it around what we can actually verify: how Jiva, our open-source agent framework, is built, and one bug we shipped a fix for.*
 
-## Multi‑Agent Orchestration Takes Center Stage
+A multi-agent architecture is worth its cost when the work splits into a planning step and an execution step that need different context. For a task that is one tight loop of "look, edit, check", a single agent is faster and easier to debug. Most teams reach for several agents because the diagram looks serious, and then pay for it in latency and in bugs that live between the agents.
 
-Early 2026 reports from Anthropic and the broader community highlight a clear architectural evolution: **single‑agent pipelines are giving way to hierarchical multi‑agent systems**. An orchestrator agent coordinates specialist agents in parallel, synthesising results and handling failures. This pattern mirrors the “agent harness” concept championed by Harrison Chase, where the model runs in a loop with tools, enabling more robust reasoning and error recovery.
+Jiva ships both designs, which makes it a fair place to look at the trade.
 
-Key benefits observed:
+## What are the two designs?
 
-* **Scalability** – Parallel specialists can tackle distinct sub‑tasks (e.g., data extraction, code generation, validation) without bottlenecks.
-* **Resilience** – If one specialist fails, the orchestrator can reroute or retry, reducing overall downtime.
-* **Specialisation** – Domain‑specific models (e.g., GLM‑5.1 for coding) outperform generic LLMs on targeted workloads.
+In general mode, [Jiva](https://github.com/KarmaloopAI/Jiva) runs a Manager agent and a Worker agent. The Manager plans, breaks the request into subtasks and writes the final answer. The Worker carries out each subtask using whatever tool servers are configured: files, a browser, a shell. A simple conversational message skips the pipeline and gets answered directly.
 
-## The Sandbox Becomes a First‑Class Citizen
+In code mode, there is one agent in a single loop. It calls the model, runs a tool, gets feedback from the language server after a file edit, and goes around again. The README says plainly why it exists: removing the hand-offs between agents reduces latency, and the file tools run inside the same process.
 
-One of the most striking trends is the emphasis on giving agents a “box”. Aaron Levie’s recent talk on *Every Agent Needs a Box* underscores that **sandbox environments and filesystem access are now a core requirement for production agents**. Companies report **100 % month‑over‑month growth** in tooling that provides isolated execution contexts, reflecting a maturation of security and governance practices.
+Same framework, same models, two shapes. The team that built it decided that coding is a tight loop and a research or operations task is not.
 
-Why sandboxes matter:
+## When does splitting pay off?
 
-* **Safety** – Isolated execution prevents agents from unintentionally modifying critical infrastructure.
-* **Observability** – Logs and telemetry from sandboxed runs give teams the visibility needed for debugging and compliance.
-* **Extensibility** – Plugin architectures, like the one powering Datasette Agent, let teams tailor agents to their data stacks without rewriting core logic.
+Split when the two halves want different things.
 
-## Business Value Drives Adoption
+- **Different context.** Planning needs the whole request and a view of what is possible. Execution needs one subtask and the tool output in front of it. Keeping them apart stops a long tool result from drowning the plan.
+- **Different tools.** The planner does not need a shell. The worker does. Giving each only what it needs shrinks both the prompt and the blast radius.
+- **A place to look when it goes wrong.** If the final answer is bad, you can ask whether the plan was wrong or the execution was. In a single loop those two failures tangle together.
 
-The conversation has moved from “what can agents do?” to “what measurable outcomes can they deliver?”. Google Cloud, UiPath, Microsoft, and Adobe all frame agentic AI around **tangible business metrics**: reduced cycle times, higher conversion rates, and lower operational costs. The 2026 State of Agentic AI report from Nylas captures this shift, noting that **production‑ready agents are now the benchmark for success**.
+Do not split for parallelism alone, or because the task feels big. Every hand-off is a place for information to get lost and a model call you pay for. Jiva's own code mode is the argument: where the work is one loop, the framework removes the seam.
 
-Real‑world examples:
+## Where did the boundary actually matter?
 
-* **Replit Agent 4** – Expands beyond code generation to handle knowledge‑work tasks such as documentation and data analysis.
-* **Datasette Agent** – Provides a conversational interface for querying structured data, with a plugin system that mirrors the extensibility of the Datasette platform.
-* **GLM‑5.1** – Surpasses Gemini 3.1 and GPT‑5.4 on coding benchmarks, illustrating how specialised models are reshaping the coding landscape.
+Not between the agents. Between the customers.
 
-## Observability, Security, and the Road Ahead
+Jiva release 0.3.46, from May 2026, fixed a set of bugs that made its cloud interface unsafe for several tenants at once. The root cause was one shared storage object whose context was overwritten each time a new session started. A request from one tenant could read or write another tenant's storage path. A second singleton, the orchestration logger, wrote every session's events to whichever session registered last.
 
-As agents become more autonomous, **observability and interpretability are emerging as first‑class concerns**. Early errors in the reasoning chain can cascade, so teams are investing in tracing tools and standardized metrics. Security‑first architectures, including threat models for agentic coding, are being baked into development pipelines.
+Nothing about that was an agent-design problem. It was shared mutable state. The fix gave every session its own storage provider with a context that cannot change, and its own logger, and made concurrent requests for the same session wait on a single creation instead of starting two. The v0.3.46 release notes in the [Jiva repository](https://github.com/KarmaloopAI/Jiva) list each change.
 
-Looking forward, we can expect:
+I read that as the useful lesson of "sandboxing" for agents. People picture a box around the model. The failures that reach customers are quieter: two sessions sharing an object that was written for one.
 
-* **Long‑running agents** that maintain state across sessions, enabling durable jobs and background processing.
-* **Edge‑AI processors** (e.g., reservoir computing chips) that give agents the low‑latency compute needed for real‑time decision‑making.
-* **Standardised agent harnesses** that abstract away the loop‑and‑tool pattern, making it easier for developers to build reliable agents.
+## What should you do with this?
 
-## What This Means for Teams Building Agentic AI
+1. **Start with one agent.** Add a second only when you can name the context or the tools it should not share with the first.
+2. **Give each session its own state.** Storage, logs, conversation history. If something is a singleton, ask what happens when two customers hit it in the same second.
+3. **Write the test for concurrency before the second customer arrives.** Two sessions, interleaved, checking that neither sees the other's data.
+4. **Keep the hand-offs few and inspectable.** Log what the planner asked for and what the worker returned, per session.
 
-For organisations ready to adopt agentic AI, the roadmap is clear:
-
-1. **Start with a sandbox** – Provide agents with isolated environments and filesystem access.
-2. **Adopt a multi‑agent architecture** – Use an orchestrator to coordinate specialists and handle failures.
-3. **Invest in observability** – Implement tracing, logging, and metrics from day one.
-4. **Focus on business outcomes** – Align agent capabilities with measurable KPIs.
-
-By following these principles, teams can move beyond hype and deliver **autonomous agents that truly augment human work**.
-
----
-
-*Ready to explore how autonomous agents can transform your workflows? Visit [Gritsa Technologies](https://www.gritsa.com) to learn more about our Jiva framework and start building production‑grade agentic AI today.*
+If you are weighing an agent project and want to know whether it needs one agent or several, [our AI agents service](/services/ai-agents/) is where that conversation starts. Before you build anything, [write the test](/blog/2026/10/12/write-the-test-before-you-hire-the-agent/) that says what a correct run looks like, and read [what breaks first when agents talk to your systems](/blog/2026/10/07/mcp-servers-in-production-what-breaks-first/).
