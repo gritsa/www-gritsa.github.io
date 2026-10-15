@@ -19,7 +19,7 @@ Many of us have hit the dreaded 429 “Too Many Requests” wall when scaling ag
 
 ### Vision detection baked into setup
 
-Vision‑capable models have been proliferating, Llama 4 Maverick, Qwen, Kimi, Claude, GPT‑4+, Gemini, Pixtral, and more. Previously you had to edit `config.json` manually to tell Jiva a model could see images. The new `detectVisionCapability()` utility matches model names against a curated list and surfaces a clear reason (“Llama 4 Maverick supports vision”). During the CLI setup wizard you’re now asked “Does this model support vision?” and the answer is pre‑filled with the detection result, but still overridable. This tiny UX tweak removes a whole class of configuration errors.
+Vision‑capable models have been proliferating: Llama 4 Maverick, Qwen, Kimi, GPT‑4+, Gemini, Pixtral, and more. Previously you had to edit `config.json` manually to tell Jiva a model could see images. The new `detectVisionCapability()` utility matches model names against a curated list and surfaces a clear reason (“Llama 4 Maverick supports vision”). During the CLI setup wizard you’re now asked “Does this model support vision?” and the answer is pre‑filled with the detection result, but still overridable. This tiny UX tweak removes a whole class of configuration errors.
 
 ### Skeleton‑first workflow for low‑output‑budget models
 
@@ -35,10 +35,10 @@ Previously the CLI and the local HTTP interface read/wrote different config file
 
 ### Bug fixes that matter
 
-- **Manager double system‑message crashes** – Fixed a bug where a directive was appended as a second system message, breaking strict providers like Qwen3.6.
-- **CodeAgent empty‑response loop** – Added `finishReason` handling and forced compaction when the model runs out of tokens mid‑thought.
-- **CLI config drop** – `defaultMaxTokens` and `reasoningEffortStrategy` are now correctly passed through all four CLI entry points.
-- **Conversation titles** – Stripped thinking blocks, raised token budget, and set low reasoning effort, yielding clean, LLM‑generated titles.
+- **Manager double system‑message crashes**: Fixed a bug where a directive was appended as a second system message, breaking strict providers like Qwen3.6.
+- **CodeAgent empty‑response loop**: Added `finishReason` handling and forced compaction when the model runs out of tokens mid‑thought.
+- **CLI config drop**: `defaultMaxTokens` and `reasoningEffortStrategy` are now correctly passed through all four CLI entry points.
+- **Conversation titles**: Stripped thinking blocks, raised token budget, and set low reasoning effort, yielding clean, LLM‑generated titles.
 
 ### What this means for you
 
@@ -60,4 +60,4 @@ If you haven’t tried the new release yet, give it a spin and let us know how i
 
 *Read the full release notes on GitHub: [Jiva v0.3.50](https://github.com/KarmaloopAI/Jiva/releases/tag/v0.3.50).*
 
-*Gritsa Technologies builds autonomous AI agents with Jiva – open‑source, production‑ready, and constantly improving.*
+*Gritsa Technologies builds autonomous AI agents with Jiva, open‑source, production‑ready, and constantly improving.*

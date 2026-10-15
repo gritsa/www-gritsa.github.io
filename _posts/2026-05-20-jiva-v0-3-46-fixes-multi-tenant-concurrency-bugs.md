@@ -17,11 +17,11 @@ The latest Jiva release, **v0.3.46**, lands on May 15, 2026, delivering a su
 
 ### Key fixes
 
-- **Storage provider alias handling** – `JIVA_STORAGE_PROVIDER=gcp` now correctly maps to the GCP bucket provider.
-- **Per‑session provider isolation** – each HTTP session now receives its own `StorageProvider` instance with an immutable context, eliminating path bleed between tenants.
-- **Session manager race conditions** – a pending‑sessions map prevents duplicate session creation and ensures proper cleanup.
-- **Orchestration logger isolation** – logs are now scoped to the tenant and session, avoiding mixed‑tenant log streams.
-- **Additional bug fixes** – several minor issues from v0.3.45 are also resolved.
+- **Storage provider alias handling**: `JIVA_STORAGE_PROVIDER=gcp` now correctly maps to the GCP bucket provider.
+- **Per‑session provider isolation**: each HTTP session now receives its own `StorageProvider` instance with an immutable context, eliminating path bleed between tenants.
+- **Session manager race conditions**: a pending‑sessions map prevents duplicate session creation and ensures proper cleanup.
+- **Orchestration logger isolation**: logs are now scoped to the tenant and session, avoiding mixed‑tenant log streams.
+- **Additional bug fixes**: several minor issues from v0.3.45 are also resolved.
 
 ### Why this matters for production AI teams
 

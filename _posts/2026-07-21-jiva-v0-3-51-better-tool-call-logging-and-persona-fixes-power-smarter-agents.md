@@ -6,7 +6,7 @@ author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Jiva's latest release adds detailed tool‑call logs and fixes a persona‑context leak, making autonomous agents more transparent and reliable."
-description: "Explore the new features in Jiva v0.3.51, including richer tool‑call logging and a critical persona‑context fix, and see how they fit into the fast‑moving agentic AI landscape."
+description: "What changed in Jiva v0.3.51: code-mode tool-call logs now show the arguments, and a stale persona prefix no longer leaks into code-mode log lines."
 keywords: "Jiva, autonomous agents, tool‑call logging, persona context, agentic AI, LLM, open‑source agents"
 featured_image: "/assets/img/posts/2026-07-21-jiva-v0-3-51-better-tool-call-logging-and-persona-fixes-power-smarter-agents.png"
 ---
@@ -17,39 +17,21 @@ I’ve been watching the agentic AI space shift from flashy model releases to th
 
 The changelog is short, but each bullet point solves a real pain point:
 
-* **Tool‑call log now shows the actual arguments** – Previously the CLI and HTTP server logs only printed the tool name. Now you’ll see the full payload: file paths, bash commands, JSON payloads, etc. That visibility is a game‑changer when you’re tracing why an agent decided to run a particular script or read a specific file.
-* **Persona‑context leak fixed** – In long‑running processes that serve both Chat and Code modes, the active persona name could bleed into Code‑mode logs, confusing operators and making audit trails noisy. The fix resets the persona on the shared logger, keeping each mode’s output clean.
+* **Tool‑call log now shows the actual arguments**: Previously the CLI and HTTP server logs only printed the tool name. Now you’ll see the full payload: file paths, bash commands, JSON payloads, etc. That visibility matters when you’re tracing why an agent decided to run a particular script or read a specific file.
+* **Persona‑context leak fixed**: In long‑running processes that serve both Chat and Code modes, the active persona name could bleed into Code‑mode logs, confusing operators and making audit trails noisy. The fix resets the persona on the shared logger, keeping each mode’s output clean.
 
 Both changes are tiny under the hood, but they dramatically improve observability and reliability, two pillars for moving agents from experimental demos to production workloads.
 
-### Why observability matters now
+### Why the arguments matter
 
-The past week has been a whirlwind for agentic AI. Moonshot’s **Kimi K3** dropped a 2.8 T‑parameter open model that rivals closed‑source giants, while Hugging Face disclosed a security incident driven entirely by an autonomous AI agent swarm. In that environment, you can’t afford a black‑box agent that silently misbehaves.
+Before this release, a code-mode log line said `Tool: edit_file` and nothing else. You knew the agent edited a file. You did not know which one, or what it changed. Now the line carries the arguments as a single line of JSON, so root-cause analysis can start with a search through the log instead of a reproduction of the whole run. Long values are cut at 500 characters and the whole line is capped at 2,000, so one huge file write cannot flood the output.
 
-Jiva’s enhanced logging gives you the same kind of forensic detail you’d expect from traditional server logs. When an agent decides to invoke a tool, you now see the exact command it constructed, the files it touched, and the parameters it passed. That makes root‑cause analysis as simple as grepping a log file, rather than reproducing a complex multi‑step interaction.
+### Why the persona fix matters
 
-The persona‑context fix also matters for multi‑tenant deployments. Many teams run a single Jiva instance serving several teams, each with its own persona. Without the reset, a stray persona prefix could leak into another team’s logs, creating confusion and potential security blind spots. The patch ensures isolation, a prerequisite for any production‑grade multi‑tenant service.
-
-### How this fits the broader trend
-
-Agentic AI is moving from “big model releases” to “big infrastructure releases.” The community is realizing that the real bottleneck isn’t raw model performance. It’s the surrounding runtime, logging, and safety nets. Jiva’s latest release is a concrete example of that shift.
-
-At the same time, the ecosystem is seeing a surge in open‑source agents that can be customized and audited. Kimi K3’s open weights promise a new wave of community‑driven tooling, while security incidents remind us that autonomous agents can be weaponized if left unchecked. By tightening logging and fixing persona leaks, Jiva is helping developers build the guardrails needed for that next wave.
+The persona context in Jiva's logger is shared across the whole process. Chat mode sets it and never cleared it, and code mode has no persona, so in an app that runs both in one long-lived process, code-mode lines could show a stale persona name where `[CodeAgent]` should be. Anything parsing those lines for the `[CodeAgent]` tag would break. Code mode now clears the persona at the start of every run. It is a small bug of a kind that appears whenever one global object is shared by two modes.
 
 ### What this means for you
 
-If you’re already running Jiva in production, upgrade now. The change log is backward compatible, and the added visibility will pay dividends the first time you need to debug a rogue tool call. For teams building multi‑tenant agent platforms, the persona fix is a must‑have to keep tenant boundaries clean.
+If you run Jiva in production, upgrade. The release is a logging change and a bug fix, nothing else. If you are building your own agent, the lesson transfers: log what the tool was asked to do, not just which tool ran, and check which of your loggers and caches are process-wide before two modes start using them.
 
-And if you’re just starting out, consider this release a template: the most impactful improvements often live in the details. As the agentic AI landscape matures, expect more releases that focus on observability, safety, and developer ergonomics rather than headline‑grabbing model sizes.
-
-### Looking ahead
-
-Jiva’s roadmap hints at deeper integration with multimodal inputs and tighter sandboxing. Those features will build on the solid foundation laid by v0.3.51. In the meantime, keep an eye on the broader ecosystem: open models like Kimi K3, security research on autonomous swarms, and the evolving standards for agent logging.
-
-The future of autonomous agents isn’t just about smarter models; it’s about smarter tooling that lets us trust those models in the wild. Jiva v0.3.51 is a step in that direction.
-
----
-
-*Read the full release notes on GitHub: [Jiva v0.3.51](https://github.com/KarmaloopAI/Jiva/releases/tag/v0.3.51).*
-
-*Explore Jiva, the open‑source autonomous agent framework from [Gritsa Technologies](https://www.gritsa.com).*
+*Updated 15 October 2026: removed claims about outside events that this post did not source. Everything above about v0.3.51 comes from the release notes in the Jiva repository.*

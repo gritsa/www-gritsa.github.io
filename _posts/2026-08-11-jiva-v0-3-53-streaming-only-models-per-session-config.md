@@ -65,9 +65,9 @@ All of these changes are additive and backward‑compatible, so existing deploym
 
 ### What this means for production teams
 
-1. **Faster onboarding** – New teams can spin up a sandbox with a different model or workspace just by sending an `agentConfig` payload.
-2. **Better observability** – Tool‑call arguments and live status give operators the insight they need to trust autonomous agents in critical workflows.
-3. **Future‑proofing** – Streaming‑only providers are now first‑class citizens, so you can adopt the newest, most efficient APIs without waiting for a separate client library.
+1. **Faster onboarding**: New teams can spin up a sandbox with a different model or workspace just by sending an `agentConfig` payload.
+2. **Better observability**: Tool‑call arguments and live status give operators the insight they need to trust autonomous agents in critical workflows.
+3. **Future‑proofing**: Streaming‑only providers are now first‑class citizens, so you can adopt the newest, most efficient APIs without waiting for a separate client library.
 
 If you’re already running Jiva, upgrade with:
 

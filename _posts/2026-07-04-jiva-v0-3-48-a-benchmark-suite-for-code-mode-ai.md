@@ -19,8 +19,8 @@ That changed with **Jiva v0.3.48**, released on June 29, 2026. The update sh
 
 The benchmark is organized into two suites:
 
-* **`taskstore`** – a baseline, eight‑tier suite that builds a tiny task‑management library from scratch. Each tier adds a new feature or bug‑fix, and the tests are cumulative, so a refactor that breaks an earlier tier is caught immediately.
-* **`microcrm`** – a scored suite that constructs a full‑stack CRM API using only Node built‑ins (`node:http` + `node:sqlite`). It runs 51 spec tests across five tasks, reporting a pass‑rate instead of a binary result.
+* **`taskstore`**: a baseline, eight‑tier suite that builds a tiny task‑management library from scratch. Each tier adds a new feature or bug‑fix, and the tests are cumulative, so a refactor that breaks an earlier tier is caught immediately.
+* **`microcrm`**: a scored suite that constructs a full‑stack CRM API using only Node built‑ins (`node:http` + `node:sqlite`). It runs 51 spec tests across five tasks, reporting a pass‑rate instead of a binary result.
 
 Both suites are runnable from the CLI (`jiva benchmark`) or via HTTP endpoints (`/api/benchmark/*`). The CLI prints a tidy table, the highest tier passed, and any diagnostic notes. The HTTP API streams progress via Server‑Sent Events, making it easy to embed the benchmark in CI pipelines.
 
@@ -62,4 +62,4 @@ If you’re experimenting with code‑mode agents, give the new benchmark a spin
 
 ---
 
-*Read the full release notes on GitHub: [Jiva v0.3.48 – Code‑Mode Benchmark Suite](https://github.com/KarmaloopAI/Jiva/releases/tag/v0.3.48).*
+*Read the full release notes on GitHub: [Jiva v0.3.48, Code‑Mode Benchmark Suite](https://github.com/KarmaloopAI/Jiva/releases/tag/v0.3.48).*

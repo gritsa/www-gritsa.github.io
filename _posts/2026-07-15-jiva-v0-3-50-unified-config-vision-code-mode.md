@@ -23,7 +23,7 @@ Many providers impose hard caps. Sarvam‑105B, for example, caps at 40 requests
 
 ### Vision detection without extra wiring
 
-Vision‑capable models have been supported under the hood for a while, but you had to flip a flag manually. v0.3.50 adds a small utility that matches model names against known vision families: Llama 4 Maverick/Scout, Qwen, Kimi, GLM, Claude, GPT‑4+, Gemini, Pixtral, Grok, Phi‑multimodal, and more. During setup the wizard now asks “Does this model support vision?” and shows the matched reason. The flag lives in the unified config, so both CLI and HTTP see it instantly. When `hasVision` is true, the orchestrator routes images directly to that model instead of routing them through a separate multimodal caption step.
+Vision‑capable models have been supported under the hood for a while, but you had to flip a flag manually. v0.3.50 adds a small utility that matches model names against known vision families: Llama 4 Maverick/Scout, Qwen, Kimi, GLM, GPT‑4+, Gemini, Pixtral, Grok, Phi‑multimodal, and more. During setup the wizard now asks “Does this model support vision?” and shows the matched reason. The flag lives in the unified config, so both CLI and HTTP see it instantly. When `hasVision` is true, the orchestrator routes images directly to that model instead of routing them through a separate multimodal caption step.
 
 ### Skeleton‑first code generation for low‑budget models
 
@@ -35,10 +35,10 @@ The `ConversationMetadata` type now includes optional fields for `mcpServers`, `
 
 ### Bug fixes that matter
 
-- **Manager double system‑message crashes** – Some strict providers reject more than one system message. The directive is now merged into the single system message, eliminating the 400 error.
-- **CodeAgent giving up early** – Empty responses used to trigger a retry cap that stopped the agent after four tries, even when `maxIterations` was high. The fix removes the tool‑call requirement for in‑loop compaction and adds a `finishReason` check that forces compaction when the model runs out of tokens mid‑thought.
-- **CLI dropping `defaultMaxTokens`** – The CLI now forwards the `defaultMaxTokens` and `reasoningEffortStrategy` fields from the config, so Sarvam‑105B respects its intended token ceiling.
-- **Conversation titles leaking thinking** – The title generation now strips any `` thinking blocks, raises the token budget from 20 to 200, and sets `reasoningEffort: 'low'`. The result is a clean, LLM‑generated title instead of a snippet of the first user message.
+- **Manager double system‑message crashes**: Some strict providers reject more than one system message. The directive is now merged into the single system message, eliminating the 400 error.
+- **CodeAgent giving up early**: Empty responses used to trigger a retry cap that stopped the agent after four tries, even when `maxIterations` was high. The fix removes the tool‑call requirement for in‑loop compaction and adds a `finishReason` check that forces compaction when the model runs out of tokens mid‑thought.
+- **CLI dropping `defaultMaxTokens`**: The CLI now forwards the `defaultMaxTokens` and `reasoningEffortStrategy` fields from the config, so Sarvam‑105B respects its intended token ceiling.
+- **Conversation titles leaking thinking**: The title generation now strips any `` thinking blocks, raises the token budget from 20 to 200, and sets `reasoningEffort: 'low'`. The result is a clean, LLM‑generated title instead of a snippet of the first user message.
 
 ### How to upgrade
 
