@@ -13,7 +13,7 @@ featured_image: "/assets/img/posts/2026-05-19-jiva-v0-3-47-multimodal-fixes-and-
 
 ## Introduction
 
-The AI landscape moves at breakneck speed, and staying ahead means constantly polishing the underlying tooling. Today we’re excited to ship **Jiva 0.3.47**, a focused release that eliminates critical bugs in multimodal image handling, restores reliable tool‑call sequences on Vertex AI MaaS, and introduces **Google Application Default Credentials (ADC)** support—making Cloud Run deployments frictionless.
+The AI landscape moves at breakneck speed, and staying ahead means constantly polishing the underlying tooling. Today we’re excited to ship **Jiva 0.3.47**, a focused release that eliminates critical bugs in multimodal image handling, restores reliable tool‑call sequences on Vertex AI MaaS, and introduces **Google Application Default Credentials (ADC)** support, making Cloud Run deployments frictionless.
 
 ## What’s New in 0.3.47
 

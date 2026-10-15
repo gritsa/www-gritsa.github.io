@@ -57,4 +57,4 @@ Make sure you are clear about your requirements and that your developer has the 
 - **Knowledgeable**– is aware of the latest trends and developments
 - **Matured** – can see the big picture, the vision of the business, and understands the customer’s requirements
 
-So, once you are clear that it is time to hire a full-stack developer, ensure that you look for inherent qualities along with technical skills. Ready to move forward? [Talk to Gritsa](/contact/) — we can have the right engineer on your project within days.
+So, once you are clear that it is time to hire a full-stack developer, ensure that you look for inherent qualities along with technical skills. Ready to move forward? [Talk to Gritsa](/contact/) and we can have the right engineer on your project within days.

@@ -25,4 +25,4 @@ This is our development center, equipped with leased line connection, a server r
 
 So we encourage you to visit us, and make the office lively again! Play some Foosball or the Xbox, or get plugged in with music and just write code for hours.
 
-See you soon! And if you'd like to work with us remotely, [reach out here](/contact/) — we serve clients globally from right here in NOIDA.
+See you soon! And if you'd like to work with us remotely, [reach out here](/contact/). We serve clients globally from right here in NOIDA.

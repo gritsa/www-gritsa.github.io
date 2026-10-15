@@ -13,7 +13,7 @@ featured_image: "/assets/img/posts/2026-07-04-jiva-v0-3-48-a-benchmark-suite-for
 
 I’ve been watching the code‑mode experiments in Jiva for months. The `--code` flag works beautifully with `gpt-oss-120b`, but the moment you switch to a shorter‑output model like Sarvam‑105b or a rate‑limited service like Krutrim, the results start to wobble. Tasks that need larger writes, multi‑file refactors, or long‑horizon debugging simply fall apart, and we had no objective way to tell *why*.
 
-That changed with **Jiva v0.3.48**, released on June 29, 2026. The update ships a built‑in, TDD‑style benchmark suite that drives a `CodeAgent` through a ladder of coding challenges, scoring each with Node’s native test runner. No external judges, no network calls—just deterministic pass/fail plus rich diagnostics (iterations, tokens, wall‑time, and whether the iteration cap was hit).
+That changed with **Jiva v0.3.48**, released on June 29, 2026. The update ships a built‑in, TDD‑style benchmark suite that drives a `CodeAgent` through a ladder of coding challenges, scoring each with Node’s native test runner. No external judges, no network calls, just deterministic pass/fail plus rich diagnostics (iterations, tokens, wall‑time, and whether the iteration cap was hit).
 
 ### What the suite actually does
 
@@ -50,7 +50,7 @@ curl -X POST https://your‑jiva‑host/api/benchmark/run \
   -d '{"maxTier":5,"suite":"microcrm"}'
 ```
 
-The benchmark reuses whatever model stack you already have configured—no extra setup required.
+The benchmark reuses whatever model stack you already have configured, no extra setup required.
 
 ### The bigger picture
 
@@ -58,7 +58,7 @@ Having a deterministic, reproducible benchmark for code‑mode is a game‑chang
 
 For us at Gritsa, this release is a step toward truly reliable AI‑augmented development. When agents can be measured as rigorously as unit tests, we can trust them to handle larger, more complex software tasks without constant human oversight.
 
-If you’re experimenting with code‑mode agents, give the new benchmark a spin. The data you collect will help shape the next wave of autonomous coding tools—tools that don’t just suggest snippets, but actually ship production‑grade features.
+If you’re experimenting with code‑mode agents, give the new benchmark a spin. The data you collect will help shape the next wave of autonomous coding tools: tools that don’t just suggest snippets, but actually ship production‑grade features.
 
 ---
 

@@ -19,11 +19,11 @@ Previously the CLI and the local HTTP interface kept their own separate configur
 
 ### Proactive rate limiting
 
-Many providers impose hard caps—Sarvam‑105B, for example, caps at 40 requests per minute. Earlier versions only reacted to 429 errors, which meant a burst could still hit the limit and cause failures. The new `maxRequestsPerMinute` field makes the client track its own request timestamps in a rolling 60‑second window and pause before sending a request that would exceed the ceiling. It also respects the standard `Retry‑After` header, falling back to provider‑specific wording only when needed. The Sarvam preset now sets this to 40 automatically, so you get safe defaults out of the box.
+Many providers impose hard caps. Sarvam‑105B, for example, caps at 40 requests per minute. Earlier versions only reacted to 429 errors, which meant a burst could still hit the limit and cause failures. The new `maxRequestsPerMinute` field makes the client track its own request timestamps in a rolling 60‑second window and pause before sending a request that would exceed the ceiling. It also respects the standard `Retry‑After` header, falling back to provider‑specific wording only when needed. The Sarvam preset now sets this to 40 automatically, so you get safe defaults out of the box.
 
 ### Vision detection without extra wiring
 
-Vision‑capable models have been supported under the hood for a while, but you had to flip a flag manually. v0.3.50 adds a small utility that matches model names against known vision families—Llama 4 Maverick/Scout, Qwen, Kimi, GLM, Claude, GPT‑4+, Gemini, Pixtral, Grok, Phi‑multimodal, and more. During setup the wizard now asks “Does this model support vision?” and shows the matched reason. The flag lives in the unified config, so both CLI and HTTP see it instantly. When `hasVision` is true, the orchestrator routes images directly to that model instead of routing them through a separate multimodal caption step.
+Vision‑capable models have been supported under the hood for a while, but you had to flip a flag manually. v0.3.50 adds a small utility that matches model names against known vision families: Llama 4 Maverick/Scout, Qwen, Kimi, GLM, Claude, GPT‑4+, Gemini, Pixtral, Grok, Phi‑multimodal, and more. During setup the wizard now asks “Does this model support vision?” and shows the matched reason. The flag lives in the unified config, so both CLI and HTTP see it instantly. When `hasVision` is true, the orchestrator routes images directly to that model instead of routing them through a separate multimodal caption step.
 
 ### Skeleton‑first code generation for low‑budget models
 
@@ -50,7 +50,7 @@ No breaking changes. Existing configurations continue to work, and the migration
 
 ---
 
-What excites me most is the combination of proactive rate limiting and native vision support. It means you can spin up a multi‑agent pipeline that ingests images, reasons about them, and writes code—all without hitting hidden provider caps or manually wiring vision flags. The skeleton‑first code mode also feels like a practical safeguard for teams that need to keep token usage predictable.
+What excites me most is the combination of proactive rate limiting and native vision support. It means you can spin up a multi‑agent pipeline that ingests images, reasons about them, and writes code, without hitting hidden provider caps or manually wiring vision flags. The skeleton‑first code mode also feels like a practical safeguard for teams that need to keep token usage predictable.
 
 If you’re already running Jiva, give the upgrade a try and let me know how the new config feels in your workflow. For those just starting, the unified config and vision detection lower the barrier to building truly autonomous agents that can see, think, and code.
 

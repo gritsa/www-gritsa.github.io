@@ -5,7 +5,7 @@ date: 2026-08-10 18:32:42 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic ai, autonomous agents, Jiva, LLM, streaming models"
-excerpt: "Jiva’s latest release adds streaming‑only model support, per‑session configuration, and live status endpoints—making production‑grade autonomous agents more flexible and observable."
+excerpt: "Jiva’s latest release adds streaming‑only model support, per‑session configuration, and live status endpoints, making production‑grade autonomous agents more flexible and observable."
 description: "Explore Jiva v0.3.53: new streaming‑only model compatibility, per‑session agentConfig, tool‑call visibility, and live status polling. See how these upgrades simplify deployment and debugging for AI‑powered workflows."
 keywords: "Jiva, Jiva v0.3.53, streaming models, agentConfig, autonomous agents, LLM, tool calls, live status"
 featured_image: "/assets/img/posts/2026-08-11-jiva-v0-3-53-streaming-only-models-per-session-config.png"

@@ -27,7 +27,7 @@ These aren’t headline‑grabbing features, but they directly address the pain 
 
 A recent Hugging Face security incident showed how an autonomous attacker can spin up thousands of parallel calls, overwhelm a system, and hide its tracks. The incident underscored the need for **observability**: you can’t defend what you can’t see. By surfacing tool‑call arguments, Jiva gives operators a forensic trail that can be fed into SIEMs or custom monitoring pipelines.
 
-At the same time, the industry is moving toward multi‑agent orchestration. The Berkeley Agentic AI Summit (August 1‑2) is gathering researchers and engineers to discuss how fleets of agents can collaborate safely. One of the recurring themes is **traceability**—each agent must expose what it did, when, and why. Jiva’s logging aligns perfectly with that vision.
+At the same time, the industry is moving toward multi‑agent orchestration. The Berkeley Agentic AI Summit (August 1‑2) is gathering researchers and engineers to discuss how fleets of agents can collaborate safely. One of the recurring themes is **traceability**, each agent must expose what it did, when, and why. Jiva’s logging aligns perfectly with that vision.
 
 ### Parallel calls: the hidden failure mode
 
@@ -39,11 +39,11 @@ The second bug involved context compaction. When the prompt grew beyond a thresh
 
 If you’re running Jiva agents in production, upgrade now. The new logging will appear in your standard output, and the recursive truncation means you won’t see malformed JSON even when dealing with complex MCP schemas. The parallel‑call fixes should eliminate the occasional “API error (400)” spikes that have been plaguing long‑running runs.
 
-For teams building multi‑agent systems, the logging gives you a shared audit log that can be aggregated across agents. Pair it with a central observability stack, and you’ll have the visibility needed to meet emerging compliance requirements—something the EU AI Act and upcoming U.S. regulations are beginning to demand.
+For teams building multi‑agent systems, the logging gives you a shared audit log that can be aggregated across agents. Pair it with a central observability stack, and you’ll have the visibility needed to meet emerging compliance requirements, which the EU AI Act and upcoming U.S. regulations are beginning to demand.
 
 ### A quick note on the broader landscape
 
-While Jiva tightens its internals, the wider agentic AI ecosystem is buzzing with activity. Gartner predicts that 40 % of enterprise apps will embed task‑specific agents by the end of 2026, and recent security research shows that autonomous attackers are already leveraging the same parallelism features that we rely on for speed. The common thread is **reliability at scale**—whether you’re defending against an AI‑driven cyber‑attack or orchestrating a fleet of collaborative agents, you need the same fundamentals: clear logs, robust error handling, and deterministic state management.
+While Jiva tightens its internals, the wider agentic AI ecosystem is buzzing with activity. Gartner predicts that 40 % of enterprise apps will embed task‑specific agents by the end of 2026, and recent security research shows that autonomous attackers are already leveraging the same parallelism features that we rely on for speed. The common thread is **reliability at scale**, whether you’re defending against an AI‑driven cyber‑attack or orchestrating a fleet of collaborative agents, you need the same fundamentals: clear logs, robust error handling, and deterministic state management.
 
 That’s why I’m excited about this release. It’s not a flashy new model or a headline‑grabbing demo; it’s the kind of engineering that lets autonomous agents move from the lab into the real world with confidence.
 
@@ -51,4 +51,4 @@ That’s why I’m excited about this release. It’s not a flashy new model or 
 
 *If you’re curious to see the changes in action, check out the [release notes](https://github.com/KarmaloopAI/Jiva/releases/tag/v0.3.52) and give the new logging a spin.*
 
-*Stay tuned for more updates as Jiva continues to evolve—because reliable agents are the foundation of the next generation of AI‑powered products.*
+*Stay tuned for more updates as Jiva continues to evolve, because reliable agents are the foundation of the next generation of AI‑powered products.*

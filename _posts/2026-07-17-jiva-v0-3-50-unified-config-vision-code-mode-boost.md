@@ -15,11 +15,11 @@ I’ve been watching the agentic AI space evolve, and the latest Jiva release fe
 
 ### Proactive rate limiting that actually works
 
-Many of us have hit the dreaded 429 “Too Many Requests” wall when scaling agents against providers with strict caps—Sarvam‑105B, for example, caps at 40 requests per minute. Jiva v0.3.50 now tracks request timestamps in a rolling 60‑second window and **waits before sending** a request that would breach the limit, rather than reacting after the fact. It also respects the standard `Retry‑After` header and falls back to parsing provider‑specific messages when needed. The result? Fewer retries, smoother pipelines, and less surprise throttling in production.
+Many of us have hit the dreaded 429 “Too Many Requests” wall when scaling agents against providers with strict caps. Sarvam‑105B, for example, caps at 40 requests per minute. Jiva v0.3.50 now tracks request timestamps in a rolling 60‑second window and **waits before sending** a request that would breach the limit, rather than reacting after the fact. It also respects the standard `Retry‑After` header and falls back to parsing provider‑specific messages when needed. The result? Fewer retries, smoother pipelines, and less surprise throttling in production.
 
 ### Vision detection baked into setup
 
-Vision‑capable models have been proliferating—Llama 4 Maverick, Qwen, Kimi, Claude, GPT‑4+, Gemini, Pixtral, and more. Previously you had to edit `config.json` manually to tell Jiva a model could see images. The new `detectVisionCapability()` utility matches model names against a curated list and surfaces a clear reason (“Llama 4 Maverick supports vision”). During the CLI setup wizard you’re now asked “Does this model support vision?” and the answer is pre‑filled with the detection result, but still overridable. This tiny UX tweak removes a whole class of configuration errors.
+Vision‑capable models have been proliferating, Llama 4 Maverick, Qwen, Kimi, Claude, GPT‑4+, Gemini, Pixtral, and more. Previously you had to edit `config.json` manually to tell Jiva a model could see images. The new `detectVisionCapability()` utility matches model names against a curated list and surfaces a clear reason (“Llama 4 Maverick supports vision”). During the CLI setup wizard you’re now asked “Does this model support vision?” and the answer is pre‑filled with the detection result, but still overridable. This tiny UX tweak removes a whole class of configuration errors.
 
 ### Skeleton‑first workflow for low‑output‑budget models
 

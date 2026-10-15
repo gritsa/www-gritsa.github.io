@@ -15,7 +15,7 @@ With the COVID-19 pandemic, businesses had to radically adapt to alternative met
 
 ## What is digital transformation?
 
-Digital transformation, in simple terms, is the creation of a digital version of a comparable identity. It includes business processes, operations, transactions as well as stakeholder experiences. It is multi-faceted. Digital transformation involves the integration of continuous change and innovation into the organizational culture. According to salesforce, “Digital transformation is the process of using digital technologies to create new — or modify existing — business processes, culture, and customer experiences to meet changing business and market requirements.”
+Digital transformation, in simple terms, is the creation of a digital version of a comparable identity. It includes business processes, operations, transactions as well as stakeholder experiences. It is multi-faceted. Digital transformation involves the integration of continuous change and innovation into the organizational culture. According to salesforce, “Digital transformation is the process of using digital technologies to create new, or modify existing, business processes, culture, and customer experiences to meet changing business and market requirements.”
 
 ## How can digital transformation benefit small and medium businesses?
 

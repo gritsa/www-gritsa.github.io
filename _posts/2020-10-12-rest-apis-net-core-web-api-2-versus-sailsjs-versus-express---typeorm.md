@@ -90,7 +90,7 @@ If you want my personal conclusion, it is even more simpler -
 
 There are several more choices that we will ostensibly be spoilt to choose from. Take them for a spin and do your thing, figure out what's best for you, your team and the future of your product.
 
-Need a team to build and ship a production API? Gritsa's [full-stack development service](/services/fullstack-development/) covers the full stack — architecture, implementation, and deployment. [Get in touch](/contact/).
+Need a team to build and ship a production API? Gritsa's [full-stack development service](/services/fullstack-development/) covers the full stack, architecture, implementation, and deployment. [Get in touch](/contact/).
 
 ---
 

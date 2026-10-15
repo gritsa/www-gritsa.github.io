@@ -20,7 +20,7 @@ The changelog is short, but each bullet point solves a real pain point:
 * **Tool‑call log now shows the actual arguments** – Previously the CLI and HTTP server logs only printed the tool name. Now you’ll see the full payload: file paths, bash commands, JSON payloads, etc. That visibility is a game‑changer when you’re tracing why an agent decided to run a particular script or read a specific file.
 * **Persona‑context leak fixed** – In long‑running processes that serve both Chat and Code modes, the active persona name could bleed into Code‑mode logs, confusing operators and making audit trails noisy. The fix resets the persona on the shared logger, keeping each mode’s output clean.
 
-Both changes are tiny under the hood, but they dramatically improve observability and reliability—two pillars for moving agents from experimental demos to production workloads.
+Both changes are tiny under the hood, but they dramatically improve observability and reliability, two pillars for moving agents from experimental demos to production workloads.
 
 ### Why observability matters now
 
@@ -32,7 +32,7 @@ The persona‑context fix also matters for multi‑tenant deployments. Many team
 
 ### How this fits the broader trend
 
-Agentic AI is moving from “big model releases” to “big infrastructure releases.” The community is realizing that the real bottleneck isn’t raw model performance—it’s the surrounding runtime, logging, and safety nets. Jiva’s latest release is a concrete example of that shift.
+Agentic AI is moving from “big model releases” to “big infrastructure releases.” The community is realizing that the real bottleneck isn’t raw model performance. It’s the surrounding runtime, logging, and safety nets. Jiva’s latest release is a concrete example of that shift.
 
 At the same time, the ecosystem is seeing a surge in open‑source agents that can be customized and audited. Kimi K3’s open weights promise a new wave of community‑driven tooling, while security incidents remind us that autonomous agents can be weaponized if left unchecked. By tightening logging and fixing persona leaks, Jiva is helping developers build the guardrails needed for that next wave.
 
@@ -44,7 +44,7 @@ And if you’re just starting out, consider this release a template: the most im
 
 ### Looking ahead
 
-Jiva’s roadmap hints at deeper integration with multimodal inputs and tighter sandboxing. Those features will build on the solid foundation laid by v0.3.51. In the meantime, keep an eye on the broader ecosystem—open models like Kimi K3, security research on autonomous swarms, and the evolving standards for agent logging.
+Jiva’s roadmap hints at deeper integration with multimodal inputs and tighter sandboxing. Those features will build on the solid foundation laid by v0.3.51. In the meantime, keep an eye on the broader ecosystem: open models like Kimi K3, security research on autonomous swarms, and the evolving standards for agent logging.
 
 The future of autonomous agents isn’t just about smarter models; it’s about smarter tooling that lets us trust those models in the wild. Jiva v0.3.51 is a step in that direction.
 
