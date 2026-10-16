@@ -1,61 +1,66 @@
 ---
 layout: post
-title: "Jiva v0.3.50: Unified Config, Vision & Code Mode"
+title: "Jiva v0.3.50: one config file, proactive rate limits and native vision"
 date: 2026-07-14 18:32:12 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
-excerpt: "Jiva v0.3.50 brings unified configuration, native vision support, and smarter code‑mode scaffolding for constrained models."
-description: "Discover the new Jiva v0.3.50 release: unified config across CLI and HTTP, auto‑detect vision models, proactive rate limiting, and skeleton‑first code generation for low‑budget LLMs."
-keywords: "Jiva, autonomous agents, LLM, vision, code mode, rate limiting, configuration, open source"
+tags: "agentic AI, autonomous agents, Jiva"
+excerpt: "Jiva v0.3.50 moves the CLI and the HTTP interface onto one config file, waits before it hits a provider's rate limit, and lets a single model handle both reasoning and images."
+description: "What changed in Jiva v0.3.50: one config file at ~/.jiva/config.json, proactive rate limiting with Retry-After, vision detection in setup, native vision for reasoning models and a skeleton-first code mode."
+keywords: "Jiva, autonomous agents, rate limiting, vision models, code mode, configuration, open source"
 featured_image: "/assets/img/posts/2026-07-15-jiva-v0-3-50-unified-config-vision-code-mode.png"
 ---
 
-I’ve been watching the Jiva repo closely, and the latest release feels like a quiet but powerful upgrade. It’s not a flashy headline‑grabber, but it solves the friction points that show up when you try to run autonomous agents at scale.
+Updated 2026-10-16: rewritten from the v0.3.50 release notes. The original post restated the changelog in marketing language and glossed over what each change fixes.
 
-### One config to rule them all
+Jiva v0.3.50 was released on July 14, 2026. The thread through it is providers that are more constrained than the defaults assume: a hard request ceiling, a small output budget, a single model that also reads images. Most of the release is Jiva adjusting to that. Three other fixes from the same release, the ones that share a cause, have [their own write-up](/blog/2026/07/16/jiva-v0-3-50-unified-config-vision-code-mode-boost/).
 
-Previously the CLI and the local HTTP interface kept their own separate configuration files. That meant a change made in the CLI could silently disappear when you switched to the HTTP mode, and vice‑versa. v0.3.50 unifies the storage location to `~/.jiva/config.json`. The migration script copies any legacy platform‑specific file the first time the new manager starts, and it backs up anything unexpected before overwriting. Now the same JSON powers both entry points, so you can edit it once and have it apply everywhere.
+## The CLI and the HTTP interface now share one config file
 
-### Proactive rate limiting
+Until this release, the CLI kept its config in a platform-specific place chosen by the `conf` package: `~/Library/Preferences/jiva-nodejs` on macOS, `%APPDATA%/jiva-nodejs/Config` on Windows, `~/.config/jiva-nodejs` on Linux. The local HTTP interface had always used `~/.jiva/config.json`, next to its conversations and logs. They were different files, so a change made through one did not reach the other, and nothing said so.
 
-Many providers impose hard caps. Sarvam‑105B, for example, caps at 40 requests per minute. Earlier versions only reacted to 429 errors, which meant a burst could still hit the limit and cause failures. The new `maxRequestsPerMinute` field makes the client track its own request timestamps in a rolling 60‑second window and pause before sending a request that would exceed the ceiling. It also respects the standard `Retry‑After` header, falling back to provider‑specific wording only when needed. The Sarvam preset now sets this to 40 automatically, so you get safe defaults out of the box.
+`ConfigManager` now pins the CLI to `~/.jiva`, so both read and write the same file. The first time it starts, `migrateLegacyConfigIfNeeded()` copies a legacy config over if the new file does not exist yet. If something is already at the new path when the copy happens, it is backed up to `config-backup.json` first rather than overwritten. After that, `~/.jiva/config.json` is authoritative and the migration never runs again. The CLI prints the result on the next `jiva` invocation, and the HTTP interface logs it as a warning at startup.
 
-### Vision detection without extra wiring
+## Rate limiting that waits instead of reacting
 
-Vision‑capable models have been supported under the hood for a while, but you had to flip a flag manually. v0.3.50 adds a small utility that matches model names against known vision families: Llama 4 Maverick/Scout, Qwen, Kimi, GLM, GPT‑4+, Gemini, Pixtral, Grok, Phi‑multimodal, and more. During setup the wizard now asks “Does this model support vision?” and shows the matched reason. The flag lives in the unified config, so both CLI and HTTP see it instantly. When `hasVision` is true, the orchestrator routes images directly to that model instead of routing them through a separate multimodal caption step.
+A new `maxRequestsPerMinute` setting on the model client makes it keep its own request timestamps in a trailing 60-second window and wait before sending a request that would break the limit. Before, Jiva reacted to a 429 after it happened. The release was motivated by Sarvam-105B, which allows 40 requests a minute and 4096 output tokens, and the Sarvam preset in the setup wizard now sets 40 for you. The setting works for any provider with a known ceiling.
 
-### Skeleton‑first code generation for low‑budget models
+When a 429 does arrive, Jiva reads the standard `Retry-After` header first (RFC 6585). It parses provider-specific wording out of the error body, such as Groq's "Please try again in 8.53s.", only when the header is missing.
 
-When a reasoning model’s `defaultMaxTokens` is ≤ 8192, the system prompt now mandates a skeleton‑first workflow. Every new file is created with `### section‑<name>` / `### endsection` blocks, and the model fills them one at a time. This keeps the token budget predictable and prevents the model from overshooting its limit. The `edit_file` tool gained a `use_regex` mode, so a whole section can be replaced by matching its markers without reproducing the current stub content.
+## One model for reasoning and images
 
-### Richer conversation metadata
+Some providers offer a single model that reasons and sees images. Groq's `llama-4-maverick` is one example the notes give. For those setups, the separate `multimodal` model and its caption-then-forward detour are wasted work.
 
-The `ConversationMetadata` type now includes optional fields for `mcpServers`, `maxIterations`, and a free‑form `harness`. When you run a code task, the agent records which MCP servers were enabled, the iteration budget you set, and the harness (e.g., `jiva-core` evaluator or a UI feature like “deep‑run”). Those values survive across auto‑saves, giving you a clearer audit trail of what the agent was allowed to do.
+A new `hasVision` flag lets any configured model declare native vision support, whatever its type. When an image arrives, the routing order is:
 
-### Bug fixes that matter
+1. a dedicated multimodal model, if one is configured (unchanged legacy behavior)
+2. the reasoning model, if it has `hasVision`
+3. the tool-calling model, if it has `hasVision`
+4. the legacy passthrough
 
-- **Manager double system‑message crashes**: Some strict providers reject more than one system message. The directive is now merged into the single system message, eliminating the 400 error.
-- **CodeAgent giving up early**: Empty responses used to trigger a retry cap that stopped the agent after four tries, even when `maxIterations` was high. The fix removes the tool‑call requirement for in‑loop compaction and adds a `finishReason` check that forces compaction when the model runs out of tokens mid‑thought.
-- **CLI dropping `defaultMaxTokens`**: The CLI now forwards the `defaultMaxTokens` and `reasoningEffortStrategy` fields from the config, so Sarvam‑105B respects its intended token ceiling.
-- **Conversation titles leaking thinking**: The title generation now strips any `` thinking blocks, raises the token budget from 20 to 200, and sets `reasoningEffort: 'low'`. The result is a clean, LLM‑generated title instead of a snippet of the first user message.
+Existing setups with a `multimodal` model behave as before. The two agent types, `DualAgent` and `CodeAgent`, needed no change because both send every model call through the orchestrator.
 
-### How to upgrade
+The setup wizard now asks "Does this model support vision (image input)?" right after you enter the model name. A new `src/utils/vision-detection.ts` matches the name against known vision-capable families and uses the result only as the default answer, with the reason shown, for example "Llama 4 Maverick supports vision". You can override it. `jiva config --show` also prints a `Vision: Yes/No` line. Before this release the flag could only be set by editing `config.json` by hand.
+
+## A skeleton-first workflow for small output budgets
+
+When a reasoning model's `defaultMaxTokens` is 8192 or less, code mode's system prompt now requires the model to scaffold every new file as `### section-<name>` and `### endsection` blocks and fill them one at a time, and it states the exact token budget. Before, that advice applied only to large files. To make this dependable, `edit_file` gained a `use_regex` mode: `old_string` is compiled as a regex, so a whole section can be replaced by matching its markers without reproducing the stub inside.
+
+## More metadata on code-mode conversations
+
+Saved code-task conversations now record which MCP servers were enabled and the iteration budget, plus a free-form field for the run mode. Values saved earlier persist across later auto-saves that do not repeat them. The type for this metadata also existed twice, with the copies drifting apart. It now lives once, in `storage/types.ts`.
+
+## The bug fixes
+
+- **A directive became a second system message.** `ManagerAgent` appended it as an extra message, and strict providers answered `400 System message must be at the beginning`. The notes name Qwen3.6 on Krutrim as one that rejected it. The directive is now merged into the single system message.
+- **Code mode stopped after about ten iterations with `maxIterations` at 100.** Context compaction only ran when the last response had tool calls, so once the model began returning empty responses the bloated prompt was resent unchanged and failed the same way each time. Compaction now runs whenever the prompt is over the threshold.
+- **The CLI ignored `defaultMaxTokens` and `reasoningEffortStrategy`.** All four places that build a model client dropped both settings, so a 4096-token cap for Sarvam never reached the request.
+- **Conversation titles were snippets or leaked reasoning.** The next post covers this one with the two above.
+
+## Upgrade
 
 ```bash
 npm install -g jiva-core@0.3.50
 ```
 
-No breaking changes. Existing configurations continue to work, and the migration script will bring any legacy files into the new unified location automatically.
-
----
-
-What excites me most is the combination of proactive rate limiting and native vision support. It means you can spin up a multi‑agent pipeline that ingests images, reasons about them, and writes code, without hitting hidden provider caps or manually wiring vision flags. The skeleton‑first code mode also feels like a practical safeguard for teams that need to keep token usage predictable.
-
-If you’re already running Jiva, give the upgrade a try and let me know how the new config feels in your workflow. For those just starting, the unified config and vision detection lower the barrier to building truly autonomous agents that can see, think, and code.
-
-*Check out the full release notes on GitHub:* [Jiva v0.3.50 release](https://github.com/KarmaloopAI/Jiva/releases/tag/v0.3.50)
-
----
-
-*Gritsa Technologies* is building the future of autonomous AI. Our open‑source framework, **Jiva**, lets you orchestrate LLM‑powered agents with confidence. Visit [Gritsa Technologies](https://www.gritsa.com) to learn more.
+The release notes list no breaking changes, and existing configs keep working. If you run on Sarvam and have not run `jiva config` since before this release, running it picks up the new rate limit default. The source and full notes are on [GitHub](https://github.com/KarmaloopAI/Jiva/releases/tag/v0.3.50).
