@@ -1,51 +1,59 @@
 ---
 layout: post
-title: "Agentic AI Takes Over Production Code—Security Risks Rise"
+title: "The security review for a coding agent starts at its shell"
 date: 2026-07-10 18:34:20 +0000
-author: "Gritsa"
+last_modified_at: 2026-10-16 17:30:00 +0530
+author: "Amy Loomis"
 categories: "AI Technology"
-tags: "agentic AI, security, autonomous agents"
-excerpt: "As AI agents write over 80% of production code, new security taxonomies and evaluation frameworks emerge to manage the risks."
-description: "As AI agents write over 80% of production code, new security taxonomies and evaluation frameworks emerge to manage the risks."
-keywords: "agentic AI, production code, AI security, autonomous agents, AI evaluation, AI risk management"
+tags:
+  - AI agents
+  - AI security
+  - Coding agents
+excerpt: "Before you ask whether the model is safe, ask what its shell can reach and what record it leaves. What Jiva's bash tool does, what it logs, and what the operator still owns."
+description: "A practical security review of a coding agent, using Jiva's code mode as the example: how the bash tool runs, what environment it inherits, where approval happens, what gets logged and what the operator has to add."
+keywords: "coding agent security, AI agent security, agent shell access, agent audit log, agent environment variables, Jiva"
 ---
 
-I keep seeing the same headline pop up in my feed: *Claude now writes 80 % of the code that lands in Anthropic’s production repos.* It’s a staggering number, and it’s not an isolated anecdote. Across the industry, autonomous agents are being handed the keys to our codebases, our CI pipelines, and even our security tooling. The excitement is palpable—speed, scale, and a new kind of productivity—but the unease is growing just as fast.
+# The security review for a coding agent starts at its shell
 
-### The shift is real
+*Updated 16 October 2026. This post was first published in July 2026 as a roundup of other people's security taxonomies and benchmarks. I removed the borrowed claims and rewrote it around what Jiva, our open-source agent framework, actually does when it runs a command, because that is the part I can check.*
 
-Anthropic’s claim that AI‑generated code now accounts for the majority of merged changes is echoed in Microsoft’s latest “Agentic Failure Taxonomy.” After a year of field work, Microsoft’s AI Red Team added seven new failure modes, from *agentic supply‑chain compromise* to *inter‑agent trust escalation*. These aren’t theoretical; they’re the kinds of bugs that can silently propagate through a fleet of agents that are constantly pulling in new dependencies and refactoring code on the fly.
+A coding agent is a language model with a shell. Most security talk is about the first half of that sentence: will the model be tricked, will it hallucinate a dependency, will it obey a hostile comment in a file. Those are real. They are also hard to measure, and they change every time the model does.
 
-At the same time, research groups are publishing proof‑of‑concept “agentic worms” that can reason across environments, hunt for secrets, and generate exploit code as they spread. The old model of a single, static vulnerability is being replaced by a living, adaptive threat that can mutate as it moves.
+The second half is not hard to measure. You can read it. So I read it.
 
-### Performance meets risk
+## What does Jiva's bash tool actually do?
 
-The performance side of the story is equally compelling. GLM‑5.2, the latest open‑source model from Z.ai, tops the Artificial Analysis Intelligence Index for long‑running agentic coding tasks. It leads on PostTrainBench, a benchmark that measures an agent’s ability to sustain complex, multi‑step coding sessions. Claude Mythos 5, Anthropic’s newest flagship, also scores high on agentic coding and cybersecurity benchmarks, showing that the big players are racing to make their agents both faster and safer.
+In Jiva's code mode, the `bash` tool is a thin wrapper around Node's `exec`. Reading `src/code/tools/bash.ts`:
 
-Microsoft’s SkillOpt research adds another layer: treating an agent’s skill file as a trainable parameter outside a frozen model. By turning skill editing into an optimization loop, they claim consistent gains across 52 evaluation cells while keeping the skill file readable and auditable. It’s a glimpse of a future where we can *train* the behavior of autonomous agents the way we train neural nets today.
+- The command runs with the workspace as its working directory. That is where it starts, not a fence. A command can `cd ..` or name an absolute path.
+- It inherits the whole environment of the Jiva process (`env: { ...process.env }`). Whatever API keys and tokens are in the shell that launched the agent are visible to every command the agent runs.
+- The tool itself applies no command filter. There is no list of forbidden commands in it.
+- It does have limits on time and noise: a 30 second default timeout, a 5 minute ceiling, and output capped at 2,000 lines or 50 KB so the model's context does not flood.
 
-### The evaluation gap
+None of this is a flaw. A coding agent that cannot run your tests is not a coding agent. But it means the safety of a command is decided by what the process is allowed to do, not by anything inside the tool.
 
-All of this progress raises a single, uncomfortable question: *How do we know an agent is ready for production?* Traditional code reviews and static analysis tools assume a human author. When an agent can generate thousands of lines in minutes, those safeguards start to look like a thin veneer.
+## Where does a human get to say no?
 
-The community is beginning to answer with new evaluation frameworks. The Agentic AI Foundation’s “Daily Agentic” newsletter highlights a growing consensus that evaluation must become as rigorous as the models themselves. From sandbox‑based red‑team exercises to continuous monitoring of agent‑generated artifacts, the industry is building a safety net that matches the speed of the agents.
+At the plan, not at the command. Start code mode with `--plan` and Jiva generates an implementation plan and asks you to approve it before executing. After approval, the plan is injected as the approved instruction and the agent works. I found no per-command confirmation prompt in the CLI.
 
-### What this means for Gritsa
+That is a sensible trade for speed. It also means approval covers intent, and nothing checks that each command stayed inside it. If your control is "a person read the plan", then what you are trusting is the model's loyalty to the plan. For the loop-level limits that do exist, such as the iteration budget and repeated-call detection, see [the runtime post](/blog/2026/07/17/why-agentic-ai-needs-a-new-runtime-infrastructure-over-models/). For a check that compares what the agent claims against what it did, see [the guardrails post](/blog/2026/08/08/when-agents-go-rogue-guardrails-for-the-new-ai-workforce/).
 
-At Gritsa, we’re building Jiva, an open‑source autonomous agent framework that lets teams orchestrate multiple agents, define clear permission boundaries, and embed continuous evaluation into the deployment pipeline. The recent advances—Microsoft’s taxonomy, SkillOpt’s trainable skills, and the performance gains in GLM‑5.2 and Claude Mythos 5—validate the direction we’re heading: agents that are powerful *and* accountable.
+## What record does it leave?
 
-We believe the next wave of AI‑driven development will be defined not just by how fast agents can write code, but by how well we can *trust* that code. That’s why we’re investing in built‑in audit trails, sandboxed execution environments, and a community‑driven benchmark suite that mirrors the real‑world workloads you’re seeing today.
+Less than you would want. In code mode, each tool call is logged at info level as a line like `[CodeAgent] Tool: bash {"command":"..."}`. String arguments are truncated at 500 characters, and the line goes to the console. Unless you capture that output, there is no file.
 
-### A call to action
+The structured file log, `~/.jiva/logs/orchestration-<timestamp>.log`, belongs to the manager and worker path. It records each tool call with its arguments and each tool result as a success flag, not the output. In the HTTP mode it buffers per session and flushes to a storage provider.
 
-If you’re shipping AI‑generated code today, ask yourself:
+So the record answers "what did the agent try", roughly. It does not answer "what did the command print", and neither path writes a diff. For a security investigation you would also want the output and the resulting change. Git gives you the second one for free if you insist the agent works on a branch.
 
-* Do you have a taxonomy of agentic failures in your org?
-* Are you continuously testing agents against adaptive threats?
-* Is there a clear, auditable record of every autonomous change?
+## Four questions I would ask before giving any coding agent a shell
 
-The answers will shape whether your AI‑augmented pipeline becomes a competitive advantage or a hidden liability.
+1. **What is in its environment?** List the variables the launching shell holds. If a production credential is among them, the agent has it. Start the agent from a shell that holds only what the task needs.
+2. **What can its user account reach?** Jiva's Docker image runs as a non-root user, and that is the right default. The CLI runs as you, and its filesystem server is scoped to your user directories by default. Run it under an account, or in a container, that can see one project and not your home folder.
+3. **Where does the record go, and is it complete enough?** Capture the console output, keep the output of commands if you need to reconstruct an incident, and treat the git history of the work branch as part of the log.
+4. **What is the human approving?** A plan, a commit, a pull request? Pick the artifact that is easiest to inspect and make that the gate.
 
----
+These are properties of the environment, and the environment is the part you control. I would rather hand a mediocre model a well-fenced shell than hand a brilliant one the keys to a laptop.
 
-*Read more about our approach to secure autonomous agents on the [Gritsa blog](https://www.gritsa.com).*
+The model will be replaced twice before your next audit. The shell will still be there.
