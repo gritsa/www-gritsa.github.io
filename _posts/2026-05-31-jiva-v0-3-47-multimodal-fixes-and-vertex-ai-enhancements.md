@@ -5,35 +5,30 @@ date: 2026-05-31 06:31:35 +0000
 author: "Gritsa"
 categories: "AI Technology"
 tags: "agentic AI, autonomous agents, Jiva"
-excerpt: "New Jiva release resolves multimodal bugs, adds Google ADC support, and boosts sub‑agent iteration limits."
-description: "Jiva v0.3.47 delivers critical multimodal image handling fixes, Harmony tool‑call support for Vertex AI, Google Application Default Credentials, and higher sub‑agent iteration limits for production AI teams."
+excerpt: "Jiva v0.3.47 fixes four bugs that broke image analysis, tool calls on Vertex AI and the final answer format, and adds Google Application Default Credentials."
+description: "What changed in Jiva v0.3.47: the Groq empty-content error on image tools, Vertex AI tool-call parsing, JSON leaking into the final answer, a CLI model field bug, Google ADC and a higher sub-agent iteration limit."
 keywords: "Jiva, autonomous agents, multimodal AI, Vertex AI, Google ADC, open-source AI"
 featured_image: "/assets/img/posts/2026-05-31-jiva-v0-3-47-multimodal-fixes-and-vertex-ai-enhancements.png"
 ---
 
-## Introduction
+Updated 2026-10-16: rewritten from the v0.3.47 release notes. The original post repeated the changelog with marketing language.
 
-The AI landscape moves fast, and production‑grade autonomous agents need rock‑solid reliability. Today we’re excited to announce **Jiva v0.3.47**, a focused release that squashes long‑standing multimodal bugs, brings full Harmony tool‑call compatibility to Vertex AI, adds seamless Google Application Default Credentials (ADC) support, and raises the sub‑agent iteration ceiling. For teams building scalable, multi‑tenant AI services, these upgrades translate directly into fewer failures, smoother deployments, and faster iteration cycles.
+Jiva v0.3.47 was released on May 19, 2026. It is mostly bug fixes, and three of the four fixes share a cause: one part of the system handed the model something it was not meant to see, or took something away that it needed. The release also adds one feature that matters if you run on Google Cloud, which is Application Default Credentials.
 
-## What’s New in v0.3.47
+## The four fixes
 
-### 1. Multimodal Image Handling Fix
+**1. Image tools failed with a 400 from Groq.** Tools such as `filesystem__read_media_file` return an empty text body plus the image bytes. The worker stored that empty string as the tool message, and Groq rejects any message with no content (`String should have at least 1 character`). The worker retried up to 20 times and failed each time. Now, when a tool returns images with no text, the content falls back to `[Image content returned]`, and the image still reaches the multimodal model through the same path as before.
 
-Previously, requesting an image analysis via `filesystem__read_media_file` would trigger a cascade of `400` errors from Groq because the tool returned an empty text payload. The worker stored an empty string as the tool’s content, violating Groq’s requirement that every message contain at least one character.
+**2. The final answer came back as raw JSON.** The manager's synthesis step reused the whole planning conversation, and that history contained the instruction "Respond ONLY with valid JSON" from the planning phase. The model obeyed it. Synthesis now starts from a fresh context made of the system messages and the synthesis prompt only. If the model still returns JSON, the code pulls out the `response` or `content` field.
 
-**Fix:** The worker now falls back to a placeholder text (`[Image content returned]`) when a tool returns images without accompanying text, while still passing the raw image bytes to the multimodal model. This eliminates the error loop and restores reliable image‑based reasoning.
+**3. Tool calls broke from the second turn on Vertex AI.** Two causes. First, the worker stored the cleaned assistant message (Harmony tokens stripped) in history, but Harmony models need to see their own markers such as `<|call|>` and `<|channel|>` to connect a call to its result. History now keeps the raw content. Second, Vertex AI MaaS uses a different dialect (`<|channel|>commentary to=TOOL_NAME <|constrain|>json<|message|>JSON_ARGS<|call|>`) that was not parsed, so its tool calls were silently dropped. A new parser in `src/models/harmony.ts` handles it and strips the `functions.` prefix so names match the registered tool.
 
-### 2. Harmony Tool‑Call Sequences on Vertex AI
+**4. The `model` config field was ignored in the CLI.** An entry using `model` instead of `defaultModel` passed `undefined` to the client, which fell back to its default model. The CLI now uses `model || defaultModel`.
 
-Vertex AI MaaS emits tool calls in a distinct Harmony dialect (`<|channel|>commentary to=TOOL_NAME <|constrain|>json<|message|>JSON_ARGS<|call|>`). Earlier versions could not parse this format, causing tool calls to be dropped after the first turn.
+## Google Application Default Credentials
 
-**Fix:** Added a `vertexChannelRegex` parser in `src/models/harmony.ts` that normalises the Vertex AI dialect to the standard Harmony token set. The worker now stores the raw Harmony content in history, preserving the call‑return chain across multiple turns.
+A new module, `src/models/google-adc.ts`, fetches short-lived OAuth2 tokens so a Vertex AI MaaS deployment on Cloud Run no longer needs a static API key. It tries the GCP metadata server first, by IP address because musl libc (the node:20-alpine image) cannot resolve `metadata.google.internal`, and falls back to `google-auth-library` for local development. Tokens are cached and refreshed five minutes before expiry. Turn it on in the model entry:
 
-### 3. Google Application Default Credentials (ADC)
-
-Deploying Jiva on Google Cloud Run or GKE previously required a static API key. The new `src/models/google-adc.ts` module automatically fetches short‑lived OAuth2 tokens from the metadata server, with a fallback to the `google-auth-library` for local development.
-
-**Configuration:**
 ```json
 {
   "models": {
@@ -46,18 +41,12 @@ Deploying Jiva on Google Cloud Run or GKE previously required a static API key. 
   }
 }
 ```
-When `useGoogleADC` is true, the `apiKey` field becomes optional, simplifying CI/CD pipelines and improving security.
 
-### 4. Sub‑agent Iteration Limit Increased
+With `useGoogleADC` on, `apiKey` is optional.
 
-The default `maxIterations` for sub‑agents spawned via `AgentSpawner` has been raised from 10 to 20. This change benefits workflows that require deeper tool‑use loops, such as multi‑file refactors or extensive research tasks, without hitting the previous iteration ceiling.
+## One more change
 
-## Why It Matters for Teams
-
-- **Reliability:** Multimodal bugs are a common source of silent failures in production agents. The fix ensures image‑based reasoning works out‑of‑the‑box.
-- **Enterprise Compatibility:** Harmony support on Vertex AI opens the door for large‑scale deployments on Google’s managed AI platform, leveraging existing IAM and VPC setups.
-- **Security & Ops:** ADC removes the need to embed long‑lived API keys, aligning with zero‑trust best practices.
-- **Scalability:** Higher iteration limits let agents perform more complex, multi‑step tasks without manual intervention.
+The default `maxIterations` for sub-agents started through `AgentSpawner` went from 10 to 20, so longer tool-use loops such as multi-file edits no longer stop at the old limit.
 
 ## Upgrade
 
@@ -65,10 +54,6 @@ The default `maxIterations` for sub‑agents spawned via `AgentSpawner` has been
 npm install -g jiva-core@0.3.47
 ```
 
-All existing configurations remain compatible; simply add `useGoogleADC: true` where you want token‑based authentication.
+The release notes list no breaking changes. Existing configs keep working. The source is on [GitHub](https://github.com/KarmaloopAI/Jiva).
 
----
-
-*Ready to put these improvements to work? Explore the full release notes on GitHub and start building more resilient autonomous agents with **[Jiva](https://github.com/KarmaloopAI/Jiva)**.*
-
-*For more insights on agentic AI and production‑ready solutions, visit **[Gritsa Technologies](https://www.gritsa.com)**.*
+The second fix has its own short write-up: [why a planning instruction can leak into the final answer](/blog/2026/05/19/jiva-v0-3-47-multimodal-fixes-and-vertex-ai-enhancements/). For how Jiva separates planning from execution, see [Agent design patterns: the one that matters is what the model does not do](/blog/2026/05/26/agentic-ai-design-patterns-2026-architecting-autonomous-systems/).
