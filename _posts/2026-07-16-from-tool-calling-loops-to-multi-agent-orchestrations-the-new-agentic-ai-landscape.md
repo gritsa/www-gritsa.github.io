@@ -1,48 +1,62 @@
 ---
 layout: post
-title: "From Tool‑Calling Loops to Multi‑Agent Orchestrations: The New Agentic AI Landscape"
+title: "A sub-agent is a function call with a briefing problem"
 date: 2026-07-15 18:32:44 +0000
-author: "Gritsa"
+last_modified_at: 2026-10-16 16:30:00 +0530
+author: "Amy Loomis"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
-excerpt: "AI agents are evolving from simple tool‑calling loops into coordinated multi‑agent systems that deliver real business value."
-description: "Exploring how AI agents are moving beyond single‑loop tool calls to multi‑agent architectures, new benchmarks, and practical deployments that reshape software development."
-keywords: "agentic AI, autonomous agents, LLM, multi‑agent systems, AI benchmarks"
+tags:
+  - AI agents
+  - Multi-agent systems
+  - Agent architecture
+excerpt: "When a manager agent delegates to a specialist, the specialist knows only what the manager wrote down. How Jiva's spawn_agent works, what it hands over, and what it leaks."
+description: "How delegation works in a multi-agent system: Jiva's spawn_agent tool, the depth limit, what a sub-agent receives, why the brief is the real design problem, and where persona scoping stops."
+keywords: "multi-agent orchestration, sub-agent, spawn agent, agent delegation, manager worker agents, Jiva"
 featured_image: "/assets/img/posts/2026-07-16-from-tool-calling-loops-to-multi-agent-orchestrations-the-new-agentic-ai-landscape.png"
 ---
 
-I keep seeing the same phrase pop up in my feeds: “AI agents are just LLMs calling tools in a loop.” It’s true, but it feels like describing a car by saying “it has an engine.” The real story is what those engines are starting to do together.
+# A sub-agent is a function call with a briefing problem
 
-### The Loop Is No Longer the End Goal
+*Updated 16 October 2026. This post was first published in July 2026 as a summary of other people's articles about multi-agent trends. I removed the borrowed quotes and rewrote it around the delegation code in Jiva, our open-source agent framework, because that is the part I can vouch for.*
 
-Simon Willison’s recent posts make the point crystal clear. He defines agents as **LLMs that call tools in a loop to achieve a goal**, then immediately warns that “11 AI agents” is as meaningless as “11 spreadsheets.” The nuance lies in what the loop looks like when you scale it.
+Most diagrams of a multi-agent system show boxes and arrows. A manager on top, three specialists below, results flowing back up. The diagram makes delegation look like organization. It is closer to a function call.
 
-James Shore’s quote, collected by Willison, hits the business side: *“Your AI coding agent needs to reduce your maintenance costs. The math only works if the LLM *decreases* your maintenance costs.”* That’s the pressure point. Companies aren’t adopting agents for novelty; they need measurable ROI.
+In [Jiva](https://github.com/KarmaloopAI/Jiva), a manager agent delegates through one tool, `spawn_agent`. It takes a persona name, a task, optional context and an optional iteration cap. It returns a string. While the sub-agent works, the manager waits. Nothing else happens in parallel, and the result lands in the manager's conversation as one tool result, the same as a file read.
 
-### From One Loop to a Symphony
+That is a useful way to think about multi-agent design. The hard part is not the org chart. It is what you put in the arguments.
 
-The Hugging Face blog adds the missing orchestration layer. Their “2026 Agentic Coding Trends” report shows a shift from a single sequential agent to **hierarchical multi‑agent systems**. An orchestrator coordinates specialists in parallel, synthesizes results, and feeds them back into the loop. It’s less a loop and more a **fluid agent flow** where intent → implementation → tests+docs → review → ship happen in tight, continuous cycles.
+## What does a sub-agent know when it starts?
 
-The same report highlights **long‑running agents** and **durable agent jobs**—agents that can persist across sessions, maintain state, and pick up where they left off. That’s a huge leap from the short‑lived scripts we saw a year ago.
+Only what the manager wrote. Reading `src/core/agent-spawner.ts`, the sub-agent's first message is built from three things: the project root path, the optional `context` string, and the `task`. It does not receive the conversation so far, the user's original request, or the manager's directive. A comment in the source says as much: the convention is that the manager includes the relevant constraints and a short summary in `context`, and a later phase might pass structured parent context along.
 
-### Benchmarks Catch Up
+So a delegation is only as good as the briefing. "Check the code and see if anything looks wrong" produces a sub-agent that guesses what you meant. "Review `src/auth/` for SQL injection, this system uses JWT, tokens reportedly expire too early" produces a review. Jiva's own spawning guide makes this exact point with the same two examples, and the system prompt tells the manager to put constraints and a conversation summary in the context field.
 
-If agents are getting more complex, we need ways to evaluate them. AutoBench Agentic, announced on Hugging Face, builds **virtual environments for every agentic task**, covering hundreds of business cases across ten domains. It’s the first benchmark that can stress‑test multi‑agent coordination without being gamed.
+If you have ever handed work to a contractor with a one-line email, you know the failure. The difference is that a contractor writes back with questions. A sub-agent that is run once, with no channel back to the manager mid-task, does not. It makes its best guess and returns something confident.
 
-Willison’s own experiments with the **Datasette Agent** illustrate the practical side. It’s an extensible AI assistant that lets users query data through natural language, powered by a plug‑in architecture. The agent isn’t just a loop; it’s a **platform** that can be extended, customized, and embedded in existing workflows.
+## How deep can the tree go?
 
-### Why This Matters for Gritsa
+Not deep by default. The guide in Jiva's repository says the default depth is three levels. The code says one: `maxAgentDepth` defaults to 1 in `dual-agent.ts`, with a comment that only the manager can spawn. When the limit is reached, the `spawn_agent` tool is not offered to the model at all, so a leaf agent cannot even try. I trust the code over the guide, and I would flag the mismatch to the people who maintain the guide, which is us.
 
-At Gritsa, we’re building **Jiva**, an open‑source autonomous agent framework. Seeing the industry move toward multi‑agent orchestration validates the direction we’ve taken: agents that can **plan, reflect, and collaborate** rather than just execute a single tool call.
+Depth one is a reasonable default. Every extra level multiplies cost, because each sub-agent is a full agent with its own loop, and it multiplies the ways a vague brief can degrade as it is paraphrased downward.
 
-The emerging ecosystem—new models like Kimi K2.6 and GLM‑5.1 optimized for tool use, local deployment options that keep data private, and benchmarks that measure real‑world performance—means we can ship agents that are not only smarter but also **trustworthy** and **cost‑effective**.
+## What does a persona actually scope?
 
-### The Takeaway
+A persona gives the sub-agent a role, a prompt and, if the persona defines them, extra MCP tool servers. That sounds like isolation. It is less than it sounds.
 
-The loop is still there, but it’s now part of a larger choreography. AI agents are becoming **orchestrated teams** that can handle long‑horizon tasks, maintain state, and deliver measurable business outcomes. For anyone building with LLMs, the question is no longer “Can we make an agent?” but “How do we compose agents so they work together efficiently and safely?”
+The sub-agent shares the manager's workspace and the same MCP server manager. When a persona brings its own tool servers, the spawner adds them to that shared manager. In the spawner file I found no code that removes them when the sub-agent finishes. The comment on the add call even says that a server already existing is fine. In practice that means a persona is a prompt boundary, not a permission boundary. If you need a reviewer that cannot write files, the persona text asking it not to is a request, not a control.
 
-That’s the conversation we’ll keep having at Gritsa, and it’s why Jiva is designed from the ground up for **multi‑agent coordination**. The future isn’t a single loop; it’s a network of loops, each playing its part in the larger symphony of autonomous AI.
+This is the same lesson as with the controls in my other Jiva posts. [The runtime enforces; the prompt asks](/blog/2026/07/17/why-agentic-ai-needs-a-new-runtime-infrastructure-over-models/). And the manager's job of checking a worker's output against what it really did is the subject of [the receipts guardrail](/blog/2026/08/08/when-agents-go-rogue-guardrails-for-the-new-ai-workforce/).
 
----
+## When is it worth splitting at all?
 
-*If you’re curious about the tools we’re using—Kimi K2.6, GLM‑5.1, and the AutoBench suite—check out the links above. And if you want to see Jiva in action, head over to our GitHub.*
+Jiva's guide has a short list I agree with. Delegate when the task needs a different kind of expertise, when you want a second set of eyes on your own work, or when the pieces are independent. Do not delegate trivial file operations, steps where the context is the whole point, or information gathering that a tool call would answer.
+
+I would add one test. Can you write the brief in four sentences? If you cannot say what the sub-agent needs to know, the task is not separable yet, and a second agent will only spread the confusion across two context windows.
+
+## What I would build first
+
+Before a second agent, write the brief template: the goal, the constraints, the files in scope, what "done" looks like, what to return. Make the manager fill it in every time. Then add one check on the way back, the same way you would review a pull request from someone new: did the result address the task, and does the tool record support what it claims?
+
+That is most of orchestration. The rest is boxes and arrows.
+
+If you are weighing a manager and specialists design for real work, [our AI agents service](/services/ai-agents/) is where I would start the conversation. And before you build it, [write the test for the finished job](/blog/2026/10/12/write-the-test-before-you-hire-the-agent/).
