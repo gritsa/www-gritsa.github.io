@@ -1,85 +1,63 @@
 ---
 layout: post
-title: "Jiva v0.3.53: Streaming‑Only Models & Per‑Session Config"
+title: "Jiva v0.3.53: Streaming-Only Models and Per-Session Config"
 date: 2026-08-10 18:32:42 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic ai, autonomous agents, Jiva, LLM, streaming models"
-excerpt: "Jiva’s latest release adds streaming‑only model support, per‑session configuration, and live status endpoints, making production‑grade autonomous agents more flexible and observable."
-description: "Explore Jiva v0.3.53: new streaming‑only model compatibility, per‑session agentConfig, tool‑call visibility, and live status polling. See how these upgrades simplify deployment and debugging for AI‑powered workflows."
-keywords: "Jiva, Jiva v0.3.53, streaming models, agentConfig, autonomous agents, LLM, tool calls, live status"
+tags: "agentic AI, autonomous agents, Jiva, LLM, streaming models"
+excerpt: "Jiva v0.3.53 lets a request override the model, MCP servers and workspace for one session without writing anything to disk, shows the arguments of every tool call, and adds a status endpoint for polling progress."
+description: "What changed in Jiva v0.3.53: streaming-only model support, per-session agentConfig that never touches disk, toolCalls arguments in chat responses, the live session status endpoint, and fixes for empty titles and Windows console windows."
+keywords: "Jiva, agentConfig, per-session configuration, streaming models, tool call audit, session status, AI agent framework"
 featured_image: "/assets/img/posts/2026-08-11-jiva-v0-3-53-streaming-only-models-per-session-config.png"
 ---
 
-I’ve been watching the autonomous‑agent landscape shift from experimental demos to production‑ready platforms, and the latest **Jiva v0.3.53** release feels like a turning point. It tackles two pain points that teams hit the moment they try to run agents at scale: **model compatibility** and **runtime observability**. In one compact update, Jiva now works with streaming‑only APIs, lets you tweak every session on the fly, and surfaces exactly what the agent is doing in real time.
+Updated 2026-10-16: rewritten from the v0.3.53 release notes. The original was a tour of features in marketing language, and it carried a sample config the notes do not document.
 
-### Streaming‑only models finally work out‑of‑the‑box
+Jiva v0.3.53 was released on August 5, 2026. All of it is additive and backward compatible, and the notes say sessions that omit the new fields behave exactly as before. The theme running through it is that a session should be able to carry its own settings, and an operator should be able to see what the agent is doing while it does it.
 
-Many providers, such as Together AI’s `Qwen/Qwen3.7‑Plus`, only expose a streaming endpoint. Before v0.3.53, Jiva would send a regular chat request, get a `400 streaming_required` error, and the model would be unusable. The new `ModelClient` now detects that error, flips a per‑instance flag, and retries with `stream: true` plus usage‑tracking options. A tiny `parseSSEStream()` helper stitches the SSE chunks back into the same response shape that the rest of the system expects, so tool‑call extraction and usage metrics stay unchanged.
+## Per-session `agentConfig`
 
-The fix is completely transparent for non‑streaming providers, meaning you can mix and match models in the same deployment without worrying about hidden incompatibilities.
+Before this release, running one Jiva server for several projects meant editing the stored configuration or starting separate containers. Now `POST /api/session`, `POST /api/chat` and `POST /api/chat/stream` accept an optional `agentConfig` object that overrides settings for that session only:
 
-### Per‑session `agentConfig` removes the need for disk‑based tweaks
+- `model` and `toolCallingModel`, the reasoning and tool-calling model names
+- `mcpServers`, which replaces the MCP server list for the session
+- `codeModeEnabled` and `codeLsp`
+- `maxIterations`, the per-agent iteration cap
+- `workspaceDir`, a session-scoped workspace
+- `systemPrompt`, accepted but reserved for future use
 
-Running a single agent across many projects often requires different models, MCP servers, or workspace directories. Previously you had to edit the global `config.json` or spin up separate containers. With v0.3.53 you can now pass an optional `agentConfig` object in any of the HTTP session‑creation calls:
+The design choice that matters is what does not happen. Per-session config is never written through the storage provider, so secrets in it never touch disk or Google Cloud Storage. Validation runs before any session or MCP subprocess is created and returns a 400 with descriptive errors. For the streaming route it runs before the server-sent-event headers go out, so a bad config gets a clean JSON error instead of a failure halfway through a stream. If you send `agentConfig` for a session that already exists or is being created, it is logged and ignored: the existing session's config wins.
 
-```json
-{
-  "agentConfig": {
-    "model": "glm-5.2",
-    "mcpServers": ["http://my‑mcp:8080"],
-    "maxIterations": 30,
-    "workspaceDir": "/tmp/project‑X"
-  }
-}
-```
+The notes also add a per-session skills directory. When `workspaceDir` is set, `${workspaceDir}/skills` is scanned alongside the user-level skills folder, and a missing folder is not an error.
 
-All of those overrides live only for the duration of the session; nothing is written to disk or GCS, so secrets stay where they belong. Validation runs before any session or MCP subprocess is created, returning a clean `400` if something is malformed. This makes it trivial to spin up a “sandbox” agent for a quick experiment and then tear it down without leaving residue.
+This is the multi-tenant lesson from [v0.3.46](/blog/2026/05/20/jiva-v0-3-46-fixes-multi-tenant-concurrency-bugs/) applied to configuration: state that belongs to one session should live with that session.
 
-### Tool‑call arguments are now visible
+## Tool-call arguments in the response
 
-When an agent runs a tool, the response used to contain only a list of tool names (`toolsUsed`). Now the payload includes a `toolCalls` array with the exact arguments that were passed:
+The chat response used to list only the names of the tools the agent used, in `toolsUsed`. It now also returns `toolCalls`, an array of objects with the tool `name` and its `args`. The notes give the example of seeing the actual SQL query a tool ran, not just that a SQL tool ran. `toolsUsed` is unchanged. The field is filled by the worker and passed up through the dual-agent, and it is not populated in code mode.
 
-```json
-{
-  "toolCalls": [
-    {"name": "run_sql", "args": {"query": "SELECT * FROM users"}}
-  ],
-  "toolsUsed": ["run_sql"]
-}
-```
+If you are asked to explain why an agent did something, the arguments are the evidence. A list of tool names is not.
 
-That extra visibility is a game‑changer for debugging complex pipelines, especially when you need to audit why a particular SQL query was issued or what parameters a code‑generation tool received.
+## Live session status
 
-### Live status polling without extra plumbing
+`OrchestrationLogger` now keeps a `currentStatus` string, derived from the structured events it already writes. Examples in the notes are "Running SQL query…", "Planning execution…" and "Synthesizing results…". `GET /api/session/:sessionId/status` returns `200` with `{ status }` if the session exists and `404` with `{ error: 'Session not found' }` otherwise, which the notes call an expected outcome of polling, not an error. A client can poll it from a second request while `POST /api/chat` is in flight, with no WebSocket or event-stream plumbing.
 
-Agents can take seconds to minutes to finish a task, and waiting for the final SSE message isn’t always convenient. Jiva now exposes `GET /api/session/:sessionId/status` which returns a human‑readable status string derived from the internal event log (`"Running SQL query…"`, `"Planning execution…"`, etc.). A client can poll this endpoint from a separate HTTP request while the main chat call streams in the background, giving you a lightweight way to show progress bars or update UI elements without adding WebSockets.
+## Streaming-only models
 
-### Minor but valuable fixes
+Some providers only accept streaming requests. The notes name Together AI's `Qwen/Qwen3.7-Plus`. Jiva used to send a normal request and get `400 streaming_required` on every call. `ModelClient` now detects that error, flips a flag on the instance and retries with `stream: true` and usage reporting on. A new `parseSSEStream()` reassembles the stream into the same shape as a normal response, so tool-call extraction and usage tracking are unchanged. Providers that support normal requests are not affected.
 
-- Reasoning models no longer get forced a `reasoning_effort` they reject.
-- Conversation titles are generated correctly for models that spend tokens on internal thinking.
-- The `disableThinking` flag lets the title generator ask a model to skip its chain‑of‑thought when appropriate.
+## Smaller fixes
 
-All of these changes are additive and backward‑compatible, so existing deployments keep working unchanged.
+- **A forced `reasoning_effort`.** `createSession` always passed `medium` when building the tool-calling model client, and plain tool-calling models such as Groq's `llama-3.3-70b-versatile` rejected it with a 400. The catalog value is now passed through as is, so non-reasoning models send nothing.
+- **Empty conversation titles.** Title generation had a hard-coded 200-token limit. Reasoning models such as GLM-5.2, DeepSeek, Qwen3, gpt-oss and Sarvam spend tokens on thinking first, so the budget could be gone before the title appeared. A new `disableThinking` option sends both flags the model families read (`thinking: false` and `enable_thinking: false`), models that cannot turn thinking off get `reasoningEffort: 'low'`, and the hard-coded limit is gone in favor of each model's configured default. This is the same family of bug as the one in the [v0.3.50 token-budget post](/blog/2026/07/16/jiva-v0-3-50-unified-config-vision-code-mode-boost/).
+- **Console windows on Windows.** Code mode's `bash` tool and the LSP launcher never set `windowsHide`, so every command flashed a console window. Both now set it, and it does nothing on macOS or Linux.
 
-### What this means for production teams
+The notes also mention that `compactionThreshold` can now be edited through `jiva config --compaction-threshold` and applies to both chat and code modes, with a suggestion to set it to roughly 70 to 80 percent of the model's context length.
 
-1. **Faster onboarding**: New teams can spin up a sandbox with a different model or workspace just by sending an `agentConfig` payload.
-2. **Better observability**: Tool‑call arguments and live status give operators the insight they need to trust autonomous agents in critical workflows.
-3. **Future‑proofing**: Streaming‑only providers are now first‑class citizens, so you can adopt the newest, most efficient APIs without waiting for a separate client library.
-
-If you’re already running Jiva, upgrade with:
+## Upgrade
 
 ```bash
 npm install -g jiva-core@0.3.53
 ```
 
-The release notes contain the full diff, but the headline features above are the ones that will change day‑to‑day operations.
-
-I’m excited to see what you’ll build with these capabilities. Whether you’re orchestrating data pipelines, automating code generation, or building custom knowledge‑work agents, the new flexibility should let you iterate faster and debug with confidence.
-
-Give it a try and let me know how the per‑session config and live status polling improve your workflows.
-
----
-*This post was generated by the Gritsa Content AI, an autonomous blogging system built by Gritsa Technologies.*
+No breaking changes. Source and notes are in the [Jiva repository](https://github.com/KarmaloopAI/Jiva). If you want help running agents with this kind of per-session control and an audit trail, see Gritsa's [AI agent services](/services/ai-agents/).
