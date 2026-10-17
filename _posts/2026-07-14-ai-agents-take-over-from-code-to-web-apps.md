@@ -1,55 +1,62 @@
 ---
 layout: post
-title: "AI Agents Take Over: From Code to Web Apps"
+title: "A skill is a routing rule, and the description is the whole rule"
 date: 2026-07-13 20:34:12 +0000
-author: "Gritsa"
+last_modified_at: 2026-10-17 11:00:00 +0530
+author: "Amy Loomis"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
-excerpt: "AI agents are evolving from simple assistants to autonomous coders and web builders, reshaping how we create software."
-description: "Explore how recent releases in AI tooling, coding agents, and multimodal models are turning AI agents into autonomous builders of code and web apps."
-keywords: "AI agents, autonomous agents, LLM, coding agents, Gemini 2.5 Pro, agentic AI, AI tooling"
+tags:
+  - AI agents
+  - Agent skills
+  - Context engineering
+excerpt: "An agent skill is a folder with one required file. What decides whether the agent ever uses it is a single line of metadata. How Jiva loads skills, and where the loading stops short."
+description: "How agent skills work in Jiva: three layers of progressive disclosure, why the description field does the routing, what the validator enforces, and what allowed-tools does not."
+keywords: "agent skills, SKILL.md, progressive disclosure, context window, agent personas, Jiva, skill routing"
 featured_image: "/assets/img/posts/2026-07-14-ai-agents-take-over-from-code-to-web-apps.png"
 ---
 
-I’ve been watching the AI landscape shift under my feet, and the ground is moving fast. In the past week alone, three seemingly unrelated releases have converged on a single, unmistakable theme: AI agents are no longer just helpers—they’re becoming autonomous builders that can write code, refactor entire projects, and even spin up interactive web apps from a single prompt.
+# A skill is a routing rule, and the description is the whole rule
 
-First, Simon Willison dropped **llm 0.31.1** on July 9. It’s a modest bump, but the headline is the new GPT‑5.6 family—Luna, Terra, and Sol—plus a fix for a tricky OpenAI Chat Completion bug. What caught my eye is the timing: the release lands just as developers are demanding tighter integration between command‑line tooling and large‑language‑model APIs. Willison’s note that the bug surfaced while testing **llm‑meta‑ai** hints at a broader trend—agents are being wired directly into developer workflows, not just called from a chat window.
+*Updated 17 October 2026. This post first appeared in July 2026 as a roundup of three tool releases and a personal anecdote about building a web app with an agent. I could not stand behind the anecdote or the borrowed quotes, so I removed them and rewrote the post around the skills code in Jiva, our open-source agent framework.*
 
-A few days later, Vellum published a deep dive titled **“10 Best AI Coding Agents in 2026.”** The article isn’t a listicle; it’s a field report from someone who has actually shipped code with these tools. Vellum’s own agent tops the chart because it remembers context across sessions, works in Slack, and never leaks credentials. The piece makes a striking claim: *“AI coding agents have moved well beyond inline suggestions. The best ones handle entire features, debug production issues, and work on your codebase while you focus elsewhere.”* That’s a bold statement, but it mirrors what I’m seeing in the wild—teams are handing off whole tickets to agents and getting back working pull requests.
+A skill, in the sense most agent tools now use the word, is a folder with one required file. The file is called `SKILL.md`. It has a block of metadata at the top and instructions below. That is all.
 
-Then, on July 8, DeepMind announced **Gemini 2.5 Pro Preview (I/O edition)**. The update isn’t just a speed bump; it adds a 147‑point jump on the WebDev Arena Leaderboard, meaning human evaluators now prefer its output for building “aesthetically pleasing and functional web apps.” The model can turn a single natural‑language prompt into a live, interactive prototype, complete with UI components and backend logic. The blog post even showcases a “Video to Learning” app built in minutes. This is the first time a multimodal model has been marketed explicitly as a *web‑app builder* rather than a code assistant.
+The interesting part is not the file. It is how little of it the agent sees by default.
 
-### The Thread That Binds Them
+## What does the agent see before it uses a skill?
 
-All three stories share a common thread: **agents are moving from suggestion to execution**. Willison’s CLI tool lets developers invoke LLMs as part of their shell scripts. Vellum’s agent persists memory and acts across channels, turning a ticket into a completed feature without human hand‑holding. Gemini 2.5 Pro turns a prompt into a deployable web app, blurring the line between “assistant” and “developer.”
+Three layers, and only the first is always in context. The Jiva persona guide calls it progressive disclosure, and the loader in `src/personas/skill-loader.ts` is built around it.
 
-Why does this matter? Because the bottleneck in AI‑driven product cycles is no longer model quality—it’s the *integration layer* that lets agents act on real codebases, respect security boundaries, and keep context over days. The industry is finally building that layer, and the payoff is a new class of autonomous workflows.
+1. **Metadata.** The name and the description. At startup Jiva scans each skill folder and parses only the frontmatter. In `persona-manager.ts`, `generateSkillsPromptBlock()` turns every skill into a small XML entry with its name, description and the path to its `SKILL.md`, and that block goes into the system prompt.
+2. **The body.** The instructions. They are not in the prompt. The prompt carries one sentence telling the model that when a request matches a skill's description, it should read that skill's file with the view tool.
+3. **Resources.** Scripts, reference documents and templates in subfolders. The body is supposed to say when to open them.
 
-### What This Means for Teams
+So a skill costs a few dozen tokens until it matters, and then it costs the whole file. A hundred skills can sit in the prompt without crowding out the task.
 
-If you’re still treating AI as a glorified autocomplete, you’re missing the boat. The next wave of productivity will come from agents that can:
+## Who decides when a skill is used?
 
-* **Read and reason across an entire repository** – not just the file you have open.
-* **Maintain long‑term memory** – remembering why a library was chosen months ago.
-* **Operate across tools** – Slack, GitHub, CI pipelines, and even the browser.
-* **Respect security** – keeping secrets out of the model’s context window.
+The model does, by reading the descriptions and judging a match. I looked for any code that does the matching and found none. `loadSkill()` exists on the persona manager and marks content as loaded, but nothing in the agent paths calls it. The body gets read because the model chose to open the file.
 
-Vellum’s emphasis on “persistent memory” and “multi‑channel presence” is a blueprint for the architecture we’ll all be adopting. Meanwhile, Gemini 2.5 Pro shows that multimodal models can generate not just code snippets but full UI experiences, opening the door for product teams to prototype at the speed of thought.
+That makes the description the entire routing rule. There is no keyword table, no classifier and no second chance. If the description does not read like the user's request, the skill is invisible, however good the instructions below it are.
 
-### A Personal Take
+The persona guide says as much: it tells authors to write descriptions that are "pushy" and to include every trigger phrase. I agree with the direction. A description should name the situations that call for the skill, in the words a user would use, not summarize what the skill is.
 
-I’ve been experimenting with a small side project that pulls data from a public API, builds a React front‑end, and deploys it to Vercel—all from a single prompt. Using Gemini 2.5 Pro, I got a working prototype in under ten minutes. Switching to Vellum’s agent, I let it handle the refactor of a legacy module while I focused on the product roadmap. The experience felt less like “using a tool” and more like “delegating a teammate.”
+The validator keeps the field honest in two ways. A description is required, it cannot exceed 1,024 characters, and it cannot contain angle brackets, which would break the XML block it is pasted into. Names must be lowercase letters, digits and hyphens, at most 64 characters. A body over 500 lines produces a warning, not an error, with the suggestion to move detail into `references/`.
 
-That shift—from tool to teammate—is the real story here. As agents become more autonomous, the role of the human developer evolves into that of a strategist, reviewer, and ethical overseer. The code still needs a human touch, but the grunt work is disappearing.
+## Where does the design stop short?
 
-### Looking Ahead
+Two places, both worth knowing before you rely on it.
 
-The next few months will likely bring tighter standards for agent security, richer memory APIs, and perhaps a unified “agent SDK” that works across providers. Companies that start building on these foundations now will reap outsized gains in speed and innovation.
+**Skills can be shadowed quietly.** Jiva also scans a standalone skills folder in the user's home directory, plus an optional per-session folder. When two folders hold skills with the same name, the later one is skipped without a warning. The home folder is scanned first, so a skill there beats a workspace skill of the same name. If yours is not firing, check for a twin.
 
-At Gritsa, we’re already integrating these ideas into **Jiva**, our open‑source autonomous agent framework. By exposing a simple “task” API that can be wired to any of the agents above, we aim to give developers the same plug‑and‑play experience that Vellum promises, but with the flexibility to swap models as they improve.
+**`allowed-tools` is a hint, not a fence.** A skill can declare which tools it may use. I searched the code for anywhere that list restricts tool access and found only one use: the dual-agent setup prints it into the context given to the validating agent, so the supervisor knows what the worker was expected to use. Nothing blocks a call. If you need a skill to be unable to run shell commands, the skill file is the wrong place to say so.
 
-If you’re curious to see a live demo of an agent building a full‑stack app, check out our latest repo on GitHub. And remember: the future isn’t about AI writing code for you—it’s about AI *working alongside* you, handling the repetitive, the complex, and the time‑consuming, so you can focus on what truly matters.
+## What I would do with this
 
----
+Write the description last, and test it as a search query. Take five real requests a user might make. For each, ask whether the description would make you open this file. If you would not, the model will not either.
 
-*Explore more at [Gritsa Technologies](https://www.gritsa.com).*
+Then keep the body short enough that opening it is cheap, and push anything bulky into references the body points at by name. The saving from progressive disclosure disappears the moment every skill is a 500 line wall of text that the model reads in full whenever it fires.
+
+None of this is specific to Jiva. Any agent that ships skills as folders has the same shape: a cheap index in the prompt, an expensive body behind it, and a model deciding between them on the strength of a sentence. Whoever writes that sentence is doing the routing.
+
+If you are working out how to give an agent reusable expertise without bloating its context, [the Gritsa team](https://gritsa.com/contact/) builds exactly this kind of setup, and [Jiva](https://github.com/KarmaloopAI/Jiva) is open source if you would rather read the code.
