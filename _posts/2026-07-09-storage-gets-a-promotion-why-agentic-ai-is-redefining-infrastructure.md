@@ -1,45 +1,90 @@
 ---
 layout: post
-title: "Storage Gets a Promotion: Why Agentic AI Is Redefining Infrastructure"
+title: "When agent storage fails, it looks like an agent with no memory"
 date: 2026-07-08 18:32:31 +0000
-author: "Gritsa"
+last_modified_at: 2026-10-17 18:00:00 +0530
+author: "Amy Loomis"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
-excerpt: "Agentic AI is turning storage from a passive backend into an active inference tier, reshaping how we build and scale AI systems."
-description: "As long‑context agents push key‑value caches beyond GPU memory, storage is becoming a critical, intelligent component of AI infrastructure, demanding new strategies for cost, governance, and performance."
-keywords: "agentic AI, storage infrastructure, long‑context agents, NVIDIA BlueField, AI strategy, enterprise AI"
+tags:
+  - AI agents
+  - Agent infrastructure
+  - Storage
+excerpt: "The storage an agent needs is a handful of JSON files, and the way it fails is silent. Nothing crashes. The agent just forgets. Four places in Jiva's storage layer where that happens."
+description: "How Jiva stores agent state: conversations, config, logs and snapshots behind one provider interface. Where a missing setting, a failed read or a skipped file turns into an agent that quietly forgets, and what to check in yours."
+keywords: "AI agent storage, agent persistence, conversation storage, multi-tenant agents, silent failure, Jiva storage provider, agent state"
 featured_image: "/assets/img/posts/2026-07-09-storage-gets-a-promotion-why-agentic-ai-is-redefining-infrastructure.png"
 ---
 
-I keep hearing the same phrase from engineers building production‑grade agents: “storage got a promotion.” It’s not a joke. The shift from simple chatbots to true agentic AI is turning storage from a quiet, passive backend into an active inference tier that lives right next to the model.
+# When agent storage fails, it looks like an agent with no memory
 
-### From Passive to Active
+*Updated 17 October 2026. This post first appeared in July as a roundup about storage hardware for long-context inference, and it ended with a performance claim about Jiva that I cannot support. I replaced it with the part I can check: how Jiva, our open-source agent framework, stores what an agent needs to remember, and how that fails. Read from the source (`src/storage`, about 1,300 lines) and from Jiva's own v0.3.46 release note.*
 
-SiliconANGLE reported on July 7, 2026 that storage is now an *active* part of the AI stack. Long‑context agents push key‑value caches and context memory beyond the limits of GPU and CPU memory. NVIDIA’s BlueField‑4 STX and CMX context‑memory storage architecture are designed to keep latency‑sensitive KV cache close to the inference engine. In other words, storage is no longer just a place to dump data; it’s a compute‑aware tier that can serve data as fast as the model can consume it.
+Most talk about storage for AI agents is about speed. Faster disks, bigger caches, memory close to the GPU. That matters if you run the model yourself. If you build agents on top of a hosted model, the storage you own is much smaller and much plainer, and it fails in a way that is easy to miss.
 
-> “It feels like storage kind of got a promotion,” said Stryker during a recent interview. “We’re going to have to come to terms with a whole lot more data and be able to store that with a combination of world‑class hardware and software.”
+It fails by looking like emptiness.
 
-### The Cost of Ignoring the New Tier
+## What does an agent actually need to store?
 
-If you treat storage as a legacy backend, you’ll pay the price. IDC forecasts that large enterprises will underestimate AI infrastructure costs by roughly 30 % through 2027. Gartner predicts that more than 40 % of agentic AI initiatives will be canceled before the end of 2027, citing weak integration, governance, and tooling rather than model quality. The common denominator? A mismatch between the AI workload and the underlying infrastructure.
+Five things, and Jiva puts all five behind one abstract class, `StorageProvider`.
 
-### A Business‑Led Strategy
+- **Config**, per tenant: one `config.json` holding things like the list of tool servers an organization has switched on.
+- **Conversations**: one JSON file per conversation, with every message and a metadata block (title, counts, token totals).
+- **A directive** per workspace: the standing instructions the agent reads before it starts.
+- **Logs**: buffered in memory, flushed to a file per session.
+- **A state snapshot**, so a cloud function can hand a session to the next one.
 
-The solution isn’t just buying faster disks. It’s a *business‑led* agentic AI strategy that defines which processes AI will run, on what data foundations, under what governance, and toward what measurable outcomes—*before* any agent or platform is built. The CRM Software Blog outlines a four‑phase roadmap: pilot, integration, scaling, and enterprise‑wide impact. Each phase demands a re‑evaluation of storage placement, RDMA fabrics, and DPU‑managed storage as part of the inference design.
+That is the whole list. No database, no vector index. Two providers are implemented: the local filesystem for the command line, and a Google Cloud Storage bucket for hosted use. The class comment and the settings also name S3 and Redis. Ask the factory for either and it throws "not yet implemented". It is worth knowing which logos on a diagram are real.
 
-### What This Means for Teams
+Everything in a cloud deployment is addressed by tenant and session, both of which must come from the authenticated request. Locally, Jiva uses fixed defaults (`local` and `cli-session`) so the command line works without any login.
 
-1. **Treat storage as a compute tier.** Evaluate context‑cache placement and RDMA fabrics the same way you evaluate GPU clusters.
-2. **Plan for long‑context workloads.** Design your data pipelines to handle KV caches that can span terabytes.
-3. **Embed governance early.** Align storage policies with AI governance to avoid the 40 % cancellation risk Gartner warns about.
-4. **Leverage specialized hardware.** NVIDIA’s BlueField‑4 STX and CMX are early examples; expect more purpose‑built storage solutions to appear.
+## Failure one: a setting that does not match falls back to local disk
 
-### The Bigger Picture
+The factory reads `JIVA_STORAGE_PROVIDER` and compares it to the provider names. Anything it does not recognize lands in the `default` branch, which creates the local filesystem provider.
 
-The rise of agentic AI is reshaping the entire infrastructure stack. Storage is just the first piece to get a promotion. As agents move from demos to real workflows at scale, they expose weaknesses in cost control, governance, and operations all at once. Companies that recognize storage as an active, intelligent component—and embed it into their AI strategy—will be the ones that turn the agentic wave into sustainable competitive advantage.
+That is not hypothetical. The v0.3.46 release note describes it happening: a Cloud Run service was configured with `gcp`, the real value was `gcp-bucket`, and the service ran on the container's own disk. Per-tenant tool lists, directives and conversation history were never read from the bucket. Nothing errored. The agent answered every question. It had simply never heard of anything a user had told it before.
 
-At Gritsa, we’re already seeing this shift in our own Jiva deployments. By treating storage as a first‑class inference tier, we’ve cut latency for long‑context agents by 30 % and reduced overall infrastructure spend. The lesson is clear: the next wave of AI isn’t just smarter models; it’s smarter infrastructure.
+The fix added aliases for `gcp`, `s3` and `aws`. The `default` branch is still there, so any other typo takes the same road. A deployment that asks for cloud storage and receives local disk should stop at startup. A fallback is the right behavior for a laptop and the wrong one for a server.
 
----
+## Failure two: "not found" and "broke" are the same answer
 
-*If you’re building agentic AI at scale, ask yourself: is your storage ready for the promotion?*
+Read a conversation from the bucket and the helper does the following: if the object does not exist, return `null`. If the download throws, log a warning and return `null`. The caller cannot tell a conversation that was never saved from one that could not be reached a moment ago.
+
+One layer up, the conversation manager turns any failure, including this one, into `Conversation not found`. And when it saves, it first tries to load the existing conversation so it can keep the title. Its catch block says to ignore the error because it will "create new". A network blip during that read means the conversation is written back as if it were new.
+
+The local provider is the same shape. It returns `null` for a missing file and for a file that no longer parses as JSON.
+
+For a person, "I can't find that conversation" is a mild annoyance. For an agent resuming a task, it is a task that starts over with no warning that anything was lost. If your storage layer has one return value for "nothing there" and "couldn't look", you will eventually act on the first when the second is true.
+
+## Failure three: the list quietly leaves things out
+
+Listing conversations locally reads every file, and a file that fails to parse is skipped. The comment is "Skip invalid files." If the directory itself cannot be read, the result is an empty list.
+
+On the bucket the shape is different but the cost is worse. To list conversations, the provider lists the object names under the tenant's prefix and then downloads every conversation in full, only to read the small metadata block at the top. A tenant with a few hundred long conversations pays for all of them every time the sidebar opens. I did not measure it, and I am not going to put a number on it. The pattern is enough: metadata that lives inside the big file can only be had by reading the big file.
+
+The silent skip is the part that matters for trust. One corrupted file and the user's history is a conversation shorter than it should be, with no way to know.
+
+## Failure four: an append that rewrites everything
+
+The logging path has the same quiet quality. Locally, logs are appended to a file. On the bucket, an append is a read of the whole existing log, a string concatenation and a write of the whole thing back. Each flush costs the size of the log so far, and it is only safe because each session writes its own log. Two writers on the same key would overwrite each other's lines.
+
+None of this is wrong for a first version. It works, and for one session at a time it works fine. It is the reason to know the shape of what you are running.
+
+## What this changes about how you run an agent
+
+You do not need faster storage to make an agent dependable. You need storage that can say no. A few habits cover most of it.
+
+Write and read back a canary at startup. If the agent is supposed to use a bucket, put one small object in it and fetch it before accepting any work. A missing bucket, a bad credential or a mistyped setting then stops the deploy.
+
+Make unknown configuration an error. Reject a provider name you do not recognize. Local disk is a fine default on a laptop, but a server should have to ask for it.
+
+Keep "absent" and "failed" apart in the return type. A missing conversation is an answer. A failed read is an exception, and whoever called it should decide what to do.
+
+Treat "fewer conversations than yesterday" as an alert. It is the cheapest test for the whole class of silent skips.
+
+And test it the way you would test the agent's judgment: with a deliberately broken environment and a check that it refuses to run. That is the same idea as [writing the test before you hire the agent](/blog/2026/10/12/write-the-test-before-you-hire-the-agent/), applied to the plumbing.
+
+Storage also has a second, separate way to fail that I have left out here: two requests sharing one mutable piece of state. Jiva hit that one too, in a multi-tenant deployment, and I wrote about the pattern in [the v0.3.46 post](/blog/2026/05/20/jiva-v0-3-46-fixes-multi-tenant-concurrency-bugs/). And what happens to the contents of a conversation once it gets long is a different question, covered in [Agent memory is whatever survives the summary](/blog/2026/08/05/agentic-ai-is-leaving-the-terminal-behind/).
+
+An agent that crashes gets fixed the same day. An agent that forgets can run for weeks. Build the storage so that forgetting is the loud failure.
+
+If you are putting an agent into production and want the plumbing reviewed before a customer finds it, [the Gritsa team](https://gritsa.com/contact/) does that work, and [Jiva](https://github.com/KarmaloopAI/Jiva) is open source if you would rather read the code yourself.
