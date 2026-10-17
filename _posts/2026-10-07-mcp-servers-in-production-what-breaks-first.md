@@ -28,7 +28,7 @@ Every tool you connect has a name, a description and a schema, and all of it lan
 
 Jiva's own documentation is blunt about this. Its code mode does not load every configured server by default, because, in the README's words, too many tools bloat the context. You opt servers in by name. That's a framework author telling you what they learned the hard way.
 
-The fix is boring. Give each agent only the servers its one job needs. An agent that reconciles invoices does not need the browser server. If two servers both expose a tool called `search`, the spec says clients "SHOULD implement a disambiguation strategy such as prefixing tool names with a server identifier." Do it before the model has to guess.
+The fix is boring. Give each agent only the servers its one job needs. An agent that reconciles invoices does not need the browser server. If two servers both expose a tool called `search`, the spec says clients "SHOULD implement a disambiguation strategy such as prefixing tool names with a server identifier." Do it before the model has to guess. (Jiva's client does: it names tools `server__tool`, and [what else I found in that client](/blog/2026/08/14/from-solo-to-swarm-how-agentic-resource-discovery-is-redefining-ai-collaboration/) is a separate story.)
 
 ## 2. Tools that are too broad
 
