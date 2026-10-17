@@ -59,7 +59,7 @@ For a person, "I can't find that conversation" is a mild annoyance. For an agent
 
 Listing conversations locally reads every file, and a file that fails to parse is skipped. The comment is "Skip invalid files." If the directory itself cannot be read, the result is an empty list.
 
-On the bucket the shape is different but the cost is worse. To list conversations, the provider lists the object names under the tenant's prefix and then downloads every conversation in full, only to read the small metadata block at the top. A tenant with a few hundred long conversations pays for all of them every time the sidebar opens. I did not measure it, and I am not going to put a number on it. The pattern is enough: metadata that lives inside the big file can only be had by reading the big file.
+On the bucket the shape is different but the cost is worse. To list conversations, the provider lists the object names under the tenant's prefix and then downloads every conversation in full, only to read the small metadata block at the top. A tenant with a few hundred long conversations pays for all of them every time the list is requested. I did not measure it, and I am not going to put a number on it. The pattern is enough: metadata that lives inside the big file can only be had by reading the big file.
 
 The silent skip is the part that matters for trust. One corrupted file and the user's history is a conversation shorter than it should be, with no way to know.
 
