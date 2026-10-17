@@ -45,7 +45,7 @@ That is a good design, because the alternative is an agent that quietly stops at
 
 In code mode with the `--plan` flag, each request goes through a planning pass first. The planning pass is properly restricted. It is given three tools, `read_file`, `glob` and `grep`, and if the model asks for anything else the code returns a message saying the tool is not available during planning. It is limited to twelve iterations, and for the last two the tools are removed so the model has to write the plan. It runs in an isolated message thread and does not touch the conversation history.
 
-Then the person sees the plan and answers one question: "Implement this plan?" Yes or no. If no, the request is cancelled and you are told to refine it and try again. If yes, the plan text is added to the message with the note that it was "reviewed and approved by the user" and should be implemented exactly as described.
+Then the person sees the plan and answers one question: "Implement this plan?" Yes or no. If no, the request is canceled and you are told to refine it and try again. If yes, the plan text is added to the message with the note that it was "reviewed and approved by the user" and should be implemented exactly as described.
 
 Three things follow.
 
