@@ -1,72 +1,68 @@
 ---
 layout: post
-title: "Agentic AI Is Leaving the Terminal Behind"
+title: "Agent memory is whatever survives the summary"
 date: 2026-08-05 18:32:32 +0000
-author: "Gritsa"
+last_modified_at: 2026-10-17 15:00:00 +0530
+author: "Amy Loomis"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
-excerpt: "Agentic AI is stepping out of code and into the full breadth of knowledge work — and the tools, security, and open-source alternatives are catching up fast."
-description: "Agentic AI is moving beyond coding into knowledge work. New releases from Simon Willison, DeepSeek, and NVIDIA are expanding what autonomous agents can do, while guardrails and open-source alternatives reshape the landscape."
-keywords: "agentic AI, autonomous agents, LLM, knowledge work, open-source AI"
+tags:
+  - AI agents
+  - Agent memory
+  - Context engineering
+excerpt: "People ask for agents with memory. Open the code of a working agent and the memory is a summary, written by a model, from evidence it was only shown part of. What Jiva keeps, what it drops, and what to do about it."
+description: "How context compaction works in Jiva: what is kept verbatim, what is summarized, how tool results are truncated before the summarizer sees them, and what that means for any agent you run in production."
+keywords: "agent memory, context compaction, conversation summarization, context window, AI agents, Jiva, context engineering"
 featured_image: "/assets/img/posts/2026-08-06-agentic-ai-is-leaving-the-terminal-behind.png"
 ---
 
-I keep coming back to the same observation: the agentic AI story is no longer about code.
+# Agent memory is whatever survives the summary
 
-It started with coding agents — Cursor, Claude Code, the whole stack. That was the proving ground. But the past week has made it impossible to miss the pivot. Replit just shipped Agent 4, explicitly repositioning itself as a knowledge-work agent. Simon Willison's LLM 0.32 landed with reasoning traces and server-side tools baked in. And NVIDIA's open deep-research agent just climbed to the top of the Hugging Face DeepResearch Bench, proving that open-source agents can now rival the closed labs on agentic benchmarks.
+*Updated 17 October 2026. This post first appeared in August 2026 as a news roundup that ended on the claim that the winning agents would be the ones that remember. I kept that question and dropped the roundup. What follows is what I found when I read how Jiva, our open-source agent framework, actually remembers.*
 
-The thread connecting all of this is simple and I think important: **agentic AI is graduating from the terminal to the office.**
+When someone asks for an agent "with memory", they usually picture a notebook the agent writes in and reads later. That is not what most agents have. What they have is a context window that fills up, and a rule for what to do when it does.
 
-Here's what I mean.
+In Jiva that rule is compaction. Once a conversation gets long, a model writes a summary of the middle, the old messages are replaced by that summary, and the agent carries on. Whatever the summary leaves out is gone. That is the memory.
 
-**The coding-to-knowledge-work transition**
+I read the code to see exactly what that means. It is more specific, and more fragile, than the word "memory" suggests.
 
-Replit's Agent 4 is the clearest signal. The company that built its reputation on code generation is now expanding into Pi, Notion, Excel, PowerPoint — the full stack of knowledge work. This isn't a side feature. It's the strategic pivot.
+## What does the agent keep verbatim?
 
-I see the same pattern everywhere. Claude Code became Cowork. Every model lab is building Excel and PowerPoint integrations. Notion is shipping custom agents for every other knowledge-work integration. The tools that proved agents could write production-grade code are now being asked to write reports, analyze data, and manage workflows.
+It depends on which agent you are running, because Jiva has two paths.
 
-The question I keep asking myself is whether this is a natural expansion or a category mistake. Can the same agentic architecture that writes a Python function also draft a quarterly business review? The evidence this week leans toward yes — but with a caveat.
+The chat agent counts messages. `ConversationManager.condenseConversation()` in `src/core/conversation-manager.ts` keeps the first two messages (the system and developer prompts) and the last ten. The default trigger is 30 messages, set in `src/core/agent.ts`. Everything between is summarized.
 
-**Reasoning traces and tool use are becoming standard**
+The code agent counts tokens. In `src/code/agent.ts`, compaction fires when a response reports more than 100,000 prompt tokens, which the source comments describe as roughly 78% of a 128K window. It keeps the system prompt and the last five rounds, where a round is one message plus the tool results that answer it. The grouping lives in `src/code/rounds.ts`, and the comment explains why: cut in the wrong place and a tool call gets summarized away while its result survives, or the reverse.
 
-Simon Willison's LLM 0.32 release is quietly significant. It adds visible reasoning traces, server-side provider tools, and redesigned content-addressable SQLite logs. The OpenAI Responses API support matters because it's becoming the de facto interface for agentic tool use.
+The chat path slices the last ten messages by count and I found no equivalent grouping there. A cut that lands between a tool call and its result is possible. I have not reproduced it, so I will leave it at that: the two paths made different safety choices.
 
-What I find most interesting is the emphasis on logging. Agentic workflows are inherently multi-step, multi-tool, multi-turn. Without visibility into what the agent did and why, you're flying blind. Willison's focus on "smarter logging" isn't a nice-to-have — it's what makes agents trustworthy enough for production knowledge work.
+## What does the summarizer actually see?
 
-DeepSeek V4 Flash 0731, released July 31st, is another signal. The 304-billion-parameter model ships with "substantially enhanced agentic capabilities" and a post-training pass that reshapes agentic policy without touching the backbone. The benchmarks show tens of points of improvement on agentic tasks. The cost is $0.435 per million input tokens — higher than some alternatives, but the performance delta is real.
+This is the part that changed how I think about it. Before the summarizing model sees the middle of the conversation, long tool results are cut. In the chat path to 300 characters each. In the code path to 200 for tool results and 300 for other messages.
 
-**Open-source agents are catching up**
+So the summary is written from a truncated record. A 5,000 character query result, a long error trace, a whole file the agent read: the summarizer sees the first few lines. If the detail that matters sits on line 40, it was never in front of the thing deciding what to remember.
 
-NVIDIA's AI-Q Blueprint — an open, portable deep-research agent — just hit the top of the DeepResearch Bench leaderboard. This is the kind of result that matters for the open-source narrative. A developer-accessible model powering advanced agentic workflows that rival closed alternatives.
+The summary itself is capped at 1,500 tokens and follows a fixed template: Goal, Instructions, Discoveries, Accomplished, Relevant files. That is a good template for a coding session. It has no slot for "the customer's exact figure" or "the rule the user stated once, early, and never repeated". Those survive only if the summarizer judges them a Discovery or an Instruction.
 
-The architecture is worth noting: Llama Nemotron Super supports explicit agentic reasoning with ON/OFF toggles via system prompts. You can run it in standard chat mode or switch to deep chain-of-thought reasoning for agent pipelines. That kind of dynamic, context-sensitive control is what separates toy agents from production tools.
+Jiva does one thing to help. If the workspace has a directive, it is placed ahead of the conversation with the instruction to prioritize context that supports it. That is the right instinct. It also means the quality of your memory depends on how well you wrote the directive.
 
-And the community is building. NVIDIA leveraged both standard and new metrics for evaluation, including reasoning traces and intermediate steps. The architecture lends itself to granular, stepwise evaluation — one of the biggest pain points in agentic pipeline development.
+## What happens when the summary fails?
 
-**Security is the next frontier**
+Both paths have a fallback, and both are blunt. The chat path trims to the most recent messages. The code path keeps the middle but cuts each tool result to its first line. The agent keeps working with less than it had. The failure is logged, but nothing in the conversation tells the user.
 
-None of this matters if the agents are vulnerable. AprielGuard, released by ServiceNow AI on Hugging Face, addresses a gap that's been obvious for months: agentic workflows are attack surfaces.
+## Is anything remembered across sessions?
 
-Multi-turn jailbreaks, prompt injections, memory hijacking, tool manipulation — these aren't theoretical. They're what happens when you give an agent access to tools, APIs, and other agents. AprielGuard systematically perturbs different components of the agentic workflow to expose realistic attack patterns.
+Conversations are saved through a storage provider (local disk or a cloud bucket) and can be reloaded, with a generated title and token totals. That persists the transcript. I looked for a store of facts the agent learns, retrieves later and updates, and did not find one in the source. Sub-agents have a stricter version of the same limit: the manager's planning prompt tells it that workers share no memory between subtasks, so data gathered in one is gone when the next starts.
 
-I keep thinking about this in the context of knowledge work. An agent that can draft a quarterly report and also access your company's internal APIs is a powerful tool and a powerful risk. The guardrails need to be as sophisticated as the capabilities.
+None of that is a criticism. It is what a working agent framework looks like today. The mistake would be to read "memory" in a feature list and assume it means more than this.
 
-**The memory problem**
+## What I would do with this
 
-There's one piece that's still missing from all of this: persistence.
+Treat the summary as a lossy cache, never as a record. Three habits follow, and none of them needs a new framework.
 
-Latent Space's coverage of ChatGPT Work points to the same gap. Today's AI products are reactive — you have to notice something needs doing, gather context, and translate it into a prompt. The agent can execute brilliantly from there, but the initial act of agency is still yours.
+Put the facts that must not be lost somewhere the compactor cannot touch. A file the agent writes and rereads, a database row, the directive. If losing a sentence would cost you money, it should not live only in the conversation.
 
-Proactivity — agents figuring out how to be useful on their own — is the holy grail. And it's blocked by memory. Without persistent, reliable memory, agents can't build on past interactions, learn from mistakes, or maintain context across sessions.
+Test your agent past the compaction line. Most demos end well before it. Run a task long enough to cross the threshold, then ask about something said in the first twenty messages. That answer tells you more than any benchmark.
 
-I think this is where the next wave of innovation will come from. Not bigger models, not more tools, but better memory architectures. The agents that win will be the ones that remember.
+And when you hear that an agent "remembers", ask who writes the summary, what they were shown, and what happens when it fails. The people selling agents rarely volunteer that. The code, if you can read it, always answers.
 
-**What this means for Gritsa**
-
-At Gritsa, we're building Jiva because we believe the future of software is agentic. The framework we're developing is designed for exactly this moment — agents that can move beyond code into the full breadth of knowledge work, with the tool use, reasoning, and security that production demands.
-
-The releases this week — Willison's logging improvements, DeepSeek's agentic post-training, NVIDIA's open research agent, ServiceNow's guardrails — they're all pieces of the same puzzle. The terminal is no longer the frontier. The office is.
-
-I'm not saying every agent will replace a knowledge worker tomorrow. But I am saying that the infrastructure for that transition is arriving faster than most people realize. The question isn't whether agentic AI will expand into knowledge work. It's who will build the memory, security, and persistence layers that make it reliable.
-
-We're betting on open-source, on transparency, and on tools that developers can actually control. If that's the bet you're making too, [Jiva](https://github.com/KarmaloopAI/Jiva) is the framework for it.
+If you are deciding what an agent in your business should hold on to, [the Gritsa team](https://gritsa.com/contact/) designs that layer, and [Jiva](https://github.com/KarmaloopAI/Jiva) is open source if you would rather read it yourself.
