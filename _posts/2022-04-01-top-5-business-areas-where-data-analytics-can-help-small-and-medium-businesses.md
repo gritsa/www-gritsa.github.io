@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /post/top-5-business-areas-where-data-analytics-can-help-small-and-medium-businesses
 layout: post
 title: "Top 5 Business Areas where Data Analytics can help Small and Medium Businesses "
 date: 2022-04-01 11:33:31 +0000

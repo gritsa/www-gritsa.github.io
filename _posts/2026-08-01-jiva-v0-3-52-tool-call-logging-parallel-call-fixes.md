@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /blog/2026/07/31/jiva-v0-3-52
 layout: post
 title: "Jiva v0.3.52: Tool‑Call Logging & Parallel Call Fixes"
 date: 2026-07-31 18:32:17 +0000
