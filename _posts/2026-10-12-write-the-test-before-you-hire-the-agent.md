@@ -35,3 +35,5 @@ This also changes who should be in the room at the start. The evaluation is a bu
 So before the next agent project, skip the demo. Ask for the answer key. If the team can produce one in a week, you have a project. If they can't, you have a meeting about what the job actually is, and that meeting is cheaper now than in month four.
 
 If you're stuck at that point, [our AI agents service](/services/ai-agents/) is where I'd start the conversation. The same habit applies when the agent talks to your systems through [MCP servers](/blog/2026/10/07/mcp-servers-in-production-what-breaks-first/): decide what a correct call looks like before you connect anything. The same logic applies to the data underneath: [Write-Audit-Publish](/blog/2026/10/13/write-audit-publish-for-agents/) is the answer key for what an agent is allowed to read.
+
+This is also where an AI plan usually goes wrong one level up: [most AI strategy is a procurement plan](/blog/2026/10/19/most-ai-strategy-is-a-procurement-plan/), a list of tools with no jobs and no measures behind it.
