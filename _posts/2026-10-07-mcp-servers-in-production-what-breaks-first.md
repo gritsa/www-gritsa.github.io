@@ -97,3 +97,5 @@ None of this is exotic. It's the same discipline you'd apply to giving a new hir
 *Sources: the Model Context Protocol specification (the [tools](https://modelcontextprotocol.io/specification/latest/server/tools) and [security best practices](https://modelcontextprotocol.io/specification/latest/basic/security_best_practices) pages, read 2026-10-07), and the Jiva README.*
 
 One more layer sits behind the tools: the data they return. [Write-Audit-Publish](/blog/2026/10/13/write-audit-publish-for-agents/) covers how to keep unchecked tables out of an agent's reach.
+
+Each tool you connect is a permission, and the permission belongs in the agent's job description: [how to scope an AI agent](/blog/2026/10/21/how-to-scope-an-ai-agent/).
