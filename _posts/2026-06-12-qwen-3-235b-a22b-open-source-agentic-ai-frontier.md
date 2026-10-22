@@ -13,7 +13,7 @@ featured_image: "/assets/img/posts/2026-06-12-qwen-3-235b-a22b-open-source-agent
 
 ## Introduction
 
-The open‑source landscape just got a serious upgrade. Alibaba’s **Qwen 3 235B‑A22B** arrives with a Mixture‑of‑Experts (MoE) architecture that activates only 22 billion parameters per token, yet delivers performance that rivals proprietary giants like GPT‑4.5 and Claude Sonnet 4.5. For teams building autonomous agents, this release means you can now run frontier‑level reasoning and coding on your own hardware under an Apache 2.0 license.
+The open‑source landscape just got a serious upgrade. Alibaba’s **Qwen 3 235B‑A22B** arrives with a Mixture‑of‑Experts (MoE) architecture that activates only 22 billion parameters per token, yet delivers performance that rivals proprietary giants like GPT‑4.5 and other frontier models. For teams building autonomous agents, this release means you can now run frontier‑level reasoning and coding on your own hardware under an Apache 2.0 license.
 
 ## What Makes Qwen 3 235B‑A22B Stand Out
 

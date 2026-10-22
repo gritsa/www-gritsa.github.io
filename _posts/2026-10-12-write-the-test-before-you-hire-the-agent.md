@@ -12,6 +12,9 @@ excerpt: "If you can't score an agent's output automatically, you can't hand the
 description: "How to evaluate AI agents before you build them: why a pilot that can't be scored never graduates, and how an answer key turns opinion into a number."
 keywords: "how to evaluate AI agents, AI pilot stuck, AI agent testing, agent evals, AI agent delegation"
 featured_image: "/assets/img/posts/2026-10-12-write-the-test-before-you-hire-the-agent.jpg"
+redirect_from:
+  - /blog/2026/05/23/claude-opus-4-7-a-leap-forward-for-agentic-ai-coding/
+  - /blog/2026/06/08/claude-opus-4-8-dynamic-workflows-and-fast-mode-power-up-agentic-ai/
 ---
 
 # Write the test before you hire the agent

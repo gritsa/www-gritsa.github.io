@@ -12,6 +12,15 @@ excerpt: "If your AI strategy fits on a vendor's slide, it's the vendor's strate
 description: "What an AI strategy for business should contain: the three jobs you will change, how you will measure them, and what you will stop doing."
 keywords: "AI strategy for business, AI strategy mistakes, how to build an AI strategy"
 featured_image: "/assets/img/posts/2026-10-19-most-ai-strategy-is-a-procurement-plan.jpg"
+redirect_from:
+  - /blog/2026/05/24/anthropics-spacex-compute-deal-powering-the-next-wave-of-agentic-ai/
+  - /blog/2026/06/13/claude-fable-5-mythos-5-next-gen-ai-models-with-safeguards/
+  - /blog/2026/06/10/anthropic-fellows-program-and-meta-llama-3-3-on-databricks-new-frontiers-in-agentic-ai/
+  - /blog/2026/05/22/anthropic-doubles-claude-code-limits-what-the-spacex-deal-means-for-developers/
+  - /blog/2026/06/06/june-2026-ai-launch-wave-a-builders-decision-map-what-you-need-to-know/
+  - /blog/2026/07/06/compute-arms-race-and-model-invoking-architectures-the-new-frontier-for-agentic-ai/
+  - /blog/2026/08/01/agentic-ai-new-models-guardrails-and-tools/
+  - /blog/2026/08/04/agentic-ai-goes-mainstream-the-year-autonomous-systems-became-a-utility/
 ---
 
 # Most AI strategy is a procurement plan

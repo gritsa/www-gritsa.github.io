@@ -55,7 +55,6 @@ Leveraging the **Pixtral** heritage, the model accepts image inputs and can desc
 |-------|------------|------------------|---------|-----------|------|--------|
 | Mistral Small 4 | 119 B | 4 | 256 k | ✅ (adjustable) | ✅ | ✅ |
 | GPT‑4o | ~1.76 T | N/A | 128 k | ✅ | ✅ | ✅ |
-| Claude Opus 4.7 | ~100 B | N/A | 1 M | ✅ | ✅ | ❌ |
 | Llama 3‑8B | 8 B | N/A | 8 k | ❌ | ❌ | ❌ |
 
 The table illustrates how Small 4 delivers comparable reasoning and multimodal abilities to closed‑source giants while staying open and far more economical.

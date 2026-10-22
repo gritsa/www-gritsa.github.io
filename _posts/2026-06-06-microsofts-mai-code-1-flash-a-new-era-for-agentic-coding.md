@@ -27,9 +27,9 @@ Key design goals include:
 
 ## Performance That Matters
 
-Microsoft evaluated MAI‑Code‑1‑Flash against Claude Haiku 4.5 across four core benchmarks:
+Microsoft evaluated MAI‑Code‑1‑Flash against a leading small model across four core benchmarks:
 
-| Benchmark | MAI‑Code‑1‑Flash Pass Rate | Claude Haiku 4.5 Pass Rate |
+| Benchmark | MAI‑Code‑1‑Flash Pass Rate | Leading Small Model Pass Rate |
 |-----------|---------------------------|----------------------------|
 | SWE‑Bench Verified | 51.2 % | 35.2 % |
 | SWE‑Bench Pro | 51.2 % | 35.2 % |

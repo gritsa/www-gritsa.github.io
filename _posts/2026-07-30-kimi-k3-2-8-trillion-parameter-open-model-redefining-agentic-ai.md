@@ -21,7 +21,7 @@ The one‑million‑token context window is the real game‑changer. Most LLMs t
 
 ### What the community is saying
 
-Simon Willison’s blog highlighted how Kimi K3 **beat Claude Fable 5 and GPT‑5.6 Sol** on the Code Arena WebDev benchmark. The score jump wasn’t marginal; it was a clear sign that longer context and multimodal grounding translate directly into better coding performance. Hugging Face’s coverage echoed the same sentiment, calling Kimi K3 “the largest open‑weight model ever released” and noting its impact on agentic workflows.
+Simon Willison’s blog highlighted how Kimi K3 **beat GPT‑5.6 Sol and other leading closed models** on the Code Arena WebDev benchmark. The score jump wasn’t marginal; it was a clear sign that longer context and multimodal grounding translate directly into better coding performance. Hugging Face’s coverage echoed the same sentiment, calling Kimi K3 “the largest open‑weight model ever released” and noting its impact on agentic workflows.
 
 Latent.Space reported that the model’s performance on the Arena.ai leaderboard has already sparked a wave of experiments. Developers are building agents that can **read an entire repository, generate a full feature set, and run tests—all in one go**. That level of autonomy was previously the domain of closed‑source, heavily guarded systems.
 

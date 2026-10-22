@@ -13,7 +13,7 @@ featured_image: "/assets/img/posts/2026-07-19-agentic-ai-gets-real-accountabilit
 
 I’ve been watching the agentic AI conversation for a while, and this July feels different. The buzzwords are still there, but the focus has sharpened: **accountability, security, and real‑world production**. Three recent pieces illustrate the shift.
 
-First, the Latent Space AINews roundup (July 2) showed how teams are already building **multi‑model orchestration** around Claude Fable 5, pairing it with cheaper open models like GLM‑5.2. The article highlighted new tooling—OpenWiki for “wiki‑memory,” Engram for memory reconciliation, and SkillComposer for structured skill selection. These aren’t just experiments; they’re the scaffolding that lets agents keep context across long‑running tasks without drowning in raw logs.
+First, the Latent Space AINews roundup (July 2) showed how teams are already building **multi‑model orchestration** around a frontier model, pairing it with cheaper open models like GLM‑5.2. The article highlighted new tooling—OpenWiki for “wiki‑memory,” Engram for memory reconciliation, and SkillComposer for structured skill selection. These aren’t just experiments; they’re the scaffolding that lets agents keep context across long‑running tasks without drowning in raw logs.
 
 Second, Simon Willison’s post on **Directly Responsible Individuals (DRI)** (July 12) reminded us that no matter how autonomous an agent becomes, the ultimate accountability must stay human. He argues that an AI should never be the DRI for a project because machines can’t truly own outcomes. That perspective is a crucial guardrail as we hand agents more decision‑making power.
 

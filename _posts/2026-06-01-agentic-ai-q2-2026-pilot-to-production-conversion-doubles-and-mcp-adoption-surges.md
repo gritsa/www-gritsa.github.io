@@ -17,9 +17,9 @@ The second quarter of 2026 has turned agentic AI from a buzzword into a line‑i
 
 Three forces converged to make this happen:
 
-1. **Rapid frontier model releases** – GPT‑5.5 Pro, Claude Opus 4.7 with a 1 M‑token context, and DeepSeek V4 Preview shipped within six weeks, compressing quality gaps and forcing buyers to adopt multi‑vendor routing.
+1. **Rapid frontier model releases** – GPT‑5.5 Pro, a frontier model with a 1 M‑token context, and DeepSeek V4 Preview shipped within six weeks, compressing quality gaps and forcing buyers to adopt multi‑vendor routing.
 2. **MCP becomes the de‑facto tool‑use protocol** – Published MCP servers crossed **9,400** entries, a 58 % quarter‑over‑quarter increase. Atlassian, Salesforce, Stripe, GitHub, and Linear all released first‑party MCP servers, cementing the standard for tool‑use plumbing.
-3. **Cost‑per‑successful‑task fell 30‑50 %** – Aggressive batch pricing from OpenAI, Claude Opus 4.7 cache pricing, and DeepSeek’s open‑weights model drove down blended rack rates by 42 % QoQ, making business cases viable at scale.
+3. **Cost‑per‑successful‑task fell 30‑50 %** – Aggressive batch pricing from OpenAI, frontier‑model cache pricing, and DeepSeek’s open‑weights model drove down blended rack rates by 42 % QoQ, making business cases viable at scale.
 
 ## Why pilot‑to‑production matters
 

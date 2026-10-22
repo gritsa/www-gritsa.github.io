@@ -19,7 +19,7 @@ Why does this matter? Because for the first time we have **production‑grade au
 
 The design patterns that make these agents work are finally catching up. Articles from August 2026 outline a new default stack: persistent shipping history, context compaction, file memory, and OpenTelemetry tracing baked in. The classic ReAct, Reflection, and Planning patterns are now standard building blocks, and multi‑agent orchestration is moving from research labs to platforms like CrewAI, AutoGen, and the newly‑hosted **Agent2Agent (A2A) protocol** from Google.
 
-Industry momentum is unmistakable. Anthropic’s revenue surged to $65 B in August, a sign that enterprises are pouring money into AI that can act, not just answer. Meta’s open‑model suite, highlighted on August 19, is positioned as the antidote to closed‑source lock‑in. And funding rounds are pouring in—HappyRobot’s $150 M Series C, Zenity’s $125 M, and a rumored >$1 B raise for Cognition together represent roughly $633 M in just twelve days.
+Industry momentum is unmistakable. A leading model provider’s revenue surged to $65 B in August, a sign that enterprises are pouring money into AI that can act, not just answer. Meta’s open‑model suite, highlighted on August 19, is positioned as the antidote to closed‑source lock‑in. And funding rounds are pouring in—HappyRobot’s $150 M Series C, Zenity’s $125 M, and a rumored >$1 B raise for Cognition together represent roughly $633 M in just twelve days.
 
 All of this points to a single, powerful idea: **agentic AI is becoming a utility**. Like electricity, it will be invisible, reliable, and available on demand. The open‑weight wave is the infrastructure that makes that possible.
 

@@ -22,7 +22,7 @@ Running a large language model locally has long been limited by memory and compu
 
 ## Vision meets language
 
-The release also marks Meta’s first truly multimodal LLM family. The **11 B and 90 B vision models** accept images as input and can be used as drop‑in replacements for their text‑only counterparts. In benchmark tests, they outperform closed‑source alternatives such as Claude 3 Haiku on image‑understanding tasks while retaining the same instruction‑following capabilities.
+The release also marks Meta’s first truly multimodal LLM family. The **11 B and 90 B vision models** accept images as input and can be used as drop‑in replacements for their text‑only counterparts. In benchmark tests, they outperform closed‑source alternatives such as a leading closed small model on image‑understanding tasks while retaining the same instruction‑following capabilities.
 
 Because the vision models share the same tokenizer and architecture as the text models, developers can switch between them without rewriting pipelines—a huge win for rapid prototyping.
 

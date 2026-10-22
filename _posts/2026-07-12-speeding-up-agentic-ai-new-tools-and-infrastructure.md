@@ -28,7 +28,7 @@ If you’re building with agents today, you can start treating them like micro�
 
 ### Looking ahead
 
-I expect we’ll see more “agent‑first” services—platforms that expose an API for an autonomous worker rather than a static model. The recent buzz around **Claude Fable 5** and **Gemini’s video dev engine** shows that model providers are also racing to make their outputs cheaper and faster. The next wave will be less about raw model size and more about how quickly an agent can close the loop between perception, reasoning, and action.
+I expect we’ll see more “agent‑first” services—platforms that expose an API for an autonomous worker rather than a static model. The recent buzz around **new frontier model releases** and **Gemini’s video dev engine** shows that model providers are also racing to make their outputs cheaper and faster. The next wave will be less about raw model size and more about how quickly an agent can close the loop between perception, reasoning, and action.
 
 ### Gritsa’s take
 

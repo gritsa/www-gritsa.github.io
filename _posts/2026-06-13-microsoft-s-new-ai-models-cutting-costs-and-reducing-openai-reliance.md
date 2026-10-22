@@ -16,11 +16,11 @@ Microsoft’s recent Build 2026 announcements mark a decisive shift in how the c
 
 The centerpiece of the launch is **MAI‑Code‑1‑Flash**, Microsoft’s first AI‑coding model. Designed for high‑efficiency inference, it plugs directly into popular developer environments such as **GitHub Copilot** and **Visual Studio Code**. For teams that rely on AI‑assisted coding, this means faster response times and lower compute bills—critical factors when scaling AI across large codebases.
 
-Alongside the coding model, Microsoft introduced **MAI‑Thinking‑1**, a medium‑sized reasoning model built for lower token consumption. Tokens are the currency of large language models; every extra token translates directly into higher operational costs. By offering a model that delivers strong reasoning performance at a fraction of the token price, Microsoft gives enterprises a viable alternative to the pricey frontier models from OpenAI and Anthropic.
+Alongside the coding model, Microsoft introduced **MAI‑Thinking‑1**, a medium‑sized reasoning model built for lower token consumption. Tokens are the currency of large language models; every extra token translates directly into higher operational costs. By offering a model that delivers strong reasoning performance at a fraction of the token price, Microsoft gives enterprises a viable alternative to the pricey frontier models from OpenAI and other leading providers.
 
 ## Reducing Dependence on OpenAI
 
-Until now, Microsoft’s AI strategy has been tightly coupled with its investments in OpenAI and Anthropic. The new models signal a deliberate move toward **AI independence**. By running these models on Azure, Microsoft can keep more of the value chain in‑house, offering customers tighter integration, better data privacy, and the ability to fine‑tune models with proprietary datasets.
+Until now, Microsoft’s AI strategy has been tightly coupled with its investments in OpenAI and other model providers. The new models signal a deliberate move toward **AI independence**. By running these models on Azure, Microsoft can keep more of the value chain in‑house, offering customers tighter integration, better data privacy, and the ability to fine‑tune models with proprietary datasets.
 
 CEO Satya Nadella framed the shift as moving from “consuming frontier models” to “participating in the frontier AI ecosystem.” This aligns with Microsoft’s broader ambition to become a **model‑and‑platform company**, not just an infrastructure provider.
 

@@ -12,6 +12,14 @@ excerpt: "The protocol is rarely what fails. Tool sprawl, broad permissions and 
 description: "MCP server best practices from the spec: what breaks first in production, from tool sprawl and broad scopes to token passthrough, and how to fix each."
 keywords: "MCP server best practices, MCP security, MCP servers in production, what is an MCP server, MCP tool design"
 featured_image: "/assets/img/posts/2026-10-07-mcp-servers-in-production.jpg"
+redirect_from:
+  - /blog/2026/05/22/anthropic-claude-code-leak-what-the-exposed-source-code-means-for-agentic-ai/
+  - /blog/2026/05/23/cve-2025-66479-anthropics-silent-fix-and-the-cve-that-claude-code-never-got/
+  - /blog/2026/05/23/cve-2025-66479-anthropics-silent-fix-and-the-cve-that-claude-code-never-got-50-60-chars/
+  - /blog/2026/05/25/claude-mythos-preview-ai-finds-zero-day-vulnerabilities/
+  - /blog/2026/07/12/claude-secures-alberta-ai-agents-hunt-cyber-vulnerabilities/
+  - /blog/2026/05/24/anthropic-acquires-stainless-what-it-means-for-agentic-ai-development/
+  - /blog/2026/07/12/model-releases-to-agent-infrastructure-the-new-ai-frontier/
 ---
 
 An MCP server is a small program that exposes tools, data and prompts to an AI model through the Model Context Protocol, so an agent can query a database or file a ticket without custom glue code for each system. Connecting one takes an afternoon. Keeping one safe, cheap and understandable for a year is the actual project.

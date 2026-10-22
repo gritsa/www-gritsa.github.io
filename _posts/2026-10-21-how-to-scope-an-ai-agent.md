@@ -12,6 +12,10 @@ excerpt: "An agent project fails at scoping before it fails at engineering. Writ
 description: "How to scope an AI agent: a one-page job description with purpose, tasks, constraints and context, plus why a rule on the page is not a lock."
 keywords: "how to scope an AI agent, AI agent job description, AI agent guardrails, what is an AI agent for business"
 featured_image: "/assets/img/posts/2026-10-21-scope-an-ai-agent.jpg"
+redirect_from:
+  - /blog/2026/05/22/claude-for-small-business-how-ai-agents-empower-smbs-2026/
+  - /blog/2026/07/26/ai-agents-enter-real-world-education-security-coding/
+  - /blog/2026/08/02/agentic-ai-beyond-code-knowledge-work-agents-arrive/
 ---
 
 # How to scope an AI agent: write the job description first

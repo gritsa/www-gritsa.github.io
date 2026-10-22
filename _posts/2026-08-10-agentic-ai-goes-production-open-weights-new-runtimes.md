@@ -27,7 +27,7 @@ Latent Space’s AINews roundup from August 7 paints a broader picture. Lang
 
 **Benchmarks that matter**
 
-Finally, Vellum’s “Best AI Employees in 2026” article provides hard numbers. OpenAI’s GPT‑5.6 tiers scored 53.6 on the Agents’ Last Exam, while Claude Fable 5 lagged at 40.5. More telling, the article notes a 15 % month‑over‑month growth in the action‑to‑output ratio for agents deployed through Vellum’s platform. In other words, agents are not only talking; they’re taking more concrete actions—triggering workflows, updating databases, and even negotiating inventory in simulated e‑commerce environments.
+Finally, Vellum’s “Best AI Employees in 2026” article provides hard numbers. OpenAI’s GPT‑5.6 tiers scored 53.6 on the Agents’ Last Exam, while another frontier model lagged at 40.5. More telling, the article notes a 15 % month‑over‑month growth in the action‑to‑output ratio for agents deployed through Vellum’s platform. In other words, agents are not only talking; they’re taking more concrete actions—triggering workflows, updating databases, and even negotiating inventory in simulated e‑commerce environments.
 
 **Why this matters for Gritsa**
 

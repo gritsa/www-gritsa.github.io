@@ -30,7 +30,7 @@ Two complementary moves are trying to solve the security and scalability puzzle.
 
 * **MCP (Model‑Centric Protocol)**, which recently moved into the Linux Foundation’s Agentic AI Foundation, provides a standardized sandbox for running agents. It defines a minimal runtime that isolates file‑system access, network calls, and tool execution, making it easier to certify an agent before it ever touches production data.
 
-* **Databricks co‑founders Matei Zaharia and Reynold Xin** unveiled **Omnigent**, a meta‑harness that sits on top of existing agent SDKs (Claude Code, Codex, Pi, etc.). Omnigent adds live collaboration, policy‑as‑code, and multi‑agent composition, essentially turning a collection of single‑purpose agents into a coordinated workforce.
+* **Databricks co‑founders Matei Zaharia and Reynold Xin** unveiled **Omnigent**, a meta‑harness that sits on top of existing agent SDKs (Codex, Pi, and other coding agents). Omnigent adds live collaboration, policy‑as‑code, and multi‑agent composition, essentially turning a collection of single‑purpose agents into a coordinated workforce.
 
 Both projects are open‑source, which means the community can audit the containment mechanisms, extend the policy language, and integrate them with any locally‑run model—including Muse Glimmer.
 
