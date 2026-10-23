@@ -4,7 +4,12 @@ title: "Agentic AI Goes Production: Open Weights, New Runtimes"
 date: 2026-08-09 18:31:55 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, open-weight models, runtime, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - open-weight models
+  - runtime
+  - LLM
 excerpt: "Open-weight models, new agent runtimes, and benchmark results show agentic AI is finally moving from experiment to production."
 description: "Open-weight models like LFM2.5‑2.6B, new runtimes such as Cloudflare’s @cloudflare/computer, and benchmark results from OpenAI and Vellum illustrate the shift toward production‑ready autonomous agents."
 keywords: "agentic AI, autonomous agents, open-weight models, runtime, LLM, production AI, benchmarks"

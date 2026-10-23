@@ -4,7 +4,10 @@ title: "From Code to Cosmos: How Agentic AI Is Redefining Work, Play, and Securi
 date: 2026-08-12 18:32:43 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Agentic AI is spilling out of code editors and into knowledge work, robotics, and even cyber‑espionage—changing what we can build and what we must protect."
 description: "Agentic AI is moving beyond coding into knowledge work, physical robotics, and large‑scale cyber‑attacks, reshaping productivity and security landscapes."
 keywords: "agentic AI, autonomous agents, LLM, knowledge work agents, robotics, AI security"

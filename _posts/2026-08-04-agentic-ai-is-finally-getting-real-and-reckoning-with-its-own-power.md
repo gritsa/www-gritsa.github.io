@@ -4,7 +4,10 @@ title: "Agentic AI Is Finally Getting Real — And Reckoning With Its Own Power"
 date: 2026-08-03 18:33:34 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "The same capabilities that let agents write code and teach classrooms also let them run five‑day cyberattacks. Here's what's happening."
 description: "Exploring the rapid evolution of agentic AI, from powerful new models to real-world security incidents and scientific breakthroughs."
 keywords: "agentic AI, autonomous agents, LLM, DeepSeek, MiniMax, OpenAI, scientific computing"

@@ -4,7 +4,12 @@ title: "Microsoft's MAI-Code-1-Flash: A New Era for Agentic Coding"
 date: 2026-06-06 10:31:32 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic ai, coding, microsoft, ai models, developer tools"
+tags:
+  - agentic ai
+  - coding
+  - microsoft
+  - ai models
+  - developer tools
 excerpt: "Explore Microsoft's MAI-Code-1-Flash, a cutting‑edge coding model that boosts developer productivity with agentic capabilities, lower token costs, and superior benchmark performance."
 description: "Explore Microsoft's MAI-Code-1-Flash, a cutting‑edge coding model that boosts developer productivity with agentic capabilities, lower token costs, and superior benchmark performance."
 keywords: "agentic coding, MAI-Code-1-Flash, Microsoft AI, coding model, developer productivity, AI benchmarks, autonomous agents"

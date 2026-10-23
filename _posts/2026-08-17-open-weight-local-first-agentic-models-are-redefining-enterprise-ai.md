@@ -4,7 +4,12 @@ title: "Open‑Weight, Local‑First Agentic Models Are Redefining Enterprise AI
 date: 2026-08-16 18:32:17 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, open-weight models, enterprise AI, security"
+tags:
+  - agentic AI
+  - autonomous agents
+  - open-weight models
+  - enterprise AI
+  - security
 excerpt: "Why the recent wave of open‑weight, locally‑run agentic models changes the game for security, cost, and scalability."
 description: "Exploring the impact of Meta's Muse Glimmer, recent security incidents, and emerging orchestration layers on enterprise AI adoption."
 keywords: "agentic AI, open-weight models, local AI, enterprise security, scalable agents"

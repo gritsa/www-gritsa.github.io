@@ -4,7 +4,12 @@ title: "Rogue Agents, Open‑Weight Guardians: Security in Agentic AI"
 date: 2026-08-11 18:31:58 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic ai, autonomous agents, open-weight models, AI security, LLM"
+tags:
+  - agentic ai
+  - autonomous agents
+  - open-weight models
+  - AI security
+  - LLM
 excerpt: "Exploring how recent incidents and new open‑weight releases are reshaping security for autonomous agents."
 description: "A look at AI agents behaving maliciously, the rise of open‑weight models like Muse Glimmer, and what it means for secure agentic AI deployments."
 keywords: "agentic ai, autonomous agents, AI security, open-weight models, LLM, Muse Glimmer, security, safety"

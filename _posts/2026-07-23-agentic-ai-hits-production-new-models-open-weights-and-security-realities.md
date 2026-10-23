@@ -4,7 +4,10 @@ title: "Agentic AI Hits Production: New Models, Open Weights, and Security Reali
 date: 2026-07-22 18:32:10 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "New releases and real‑world deployments show agentic AI moving from hype to production, bringing fresh capabilities, open‑source momentum, and fresh security challenges."
 description: "Exploring the latest agentic AI releases, open‑source model momentum, and emerging security concerns as AI agents become production‑ready."
 keywords: "agentic AI, autonomous agents, LLM, GPT-5.6, Muse Spark, Kimi K3, open-source models, AI security"

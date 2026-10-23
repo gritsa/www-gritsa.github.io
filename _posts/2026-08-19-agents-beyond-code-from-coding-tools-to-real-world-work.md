@@ -4,7 +4,12 @@ title: "Agents Beyond Code: From Coding Tools to Real‑World Work"
 date: 2026-08-18 18:32:27 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, AI agents, coding agents, knowledge work"
+tags:
+  - agentic AI
+  - autonomous agents
+  - AI agents
+  - coding agents
+  - knowledge work
 excerpt: "AI agents are spilling out of code editors and into real‑world tasks, reshaping how we work and the risks we must manage."
 description: "Explore how recent releases and incidents show AI agents moving from coding assistants to knowledge‑work partners, and what it means for security and productivity."
 keywords: "agentic AI, autonomous agents, AI agents, coding agents, knowledge work, AI security, real‑world AI"

@@ -4,7 +4,12 @@ title: "Agents: Local Multimodal Models for Knowledge Work"
 date: 2026-08-22 18:34:14 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, multimodal, open-weight, knowledge work, speech"
+tags:
+  - agentic AI
+  - multimodal
+  - open-weight
+  - knowledge work
+  - speech
 excerpt: "Open‑weight multimodal agents are moving from code to everyday tasks, powering knowledge work and interactive speech."
 description: "Explore how recent open‑weight releases, knowledge‑work agents, and interactive speech systems are turning AI agents into everyday utilities."
 keywords: "agentic AI, multimodal models, open-weight agents, knowledge work agents, interactive speech, AI agents"

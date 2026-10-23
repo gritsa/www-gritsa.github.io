@@ -5,7 +5,7 @@ date: 2026-10-13 09:00:00 +0530
 author: "Amy Loomis"
 categories: "Data Foundations"
 tags:
-  - Data engineering
+  - - Data engineering
   - AI agents
   - Data quality
 excerpt: "An agent will use whatever number you give it. Audit the data before it can see it."

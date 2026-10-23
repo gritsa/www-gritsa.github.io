@@ -5,7 +5,7 @@ date: 2026-10-07 09:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - MCP
+  - - MCP
   - AI agents
   - AI governance
 excerpt: "The protocol is rarely what fails. Tool sprawl, broad permissions and borrowed tokens are, usually in that order."

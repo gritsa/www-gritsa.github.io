@@ -6,7 +6,7 @@ last_modified_at: 2026-10-16 16:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - AI agents
+  - - AI agents
   - Agent evaluation
   - Supervision
 excerpt: "An agent is a model calling tools in a loop. The loop that improves it, in a way a business can accept, is a second agent that checks the work against a written definition of done and sends the first one back. Here is how Jiva's harness does it, with its limits."

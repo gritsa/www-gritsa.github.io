@@ -4,7 +4,12 @@ title: "Jiva v0.3.53: Streaming-Only Models and Per-Session Config"
 date: 2026-08-10 18:32:42 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, Jiva, LLM, streaming models"
+tags:
+  - agentic AI
+  - autonomous agents
+  - Jiva
+  - LLM
+  - streaming models
 excerpt: "Jiva v0.3.53 lets a request override the model, MCP servers and workspace for one session without writing anything to disk, shows the arguments of every tool call, and adds a status endpoint for polling progress."
 description: "What changed in Jiva v0.3.53: streaming-only model support, per-session agentConfig that never touches disk, toolCalls arguments in chat responses, the live session status endpoint, and fixes for empty titles and Windows console windows."
 keywords: "Jiva, agentConfig, per-session configuration, streaming models, tool call audit, session status, AI agent framework"

@@ -4,7 +4,10 @@ title: "Microsoft’s New AI Models: Cutting Costs and Reducing OpenAI Reliance"
 date: 2026-06-13 08:31:32 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Microsoft’s MAI‑Code‑1‑Flash and MAI‑Thinking‑1 promise cheaper, more customizable AI for developers."
 description: "Explore how Microsoft’s latest proprietary models aim to lower inference and token costs, integrate with developer tools, and diversify the AI stack away from OpenAI."
 keywords: "Microsoft AI, MAI-Code-1-Flash, MAI-Thinking-1, agentic AI, autonomous agents, LLM, cost reduction, OpenAI alternatives"

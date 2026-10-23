@@ -6,7 +6,10 @@ title: "Jiva v0.3.52: Tool‑Call Logging & Parallel Call Fixes"
 date: 2026-07-31 18:32:17 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic ai, jiva, autonomous agents"
+tags:
+  - agentic ai
+  - jiva
+  - autonomous agents
 excerpt: "Jiva’s latest release adds tool‑call logging, recursive argument truncation, and fixes parallel tool‑call bugs, boosting agent reliability in production."
 description: "Jiva’s latest release adds tool‑call logging, recursive argument truncation, and fixes parallel tool‑call bugs, boosting agent reliability in production."
 keywords: "Jiva, agentic AI, tool-call logging, parallel tool calls, autonomous agents"

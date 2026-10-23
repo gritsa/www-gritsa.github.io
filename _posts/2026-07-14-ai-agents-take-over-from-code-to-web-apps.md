@@ -6,7 +6,7 @@ last_modified_at: 2026-10-17 11:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - AI agents
+  - - AI agents
   - Agent skills
   - Context engineering
 excerpt: "An agent skill is a folder with one required file. What decides whether the agent ever uses it is a single line of metadata. How Jiva loads skills, and where the loading stops short."

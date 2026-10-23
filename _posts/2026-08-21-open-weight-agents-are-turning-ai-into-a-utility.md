@@ -4,7 +4,10 @@ title: "Open‑Weight Agents Are Turning AI Into a Utility"
 date: 2026-08-20 18:36:07 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Open‑weight models are finally giving us production‑grade autonomous agents that run locally, reshaping how we build and deploy AI."
 description: "Open‑weight LLMs like Qwen3.8 Max and Muse Glimmer are delivering agentic capabilities on‑device, driving a shift toward utility‑grade AI services."
 keywords: "agentic AI, open-weight models, autonomous agents, LLM, production AI"

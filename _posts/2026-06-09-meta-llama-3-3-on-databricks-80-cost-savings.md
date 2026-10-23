@@ -4,7 +4,10 @@ title: "Meta Llama 3.3 on Databricks: 80% Cost Savings"
 date: 2026-06-09 16:31:59 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Meta's Llama 3.3 70B model on Databricks slashes inference costs by up to 80% while delivering 40% faster responses, unlocking affordable, high‑performance agentic AI."
 description: "Discover how Meta Llama 3.3 on Databricks delivers up to 80% cost savings and 40% faster inference, enabling scalable, multilingual autonomous agents for enterprises."
 keywords: "Meta Llama 3.3, Databricks, cost savings, agentic AI, autonomous agents, LLM"

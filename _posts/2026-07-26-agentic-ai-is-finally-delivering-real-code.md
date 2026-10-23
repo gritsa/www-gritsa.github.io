@@ -4,7 +4,10 @@ title: "Agentic AI Is Finally Delivering Real Code"
 date: 2026-07-25 18:31:36 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Why the latest open‑source models and coding‑agent breakthroughs mean autonomous agents are now writing production‑grade code."
 description: "Exploring recent open‑source LLM releases and coding‑agent advances that show autonomous agents are ready for real‑world software development."
 keywords: "agentic AI, autonomous agents, LLM, open‑source models, coding agents"

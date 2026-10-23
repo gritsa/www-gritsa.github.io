@@ -4,7 +4,10 @@ title: "Agentic AI Goes Mainstream: New Models, Tools, Security"
 date: 2026-07-19 18:32:39 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "The latest releases and incidents show that agentic AI is moving from hype to production, bringing new capabilities, tools, and security challenges."
 description: "Exploring how new models like GPT-5.6, tools such as GraphRAG, and recent security incidents illustrate the rapid maturation of agentic AI in real-world deployments."
 keywords: "agentic AI, autonomous agents, LLM, GPT-5.6, GraphRAG, AI security"

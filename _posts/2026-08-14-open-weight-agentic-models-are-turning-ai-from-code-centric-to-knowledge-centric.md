@@ -4,7 +4,12 @@ title: "Open‑Weight Agentic Models Are Turning AI From Code‑Centric to Knowl
 date: 2026-08-13 18:32:04 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM, open-weight models, knowledge work"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
+  - open-weight models
+  - knowledge work
 excerpt: "Open‑weight releases like DeepSeek V4 Flash and Meta’s Muse Glimmer are reshaping how we build agents, moving them out of the terminal and into everyday knowledge work."
 description: "A look at recent open‑weight agentic releases, their capabilities, and why they signal a shift from coding‑only agents to broader knowledge‑work assistants."
 keywords: "agentic AI, open-weight models, DeepSeek V4 Flash, Muse Glimmer, Replit Agent 4, knowledge work agents, LLM, autonomous agents"

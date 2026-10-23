@@ -4,7 +4,10 @@ title: "Agentic AI Gets Real: Accountability, Security, and Production"
 date: 2026-07-18 18:33:50 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Why 2026 marks the year agentic AI moves from hype to accountable, secure production systems."
 description: "Exploring the shift toward accountable, secure, and production‑ready agentic AI in 2026, with insights from recent industry developments."
 keywords: "agentic AI, autonomous agents, LLM, accountability, security, production AI"

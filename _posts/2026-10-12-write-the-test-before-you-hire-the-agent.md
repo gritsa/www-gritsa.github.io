@@ -5,7 +5,7 @@ date: 2026-10-12 09:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - AI agents
+  - - AI agents
   - AI evaluation
   - Future readiness
 excerpt: "If you can't score an agent's output automatically, you can't hand the job over. The eval is the job description."

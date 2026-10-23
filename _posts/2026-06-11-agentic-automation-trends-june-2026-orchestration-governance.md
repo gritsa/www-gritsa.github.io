@@ -4,7 +4,10 @@ title: "Agentic Automation Trends June 2026: Orchestration & Governance"
 date: 2026-06-11 06:31:47 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Explore how agentic automation, orchestration, and governance are reshaping AI workflows in June 2026."
 description: "Discover the latest AI automation trends for June 2026, focusing on agentic automation, orchestration, governance, and resilience for modern enterprises."
 keywords: "agentic AI, autonomous agents, AI automation, orchestration, governance, resilience, LLM"

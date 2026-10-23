@@ -4,7 +4,10 @@ title: "Jiva v0.3.50: one config file, proactive rate limits and native vision"
 date: 2026-07-14 18:32:12 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, Jiva"
+tags:
+  - agentic AI
+  - autonomous agents
+  - Jiva
 excerpt: "Jiva v0.3.50 moves the CLI and the HTTP interface onto one config file, waits before it hits a provider's rate limit, and lets a single model handle both reasoning and images."
 description: "What changed in Jiva v0.3.50: one config file at ~/.jiva/config.json, proactive rate limiting with Retry-After, vision detection in setup, native vision for reasoning models and a skeleton-first code mode."
 keywords: "Jiva, autonomous agents, rate limiting, vision models, code mode, configuration, open source"

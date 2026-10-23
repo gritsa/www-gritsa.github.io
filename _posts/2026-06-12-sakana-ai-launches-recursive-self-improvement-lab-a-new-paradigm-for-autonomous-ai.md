@@ -4,7 +4,10 @@ title: "Sakana AI Launches Recursive Self‑Improvement Lab: A New Paradigm for 
 date: 2026-06-12 04:31:49 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, AI research"
+tags:
+  - agentic AI
+  - autonomous agents
+  - AI research
 excerpt: "Sakana AI opens a dedicated RSI Lab to build self‑improving AI systems, promising compute‑efficient breakthroughs for sovereign AI."
 description: "Sakana AI's new Recursive Self‑Improvement Lab aims to create autonomous AI that upgrades itself, offering a compute‑efficient path to sovereign AI capabilities."
 keywords: "recursive self‑improvement, autonomous AI, Sakana AI, sovereign AI, AI research, agentic AI"

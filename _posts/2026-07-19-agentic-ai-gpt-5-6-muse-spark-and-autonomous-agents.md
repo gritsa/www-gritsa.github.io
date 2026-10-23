@@ -4,7 +4,10 @@ title: "Agentic AI: GPT‑5.6, Muse Spark, and Autonomous Agents"
 date: 2026-07-18 18:32:23 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "A look at the latest breakthroughs in agentic AI and what they mean for developers."
 description: "Exploring OpenAI's GPT‑5.6, Meta's Muse Spark, and the emerging security challenges of autonomous agents."
 keywords: "agentic AI, autonomous agents, GPT‑5.6, Muse Spark, AI security"

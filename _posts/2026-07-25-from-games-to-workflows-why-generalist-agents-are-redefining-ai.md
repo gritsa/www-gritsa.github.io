@@ -4,7 +4,10 @@ title: "From Games to Workflows: Why Generalist Agents Are Redefining AI"
 date: 2026-07-24 18:32:27 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Generalist agents that can act across games, code, and real‑world tasks are emerging, reshaping how we build AI systems."
 description: "Exploring the rise of generalist, multi‑modal agents—from DeepMind's SIMA to OpenAI's GPT‑5.6 and Meta's Muse Spark—and what they mean for developers."
 keywords: "agentic AI, generalist agents, multi‑modal AI, autonomous agents, LLM"

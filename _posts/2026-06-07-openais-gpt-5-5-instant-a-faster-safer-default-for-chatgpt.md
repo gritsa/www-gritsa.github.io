@@ -4,7 +4,10 @@ title: "OpenAI's GPT-5.5 Instant: A Faster, Safer Default for ChatGPT"
 date: 2026-06-07 12:31:35 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "OpenAI's latest model cuts hallucinations and speeds up responses, reshaping daily AI interactions."
 description: "OpenAI's GPT-5.5 Instant reduces hallucinations by over 50% and delivers faster, more concise answers, making it the new default for ChatGPT users."
 keywords: "GPT-5.5 Instant, ChatGPT, OpenAI, AI safety, LLM performance"

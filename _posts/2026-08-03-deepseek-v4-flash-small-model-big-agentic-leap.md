@@ -4,7 +4,10 @@ title: "DeepSeek V4 Flash: Small Model, Big Agentic Leap"
 date: 2026-08-02 18:33:12 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Why a 13‑billion‑parameter model just beat the 49‑billion‑parameter flagship on every agentic benchmark, and what it means for builders."
 description: "DeepSeek V4 Flash‑0731 ships with a tiny active size yet outperforms larger models on tool‑use and reasoning, offering a cheaper, open‑weight path to production agents."
 keywords: "DeepSeek V4 Flash, agentic AI, autonomous agents, LLM, open weights, tool use, cost efficiency"

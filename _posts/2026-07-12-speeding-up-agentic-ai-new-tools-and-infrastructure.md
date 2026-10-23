@@ -4,7 +4,12 @@ title: "Speeding Up Agentic AI: New Tools and Infrastructure"
 date: 2026-07-11 20:32:37 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM, infrastructure, speed"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
+  - infrastructure
+  - speed
 excerpt: "How recent releases in CLI tooling, cloud platforms, and model decoding are making autonomous agents faster and cheaper to run."
 description: "Exploring the latest developments—llm 0.31.1, Modal's agent‑centric cloud, and DeepSeek's speculative decoding—that are accelerating agentic AI workloads."
 keywords: "agentic AI, autonomous agents, LLM, infrastructure, speed, Modal, DeepSeek, GPT-5.6"

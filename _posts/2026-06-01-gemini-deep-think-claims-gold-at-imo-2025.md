@@ -4,7 +4,12 @@ title: "Gemini Deep Think Claims Gold at IMO 2025"
 date: 2026-06-01 04:31:45 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, mathematical reasoning, DeepMind, Gemini, AI research"
+tags:
+  - agentic AI
+  - mathematical reasoning
+  - DeepMind
+  - Gemini
+  - AI research
 excerpt: "Google DeepMind's Gemini Deep Think solves five IMO problems, achieving gold‑medal level reasoning and signaling a leap in AI mathematical capabilities."
 description: "DeepMind's Gemini Deep Think achieves gold‑medal performance at the 2025 International Mathematical Olympiad, showcasing breakthrough reasoning abilities for AI."
 keywords: "Gemini Deep Think, AI reasoning, International Mathematical Olympiad, DeepMind, autonomous agents, mathematical AI, AI breakthroughs"

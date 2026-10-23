@@ -4,7 +4,10 @@ title: "NVIDIA Cosmos 3: The Open Frontier Model for Physical AI"
 date: 2026-06-07 02:31:16 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "NVIDIA's new open omnimodel lets developers build robots and autonomous systems that perceive, reason, and act in the physical world."
 description: "Explore NVIDIA Cosmos 3, the first fully open physical-AI omnimodel that combines vision reasoning, world generation, and action prediction for next‑gen autonomous agents."
 keywords: "NVIDIA Cosmos 3, physical AI, autonomous agents, multimodal models, robotics, open AI models"

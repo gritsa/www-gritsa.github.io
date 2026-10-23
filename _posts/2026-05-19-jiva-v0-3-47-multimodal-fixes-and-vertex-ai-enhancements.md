@@ -4,7 +4,11 @@ title: "An old instruction in your agent's history will be obeyed later"
 date: 2026-05-19 00:00:00 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, prompt design, agent debugging, Jiva"
+tags:
+  - agentic AI
+  - prompt design
+  - agent debugging
+  - Jiva
 excerpt: "Jiva's final answers came back as raw JSON because a planning instruction was still in the conversation. The fix is a rule about context, not a better prompt."
 description: "Why an agent's final answer came back as raw JSON: a Respond ONLY with valid JSON instruction from the planning step stayed in history. How Jiva v0.3.47 fixed it."
 keywords: "agent final answer JSON, agent context management, planning and synthesis, Jiva, agent debugging"

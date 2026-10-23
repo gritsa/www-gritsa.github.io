@@ -4,7 +4,11 @@ title: "Kimi K3: 2.8‑Trillion‑Parameter Open Model Redefining Agentic AI"
 date: 2026-07-29 18:31:52 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, open-weight models, Kimi K3, LLM"
+tags:
+  - agentic AI
+  - open-weight models
+  - Kimi K3
+  - LLM
 excerpt: "Moonshot AI's Kimi K3 shatters context limits and multimodal boundaries, sparking a new wave of autonomous agents."
 description: "Moonshot AI's 2.8‑trillion‑parameter Kimi K3 pushes open‑weight LLMs into the long‑context, multimodal era, reshaping what autonomous agents can do."
 keywords: "agentic AI, open-weight models, Kimi K3, LLM, multimodal, long-context"

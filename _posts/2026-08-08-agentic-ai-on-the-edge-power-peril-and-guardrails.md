@@ -4,7 +4,12 @@ title: "Agentic AI on the Edge: Power, Peril, and Guardrails"
 date: 2026-08-07 18:32:36 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic-ai, autonomous-agents, safety, llm, guardrails"
+tags:
+  - agentic-ai
+  - autonomous-agents
+  - safety
+  - llm
+  - guardrails
 excerpt: "As autonomous agents become cheaper and more capable, real‑world incidents expose the risks and the urgent need for unified guardrails."
 description: "Exploring the recent AI Security Institute cyber‑testing mishap, the launch of ServiceNow‑AI's AprielGuard, and new low‑cost agent models, we argue that power without protection is a liability."
 keywords: "agentic AI, autonomous agents, safety guardrails, AI security, LLM agents"

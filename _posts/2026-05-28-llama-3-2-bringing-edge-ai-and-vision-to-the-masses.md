@@ -4,7 +4,10 @@ title: "Llama 3.2: Bringing Edge AI and Vision to the Masses"
 date: 2026-05-28 14:31:35 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic ai, autonomous agents, LLM"
+tags:
+  - agentic ai
+  - autonomous agents
+  - LLM
 excerpt: "Meta's Llama 3.2 introduces lightweight, vision-enabled models that run on mobile and edge devices, unlocking new possibilities for on‑device AI."
 description: "Explore Meta's Llama 3.2 release—small text‑only and multimodal models that run locally, boost privacy, and enable new edge AI applications."
 keywords: "Llama 3.2, edge AI, vision LLM, on‑device AI, open‑source LLM, multimodal models, privacy, low latency"

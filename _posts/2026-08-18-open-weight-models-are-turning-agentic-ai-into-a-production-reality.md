@@ -4,7 +4,10 @@ title: "Open‑Weight Models Are Turning Agentic AI Into a Production Reality"
 date: 2026-08-18 10:31:38 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Why the flood of new open‑weight LLMs is finally making autonomous agents practical for real‑world workloads."
 description: "Exploring how recent open‑weight model releases and the Agentic AI Summit are converging to bring production‑grade autonomous agents to enterprises."
 keywords: "agentic AI, open-weight models, autonomous agents, LLM, production AI"

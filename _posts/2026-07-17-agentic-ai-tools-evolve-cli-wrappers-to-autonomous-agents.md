@@ -4,7 +4,10 @@ title: "Agentic AI Tools Evolve: CLI Wrappers to Autonomous Agents"
 date: 2026-07-16 20:32:21 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM tools"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM tools
 excerpt: "How recent releases in CLI LLM tools, open‑source models, and agent‑focused infrastructure are shaping the next wave of autonomous AI."
 description: "Explore the latest developments in agentic AI—from Simon Willison’s llm 0.31.1 to Modal’s agent‑ready cloud and Vellum’s coding agents—and what they mean for developers."
 keywords: "agentic AI, autonomous agents, LLM tools, open-source models, AI infrastructure, coding agents, CLI LLM, Modal, Jiva"

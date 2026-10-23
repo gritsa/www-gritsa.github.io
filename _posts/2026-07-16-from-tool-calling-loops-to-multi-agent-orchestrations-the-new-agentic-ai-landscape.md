@@ -6,7 +6,7 @@ last_modified_at: 2026-10-16 16:30:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - AI agents
+  - - AI agents
   - Multi-agent systems
   - Agent architecture
 excerpt: "When a manager agent delegates to a specialist, the specialist knows only what the manager wrote down. How Jiva's spawn_agent works, what it hands over, and what it leaks."

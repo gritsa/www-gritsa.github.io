@@ -4,7 +4,10 @@ title: "Agentic AI: Open Models, Skill Tuning, Multi‑Agent Systems"
 date: 2026-07-23 18:32:53 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Open‑weight models are finally catching up, while new research treats agent skills as trainable parameters and multi‑agent orchestration becomes the norm."
 description: "Exploring how open‑source LLMs, skill‑optimization techniques, and coordinated multi‑agent architectures are shaping the next wave of agentic AI."
 keywords: "agentic AI, open models, skill tuning, multi‑agent systems, LLM, autonomous agents"

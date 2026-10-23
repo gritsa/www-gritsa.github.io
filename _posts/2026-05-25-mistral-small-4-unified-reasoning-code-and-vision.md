@@ -4,7 +4,10 @@ title: "Mistral Small 4: Unified Reasoning, Code, and Vision"
 date: 2026-05-25 18:31:54 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic ai, autonomous agents, LLM"
+tags:
+  - agentic ai
+  - autonomous agents
+  - LLM
 excerpt: "Mistral Small 4 merges reasoning, coding, and multimodal vision into a single open-source model, delivering frontier performance at a fraction of the cost."
 description: "Discover how Mistral Small 4 unifies reasoning, code generation, and multimodal vision in one open-source model, offering high performance and low cost for developers."
 keywords: "Mistral Small 4, agentic AI, multimodal model, open-source LLM, reasoning model, code generation, vision AI, cost-effective AI"

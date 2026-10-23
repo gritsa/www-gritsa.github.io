@@ -4,7 +4,10 @@ title: "Jiva v0.3.51: Better Tool‑Call Logging and Persona Fixes Power Smarter
 date: 2026-07-20 18:32:54 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Jiva's latest release adds detailed tool‑call logs and fixes a persona‑context leak, making autonomous agents more transparent and reliable."
 description: "What changed in Jiva v0.3.51: code-mode tool-call logs now show the arguments, and a stale persona prefix no longer leaks into code-mode log lines."
 keywords: "Jiva, autonomous agents, tool‑call logging, persona context, agentic AI, LLM, open‑source agents"

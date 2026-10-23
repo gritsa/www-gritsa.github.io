@@ -4,7 +4,10 @@ title: "From Open Models to Autonomous Agents: The 2026 Shift"
 date: 2026-08-19 18:32:54 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Open‑weight models and new design patterns are turning experimental AI into production‑grade autonomous agents."
 description: "Exploring how August 2026's open‑source LLM releases, agentic design patterns, and regulatory changes are converging to make autonomous agents a practical reality for enterprises."
 keywords: "agentic AI, autonomous agents, open-source LLM, DeepSeek-V4-Pro, Kimi K2.6, EU AI Act, design patterns, production AI"

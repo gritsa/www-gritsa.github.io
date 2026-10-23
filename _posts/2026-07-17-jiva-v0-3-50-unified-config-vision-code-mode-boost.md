@@ -4,7 +4,10 @@ title: "Three agent bugs with one cause: a reasoning model that ran out of token
 date: 2026-07-16 20:33:04 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, Jiva"
+tags:
+  - agentic AI
+  - autonomous agents
+  - Jiva
 excerpt: "A 20-token title call, a dropped max_tokens setting and a code agent that gave up early all traced back to the same thing: the model spent its budget thinking and never answered."
 description: "Three bugs fixed in Jiva v0.3.50 that share one root cause: a reasoning model exhausting its completion budget before producing visible output, and how to guard against it."
 keywords: "reasoning models, max tokens, finish_reason length, agent bugs, Jiva, autonomous agents"

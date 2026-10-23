@@ -6,7 +6,7 @@ last_modified_at: 2026-10-16 15:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - AI agents
+  - - AI agents
   - Guardrails
   - Agent evaluation
 excerpt: "Most agent guardrails watch what goes in and what comes out. The one I would add first checks the agent's claims against its own tool log. Here is how Jiva does it, and where that check fails open."

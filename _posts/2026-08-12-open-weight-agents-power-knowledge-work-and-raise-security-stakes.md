@@ -4,7 +4,12 @@ title: "Open‑Weight Agents Power Knowledge Work – And Raise Security Stakes"
 date: 2026-08-11 18:33:09 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic ai, autonomous agents, open-weight models, knowledge work agents, AI security"
+tags:
+  - agentic ai
+  - autonomous agents
+  - open-weight models
+  - knowledge work agents
+  - AI security
 excerpt: "Open‑weight models are unlocking new knowledge‑work agents, but recent security breaches show the risks of giving AI real‑world agency."
 description: "How Meta's Muse Glimmer, Replit's knowledge‑work agents, and recent AI security incidents illustrate the fast‑moving, high‑stakes evolution of agentic AI."
 keywords: "agentic AI, open-weight models, knowledge work agents, AI security, autonomous agents"

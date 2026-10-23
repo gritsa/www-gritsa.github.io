@@ -4,7 +4,10 @@ title: "From Coding to Knowledge: How Agentic AI Is Expanding Beyond Code"
 date: 2026-08-18 10:43:01 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, knowledge work"
+tags:
+  - agentic AI
+  - autonomous agents
+  - knowledge work
 excerpt: "Agentic AI is moving from coding assistants to knowledge‑work partners, powered by tools like Replit Agent 4 and Databricks’ Omnigent."
 description: "Explore how the latest agentic AI tools are shifting from code generation to knowledge‑work automation, with Replit Agent 4 and Databricks Omnigent leading the way."
 keywords: "agentic AI, knowledge work agents, Replit Agent 4, Omnigent, multi‑agent orchestration, autonomous agents"

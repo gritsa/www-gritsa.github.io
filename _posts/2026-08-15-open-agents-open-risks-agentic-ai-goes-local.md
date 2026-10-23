@@ -4,7 +4,12 @@ title: "Open Agents, Open Risks: Agentic AI Goes Local"
 date: 2026-08-14 22:31:39 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, open-weight models, security, local AI"
+tags:
+  - agentic AI
+  - autonomous agents
+  - open-weight models
+  - security
+  - local AI
 excerpt: "Agentic AI is moving from closed labs to open, local models, but the rapid expansion brings new security challenges."
 description: "Discover how open‑weight models like Meta's Muse Glimmer and performance gains in Grok 4.6 are reshaping agentic AI, and why security guardrails are essential."
 keywords: "agentic AI, autonomous agents, open-weight models, security guardrails, local AI"

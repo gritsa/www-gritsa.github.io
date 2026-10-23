@@ -6,7 +6,7 @@ last_modified_at: 2026-10-15 16:30:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - AI agents
+  - - AI agents
   - Agent architecture
   - Multi-tenant
 excerpt: "Splitting an agent in two is a cost you pay for a benefit. Here is when the benefit shows up, and the production bug that taught us where the real boundary sits."

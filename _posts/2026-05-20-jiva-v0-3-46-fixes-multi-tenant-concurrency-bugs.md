@@ -4,7 +4,10 @@ title: "Jiva v0.3.46 Fixes Multi-Tenant Concurrency Bugs"
 date: 2026-05-20 08:00:00 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, Jiva"
+tags:
+  - agentic AI
+  - autonomous agents
+  - Jiva
 excerpt: "Jiva v0.3.46 fixes six concurrency bugs in the HTTP and Cloud Run interface. One shared object, mutated across an await, let one tenant's requests write into another tenant's storage path."
 description: "What changed in Jiva v0.3.46: the shared storage provider that corrupted cross-tenant GCS paths, a session race that leaked sub-processes, a logger singleton that mixed tenants, and the gcp alias that silently fell back to local storage."
 keywords: "Jiva, multi-tenant, concurrency, Cloud Run, storage provider, session isolation, AI agent framework"

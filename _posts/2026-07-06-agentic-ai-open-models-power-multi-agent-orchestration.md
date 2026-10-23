@@ -4,7 +4,10 @@ title: "Agentic AI: Open Models Power Multi‑Agent Orchestration"
 date: 2026-07-05 18:34:34 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, open-source models"
+tags:
+  - agentic AI
+  - autonomous agents
+  - open-source models
 excerpt: "Open‑source LLMs are now orchestrating teams of sub‑agents, reshaping how we build AI‑driven software."
 description: "Explore how recent open‑source releases and industry shifts are turning agentic AI into a collaborative workforce, with multi‑agent orchestration at its core."
 keywords: "agentic AI, multi-agent orchestration, open-source LLMs, autonomous agents, AI agents, Jiva, Gritsa Technologies"

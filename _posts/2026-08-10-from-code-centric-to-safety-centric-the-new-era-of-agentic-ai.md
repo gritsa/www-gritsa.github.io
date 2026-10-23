@@ -4,7 +4,10 @@ title: "From Code‑Centric to Safety‑Centric: The New Era of Agentic AI"
 date: 2026-08-09 18:33:33 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "Meta’s Muse Spark 1.2 and Muse Code, a leading provider’s biology safeguards, and emerging security frameworks show a shift toward trustworthy, auditable AI agents."
 description: "Exploring how recent releases and safety advances are reshaping agentic AI from powerful tools to governed, production‑ready systems."
 keywords: "agentic AI, autonomous agents, LLM, safety, governance, coding agents, Muse Spark, security best practices"

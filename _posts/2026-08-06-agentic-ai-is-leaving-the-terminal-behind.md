@@ -6,7 +6,7 @@ last_modified_at: 2026-10-17 15:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - AI agents
+  - - AI agents
   - Agent memory
   - Context engineering
 excerpt: "People ask for agents with memory. Open the code of a working agent and the memory is a summary, written by a model, from evidence it was only shown part of. What Jiva keeps, what it drops, and what to do about it."

@@ -4,7 +4,10 @@ title: "Agentic AI Tools Launch: New Releases Empower Agents"
 date: 2026-07-21 18:31:54 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "A wave of fresh releases—llm 0.31.1, Laguna XS 2.1, GPT‑Live‑1, and more—shows how agents are finally getting the tools they need to act on their own."
 description: "New open‑source and commercial releases are giving AI agents the capabilities they need to plan, code, and execute tasks autonomously."
 keywords: "agentic AI, autonomous agents, LLM, llm 0.31.1, Laguna XS 2.1, GPT‑Live‑1, AI tools"

@@ -4,7 +4,10 @@ title: "OpenAI's Dreaming V3: A New Era for ChatGPT Memory"
 date: 2026-06-08 02:31:22 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "OpenAI's latest memory upgrade, Dreaming V3, lets ChatGPT remember you better than ever."
 description: "Explore how OpenAI's Dreaming V3 memory system works, its impact on user experience, and what it means for the future of AI assistants."
 keywords: "OpenAI, ChatGPT, Dreaming V3, memory, AI assistants, personalization"

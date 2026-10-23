@@ -4,7 +4,12 @@ title: "Agentic AI Q2 2026: Pilot‑to‑Production Conversion Doubles and MCP A
 date: 2026-06-01 00:31:33 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, MCP, pilot to production, AI adoption"
+tags:
+  - agentic AI
+  - autonomous agents
+  - MCP
+  - pilot to production
+  - AI adoption
 excerpt: "Q2 2026 marks a turning point: enterprise pilots become production systems, MCP servers hit 9,400, and funding for agentic AI explodes."
 description: "Explore the latest Q2 2026 data on agentic AI adoption, MCP growth, and the doubling of pilot‑to‑production conversion rates."
 keywords: "agentic AI, autonomous agents, MCP, pilot to production, AI adoption, Q2 2026"

@@ -4,7 +4,12 @@ title: "Google I/O 2026: The Agentic Gemini Era"
 date: 2026-06-08 00:31:27 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic ai, google, gemini, ai agents, generative ui"
+tags:
+  - agentic ai
+  - google
+  - gemini
+  - ai agents
+  - generative ui
 excerpt: "Explore how Google’s I/O 2026 introduced Gemini 3.5 Flash, AI agents, and generative UI, marking the shift to agentic AI in search and apps."
 description: "Explore how Google’s I/O 2026 introduced Gemini 3.5 Flash, AI agents, and generative UI, marking the shift to agentic AI in search and apps."
 keywords: "agentic AI, Gemini 3.5 Flash, AI agents, generative UI, Google I/O 2026"

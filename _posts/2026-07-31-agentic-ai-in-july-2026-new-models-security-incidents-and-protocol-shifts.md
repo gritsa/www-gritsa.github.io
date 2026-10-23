@@ -4,7 +4,10 @@ title: "Agentic AI in July 2026: New Models, Security Incidents, and Protocol Sh
 date: 2026-07-30 18:31:48 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, LLM"
+tags:
+  - agentic AI
+  - autonomous agents
+  - LLM
 excerpt: "July 2026 brings fresh model releases, a stark security breach, and a stateless protocol that could reshape how we build agents."
 description: "A look at the latest agentic AI developments—OpenAI's GPT‑5.6 family, a major security incident, and the MCP 2026‑07‑28 release—showing how the field is moving from hype to production."
 keywords: "agentic AI, autonomous agents, LLM, GPT-5.6, security incident, MCP protocol"

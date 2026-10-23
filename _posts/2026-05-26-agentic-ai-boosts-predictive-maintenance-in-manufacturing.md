@@ -4,7 +4,12 @@ title: "Agentic AI Boosts Predictive Maintenance in Manufacturing"
 date: 2026-05-26 10:31:50 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic ai, autonomous agents, manufacturing, predictive maintenance, AI"
+tags:
+  - agentic ai
+  - autonomous agents
+  - manufacturing
+  - predictive maintenance
+  - AI
 excerpt: "Discover how autonomous AI agents are revolutionizing predictive maintenance, cutting downtime and boosting efficiency in modern factories."
 description: "Explore the impact of agentic AI on predictive maintenance in manufacturing, with real-world examples and future trends."
 keywords: "agentic AI, predictive maintenance, manufacturing, autonomous agents, AI-driven operations"

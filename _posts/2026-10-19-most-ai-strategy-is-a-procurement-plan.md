@@ -5,7 +5,7 @@ date: 2026-10-19 09:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - AI strategy
+  - - AI strategy
   - Future readiness
   - AI agents
 excerpt: "If your AI strategy fits on a vendor's slide, it's the vendor's strategy."

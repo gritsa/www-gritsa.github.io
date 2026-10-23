@@ -6,7 +6,7 @@ last_modified_at: 2026-10-17 17:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - AI agents
+  - - AI agents
   - Agent infrastructure
   - Configuration
 excerpt: "Ask where an agent's configuration lives and the answer is never one file. Jiva reads settings from a config file, from environment variables and from the request, and the order they win in has consequences for key rotation, defaults and debugging."

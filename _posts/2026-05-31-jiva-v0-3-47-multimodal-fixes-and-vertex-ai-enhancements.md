@@ -4,7 +4,10 @@ title: "Jiva v0.3.47: Multimodal Fixes and Vertex AI Enhancements"
 date: 2026-05-31 06:31:35 +0000
 author: "Gritsa"
 categories: "AI Technology"
-tags: "agentic AI, autonomous agents, Jiva"
+tags:
+  - agentic AI
+  - autonomous agents
+  - Jiva
 excerpt: "Jiva v0.3.47 fixes four bugs that broke image analysis, tool calls on Vertex AI and the final answer format, and adds Google Application Default Credentials."
 description: "What changed in Jiva v0.3.47: the Groq empty-content error on image tools, Vertex AI tool-call parsing, JSON leaking into the final answer, a CLI model field bug, Google ADC and a higher sub-agent iteration limit."
 keywords: "Jiva, autonomous agents, multimodal AI, Vertex AI, Google ADC, open-source AI"
