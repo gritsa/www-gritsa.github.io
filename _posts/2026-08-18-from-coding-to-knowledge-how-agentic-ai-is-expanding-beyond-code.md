@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, knowledge work"
 excerpt: "Agentic AI is moving from coding assistants to knowledge‑work partners, powered by tools like Replit Agent 4 and Databricks’ Omnigent."
 description: "Explore how the latest agentic AI tools are shifting from code generation to knowledge‑work automation, with Replit Agent 4 and Databricks Omnigent leading the way."
 keywords: "agentic AI, knowledge work agents, Replit Agent 4, Omnigent, multi‑agent orchestration, autonomous agents"
-featured_image: "/assets/img/posts/2026-08-18-from-coding-to-knowledge-how-agentic-ai-is-expanding-beyond-code.png"
+featured_image: "/assets/img/posts/2026-08-18-from-coding-to-knowledge-how-agentic-ai-is-expanding-beyond-code.jpg"
 ---
 
 I’ve been watching the agentic AI landscape for months, and the most striking shift this week isn’t a new model size or a faster inference engine. It’s the way agents are leaving the terminal and stepping into the messy world of knowledge work. Two releases illustrate this pivot perfectly: Replit’s Agent 4, a “knowledge‑work” assistant, and Databricks’ open‑source Omnigent, a meta‑harness that lets you compose, govern, and share agents across coding and non‑coding tasks.

@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "The same capabilities that let agents write code and teach classrooms also let them run five‑day cyberattacks. Here's what's happening."
 description: "Exploring the rapid evolution of agentic AI, from powerful new models to real-world security incidents and scientific breakthroughs."
 keywords: "agentic AI, autonomous agents, LLM, DeepSeek, MiniMax, OpenAI, scientific computing"
-featured_image: "/assets/img/posts/2026-08-04-agentic-ai-is-finally-getting-real-and-reckoning-with-its-own-power.png"
+featured_image: "/assets/img/posts/2026-08-04-agentic-ai-is-finally-getting-real-and-reckoning-with-its-own-power.jpg"
 ---
 
 I keep seeing the same pattern in the AI world: a breakthrough that feels like magic, followed quickly by a reminder that magic can be dangerous.

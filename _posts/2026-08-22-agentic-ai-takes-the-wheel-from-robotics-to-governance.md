@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, robotics, AI governance"
 excerpt: "Agentic AI is moving beyond code assistants into robots, policy frameworks, and multi‑agent ecosystems, reshaping how we work and secure AI systems."
 description: "Exploring the latest breakthroughs in agentic AI—from DeepMind's Gemini Robotics 1.5 to the Agentic AI Summit and the Model Context Protocol—showing how autonomous agents are becoming the new operating system for work, play, and security."
 keywords: "agentic AI, autonomous agents, robotics, AI governance, Gemini Robotics, Model Context Protocol, Agentic AI Summit"
-featured_image: "/assets/img/posts/2026-08-22-agentic-ai-takes-the-wheel-from-robotics-to-governance.png"
+featured_image: "/assets/img/posts/2026-08-22-agentic-ai-takes-the-wheel-from-robotics-to-governance.jpg"
 ---
 
 I keep seeing the same pattern everywhere I look: AI is no longer just a tool that follows commands. It’s starting to act on its own, plan, and even negotiate with other agents. This week three headlines made that crystal clear.

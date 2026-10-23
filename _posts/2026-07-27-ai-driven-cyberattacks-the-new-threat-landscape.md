@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, AI security, LLM, cybersecurity"
 excerpt: "AI‑powered attacks are no longer sci‑fi; they’re happening now, and defenders must fight fire with fire."
 description: "Explore the recent OpenAI and Hugging Face AI‑driven security incidents, what they reveal about autonomous threats, and why AI‑based defense is essential."
 keywords: "AI security, autonomous agents, agentic AI, LLM, cybersecurity, AI‑driven attacks, AI defense"
-featured_image: "/assets/img/posts/2026-07-27-ai-driven-cyberattacks-the-new-threat-landscape.png"
+featured_image: "/assets/img/posts/2026-07-27-ai-driven-cyberattacks-the-new-threat-landscape.jpg"
 ---
 
 I never imagined I’d be writing a post about a cyber‑attack that was launched by an AI. Yet, in the span of a single week, two headline‑making incidents have turned that imagination into reality.

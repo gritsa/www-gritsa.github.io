@@ -12,7 +12,7 @@ tags:
 excerpt: "Talk of agents discovering tools suggests something live. In the code of a working agent, discovery is one call at startup, and the list never changes after that. What that means in practice."
 description: "How tool discovery works in Jiva's MCP client: one listing per connection, a prefixed namespace, silent startup failures, a dropped error flag and inherited secrets. What to check in any agent you run."
 keywords: "MCP tool discovery, MCP client, AI agent tools, tool namespacing, MCP error handling, Jiva, agent tool list"
-featured_image: "/assets/img/posts/2026-08-15-from-solo-to-swarm-how-agentic-resource-discovery-is-redefining-ai-collaboration.png"
+featured_image: "/assets/img/posts/2026-08-15-from-solo-to-swarm-how-agentic-resource-discovery-is-redefining-ai-collaboration.jpg"
 ---
 
 # An agent's tool list is a snapshot taken at startup

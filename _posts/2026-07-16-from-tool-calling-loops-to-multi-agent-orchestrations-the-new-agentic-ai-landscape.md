@@ -12,7 +12,7 @@ tags:
 excerpt: "When a manager agent delegates to a specialist, the specialist knows only what the manager wrote down. How Jiva's spawn_agent works, what it hands over, and what it leaks."
 description: "How delegation works in a multi-agent system: Jiva's spawn_agent tool, the depth limit, what a sub-agent receives, why the brief is the real design problem, and where persona scoping stops."
 keywords: "multi-agent orchestration, sub-agent, spawn agent, agent delegation, manager worker agents, Jiva"
-featured_image: "/assets/img/posts/2026-07-16-from-tool-calling-loops-to-multi-agent-orchestrations-the-new-agentic-ai-landscape.png"
+featured_image: "/assets/img/posts/2026-07-16-from-tool-calling-loops-to-multi-agent-orchestrations-the-new-agentic-ai-landscape.jpg"
 ---
 
 # A sub-agent is a function call with a briefing problem

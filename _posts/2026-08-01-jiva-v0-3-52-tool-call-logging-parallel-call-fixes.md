@@ -10,7 +10,7 @@ tags: "agentic ai, jiva, autonomous agents"
 excerpt: "Jiva’s latest release adds tool‑call logging, recursive argument truncation, and fixes parallel tool‑call bugs, boosting agent reliability in production."
 description: "Jiva’s latest release adds tool‑call logging, recursive argument truncation, and fixes parallel tool‑call bugs, boosting agent reliability in production."
 keywords: "Jiva, agentic AI, tool-call logging, parallel tool calls, autonomous agents"
-featured_image: "/assets/img/posts/2026-08-01-jiva-v0-3-52-tool-call-logging-parallel-call-fixes.png"
+featured_image: "/assets/img/posts/2026-08-01-jiva-v0-3-52-tool-call-logging-parallel-call-fixes.jpg"
 ---
 
 I’ve been watching the agentic AI space shift from flashy demos to the gritty work of making autonomous agents trustworthy. This week, the Jiva team dropped **v0.3.52**, and the changes feel like a quiet but essential step toward that trust.

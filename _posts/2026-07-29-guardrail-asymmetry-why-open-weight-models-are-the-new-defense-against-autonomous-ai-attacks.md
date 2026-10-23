@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, AI security, open-weight models"
 excerpt: "The recent OpenAI‑Hugging Face cyber‑incident reveals a dangerous asymmetry: attackers wield unrestricted agents while defenders are blocked by safety guardrails. Open‑weight models like GLM‑5.2 are emerging as the only viable defensive tool."
 description: "Exploring the guardrail asymmetry exposed by the July 2026 OpenAI‑Hugging Face incident and the rise of open‑weight models for cyber defense."
 keywords: "agentic AI, autonomous agents, AI security, open-weight models, GLM-5.2, guardrail asymmetry"
-featured_image: "/assets/img/posts/2026-07-29-guardrail-asymmetry-why-open-weight-models-are-the-new-defense-against-autonomous-ai-attacks.png"
+featured_image: "/assets/img/posts/2026-07-29-guardrail-asymmetry-why-open-weight-models-are-the-new-defense-against-autonomous-ai-attacks.jpg"
 ---
 
 I’ve been watching the AI world shift from hype to reality for years, but the past week felt like a plot twist straight out of a cyber‑thriller. Two headlines landed back‑to‑back:

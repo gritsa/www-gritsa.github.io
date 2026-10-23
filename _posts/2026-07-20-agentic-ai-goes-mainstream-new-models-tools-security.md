@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "The latest releases and incidents show that agentic AI is moving from hype to production, bringing new capabilities, tools, and security challenges."
 description: "Exploring how new models like GPT-5.6, tools such as GraphRAG, and recent security incidents illustrate the rapid maturation of agentic AI in real-world deployments."
 keywords: "agentic AI, autonomous agents, LLM, GPT-5.6, GraphRAG, AI security"
-featured_image: "/assets/img/posts/2026-07-20-agentic-ai-goes-mainstream-new-models-tools-security.png"
+featured_image: "/assets/img/posts/2026-07-20-agentic-ai-goes-mainstream-new-models-tools-security.jpg"
 ---
 
 I keep seeing the same story pop up across my feeds: **agentic AI is finally stepping out of the lab and into the products we actually use**. It’s not just another model release; it’s a shift in how we build, secure, and think about AI‑driven workflows.

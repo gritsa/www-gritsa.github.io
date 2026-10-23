@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Google’s new Gemini 3.5 Flash and Antigravity platform shift the focus from raw benchmark scores to high‑throughput agent orchestration, while open‑source models offer a cost‑effective alternative."
 description: "Exploring the speed‑first era of agentic AI, Google’s Gemini 3.5 Flash, Antigravity, and how open‑source models like Kimi K2.6 and DeepSeek V4 are reshaping the landscape."
 keywords: "agentic AI, autonomous agents, LLM, Gemini 3.5 Flash, Antigravity, open-source LLM, Kimi K2.6, DeepSeek V4"
-featured_image: "/assets/img/posts/2026-07-08-speed-first-agentic-ai-google-s-3-5-flash-antigravity-and-the-open-source-counter-wave.png"
+featured_image: "/assets/img/posts/2026-07-08-speed-first-agentic-ai-google-s-3-5-flash-antigravity-and-the-open-source-counter-wave.jpg"
 ---
 
 I’ve been watching the AI world pivot from “bigger is better” to “faster is smarter.” The latest moves from Google and the open‑source community make it clear: the next wave of agentic AI will be defined by speed, orchestration, and cost‑effective alternatives.

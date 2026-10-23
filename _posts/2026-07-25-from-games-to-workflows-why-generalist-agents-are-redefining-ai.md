@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Generalist agents that can act across games, code, and real‑world tasks are emerging, reshaping how we build AI systems."
 description: "Exploring the rise of generalist, multi‑modal agents—from DeepMind's SIMA to OpenAI's GPT‑5.6 and Meta's Muse Spark—and what they mean for developers."
 keywords: "agentic AI, generalist agents, multi‑modal AI, autonomous agents, LLM"
-featured_image: "/assets/img/posts/2026-07-25-from-games-to-workflows-why-generalist-agents-are-redefining-ai.png"
+featured_image: "/assets/img/posts/2026-07-25-from-games-to-workflows-why-generalist-agents-are-redefining-ai.jpg"
 ---
 
 I’ve been watching a quiet but profound shift in the AI landscape over the past week. It isn’t a single headline‑grabbing model; it’s the convergence of several releases that together point to a new era of **generalist agents**—systems that can perceive, reason, and act across wildly different domains, from video‑game worlds to production codebases.

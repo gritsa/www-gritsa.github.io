@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, Jiva"
 excerpt: "A 20-token title call, a dropped max_tokens setting and a code agent that gave up early all traced back to the same thing: the model spent its budget thinking and never answered."
 description: "Three bugs fixed in Jiva v0.3.50 that share one root cause: a reasoning model exhausting its completion budget before producing visible output, and how to guard against it."
 keywords: "reasoning models, max tokens, finish_reason length, agent bugs, Jiva, autonomous agents"
-featured_image: "/assets/img/posts/2026-07-17-jiva-v0-3-50-unified-config-vision-code-mode-boost.png"
+featured_image: "/assets/img/posts/2026-07-17-jiva-v0-3-50-unified-config-vision-code-mode-boost.jpg"
 ---
 
 Updated 2026-10-16: rewritten from the Jiva v0.3.50 release notes. The original post duplicated the [full release note](/blog/2026/07/14/jiva-v0-3-50-unified-config-vision-code-mode/); this one covers a single pattern from it.

@@ -12,7 +12,7 @@ tags:
 excerpt: "An agent skill is a folder with one required file. What decides whether the agent ever uses it is a single line of metadata. How Jiva loads skills, and where the loading stops short."
 description: "How agent skills work in Jiva: three layers of progressive disclosure, why the description field does the routing, what the validator enforces, and what allowed-tools does not."
 keywords: "agent skills, SKILL.md, progressive disclosure, context window, agent personas, Jiva, skill routing"
-featured_image: "/assets/img/posts/2026-07-14-ai-agents-take-over-from-code-to-web-apps.png"
+featured_image: "/assets/img/posts/2026-07-14-ai-agents-take-over-from-code-to-web-apps.jpg"
 ---
 
 # A skill is a routing rule, and the description is the whole rule

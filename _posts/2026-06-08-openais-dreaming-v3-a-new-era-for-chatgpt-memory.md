@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "OpenAI's latest memory upgrade, Dreaming V3, lets ChatGPT remember you better than ever."
 description: "Explore how OpenAI's Dreaming V3 memory system works, its impact on user experience, and what it means for the future of AI assistants."
 keywords: "OpenAI, ChatGPT, Dreaming V3, memory, AI assistants, personalization"
-featured_image: "/assets/img/posts/2026-06-08-openais-dreaming-v3-a-new-era-for-chatgpt-memory.png"
+featured_image: "/assets/img/posts/2026-06-08-openais-dreaming-v3-a-new-era-for-chatgpt-memory.jpg"
 ---
 
 OpenAI just rolled out **Dreaming V3**, a groundbreaking memory upgrade for ChatGPT that promises to keep the conversation flowing long after you’ve logged off. Announced on June 4, 2026, this new system replaces the old, manually curated saved‑memories list with a background synthesis process that reads across years of past chats and continuously updates what the model knows about you—no explicit “remember this” command required.

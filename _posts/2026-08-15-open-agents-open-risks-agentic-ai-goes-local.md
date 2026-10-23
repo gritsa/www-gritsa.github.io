@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, open-weight models, security, local AI"
 excerpt: "Agentic AI is moving from closed labs to open, local models, but the rapid expansion brings new security challenges."
 description: "Discover how open‑weight models like Meta's Muse Glimmer and performance gains in Grok 4.6 are reshaping agentic AI, and why security guardrails are essential."
 keywords: "agentic AI, autonomous agents, open-weight models, security guardrails, local AI"
-featured_image: "/assets/img/posts/2026-08-15-open-agents-open-risks-agentic-ai-goes-local.png"
+featured_image: "/assets/img/posts/2026-08-15-open-agents-open-risks-agentic-ai-goes-local.jpg"
 ---
 
 I’ve been watching the agentic AI landscape shift under my own eyes this week, and it feels like the ground is moving from a closed laboratory into the open air of everyday devices. The four stories that caught my attention all point to the same tension: **more power, more openness, and more risk**.

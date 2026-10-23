@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, open-source models"
 excerpt: "Open‑source LLMs are now orchestrating teams of sub‑agents, reshaping how we build AI‑driven software."
 description: "Explore how recent open‑source releases and industry shifts are turning agentic AI into a collaborative workforce, with multi‑agent orchestration at its core."
 keywords: "agentic AI, multi-agent orchestration, open-source LLMs, autonomous agents, AI agents, Jiva, Gritsa Technologies"
-featured_image: "/assets/img/posts/2026-07-06-agentic-ai-open-models-power-multi-agent-orchestration.png"
+featured_image: "/assets/img/posts/2026-07-06-agentic-ai-open-models-power-multi-agent-orchestration.jpg"
 ---
 
 I’ve been watching a quiet revolution unfold in the AI community. It’s not a single breakthrough model or a headline‑grabbing product launch; it’s the way developers are now **building teams of agents that talk to each other, share tools, and finish whole projects without a human in the loop**. The pieces are falling into place across blogs, research papers, and open‑source releases, and they point to a new operating system for AI: **agentic orchestration**.

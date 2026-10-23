@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, Jiva"
 excerpt: "Jiva v0.3.50 moves the CLI and the HTTP interface onto one config file, waits before it hits a provider's rate limit, and lets a single model handle both reasoning and images."
 description: "What changed in Jiva v0.3.50: one config file at ~/.jiva/config.json, proactive rate limiting with Retry-After, vision detection in setup, native vision for reasoning models and a skeleton-first code mode."
 keywords: "Jiva, autonomous agents, rate limiting, vision models, code mode, configuration, open source"
-featured_image: "/assets/img/posts/2026-07-15-jiva-v0-3-50-unified-config-vision-code-mode.png"
+featured_image: "/assets/img/posts/2026-07-15-jiva-v0-3-50-unified-config-vision-code-mode.jpg"
 ---
 
 Updated 2026-10-16: rewritten from the v0.3.50 release notes. The original post restated the changelog in marketing language and glossed over what each change fixes.

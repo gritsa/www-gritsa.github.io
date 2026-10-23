@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "OpenAI's latest model cuts hallucinations and speeds up responses, reshaping daily AI interactions."
 description: "OpenAI's GPT-5.5 Instant reduces hallucinations by over 50% and delivers faster, more concise answers, making it the new default for ChatGPT users."
 keywords: "GPT-5.5 Instant, ChatGPT, OpenAI, AI safety, LLM performance"
-featured_image: "/assets/img/posts/2026-06-07-openais-gpt-5-5-instant-a-faster-safer-default-for-chatgpt.png"
+featured_image: "/assets/img/posts/2026-06-07-openais-gpt-5-5-instant-a-faster-safer-default-for-chatgpt.jpg"
 ---
 
 OpenAI has quietly rolled out a significant upgrade to the AI experience most of us use every day. On May 5, 2026, the company replaced the long‑standing GPT‑5.3 Instant with **GPT‑5.5 Instant** as the default model for ChatGPT on both web and mobile. The change is more than a version bump—it delivers a measurable drop in hallucinations, a noticeable speed boost, and tighter controls for everyday users.

@@ -8,7 +8,7 @@ tags: "agentic AI, prompt design, agent debugging, Jiva"
 excerpt: "Jiva's final answers came back as raw JSON because a planning instruction was still in the conversation. The fix is a rule about context, not a better prompt."
 description: "Why an agent's final answer came back as raw JSON: a Respond ONLY with valid JSON instruction from the planning step stayed in history. How Jiva v0.3.47 fixed it."
 keywords: "agent final answer JSON, agent context management, planning and synthesis, Jiva, agent debugging"
-featured_image: "/assets/img/posts/2026-05-19-jiva-v0-3-47-multimodal-fixes-and-vertex-ai-enhancements.png"
+featured_image: "/assets/img/posts/2026-05-19-jiva-v0-3-47-multimodal-fixes-and-vertex-ai-enhancements.jpg"
 ---
 
 Updated 2026-10-16: rewritten around one bug from the Jiva v0.3.47 release notes. The full changelog is in [the release post](/blog/2026/05/31/jiva-v0-3-47-multimodal-fixes-and-vertex-ai-enhancements/).

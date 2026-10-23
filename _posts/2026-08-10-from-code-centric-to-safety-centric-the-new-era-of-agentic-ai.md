@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Meta’s Muse Spark 1.2 and Muse Code, a leading provider’s biology safeguards, and emerging security frameworks show a shift toward trustworthy, auditable AI agents."
 description: "Exploring how recent releases and safety advances are reshaping agentic AI from powerful tools to governed, production‑ready systems."
 keywords: "agentic AI, autonomous agents, LLM, safety, governance, coding agents, Muse Spark, security best practices"
-featured_image: "/assets/img/posts/2026-08-10-from-code-centric-to-safety-centric-the-new-era-of-agentic-ai.png"
+featured_image: "/assets/img/posts/2026-08-10-from-code-centric-to-safety-centric-the-new-era-of-agentic-ai.jpg"
 ---
 
 I’ve been watching the agentic AI landscape for a while, and the past week feels like a turning point. It’s no longer enough to ship a model that can write code or answer questions. The conversation has moved to **how we make those agents trustworthy, auditable, and safe enough for real‑world deployment**.

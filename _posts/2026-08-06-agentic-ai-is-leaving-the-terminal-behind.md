@@ -12,7 +12,7 @@ tags:
 excerpt: "People ask for agents with memory. Open the code of a working agent and the memory is a summary, written by a model, from evidence it was only shown part of. What Jiva keeps, what it drops, and what to do about it."
 description: "How context compaction works in Jiva: what is kept verbatim, what is summarized, how tool results are truncated before the summarizer sees them, and what that means for any agent you run in production."
 keywords: "agent memory, context compaction, conversation summarization, context window, AI agents, Jiva, context engineering"
-featured_image: "/assets/img/posts/2026-08-06-agentic-ai-is-leaving-the-terminal-behind.png"
+featured_image: "/assets/img/posts/2026-08-06-agentic-ai-is-leaving-the-terminal-behind.jpg"
 ---
 
 # Agent memory is whatever survives the summary

@@ -8,7 +8,7 @@ tags: "agentic AI, multimodal, open-weight, knowledge work, speech"
 excerpt: "Open‑weight multimodal agents are moving from code to everyday tasks, powering knowledge work and interactive speech."
 description: "Explore how recent open‑weight releases, knowledge‑work agents, and interactive speech systems are turning AI agents into everyday utilities."
 keywords: "agentic AI, multimodal models, open-weight agents, knowledge work agents, interactive speech, AI agents"
-featured_image: "/assets/img/posts/2026-08-23-agents-local-multimodal-models-for-knowledge-work.png"
+featured_image: "/assets/img/posts/2026-08-23-agents-local-multimodal-models-for-knowledge-work.jpg"
 ---
 
 I’ve been watching a quiet shift that feels bigger than any single model release. Over the past week, three seemingly unrelated announcements converged on the same idea: **agents are becoming local, multimodal, and ready for the kinds of knowledge‑work and speech tasks that used to live in separate silos**.

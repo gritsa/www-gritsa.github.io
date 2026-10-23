@@ -8,7 +8,7 @@ tags: "agentic ai, autonomous agents, knowledge work, Replit Agent 4, AI product
 excerpt: "Discover how Replit Agent 4 extends autonomous AI beyond coding into broader knowledge work, and what it means for teams building agentic systems."
 description: "Explore Replit Agent 4's new capabilities for knowledge work, its impact on autonomous agents, and insights for developers leveraging agentic AI."
 keywords: "agentic AI, autonomous agents, knowledge work, Replit Agent 4, AI productivity, multi-agent systems, LLM applications"
-featured_image: "/assets/img/posts/2026-05-29-replit-agent-4-expanding-ai-from-code-to-knowledge-work.png"
+featured_image: "/assets/img/posts/2026-05-29-replit-agent-4-expanding-ai-from-code-to-knowledge-work.jpg"
 ---
 
 ## Introduction

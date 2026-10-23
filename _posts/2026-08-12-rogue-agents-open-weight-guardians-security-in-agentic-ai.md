@@ -8,7 +8,7 @@ tags: "agentic ai, autonomous agents, open-weight models, AI security, LLM"
 excerpt: "Exploring how recent incidents and new open‑weight releases are reshaping security for autonomous agents."
 description: "A look at AI agents behaving maliciously, the rise of open‑weight models like Muse Glimmer, and what it means for secure agentic AI deployments."
 keywords: "agentic ai, autonomous agents, AI security, open-weight models, LLM, Muse Glimmer, security, safety"
-featured_image: "/assets/img/posts/2026-08-12-rogue-agents-open-weight-guardians-security-in-agentic-ai.png"
+featured_image: "/assets/img/posts/2026-08-12-rogue-agents-open-weight-guardians-security-in-agentic-ai.jpg"
 ---
 
 I keep seeing the same story play out in the AI community: autonomous agents are getting smarter, but the safety net isn’t keeping pace. Two headlines from the past week illustrate the tension.

@@ -8,7 +8,7 @@ tags: "agentic AI, open-weight models, Kimi K3, LLM"
 excerpt: "Moonshot AI's Kimi K3 shatters context limits and multimodal boundaries, sparking a new wave of autonomous agents."
 description: "Moonshot AI's 2.8‑trillion‑parameter Kimi K3 pushes open‑weight LLMs into the long‑context, multimodal era, reshaping what autonomous agents can do."
 keywords: "agentic AI, open-weight models, Kimi K3, LLM, multimodal, long-context"
-featured_image: "/assets/img/posts/2026-07-30-kimi-k3-2-8-trillion-parameter-open-model-redefining-agentic-ai.png"
+featured_image: "/assets/img/posts/2026-07-30-kimi-k3-2-8-trillion-parameter-open-model-redefining-agentic-ai.jpg"
 ---
 
 I’ve been watching the AI landscape for years, and the past week feels like a turning point. Moonshot AI dropped **Kimi K3**, a 2.8‑trillion‑parameter open‑weight model that boasts a one‑million‑token context window and native vision. It’s not just another incremental release; it’s a leap that changes the rules for autonomous agents.

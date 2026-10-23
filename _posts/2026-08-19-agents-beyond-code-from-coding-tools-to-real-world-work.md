@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, AI agents, coding agents, knowledge work"
 excerpt: "AI agents are spilling out of code editors and into real‑world tasks, reshaping how we work and the risks we must manage."
 description: "Explore how recent releases and incidents show AI agents moving from coding assistants to knowledge‑work partners, and what it means for security and productivity."
 keywords: "agentic AI, autonomous agents, AI agents, coding agents, knowledge work, AI security, real‑world AI"
-featured_image: "/assets/img/posts/2026-08-19-agents-beyond-code-from-coding-tools-to-real-world-work.png"
+featured_image: "/assets/img/posts/2026-08-19-agents-beyond-code-from-coding-tools-to-real-world-work.jpg"
 ---
 
 I’ve been watching a quiet shift that feels bigger than any single model release. Over the past week, three stories landed in my feed that together sketch a new landscape: AI agents are no longer confined to the terminal. They’re stepping into knowledge work, 3‑D virtual worlds, and even the messy reality of the open internet.

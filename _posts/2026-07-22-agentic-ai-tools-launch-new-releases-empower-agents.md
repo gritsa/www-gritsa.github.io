@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "A wave of fresh releases—llm 0.31.1, Laguna XS 2.1, GPT‑Live‑1, and more—shows how agents are finally getting the tools they need to act on their own."
 description: "New open‑source and commercial releases are giving AI agents the capabilities they need to plan, code, and execute tasks autonomously."
 keywords: "agentic AI, autonomous agents, LLM, llm 0.31.1, Laguna XS 2.1, GPT‑Live‑1, AI tools"
-featured_image: "/assets/img/posts/2026-07-22-agentic-ai-tools-launch-new-releases-empower-agents.png"
+featured_image: "/assets/img/posts/2026-07-22-agentic-ai-tools-launch-new-releases-empower-agents.jpg"
 ---
 
 I’ve been watching the agentic AI space for a while, and this week feels like a turning point. A handful of releases landed almost simultaneously, each adding a piece to the puzzle that lets agents move from “chat‑only” to “do‑it‑yourself.” The common thread is simple: agents now have the tools to plan, code, and execute without a human in the loop.

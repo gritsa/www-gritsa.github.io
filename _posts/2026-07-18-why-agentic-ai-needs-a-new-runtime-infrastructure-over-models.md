@@ -12,7 +12,7 @@ tags:
 excerpt: "Better models do not make agents safe to run. The controls that do are the ones the runtime enforces whether or not the model behaves. Here are the ones Jiva ships, and the one it deliberately leaves to you."
 description: "What an AI agent runtime is, and which controls belong in it: iteration budgets, loop detection, read-only planning, approval gates, tool scoping. Concrete examples from Jiva, Gritsa's open-source agent framework, including its honest limits."
 keywords: "agent runtime, AI agent guardrails, agent loop detection, plan and approve, iteration budget, agent infrastructure, Jiva"
-featured_image: "/assets/img/posts/2026-07-18-why-agentic-ai-needs-a-new-runtime-infrastructure-over-models.png"
+featured_image: "/assets/img/posts/2026-07-18-why-agentic-ai-needs-a-new-runtime-infrastructure-over-models.jpg"
 ---
 
 # An agent runtime is the part that still works when the model doesn't

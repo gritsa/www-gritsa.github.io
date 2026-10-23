@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Jiva v0.3.48 adds a deterministic benchmark that scores a model in code mode with no LLM judge, and separates a model that cannot emit a large enough response from one that got the logic wrong."
 description: "What changed in Jiva v0.3.48: the taskstore and micro-CRM benchmark suites, the output-limited flag, the jiva benchmark command and HTTP routes, and the code-mode tool-call fixes the first runs exposed."
 keywords: "Jiva, code mode benchmark, AI agent evaluation, tool call fixes, deterministic testing, open-source AI"
-featured_image: "/assets/img/posts/2026-07-04-jiva-v0-3-48-a-benchmark-suite-for-code-mode-ai.png"
+featured_image: "/assets/img/posts/2026-07-04-jiva-v0-3-48-a-benchmark-suite-for-code-mode-ai.jpg"
 ---
 
 Updated 2026-10-16: rewritten from the v0.3.48 release notes. The original post leaned on adjectives the notes do not support.

@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "July 2026 brings fresh model releases, a stark security breach, and a stateless protocol that could reshape how we build agents."
 description: "A look at the latest agentic AI developments—OpenAI's GPT‑5.6 family, a major security incident, and the MCP 2026‑07‑28 release—showing how the field is moving from hype to production."
 keywords: "agentic AI, autonomous agents, LLM, GPT-5.6, security incident, MCP protocol"
-featured_image: "/assets/img/posts/2026-07-31-agentic-ai-in-july-2026-new-models-security-incidents-and-protocol-shifts.png"
+featured_image: "/assets/img/posts/2026-07-31-agentic-ai-in-july-2026-new-models-security-incidents-and-protocol-shifts.jpg"
 ---
 
 I keep seeing the same story repeat: every few months a new model drops, and the community rushes to build agents around it. This July feels different. The releases are bigger, the security fallout is real, and the infrastructure is finally catching up.

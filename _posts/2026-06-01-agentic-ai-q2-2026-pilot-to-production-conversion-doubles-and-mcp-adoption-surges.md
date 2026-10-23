@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, MCP, pilot to production, AI adoption"
 excerpt: "Q2 2026 marks a turning point: enterprise pilots become production systems, MCP servers hit 9,400, and funding for agentic AI explodes."
 description: "Explore the latest Q2 2026 data on agentic AI adoption, MCP growth, and the doubling of pilot‑to‑production conversion rates."
 keywords: "agentic AI, autonomous agents, MCP, pilot to production, AI adoption, Q2 2026"
-featured_image: "/assets/img/posts/2026-06-01-agentic-ai-q2-2026-pilot-to-production-conversion-doubles-and-mcp-adoption-surges.png"
+featured_image: "/assets/img/posts/2026-06-01-agentic-ai-q2-2026-pilot-to-production-conversion-doubles-and-mcp-adoption-surges.jpg"
 ---
 
 ## The inflection point for agentic AI

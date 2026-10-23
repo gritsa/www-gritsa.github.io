@@ -12,7 +12,7 @@ tags:
 excerpt: "An agent is a model calling tools in a loop. The loop that improves it, in a way a business can accept, is a second agent that checks the work against a written definition of done and sends the first one back. Here is how Jiva's harness does it, with its limits."
 description: "Self-improving AI agents, without the hype: a supervisor agent that checks work against a written directive, nudges the worker, and gives up after a fixed number of cycles. How Jiva's evaluator harness works and where it can fail."
 keywords: "self-improving agents, agent supervision, evaluator agent, agent harness, tool-calling loop, definition of done, Jiva"
-featured_image: "/assets/img/posts/2026-07-05-from-tool-calling-loops-to-self-improving-agents.png"
+featured_image: "/assets/img/posts/2026-07-05-from-tool-calling-loops-to-self-improving-agents.jpg"
 ---
 
 # Self-improving agents: the version I would put in production is a supervisor with a checklist

@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "New releases and real‑world deployments show agentic AI moving from hype to production, bringing fresh capabilities, open‑source momentum, and fresh security challenges."
 description: "Exploring the latest agentic AI releases, open‑source model momentum, and emerging security concerns as AI agents become production‑ready."
 keywords: "agentic AI, autonomous agents, LLM, GPT-5.6, Muse Spark, Kimi K3, open-source models, AI security"
-featured_image: "/assets/img/posts/2026-07-23-agentic-ai-hits-production-new-models-open-weights-and-security-realities.png"
+featured_image: "/assets/img/posts/2026-07-23-agentic-ai-hits-production-new-models-open-weights-and-security-realities.jpg"
 ---
 
 I’ve been watching the agentic AI landscape shift under my feet. The buzz around “agents” used to feel like a distant promise. Lately, it feels like the ground is moving fast enough to trip you if you’re not paying attention.

@@ -12,7 +12,7 @@ tags:
 excerpt: "Every agent demo has a stop button. Read the code behind one and you find a flag that is checked between steps. What Jiva's terminal loop lets a person do, and what to ask before you give an agent real work."
 description: "How the human controls in Jiva's interactive loop actually work: Ctrl+C as a cooperative stop flag, the step-limit prompt, and a plan-approval gate that is a single yes or no. What each one does and does not guarantee."
 keywords: "AI agent controls, human in the loop, stop an AI agent, plan approval, agent step limit, Jiva, agent safety"
-featured_image: "/assets/img/posts/2026-07-28-ai-agents-from-cli-tools-to-cloud-security.png"
+featured_image: "/assets/img/posts/2026-07-28-ai-agents-from-cli-tools-to-cloud-security.jpg"
 ---
 
 # Stopping an agent is a request, not a command

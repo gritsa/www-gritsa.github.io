@@ -12,7 +12,7 @@ tags:
 excerpt: "Reflection, tool use, planning and multi-agent are the patterns everyone lists. The one that decides whether an agent survives production is the line you draw around the model."
 description: "Agent design patterns (reflection, tool use, planning, multi-agent) and the pattern that matters most: keep deterministic work out of the model. With the three-layer pipeline from Gritsa's open-source agent framework, Jiva."
 keywords: "agent design patterns, agentic AI patterns, reflection, tool use, planning, multi-agent, deterministic pipeline, AI agent architecture"
-featured_image: "/assets/img/posts/2026-05-26-agentic-ai-design-patterns-2026-architecting-autonomous-systems.png"
+featured_image: "/assets/img/posts/2026-05-26-agentic-ai-design-patterns-2026-architecting-autonomous-systems.jpg"
 ---
 
 # Agent design patterns: the one that matters is what the model does not do

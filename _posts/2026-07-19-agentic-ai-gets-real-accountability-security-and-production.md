@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Why 2026 marks the year agentic AI moves from hype to accountable, secure production systems."
 description: "Exploring the shift toward accountable, secure, and production‑ready agentic AI in 2026, with insights from recent industry developments."
 keywords: "agentic AI, autonomous agents, LLM, accountability, security, production AI"
-featured_image: "/assets/img/posts/2026-07-19-agentic-ai-gets-real-accountability-security-and-production.png"
+featured_image: "/assets/img/posts/2026-07-19-agentic-ai-gets-real-accountability-security-and-production.jpg"
 ---
 
 I’ve been watching the agentic AI conversation for a while, and this July feels different. The buzzwords are still there, but the focus has sharpened: **accountability, security, and real‑world production**. Three recent pieces illustrate the shift.

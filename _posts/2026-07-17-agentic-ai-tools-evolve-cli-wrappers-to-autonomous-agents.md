@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM tools"
 excerpt: "How recent releases in CLI LLM tools, open‑source models, and agent‑focused infrastructure are shaping the next wave of autonomous AI."
 description: "Explore the latest developments in agentic AI—from Simon Willison’s llm 0.31.1 to Modal’s agent‑ready cloud and Vellum’s coding agents—and what they mean for developers."
 keywords: "agentic AI, autonomous agents, LLM tools, open-source models, AI infrastructure, coding agents, CLI LLM, Modal, Jiva"
-featured_image: "/assets/img/posts/2026-07-17-agentic-ai-tools-evolve-cli-wrappers-to-autonomous-agents.png"
+featured_image: "/assets/img/posts/2026-07-17-agentic-ai-tools-evolve-cli-wrappers-to-autonomous-agents.jpg"
 ---
 
 I keep seeing the same pattern pop up across the AI landscape: tools that once felt like simple command‑line wrappers are now becoming the backbone of fully autonomous agents. It’s not just a single breakthrough; it’s a convergence of releases, models, and infrastructure that together push us toward a future where agents can plan, code, and iterate without constant human hand‑holding.

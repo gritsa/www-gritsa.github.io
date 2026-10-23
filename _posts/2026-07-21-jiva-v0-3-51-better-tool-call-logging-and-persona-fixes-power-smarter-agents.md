@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Jiva's latest release adds detailed tool‑call logs and fixes a persona‑context leak, making autonomous agents more transparent and reliable."
 description: "What changed in Jiva v0.3.51: code-mode tool-call logs now show the arguments, and a stale persona prefix no longer leaks into code-mode log lines."
 keywords: "Jiva, autonomous agents, tool‑call logging, persona context, agentic AI, LLM, open‑source agents"
-featured_image: "/assets/img/posts/2026-07-21-jiva-v0-3-51-better-tool-call-logging-and-persona-fixes-power-smarter-agents.png"
+featured_image: "/assets/img/posts/2026-07-21-jiva-v0-3-51-better-tool-call-logging-and-persona-fixes-power-smarter-agents.jpg"
 ---
 
 I’ve been watching the agentic AI space shift from flashy model releases to the gritty engineering that makes those models usable in production. The newest Jiva release, **v0.3.51**, lands right in that sweet spot: it doesn’t add a headline‑grabbing model, but it tightens the plumbing that lets developers trust and debug autonomous agents.

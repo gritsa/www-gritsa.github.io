@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Agentic AI is shifting from experimental prototypes to essential, utility‑grade services—driven by open‑weight models, on‑device deployment, and new security standards."
 description: "Explore how recent open‑weight releases, regulatory watermarking, and benchmark advances are turning autonomous agents into utility‑grade infrastructure for businesses."
 keywords: "agentic AI, autonomous agents, LLM, open-weight models, on-device AI, security, watermarking"
-featured_image: "/assets/img/posts/2026-08-16-why-agentic-ai-is-becoming-a-utility.png"
+featured_image: "/assets/img/posts/2026-08-16-why-agentic-ai-is-becoming-a-utility.jpg"
 ---
 
 I’ve been watching the AI landscape for years, and something feels different this August. The buzz isn’t just about bigger language models or fancier prompts—it’s about *agents* that can plan, act, and be trusted to run on the devices that already power our businesses.

@@ -12,7 +12,7 @@ tags:
 excerpt: "Most agent guardrails watch what goes in and what comes out. The one I would add first checks the agent's claims against its own tool log. Here is how Jiva does it, and where that check fails open."
 description: "A guardrail for AI agents that audits claims against the tool-call record: unjustified failure, results the tools do not support, missing required tools. How Jiva's client agent works, with its honest limits."
 keywords: "AI agent guardrails, agent validation, hallucinated tool use, agent audit, claims versus tool calls, Jiva client agent"
-featured_image: "/assets/img/posts/2026-08-09-when-agents-go-rogue-guardrails-for-the-new-ai-workforce.png"
+featured_image: "/assets/img/posts/2026-08-09-when-agents-go-rogue-guardrails-for-the-new-ai-workforce.jpg"
 ---
 
 # The guardrail that checks the receipts: auditing what an agent says it did

@@ -8,7 +8,7 @@ tags: "agentic AI, open-source, search, AI research"
 excerpt: "A new open‑source search agent called Harness‑1 outperforms GPT‑5.4 in recall, offering enterprises a cost‑effective way to power autonomous information retrieval."
 description: "Discover how Harness‑1, a 20‑billion‑parameter open‑source AI search agent, achieves 73% recall on complex queries, surpassing GPT‑5.4 and providing a scalable solution for enterprise data discovery."
 keywords: "agentic AI, open-source AI, search agent, GPT-5.4, Harness-1"
-featured_image: "/assets/img/posts/2026-06-11-harness-1-open-source-ai-search-agent-beats-gpt-5-4.png"
+featured_image: "/assets/img/posts/2026-06-11-harness-1-open-source-ai-search-agent-beats-gpt-5-4.jpg"
 ---
 
 ## The Retrieval Revolution Is Here

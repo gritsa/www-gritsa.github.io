@@ -8,7 +8,7 @@ tags: "agentic AI, open-source LLM, multilingual reasoning, large language model
 excerpt: "Alibaba's Qwen 3 235B-A22B sets a new benchmark for open-source agentic AI, delivering GPT‑4‑class reasoning and coding on Apache‑2.0."
 description: "Discover how Qwen 3 235B-A22B pushes open‑source LLMs to GPT‑4 level, offering multilingual support, massive context, and flexible licensing for developers."
 keywords: "Qwen 3 235B-A22B, open-source LLM, agentic AI, multilingual reasoning, Apache 2.0, large language model, AI research"
-featured_image: "/assets/img/posts/2026-06-12-qwen-3-235b-a22b-open-source-agentic-ai-frontier.png"
+featured_image: "/assets/img/posts/2026-06-12-qwen-3-235b-a22b-open-source-agentic-ai-frontier.jpg"
 ---
 
 ## Introduction

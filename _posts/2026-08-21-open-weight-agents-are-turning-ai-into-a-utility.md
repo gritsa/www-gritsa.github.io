@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Open‑weight models are finally giving us production‑grade autonomous agents that run locally, reshaping how we build and deploy AI."
 description: "Open‑weight LLMs like Qwen3.8 Max and Muse Glimmer are delivering agentic capabilities on‑device, driving a shift toward utility‑grade AI services."
 keywords: "agentic AI, open-weight models, autonomous agents, LLM, production AI"
-featured_image: "/assets/img/posts/2026-08-21-open-weight-agents-are-turning-ai-into-a-utility.png"
+featured_image: "/assets/img/posts/2026-08-21-open-weight-agents-are-turning-ai-into-a-utility.jpg"
 ---
 
 I keep seeing the same story in my inbox: another open‑weight model that can run on a laptop, another platform that promises “agentic” workflows out of the box. It feels like the AI world is finally moving from flashy demos to something you can actually ship.

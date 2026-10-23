@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Agentic AI is spilling out of code editors and into knowledge work, robotics, and even cyber‑espionage—changing what we can build and what we must protect."
 description: "Agentic AI is moving beyond coding into knowledge work, physical robotics, and large‑scale cyber‑attacks, reshaping productivity and security landscapes."
 keywords: "agentic AI, autonomous agents, LLM, knowledge work agents, robotics, AI security"
-featured_image: "/assets/img/posts/2026-08-13-from-code-to-cosmos-how-agentic-ai-is-redefining-work-play-and-security.png"
+featured_image: "/assets/img/posts/2026-08-13-from-code-to-cosmos-how-agentic-ai-is-redefining-work-play-and-security.jpg"
 ---
 
 I’ve been watching a quiet shift that feels bigger than any single model release. Over the past week three stories converged, each a piece of the same puzzle: **agentic AI is spilling out of code editors and into knowledge work, robotics, and even cyber‑espionage**. The common thread is a new kind of autonomy—agents that plan, reason, and act across domains—while the stakes for safety and security rise in lockstep.

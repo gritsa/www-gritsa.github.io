@@ -8,7 +8,7 @@ tags: "agentic ai, autonomous agents, NVIDIA, enterprise ai, AI security"
 excerpt: "NVIDIA's new Agent Toolkit and OpenShell platform promise secure, scalable AI agents for the enterprise."
 description: "Explore NVIDIA's latest Agent Toolkit and OpenShell, a secure runtime for building enterprise AI agents, and what it means for the future of autonomous systems."
 keywords: "agentic AI, NVIDIA Agent Toolkit, OpenShell, enterprise AI agents, AI security, autonomous agents"
-featured_image: "/assets/img/posts/2026-05-27-nvidia-unveils-agent-toolkit-and-openshell-for-enterprise-ai-agents.png"
+featured_image: "/assets/img/posts/2026-05-27-nvidia-unveils-agent-toolkit-and-openshell-for-enterprise-ai-agents.jpg"
 ---
 
 ## Introduction

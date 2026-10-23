@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Why a 13‑billion‑parameter model just beat the 49‑billion‑parameter flagship on every agentic benchmark, and what it means for builders."
 description: "DeepSeek V4 Flash‑0731 ships with a tiny active size yet outperforms larger models on tool‑use and reasoning, offering a cheaper, open‑weight path to production agents."
 keywords: "DeepSeek V4 Flash, agentic AI, autonomous agents, LLM, open weights, tool use, cost efficiency"
-featured_image: "/assets/img/posts/2026-08-03-deepseek-v4-flash-small-model-big-agentic-leap.png"
+featured_image: "/assets/img/posts/2026-08-03-deepseek-v4-flash-small-model-big-agentic-leap.jpg"
 ---
 
 I’ve been watching the agentic AI space for a while, and the latest move from DeepSeek feels like a quiet earthquake. On July 31, 2026 they released **DeepSeek‑V4‑Flash‑0731**, a model that only activates 13 billion parameters yet beats the 49‑billion‑parameter V4‑Pro preview on every agentic benchmark they publish.

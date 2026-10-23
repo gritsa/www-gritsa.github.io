@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "A look at the latest breakthroughs in agentic AI and what they mean for developers."
 description: "Exploring OpenAI's GPT‑5.6, Meta's Muse Spark, and the emerging security challenges of autonomous agents."
 keywords: "agentic AI, autonomous agents, GPT‑5.6, Muse Spark, AI security"
-featured_image: "/assets/img/posts/2026-07-19-agentic-ai-gpt-5-6-muse-spark-and-autonomous-agents.png"
+featured_image: "/assets/img/posts/2026-07-19-agentic-ai-gpt-5-6-muse-spark-and-autonomous-agents.jpg"
 ---
 
 I’ve been watching the agentic AI landscape shift from a series of isolated tool‑calling tricks to full‑blown, self‑orchestrating systems. This week three headlines made that shift unmistakable.

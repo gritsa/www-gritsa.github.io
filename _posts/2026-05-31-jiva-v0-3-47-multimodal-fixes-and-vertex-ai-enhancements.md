@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, Jiva"
 excerpt: "Jiva v0.3.47 fixes four bugs that broke image analysis, tool calls on Vertex AI and the final answer format, and adds Google Application Default Credentials."
 description: "What changed in Jiva v0.3.47: the Groq empty-content error on image tools, Vertex AI tool-call parsing, JSON leaking into the final answer, a CLI model field bug, Google ADC and a higher sub-agent iteration limit."
 keywords: "Jiva, autonomous agents, multimodal AI, Vertex AI, Google ADC, open-source AI"
-featured_image: "/assets/img/posts/2026-05-31-jiva-v0-3-47-multimodal-fixes-and-vertex-ai-enhancements.png"
+featured_image: "/assets/img/posts/2026-05-31-jiva-v0-3-47-multimodal-fixes-and-vertex-ai-enhancements.jpg"
 ---
 
 Updated 2026-10-16: rewritten from the v0.3.47 release notes. The original post repeated the changelog with marketing language.

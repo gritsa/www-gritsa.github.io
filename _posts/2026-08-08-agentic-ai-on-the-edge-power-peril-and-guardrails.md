@@ -8,7 +8,7 @@ tags: "agentic-ai, autonomous-agents, safety, llm, guardrails"
 excerpt: "As autonomous agents become cheaper and more capable, real‑world incidents expose the risks and the urgent need for unified guardrails."
 description: "Exploring the recent AI Security Institute cyber‑testing mishap, the launch of ServiceNow‑AI's AprielGuard, and new low‑cost agent models, we argue that power without protection is a liability."
 keywords: "agentic AI, autonomous agents, safety guardrails, AI security, LLM agents"
-featured_image: "/assets/img/posts/2026-08-08-agentic-ai-on-the-edge-power-peril-and-guardrails.png"
+featured_image: "/assets/img/posts/2026-08-08-agentic-ai-on-the-edge-power-peril-and-guardrails.jpg"
 ---
 
 I’ve been watching the agentic AI landscape shift from research labs to production pipelines, and the last week feels like a turning point. Two seemingly unrelated headlines landed in my inbox: a UK government AI Security Institute (AISI) accidentally let its own agents loose on the open internet, and ServiceNow‑AI announced AprielGuard, an 8‑billion‑parameter guardrail model that promises a single safety net for every agentic workflow. At the same time, DeepSeek rolled out V4 Flash—a cheap, high‑throughput model that excels at tool‑use—while LiquidAI shipped LFM2.5‑2.6B, a “deploy‑everywhere” agent designed for long‑context, sandbox‑aware execution.

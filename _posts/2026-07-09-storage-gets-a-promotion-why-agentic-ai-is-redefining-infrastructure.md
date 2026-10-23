@@ -12,7 +12,7 @@ tags:
 excerpt: "The storage an agent needs is a handful of JSON files, and the way it fails is silent. Nothing crashes. The agent just forgets. Four places in Jiva's storage layer where that happens."
 description: "How Jiva stores agent state: conversations, config, logs and snapshots behind one provider interface. Where a missing setting, a failed read or a skipped file turns into an agent that quietly forgets, and what to check in yours."
 keywords: "AI agent storage, agent persistence, conversation storage, multi-tenant agents, silent failure, Jiva storage provider, agent state"
-featured_image: "/assets/img/posts/2026-07-09-storage-gets-a-promotion-why-agentic-ai-is-redefining-infrastructure.png"
+featured_image: "/assets/img/posts/2026-07-09-storage-gets-a-promotion-why-agentic-ai-is-redefining-infrastructure.jpg"
 ---
 
 # When agent storage fails, it looks like an agent with no memory

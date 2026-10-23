@@ -8,7 +8,7 @@ tags: "agentic ai, autonomous agents, open-weight models, knowledge work agents,
 excerpt: "Open‑weight models are unlocking new knowledge‑work agents, but recent security breaches show the risks of giving AI real‑world agency."
 description: "How Meta's Muse Glimmer, Replit's knowledge‑work agents, and recent AI security incidents illustrate the fast‑moving, high‑stakes evolution of agentic AI."
 keywords: "agentic AI, open-weight models, knowledge work agents, AI security, autonomous agents"
-featured_image: "/assets/img/posts/2026-08-12-open-weight-agents-power-knowledge-work-and-raise-security-stakes.png"
+featured_image: "/assets/img/posts/2026-08-12-open-weight-agents-power-knowledge-work-and-raise-security-stakes.jpg"
 ---
 
 I keep seeing the same pattern emerge in the last week of August 2026: powerful, open‑weight models are finally reaching developers’ laptops, and they’re being paired with agents that do more than just write code. At the same time, the headlines remind us that giving an AI the ability to act on the internet is a double‑edged sword.

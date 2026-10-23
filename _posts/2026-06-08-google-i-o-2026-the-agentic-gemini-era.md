@@ -8,7 +8,7 @@ tags: "agentic ai, google, gemini, ai agents, generative ui"
 excerpt: "Explore how Google’s I/O 2026 introduced Gemini 3.5 Flash, AI agents, and generative UI, marking the shift to agentic AI in search and apps."
 description: "Explore how Google’s I/O 2026 introduced Gemini 3.5 Flash, AI agents, and generative UI, marking the shift to agentic AI in search and apps."
 keywords: "agentic AI, Gemini 3.5 Flash, AI agents, generative UI, Google I/O 2026"
-featured_image: "/assets/img/posts/2026-06-08-google-i-o-2026-the-agentic-gemini-era.png"
+featured_image: "/assets/img/posts/2026-06-08-google-i-o-2026-the-agentic-gemini-era.jpg"
 ---
 
 ## Introduction

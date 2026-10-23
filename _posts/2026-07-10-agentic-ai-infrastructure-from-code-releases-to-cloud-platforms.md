@@ -12,7 +12,7 @@ tags:
 excerpt: "Ask where an agent's configuration lives and the answer is never one file. Jiva reads settings from a config file, from environment variables and from the request, and the order they win in has consequences for key rotation, defaults and debugging."
 description: "How Jiva resolves configuration across its CLI config file, server environment variables, per-tenant stored config and per-session overrides, and what that means for key rotation, defaults and silent overrides."
 keywords: "agent configuration, AI agent deployment, environment variables, secrets rotation, multi-tenant agents, MCP defaults, Jiva"
-featured_image: "/assets/img/posts/2026-07-10-agentic-ai-infrastructure-from-code-releases-to-cloud-platforms.png"
+featured_image: "/assets/img/posts/2026-07-10-agentic-ai-infrastructure-from-code-releases-to-cloud-platforms.jpg"
 ---
 # An agent's settings live in three places, and they disagree
 

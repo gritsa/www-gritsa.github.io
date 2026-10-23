@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, open-weight models, runtime, LLM"
 excerpt: "Open-weight models, new agent runtimes, and benchmark results show agentic AI is finally moving from experiment to production."
 description: "Open-weight models like LFM2.5‑2.6B, new runtimes such as Cloudflare’s @cloudflare/computer, and benchmark results from OpenAI and Vellum illustrate the shift toward production‑ready autonomous agents."
 keywords: "agentic AI, autonomous agents, open-weight models, runtime, LLM, production AI, benchmarks"
-featured_image: "/assets/img/posts/2026-08-10-agentic-ai-goes-production-open-weights-new-runtimes.png"
+featured_image: "/assets/img/posts/2026-08-10-agentic-ai-goes-production-open-weights-new-runtimes.jpg"
 ---
 
 I’ve been watching the agentic AI landscape for months, and the past week feels like a turning point. Three independent signals—Simon Willison’s LLM 0.32 release, Hugging Face’s LFM2.5‑2.6B “Deploy Agents Everywhere” blog, and the flurry of production‑focused announcements from Latent Space and Vellum—converge on the same idea: agents are finally graduating from research demos to real‑world workloads.

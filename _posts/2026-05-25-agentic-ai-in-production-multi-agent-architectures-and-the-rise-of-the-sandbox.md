@@ -12,7 +12,7 @@ tags:
 excerpt: "Splitting an agent in two is a cost you pay for a benefit. Here is when the benefit shows up, and the production bug that taught us where the real boundary sits."
 description: "When a multi-agent architecture is worth it and when a single loop is better, using the manager and worker design in Jiva and a real multi-tenant isolation bug as the examples."
 keywords: "multi-agent architecture, manager worker agents, single agent loop, agent isolation, multi-tenant AI agents"
-featured_image: "/assets/img/posts/2026-05-25-agentic-ai-in-production-multi-agent-architectures-and-the-rise-of-the-sandbox.png"
+featured_image: "/assets/img/posts/2026-05-25-agentic-ai-in-production-multi-agent-architectures-and-the-rise-of-the-sandbox.jpg"
 ---
 
 # Multi-agent architectures: when two agents beat one, and when one loop wins

@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Open‑weight models and new design patterns are turning experimental AI into production‑grade autonomous agents."
 description: "Exploring how August 2026's open‑source LLM releases, agentic design patterns, and regulatory changes are converging to make autonomous agents a practical reality for enterprises."
 keywords: "agentic AI, autonomous agents, open-source LLM, DeepSeek-V4-Pro, Kimi K2.6, EU AI Act, design patterns, production AI"
-featured_image: "/assets/img/posts/2026-08-20-from-open-models-to-autonomous-agents-the-2026-shift.png"
+featured_image: "/assets/img/posts/2026-08-20-from-open-models-to-autonomous-agents-the-2026-shift.jpg"
 ---
 
 I keep seeing the same story in my inbox: another open‑weight model drops, another paper touts a new “agentic” pattern, and another regulator drafts a rulebook. This August, the three threads finally intersect. The result is a shift from experimental prototypes to production‑grade autonomous agents that can be trusted, governed, and scaled.

@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, enterprise AI"
 excerpt: "Explore how autonomous AI agents are reshaping enterprise workflows in 2026, with real‑world adoption trends and governance insights."
 description: "Discover the latest enterprise adoption of agentic AI in 2026, key trends, governance challenges, and practical steps for organizations."
 keywords: "agentic AI, autonomous agents, enterprise AI, AI governance, AI adoption trends"
-featured_image: "/assets/img/posts/2026-06-07-agentic-ai-takes-the-wheel-2026-enterprise-insights.png"
+featured_image: "/assets/img/posts/2026-06-07-agentic-ai-takes-the-wheel-2026-enterprise-insights.jpg"
 ---
 
 ## The Rise of Agentic AI in 2026

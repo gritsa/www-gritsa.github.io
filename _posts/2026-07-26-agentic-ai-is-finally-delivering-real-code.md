@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Why the latest open‑source models and coding‑agent breakthroughs mean autonomous agents are now writing production‑grade code."
 description: "Exploring recent open‑source LLM releases and coding‑agent advances that show autonomous agents are ready for real‑world software development."
 keywords: "agentic AI, autonomous agents, LLM, open‑source models, coding agents"
-featured_image: "/assets/img/posts/2026-07-26-agentic-ai-is-finally-delivering-real-code.png"
+featured_image: "/assets/img/posts/2026-07-26-agentic-ai-is-finally-delivering-real-code.jpg"
 ---
 
 I’ve been watching the agentic AI space for years, and the past week feels like the moment the hype finally cracked open. Two independent signals landed in my inbox, and together they paint a clear picture: autonomous agents are no longer experimental toys—they’re becoming reliable code‑writers that can ship production software.

@@ -8,7 +8,7 @@ tags: "agentic AI, autonomous agents, LLM"
 excerpt: "Mistral's new 128B model merges instruction, reasoning, and coding, powering next‑gen agentic workflows."
 description: "Explore Mistral Medium 3.5's unified architecture, remote coding agents, and enterprise implications for autonomous AI."
 keywords: "Mistral Medium 3.5, agentic AI, unified LLM, remote coding agents, enterprise AI"
-featured_image: "/assets/img/posts/2026-06-11-mistral-medium-3-5-a-unified-frontier-model-for-agentic-ai.png"
+featured_image: "/assets/img/posts/2026-06-11-mistral-medium-3-5-a-unified-frontier-model-for-agentic-ai.jpg"
 ---
 
 ## A New Frontier in Unified Models
