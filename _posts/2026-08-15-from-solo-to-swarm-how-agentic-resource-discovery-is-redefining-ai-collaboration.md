@@ -6,7 +6,7 @@ last_modified_at: 2026-10-17 17:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - - AI agents
+  - AI agents
   - MCP
   - Tool discovery
 excerpt: "Talk of agents discovering tools suggests something live. In the code of a working agent, discovery is one call at startup, and the list never changes after that. What that means in practice."

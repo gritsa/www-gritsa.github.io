@@ -6,7 +6,7 @@ last_modified_at: 2026-10-17 16:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - - AI agents
+  - AI agents
   - Human in the loop
   - Agent controls
 excerpt: "Every agent demo has a stop button. Read the code behind one and you find a flag that is checked between steps. What Jiva's terminal loop lets a person do, and what to ask before you give an agent real work."

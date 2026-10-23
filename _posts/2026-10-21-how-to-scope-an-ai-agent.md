@@ -5,7 +5,7 @@ date: 2026-10-21 09:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Agents"
 tags:
-  - - AI agents
+  - AI agents
   - Agent design
   - Business AI
 excerpt: "An agent project fails at scoping before it fails at engineering. Write the one-page job description first."

@@ -6,7 +6,7 @@ last_modified_at: 2026-10-17 18:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - - AI agents
+  - AI agents
   - Agent infrastructure
   - Storage
 excerpt: "The storage an agent needs is a handful of JSON files, and the way it fails is silent. Nothing crashes. The agent just forgets. Four places in Jiva's storage layer where that happens."

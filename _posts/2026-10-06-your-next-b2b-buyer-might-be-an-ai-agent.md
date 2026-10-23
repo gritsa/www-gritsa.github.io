@@ -5,7 +5,7 @@ date: 2026-10-06 09:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - - AI agents
+  - AI agents
   - AI search
   - Future readiness
 excerpt: "Half of B2B software buyers now start research in an AI chatbot. Your most careful reader may not be a person."

@@ -6,7 +6,7 @@ last_modified_at: 2026-10-16 14:00:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - - AI agents
+  - AI agents
   - Agent runtime
   - Guardrails
 excerpt: "Better models do not make agents safe to run. The controls that do are the ones the runtime enforces whether or not the model behaves. Here are the ones Jiva ships, and the one it deliberately leaves to you."

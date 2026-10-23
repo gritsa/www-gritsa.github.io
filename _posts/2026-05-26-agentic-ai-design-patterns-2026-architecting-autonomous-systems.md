@@ -6,7 +6,7 @@ last_modified_at: 2026-10-15 20:30:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - - AI agents
+  - AI agents
   - Agent architecture
   - Design patterns
 excerpt: "Reflection, tool use, planning and multi-agent are the patterns everyone lists. The one that decides whether an agent survives production is the line you draw around the model."

@@ -6,7 +6,7 @@ last_modified_at: 2026-10-16 17:30:00 +0530
 author: "Amy Loomis"
 categories: "AI Technology"
 tags:
-  - - AI agents
+  - AI agents
   - AI security
   - Coding agents
 excerpt: "Before you ask whether the model is safe, ask what its shell can reach and what record it leaves. What Jiva's bash tool does, what it logs, and what the operator still owns."
