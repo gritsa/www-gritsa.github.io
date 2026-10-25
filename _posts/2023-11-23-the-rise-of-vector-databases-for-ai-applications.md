@@ -23,7 +23,7 @@ Vector databases are especially capable of employing many advanced techniques th
 
 ![Vector database for AI applications](https://static.wixstatic.com/media/1854f5_25c5078f2be84ede8580ffa999ed52b2~mv2.jpg/v1/fill/w_3840,h_2160,al_c,q_90/1854f5_25c5078f2be84ede8580ffa999ed52b2~mv2.jpg)
 
-Traditional databases have been found to be lethargic and cumbersome when it comes to handling high-dimensional data, making them unreliable and incompetent for AI applications. [Vector databases](https://www.gritsa.com/post/what-is-vector-database-and-why-is-it-gaining-importance), on the other hand, leverage several advanced indexing techniques like approximate nearest neighbors (ANN) and similarity search, which sharply increase the speed of data retrieval. Above all, it makes them efficient at handling the inherent complexity of high-dimensional data.
+Traditional databases have been found to be lethargic and cumbersome when it comes to handling high-dimensional data, making them unreliable and incompetent for AI applications. [Vector databases](/blog/2023/11/15/what-is-vector-database-and-why-is-it-gaining-importance/), on the other hand, leverage several advanced indexing techniques like approximate nearest neighbors (ANN) and similarity search, which sharply increase the speed of data retrieval. Above all, it makes them efficient at handling the inherent complexity of high-dimensional data.
 
 ### Easy Scalability:
 
