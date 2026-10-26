@@ -37,7 +37,7 @@ Then write down how you will know. This is the part that gets skipped, and it's 
 
 Then the uncomfortable one: what stops. Every job you hand to an agent leaves a gap somewhere. A report nobody reads anymore. A meeting. A contractor. A queue of work people did only because the old process created it. If the strategy never removes anything, nothing was actually delegated. You added a tool and kept the work, which is the most expensive way to adopt anything.
 
-Notice what's missing from all this: the model. I'd argue that's correct. Models change every few months and anyone can rent the same ones. The parts that last are your data, your process, and your decisions about who may do what. A strategy built on a specific vendor's roadmap expires when the roadmap does. One built on jobs, measures and stopping rules survives a model swap.
+Notice what's missing from all this: the model. I'd argue that's correct. Models change every few months and anyone can rent the same ones. The parts that last are your data, your process, and your decisions about who may do what. A strategy built on a specific vendor's roadmap expires when the roadmap does. One built on jobs, measures and stopping rules survives a model swap, provided you can [tell whether the swap worked](/blog/2026/10/26/llm-lock-in-is-not-where-you-think-it-is/).
 
 None of this means buying tools is silly. You will buy tools. But decide the jobs first and the tools become an easy question with a short answer, instead of a long one with a slide deck.
 
