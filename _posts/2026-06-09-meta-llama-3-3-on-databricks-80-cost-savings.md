@@ -16,7 +16,7 @@ featured_image: "/assets/img/posts/2026-06-09-meta-llama-3-3-on-databricks-80-co
 
 ## Introduction
 
-Enterprises are racing to embed autonomous agents into their workflows, but the price of running large language models has been a major roadblock. Meta’s latest open‑source release, **Llama 3.3 70B**, now available on the Databricks Data Intelligence Platform, changes the game. It promises **up to 80 % lower total cost of ownership (TCO)** and **40 % faster inference**—a combination that makes production‑grade agentic AI accessible to teams of any size.
+Enterprises are racing to embed autonomous agents into their workflows, but the price of running large language models has been a major roadblock. Meta’s latest open‑source release, **Llama 3.3 70B**, now available on the Databricks Data Intelligence Platform, changes the game. It promises **up to 80 % lower total cost of ownership (TCO)** and **40 % faster inference**, a combination that makes production‑grade agentic AI accessible to teams of any size.
 
 ## Why Cost Savings Matter
 

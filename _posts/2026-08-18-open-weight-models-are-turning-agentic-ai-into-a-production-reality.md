@@ -23,7 +23,7 @@ What ties these releases together is not just raw performance but **accessibilit
 
 ### The ecosystem catches up
 
-At the same time, the community is finally building the scaffolding that turns a model into a product. The **Agentic AI Summit 2026** (August 12) gathered roughly 5,000 in‑person attendees and 100 k online viewers. The recurring theme was “no single breakthrough will define the future; it will be an ecosystem.” Speakers from Meta, ByteDance, and several startups demoed end‑to‑end pipelines: model loading, tool use, stateful memory, and safety guardrails—all running on commodity hardware.
+At the same time, the community is finally building the scaffolding that turns a model into a product. The **Agentic AI Summit 2026** (August 12) gathered roughly 5,000 in‑person attendees and 100 k online viewers. The recurring theme was “no single breakthrough will define the future; it will be an ecosystem.” Speakers from Meta, ByteDance, and several startups demoed end‑to‑end pipelines: model loading, tool use, stateful memory, and safety guardrails, all running on commodity hardware.
 
 Industry analysts are calling 2026 the breakout year for agentic systems. Enterprises are pouring money into AI, but they’re hitting a wall: data silos, governance gaps, and security concerns. The EU AI Act went live on August 2, forcing anyone deploying high‑risk agents to prove transparency and risk management. The open‑weight wave gives teams the control they need to meet those requirements without surrendering to a single vendor.
 

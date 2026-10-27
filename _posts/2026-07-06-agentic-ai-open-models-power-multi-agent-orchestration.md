@@ -18,7 +18,7 @@ I’ve been watching a quiet revolution unfold in the AI community. It’s not a
 
 ### From “one‑shot” prompts to “one‑team” workflows
 
-A few weeks ago I read Geoffrey Litt’s talk notes on *understand to participate* (Simon Willison’s weblog, July 2). He warned that as coding agents grow more capable, we risk accumulating *cognitive debt*—our mental model of the code drifts away from what the agent actually does. The antidote, he argued, is to stay in the loop, to **understand the agent’s reasoning** so we can steer it. That’s exactly what the new wave of multi‑agent systems is trying to solve: instead of a single monolithic prompt, we give the model a *team* of specialized sub‑agents, each with its own tools and context, and let a manager agent coordinate them.
+A few weeks ago I read Geoffrey Litt’s talk notes on *understand to participate* (Simon Willison’s weblog, July 2). He warned that as coding agents grow more capable, we risk accumulating *cognitive debt*, our mental model of the code drifts away from what the agent actually does. The antidote, he argued, is to stay in the loop, to **understand the agent’s reasoning** so we can steer it. That’s exactly what the new wave of multi‑agent systems is trying to solve: instead of a single monolithic prompt, we give the model a *team* of specialized sub‑agents, each with its own tools and context, and let a manager agent coordinate them.
 
 Moonshot AI’s Kimi K2.5 (DeepLearning.ai, Feb 2026) is the poster child. It adds vision, but the real headline is its **sub‑agent engine**. Kimi can spin up parallel workers for research, fact‑checking, web scraping, and even code generation, then stitch their outputs together. In benchmarks it out‑performed every other open‑weight model on the Artificial Analysis Intelligence Index, and the speed‑up from parallel sub‑agents was 3‑4×. The paper frames this as “agents building agents,” a phrase that now appears in talks from OpenClaw, other coding agents, and even Microsoft’s SkillOpt research.
 
@@ -26,7 +26,7 @@ Moonshot AI’s Kimi K2.5 (DeepLearning.ai, Feb 2026) is the poster child. I
 
 If you look at the Hugging Face community roundup (July 2026), you’ll see a flood of models explicitly marketed for *agentic* work: GLM‑5.1, Qwen3, Kimi K2.6, and the newly released **Ornith‑1.0** family. Ornith ships MIT‑licensed dense and MoE variants that claim top scores on SWE‑Bench and Terminal‑Bench. What ties them together is **tool‑use APIs** and **long‑context windows** that let an agent keep a whole codebase in memory while it iterates.
 
-Meta’s Llama 3.1 (July 2026) pushed the frontier further with a 405 B open‑weight model and a reference system that includes Llama Guard 3 and Prompt Guard. The release notes stress *agentic workflows*—the model can call external tools, reason over long documents, and even generate its own prompts for sub‑tasks. Frontier closed models released in June 2026 are not open‑source, but their system cards describe **multi‑agent pipelines** that mirror what the open community is building.
+Meta’s Llama 3.1 (July 2026) pushed the frontier further with a 405 B open‑weight model and a reference system that includes Llama Guard 3 and Prompt Guard. The release notes stress *agentic workflows*, the model can call external tools, reason over long documents, and even generate its own prompts for sub‑tasks. Frontier closed models released in June 2026 are not open‑source, but their system cards describe **multi‑agent pipelines** that mirror what the open community is building.
 
 ### Industry is already betting on the team model
 
@@ -36,7 +36,7 @@ Even policy is catching up. The U.S. government announced a pre‑release review
 
 ### Why this matters for Gritsa and Jiva
 
-At Gritsa we’re building **Jiva**, an open‑source autonomous agent framework. The trends above validate our direction: the community is moving from single‑prompt assistants to **orchestrated agent teams** that can handle long‑horizon tasks, keep context, and be audited. By exposing Jiva’s sub‑agent API and encouraging developers to plug in their own tools, we give teams the same flexibility that Kimi, GLM, and Ornith provide—while keeping the stack fully open and extensible.
+At Gritsa we’re building **Jiva**, an open‑source autonomous agent framework. The trends above validate our direction: the community is moving from single‑prompt assistants to **orchestrated agent teams** that can handle long‑horizon tasks, keep context, and be audited. By exposing Jiva’s sub‑agent API and encouraging developers to plug in their own tools, we give teams the same flexibility that Kimi, GLM, and Ornith provide, while keeping the stack fully open and extensible.
 
 The next step for us is to ship a **Jiva‑orchestrator** that can spin up sub‑agents on demand, manage their state, and surface a unified log for debugging. That’s the concrete way we’ll turn the industry’s “agents building agents” mantra into a product you can run on your own hardware.
 

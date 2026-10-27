@@ -30,7 +30,7 @@ That moment crystallised a new reality: **defensive AI must be self‑hosted and
 
 ### Open‑weight models as the defensive backbone
 
-GLM‑5.2 isn’t the only player. Recent releases from the open‑source community—**Kimi K3**, **Nemotron‑3‑Embed**, and **Inkling**—show that frontier capabilities are no longer the exclusive domain of closed APIs. These models can be fine‑tuned for specific threat‑intel pipelines, run on modest GPU clusters, and be audited for hidden back‑doors.
+GLM‑5.2 isn’t the only player. Recent releases from the open‑source community, **Kimi K3**, **Nemotron‑3‑Embed**, and **Inkling**, show that frontier capabilities are no longer the exclusive domain of closed APIs. These models can be fine‑tuned for specific threat‑intel pipelines, run on modest GPU clusters, and be audited for hidden back‑doors.
 
 The strategic implication is clear: **organizations should treat open‑weight models as a core component of their cyber‑defense stack**, not as a nice‑to‑have research toy. By maintaining an internal model zoo, security teams can:
 

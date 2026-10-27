@@ -26,7 +26,7 @@ These models aren’t just academic curiosities. They ship with quantization sup
 
 Capability alone isn’t enough. The LangChain 2026 Report shows that 32 % of practitioners cite output quality as the top blocker for production agents. The community’s answer is a set of design patterns that make agents self‑correcting and predictable.
 
-The **Reflection** pattern forces an agent to critique its own output before returning it. In benchmark tests, Reflection lifted HumanEval scores from 80 % to 91 %—a 10‑point jump that translates directly into fewer bugs in production code. Paired with external verification tools like unit‑test runners, the improvement can exceed 30 percentage points.
+The **Reflection** pattern forces an agent to critique its own output before returning it. In benchmark tests, Reflection lifted HumanEval scores from 80 % to 91 %, a 10‑point jump that translates directly into fewer bugs in production code. Paired with external verification tools like unit‑test runners, the improvement can exceed 30 percentage points.
 
 Other patterns gaining traction include **Plan‑and‑Execute**, which decomposes a request into a clear task graph, and **Tool Use** with a centralized registry, ensuring agents only invoke vetted services. Multi‑agent collaboration and memory‑management patterns are also maturing, allowing fleets of agents to coordinate without stepping on each other’s toes.
 
@@ -34,13 +34,13 @@ Other patterns gaining traction include **Plan‑and‑Execute**, which decompos
 
 On August 2, the EU AI Act becomes operational, imposing transparency, risk‑management, and audit requirements on high‑risk AI systems. The act doesn’t ban autonomous agents; it demands that any system making decisions in employment, credit, or critical infrastructure demonstrate explainability and human oversight.
 
-The timing is deliberate. As open‑weight models become more capable, regulators are catching up, and enterprises are finally ready to invest in the governance layer that makes agents trustworthy. Companies that start now—building reflection loops, audit logs, and tool registries—will be the ones that survive the compliance wave.
+The timing is deliberate. As open‑weight models become more capable, regulators are catching up, and enterprises are finally ready to invest in the governance layer that makes agents trustworthy. Companies that start now, building reflection loops, audit logs, and tool registries, will be the ones that survive the compliance wave.
 
 ### The convergence: production‑grade autonomy
 
 What ties these three developments together is a single idea: **autonomy is now a product feature, not a research experiment**. Open‑weight models give us the raw horsepower; design patterns give us the reliability; regulation gives us the guardrails. Together they turn “agentic AI” from a buzzword into a deployable service.
 
-For teams building on Jiva, this means you can now spin up a multi‑agent workflow that runs on a single GPU, self‑corrects its outputs, and satisfies the EU AI Act’s transparency requirements—all without leaving your own infrastructure.
+For teams building on Jiva, this means you can now spin up a multi‑agent workflow that runs on a single GPU, self‑corrects its outputs, and satisfies the EU AI Act’s transparency requirements, all without leaving your own infrastructure.
 
 The question is no longer “Can we build an autonomous agent?” but “How quickly can we embed it into our existing processes while keeping control and compliance front‑and‑center?” The answer will define the next wave of enterprise AI.
 

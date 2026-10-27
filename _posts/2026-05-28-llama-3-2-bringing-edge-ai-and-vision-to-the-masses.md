@@ -9,7 +9,7 @@ tags:
   - autonomous agents
   - LLM
 excerpt: "Meta's Llama 3.2 introduces lightweight, vision-enabled models that run on mobile and edge devices, unlocking new possibilities for on‑device AI."
-description: "Explore Meta's Llama 3.2 release—small text‑only and multimodal models that run locally, boost privacy, and enable new edge AI applications."
+description: "Explore Meta's Llama 3.2 release, small text‑only and multimodal models that run locally, boost privacy, and enable new edge AI applications."
 keywords: "Llama 3.2, edge AI, vision LLM, on‑device AI, open‑source LLM, multimodal models, privacy, low latency"
 featured_image: "/assets/img/posts/2026-05-28-llama-3-2-bringing-edge-ai-and-vision-to-the-masses.jpg"
 ---
@@ -27,7 +27,7 @@ Running a large language model locally has long been limited by memory and compu
 
 The release also marks Meta’s first truly multimodal LLM family. The **11 B and 90 B vision models** accept images as input and can be used as drop‑in replacements for their text‑only counterparts. In benchmark tests, they outperform closed‑source alternatives such as a leading closed small model on image‑understanding tasks while retaining the same instruction‑following capabilities.
 
-Because the vision models share the same tokenizer and architecture as the text models, developers can switch between them without rewriting pipelines—a huge win for rapid prototyping.
+Because the vision models share the same tokenizer and architecture as the text models, developers can switch between them without rewriting pipelines, a huge win for rapid prototyping.
 
 ## A unified stack for every environment
 
@@ -57,4 +57,4 @@ The models are available on Hugging Face, IBM watsonx, and the official Llam
 
 *Ready to experiment with on‑device agents? Check out the [Llama 3.2 models on Hugging Face](https://huggingface.co/meta-llama) and start building privacy‑preserving AI today.*
 
-[Gritsa Technologies](https://www.gritsa.com) is at the forefront of autonomous AI solutions. Our open‑source **[Jiva framework](https://github.com/KarmaloopAI/Jiva)** empowers developers to create production‑grade agents—now you can pair Jiva with Llama 3.2 for truly decentralized intelligence.
+[Gritsa Technologies](https://www.gritsa.com) is at the forefront of autonomous AI solutions. Our open‑source **[Jiva framework](https://github.com/KarmaloopAI/Jiva)** empowers developers to create production‑grade agents, now you can pair Jiva with Llama 3.2 for truly decentralized intelligence.

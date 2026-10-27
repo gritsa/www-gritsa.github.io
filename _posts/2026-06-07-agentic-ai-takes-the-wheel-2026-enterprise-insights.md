@@ -24,7 +24,7 @@ Adoption rates vary by geography. Asia‑Pacific leads the charge, with AI spend
 
 ## Governance and Risk Management
 
-With rapid deployment comes heightened risk. Forrester reports that 63% of firms cannot enforce purpose limits on agents, and 60% lack quick termination mechanisms. The EU AI Act, effective August 2026, will impose strict transparency and oversight requirements for high‑risk agents. Best‑practice frameworks now emphasize bounded autonomy—clear operational limits, human escalation paths, and comprehensive audit trails.
+With rapid deployment comes heightened risk. Forrester reports that 63% of firms cannot enforce purpose limits on agents, and 60% lack quick termination mechanisms. The EU AI Act, effective August 2026, will impose strict transparency and oversight requirements for high‑risk agents. Best‑practice frameworks now emphasize bounded autonomy, clear operational limits, human escalation paths, and comprehensive audit trails.
 
 ## Practical Use Cases
 
@@ -32,7 +32,7 @@ The highest‑impact deployments are in IT operations, knowledge management, cus
 
 ## Getting Started
 
-Organizations should begin with governance, fix data foundations, and invest in AI literacy. A structured sprint—such as Insentra’s Agentic AI Sprint—can deliver a production‑ready solution in ten weeks, covering prompt engineering, custom GPTs, and agentic thinking across multiple cloud environments.
+Organizations should begin with governance, fix data foundations, and invest in AI literacy. A structured sprint, such as Insentra’s Agentic AI Sprint, can deliver a production‑ready solution in ten weeks, covering prompt engineering, custom GPTs, and agentic thinking across multiple cloud environments.
 
 > Ready to put your organization on the fast track? Learn how Gritsa can help you build production‑grade agentic AI solutions. Visit [Gritsa Technologies](https://www.gritsa.com) for a consultation.
 

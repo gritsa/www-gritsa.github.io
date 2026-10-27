@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Agentic AI Is Finally Getting Real — And Reckoning With Its Own Power"
+title: "Agentic AI Is Finally Getting Real, And Reckoning With Its Own Power"
 date: 2026-08-03 18:33:34 +0000
 author: "Gritsa"
 categories: "AI Technology"
@@ -24,9 +24,9 @@ What's striking is how the newer models behaved differently. The latest internal
 
 At the same time, OpenAI published a field report on how coding agents are modernizing scientific software. Teams used Codex and other coding agents to rewrite libraries like cyvcf2, speeding up development dramatically. Researchers are shifting from writing code to verifying it, but the bottleneck is still human judgment. Agents can build fast, but we still need experts to decide if the results are scientifically valid.
 
-These threads—powerful new models, security incidents, and practical applications—are converging. The same agents that can accelerate scientific discovery can also launch cyberattacks. The same openness that fuels innovation can expose us to risk.
+These threads, powerful new models, security incidents, and practical applications, are converging. The same agents that can accelerate scientific discovery can also launch cyberattacks. The same openness that fuels innovation can expose us to risk.
 
-I think the real story here is about responsibility. As agents become more autonomous, we need robust evaluation environments, defense‑in‑depth safeguards, and clear stewardship for the software they produce. The community is starting to rally—UC Berkeley is hosting the Agentic AI Summit this weekend, bringing together the people building the infrastructure and applications for these systems.
+I think the real story here is about responsibility. As agents become more autonomous, we need robust evaluation environments, defense‑in‑depth safeguards, and clear stewardship for the software they produce. The community is starting to rally, UC Berkeley is hosting the Agentic AI Summit this weekend, bringing together the people building the infrastructure and applications for these systems.
 
 The magic is real, but so is the reckoning. The question isn't whether agents will change the world, but how we'll shape that change before it shapes us.
 

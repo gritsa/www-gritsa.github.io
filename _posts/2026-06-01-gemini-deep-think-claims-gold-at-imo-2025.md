@@ -48,7 +48,7 @@ Developers can start experimenting with Deep Think‑style reasoning by:
 - Designing multi‑agent pipelines where each agent focuses on a sub‑task (e.g., hypothesis, proof, verification).
 - Incorporating external tools such as symbolic solvers or theorem provers to augment the reasoning loop.
 
-Researchers should view this result as a validation of **agentic AI design patterns**—particularly the combination of planning, tool use, and self‑reflection—as a pathway toward more capable autonomous systems.
+Researchers should view this result as a validation of **agentic AI design patterns**, particularly the combination of planning, tool use, and self‑reflection, as a pathway toward more capable autonomous systems.
 
 ## Conclusion
 

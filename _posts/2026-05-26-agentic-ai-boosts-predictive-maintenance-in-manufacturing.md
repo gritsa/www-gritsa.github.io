@@ -18,7 +18,7 @@ featured_image: "/assets/img/posts/2026-05-26-agentic-ai-boosts-predictive-maint
 
 ## Introduction
 
-In today's fast‑paced factories, unplanned downtime can cost millions. Agentic AI—systems that can plan, reason, and act autonomously—is emerging as a game‑changer for predictive maintenance, turning raw sensor data into proactive, self‑executing repair actions.
+In today's fast‑paced factories, unplanned downtime can cost millions. Agentic AI, systems that can plan, reason, and act autonomously, is emerging as a game‑changer for predictive maintenance, turning raw sensor data into proactive, self‑executing repair actions.
 
 ## What Is Agentic AI?
 
@@ -60,6 +60,6 @@ As agentic frameworks mature, we can expect:
 
 ## Conclusion
 
-Agentic AI is turning predictive maintenance from a reactive checklist into a proactive, self‑driving operation. For manufacturers looking to stay competitive, embracing autonomous agents is no longer optional—it's essential.
+Agentic AI is turning predictive maintenance from a reactive checklist into a proactive, self‑driving operation. For manufacturers looking to stay competitive, embracing autonomous agents is no longer optional, it's essential.
 
 *Ready to explore agentic solutions for your operations? Visit [Gritsa Technologies](https://www.gritsa.com) to learn more.*

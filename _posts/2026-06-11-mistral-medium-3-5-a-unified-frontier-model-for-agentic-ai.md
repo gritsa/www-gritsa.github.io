@@ -16,7 +16,7 @@ featured_image: "/assets/img/posts/2026-06-11-mistral-medium-3-5-a-unified-front
 
 ## A New Frontier in Unified Models
 
-Mistral AI has just unveiled **Mistral Medium 3.5**, a 128‑billion‑parameter model that brings together instruction following, advanced reasoning, and code generation in a single, open‑weight package. Released under a Modified MIT license, Medium 3.5 is positioned as the backbone for the next wave of **agentic AI**—systems that can plan, reflect, and execute multi‑step tasks autonomously.
+Mistral AI has just unveiled **Mistral Medium 3.5**, a 128‑billion‑parameter model that brings together instruction following, advanced reasoning, and code generation in a single, open‑weight package. Released under a Modified MIT license, Medium 3.5 is positioned as the backbone for the next wave of **agentic AI**, systems that can plan, reflect, and execute multi‑step tasks autonomously.
 
 ## What Sets Medium 3.5 Apart?
 
@@ -29,7 +29,7 @@ Unlike the typical stack of separate models for chat, reasoning, and coding, Med
 - **VS Code Extension & CLI**: Tight integration with developers’ toolchains, allowing project‑wide automation directly from the editor.
 
 ### 3. Open‑Weight Accessibility
-By publishing the model weights under a permissive license, Mistral invites the community to experiment, fine‑tune, and embed the model into custom pipelines—accelerating innovation across the ecosystem.
+By publishing the model weights under a permissive license, Mistral invites the community to experiment, fine‑tune, and embed the model into custom pipelines, accelerating innovation across the ecosystem.
 
 ## Enterprise Implications
 
@@ -43,7 +43,7 @@ These capabilities translate into faster time‑to‑value for AI‑driven produ
 
 ## Looking Ahead
 
-Mistral’s release signals a shift toward **integrated, agent‑ready models**. As the ecosystem matures, we can expect tighter standards for tool use, reflection, and multi‑agent coordination—areas where Gritsa’s own **Jiva** framework is already making strides.
+Mistral’s release signals a shift toward **integrated, agent‑ready models**. As the ecosystem matures, we can expect tighter standards for tool use, reflection, and multi‑agent coordination, areas where Gritsa’s own **Jiva** framework is already making strides.
 
 Stay tuned for deeper dives into how you can integrate Medium 3.5 with Jiva’s autonomous agent architecture.
 

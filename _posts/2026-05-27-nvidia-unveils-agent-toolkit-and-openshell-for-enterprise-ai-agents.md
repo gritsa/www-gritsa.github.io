@@ -28,7 +28,7 @@ The **Agent Toolkit** is an open‑source collection of libraries and reference 
 - **Built‑in observability** hooks that surface latency, token usage, and error rates in real time.
 - **Extensible plugin system** for integrating domain‑specific tools (e.g., ERP connectors, data‑lake queries).
 
-By abstracting the boilerplate of agent orchestration, the toolkit lets developers focus on the *what*—the business logic—rather than the *how*—the plumbing.
+By abstracting the boilerplate of agent orchestration, the toolkit lets developers focus on the *what*, the business logic, rather than the *how*, the plumbing.
 
 ## OpenShell: Security‑First Runtime
 

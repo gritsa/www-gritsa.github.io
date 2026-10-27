@@ -18,7 +18,7 @@ featured_image: "/assets/img/posts/2026-06-06-microsofts-mai-code-1-flash-a-new-
 
 ## Introduction
 
-The landscape of software development is being reshaped by **agentic coding**—AI systems that not only suggest snippets but actively collaborate with developers, reasoning through complex tasks and adapting to real‑world workflows. At the forefront of this shift is Microsoft’s latest release, **MAI‑Code‑1‑Flash**, a purpose‑built coding model that promises faster, cheaper, and more reliable assistance for everyday developers.
+The landscape of software development is being reshaped by **agentic coding**, AI systems that not only suggest snippets but actively collaborate with developers, reasoning through complex tasks and adapting to real‑world workflows. At the forefront of this shift is Microsoft’s latest release, **MAI‑Code‑1‑Flash**, a purpose‑built coding model that promises faster, cheaper, and more reliable assistance for everyday developers.
 
 ## What Is MAI‑Code‑1‑Flash?
 

@@ -20,11 +20,11 @@ I’ve been watching the AI landscape shift under my feet. The headlines keep ta
 
 ### From code‑centric to knowledge‑centric agents
 
-For years the agent conversation revolved around coding assistants—tools that could write a function, run a test, or spin up a micro‑service. That’s still useful, but it’s becoming a niche. The latest releases from DeepSeek, Meta, and Replit illustrate a broader ambition: agents that can plan, reason, and act across spreadsheets, presentations, and research papers.
+For years the agent conversation revolved around coding assistants, tools that could write a function, run a test, or spin up a micro‑service. That’s still useful, but it’s becoming a niche. The latest releases from DeepSeek, Meta, and Replit illustrate a broader ambition: agents that can plan, reason, and act across spreadsheets, presentations, and research papers.
 
 DeepSeek’s **V4 Flash** (released July 31) ships with MIT‑licensed weights and a price point that makes it viable for production pipelines. Its 284‑billion‑parameter backbone stays the same, but a post‑training pass tuned for agentic reasoning lets it beat the larger V4‑Pro preview on every agentic benchmark DeepSeek publishes. What’s striking is the cost: $0.14 per million input tokens and $0.28 per million output tokens, with a cache‑hit discount that brings the effective price close to zero for repetitive workloads. That economics opens the door for startups and indie hackers to run sophisticated agents without a massive cloud bill.
 
-Meta’s **Muse Glimmer** (launched August 10) is a 30‑billion‑parameter model distilled from Muse Spark, explicitly designed for “always‑on” local agents. It runs on a single consumer GPU, supports function calling, and can chain multiple tool calls in a single prompt. The model card highlights multi‑step reasoning, reliable tool use, and failure recovery—all without needing a network connection. In other words, the agent can live on your laptop, ready to draft a slide deck, summarize a research article, or even spin up a tiny web dashboard on the fly.
+Meta’s **Muse Glimmer** (launched August 10) is a 30‑billion‑parameter model distilled from Muse Spark, explicitly designed for “always‑on” local agents. It runs on a single consumer GPU, supports function calling, and can chain multiple tool calls in a single prompt. The model card highlights multi‑step reasoning, reliable tool use, and failure recovery, all without needing a network connection. In other words, the agent can live on your laptop, ready to draft a slide deck, summarize a research article, or even spin up a tiny web dashboard on the fly.
 
 Replit’s **Agent 4** (introduced July 29) takes the same idea a step further by targeting knowledge‑work tasks. It can generate a full presentation, write Excel macros, or produce a short video script from a single sentence. The demo videos show the agent pulling in external APIs, formatting Markdown into PowerPoint, and even handling basic design choices. It’s a clear signal that the “coding‑only” era is giving way to a broader, more creative workflow.
 
@@ -36,13 +36,13 @@ Open‑weight releases have been around for a while, but the combination of thre
 2. **Tool‑use maturity** – Both models expose native function‑calling APIs and support speculative decoding, which reduces latency and makes multi‑step reasoning reliable.
 3. **Knowledge‑work focus** – The demos and documentation explicitly target spreadsheets, slides, and research summarization, not just code generation.
 
-Together, they lower the barrier for anyone—students, analysts, product managers—to embed autonomous reasoning into their daily tools.
+Together, they lower the barrier for anyone, students, analysts, product managers, to embed autonomous reasoning into their daily tools.
 
 ### What this means for developers
 
 If you’re building an agent today, the default choice is shifting. Instead of reaching for a closed‑source, high‑cost model, you can start with DeepSeek V4 Flash for a cheap, production‑ready API, or run Muse Glimmer locally for privacy‑sensitive tasks. Replit Agent 4 shows how the same underlying tech can be wrapped in a UI that non‑technical users love.
 
-For teams evaluating performance, the key takeaway is simple: **agentic capability is no longer tied to parameter count**. A 13‑billion‑activated‑parameter Flash can outperform a 49‑billion‑parameter Pro on the same benchmarks, while costing a fraction of the compute. That changes the economics of experimentation and opens up new product ideas—agents that live inside your IDE, your spreadsheet, or even your email client.
+For teams evaluating performance, the key takeaway is simple: **agentic capability is no longer tied to parameter count**. A 13‑billion‑activated‑parameter Flash can outperform a 49‑billion‑parameter Pro on the same benchmarks, while costing a fraction of the compute. That changes the economics of experimentation and opens up new product ideas, agents that live inside your IDE, your spreadsheet, or even your email client.
 
 ### The road ahead
 

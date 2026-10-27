@@ -60,7 +60,7 @@ By providing these capabilities under an open license, Alibaba lowers the barrie
 
 ## Conclusion
 
-Qwen 3 235B‑A22B is more than a new model; it’s a catalyst for the next wave of autonomous AI. Its blend of frontier performance, efficient MoE design, and permissive licensing makes it a compelling choice for anyone building agentic applications. As the ecosystem matures, expect rapid community contributions—fine‑tuned domain models, new tool‑calling plugins, and optimized inference stacks.
+Qwen 3 235B‑A22B is more than a new model; it’s a catalyst for the next wave of autonomous AI. Its blend of frontier performance, efficient MoE design, and permissive licensing makes it a compelling choice for anyone building agentic applications. As the ecosystem matures, expect rapid community contributions, fine‑tuned domain models, new tool‑calling plugins, and optimized inference stacks.
 
 Ready to explore what an open‑source, agent‑ready LLM can do for your projects? Visit **[Gritsa Technologies](https://www.gritsa.com)** to learn how our Jiva framework can integrate Qwen 3 235B‑A22B into your autonomous workflows.
 

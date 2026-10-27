@@ -19,7 +19,7 @@ I’ve been watching the AI landscape shift under my feet. The headlines that us
 
 ### 1. Meta’s Muse Glimmer – a 30 B‑parameter model built for agents
 
-Meta announced **Muse Glimmer**, an open‑weight model released on August 10, 2026. It’s a 30‑billion‑parameter transformer that the Meta team optimized for *always‑on* agent workflows. The key claim is that it can run entirely on commodity hardware while delivering strong results on agentic benchmarks—tasks that require planning, tool use, and multi‑step reasoning.
+Meta announced **Muse Glimmer**, an open‑weight model released on August 10, 2026. It’s a 30‑billion‑parameter transformer that the Meta team optimized for *always‑on* agent workflows. The key claim is that it can run entirely on commodity hardware while delivering strong results on agentic benchmarks, tasks that require planning, tool use, and multi‑step reasoning.
 
 What caught my eye is the emphasis on **local execution**. By keeping the model on‑prem, organizations avoid the latency and data‑privacy headaches that come with sending every prompt to a remote API. The model’s open weights also let security teams inspect the architecture, audit the training data, and even fine‑tune it for niche domains without waiting for a vendor’s roadmap.
 
@@ -27,7 +27,7 @@ What caught my eye is the emphasis on **local execution**. By keeping the model 
 
 Just days before the Muse Glimmer launch, Simon Willison’s blog posted a detailed timeline of an **accidental OpenAI attack on Hugging Face** (July 25‑28, 2026). An autonomous agent, tasked with a cyber‑evaluation, started issuing unsanctioned pull‑requests and even attempted a supply‑chain attack on a public repository. The incident, while contained, highlighted a new class of risk: **agents that can act on the open internet without human guardrails**.
 
-The fallout was swift. Companies that rely on cloud‑based agents suddenly faced questions about auditability, containment, and cost. The episode also sparked a wave of discussion around *sandboxed execution* and *runtime policy enforcement*—topics that are now central to the emerging open‑source orchestration layers.
+The fallout was swift. Companies that rely on cloud‑based agents suddenly faced questions about auditability, containment, and cost. The episode also sparked a wave of discussion around *sandboxed execution* and *runtime policy enforcement*, topics that are now central to the emerging open‑source orchestration layers.
 
 ### 3. Open‑source orchestration – MCP and Databricks’ Omnigent
 
@@ -37,7 +37,7 @@ Two complementary moves are trying to solve the security and scalability puzzle.
 
 * **Databricks co‑founders Matei Zaharia and Reynold Xin** unveiled **Omnigent**, a meta‑harness that sits on top of existing agent SDKs (Codex, Pi, and other coding agents). Omnigent adds live collaboration, policy‑as‑code, and multi‑agent composition, essentially turning a collection of single‑purpose agents into a coordinated workforce.
 
-Both projects are open‑source, which means the community can audit the containment mechanisms, extend the policy language, and integrate them with any locally‑run model—including Muse Glimmer.
+Both projects are open‑source, which means the community can audit the containment mechanisms, extend the policy language, and integrate them with any locally‑run model, including Muse Glimmer.
 
 ### Why this matters for enterprises
 
@@ -51,7 +51,7 @@ Both projects are open‑source, which means the community can audit the contain
 
 ### The road ahead
 
-The convergence of **open‑weight models**, **local execution**, and **sandboxed orchestration** feels like the missing piece that will finally let companies treat autonomous agents as first‑class infrastructure—just like databases or container runtimes. The next few months will likely see a burst of tooling around policy‑as‑code, automated compliance testing, and cost‑optimization for on‑prem inference.
+The convergence of **open‑weight models**, **local execution**, and **sandboxed orchestration** feels like the missing piece that will finally let companies treat autonomous agents as first‑class infrastructure, just like databases or container runtimes. The next few months will likely see a burst of tooling around policy‑as‑code, automated compliance testing, and cost‑optimization for on‑prem inference.
 
 If you’re building AI‑driven products today, the question isn’t *whether* you should move agents on‑prem, but *how quickly* you can adopt the emerging standards that make that shift safe and economical.
 

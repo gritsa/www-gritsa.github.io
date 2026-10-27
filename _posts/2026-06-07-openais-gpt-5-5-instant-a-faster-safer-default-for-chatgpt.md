@@ -14,7 +14,7 @@ keywords: "GPT-5.5 Instant, ChatGPT, OpenAI, AI safety, LLM performance"
 featured_image: "/assets/img/posts/2026-06-07-openais-gpt-5-5-instant-a-faster-safer-default-for-chatgpt.jpg"
 ---
 
-OpenAI has quietly rolled out a significant upgrade to the AI experience most of us use every day. On May 5, 2026, the company replaced the long‑standing GPT‑5.3 Instant with **GPT‑5.5 Instant** as the default model for ChatGPT on both web and mobile. The change is more than a version bump—it delivers a measurable drop in hallucinations, a noticeable speed boost, and tighter controls for everyday users.
+OpenAI has quietly rolled out a significant upgrade to the AI experience most of us use every day. On May 5, 2026, the company replaced the long‑standing GPT‑5.3 Instant with **GPT‑5.5 Instant** as the default model for ChatGPT on both web and mobile. The change is more than a version bump, it delivers a measurable drop in hallucinations, a noticeable speed boost, and tighter controls for everyday users.
 
 ## Why the upgrade matters
 
@@ -42,7 +42,7 @@ Enterprises that rely on ChatGPT for customer‑facing bots can now promise **mo
 
 OpenAI’s move signals a broader trend: **making the default model safer and faster** rather than simply chasing raw capability. As AI becomes a daily utility, the cost of occasional misinformation rises sharply. By tightening the safety net and shaving latency, GPT‑5.5 Instant sets a new baseline for what users should expect from a “default” AI assistant.
 
-For developers, the key takeaway is to **monitor the new metrics**—hallucination rate, latency, and token usage—when evaluating performance. The underlying improvements are likely to cascade into future releases, so staying on the latest default will keep your applications both **responsive and trustworthy**.
+For developers, the key takeaway is to **monitor the new metrics**, hallucination rate, latency, and token usage, when evaluating performance. The underlying improvements are likely to cascade into future releases, so staying on the latest default will keep your applications both **responsive and trustworthy**.
 
 ---
 

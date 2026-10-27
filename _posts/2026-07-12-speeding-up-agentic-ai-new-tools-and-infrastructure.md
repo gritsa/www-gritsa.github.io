@@ -11,7 +11,7 @@ tags:
   - infrastructure
   - speed
 excerpt: "How recent releases in CLI tooling, cloud platforms, and model decoding are making autonomous agents faster and cheaper to run."
-description: "Exploring the latest developments—llm 0.31.1, Modal's agent‑centric cloud, and DeepSeek's speculative decoding—that are accelerating agentic AI workloads."
+description: "Exploring the latest developments, llm 0.31.1, Modal's agent‑centric cloud, and DeepSeek's speculative decoding, that are accelerating agentic AI workloads."
 keywords: "agentic AI, autonomous agents, LLM, infrastructure, speed, Modal, DeepSeek, GPT-5.6"
 ---
 
@@ -19,7 +19,7 @@ I’ve been watching the agentic AI landscape shift from a series of isolated ex
 
 First, Simon Willison dropped **llm 0.31.1** on July 9. It’s a tiny command‑line wrapper that lets developers spin up any large language model from the terminal. The release also announced the **GPT‑5.6 family (Luna, Terra, Sol)** and a major upgrade to **sqlite‑utils 4.0** with schema migrations. What caught my eye is how the tool lowers the friction for anyone to prototype an agent without leaving their shell. When you can fire up a model with a single command, the barrier to building autonomous workflows collapses.
 
-Second, **Modal** just closed a **$355 M Series C** and is positioning itself as the “agent cloud.” Their CTO, Akshat Bubna, explained that traditional web‑app stacks weren’t built for the bursty, GPU‑heavy workloads agents generate. Modal’s platform now offers elastic inference, sandboxed execution environments, and GPU burst on demand—features that let an agent spin up a sandbox, run a heavy inference job, and tear it down in seconds. The shift from “developer‑centric” to “agent‑centric” infrastructure feels like the missing piece that will let teams run dozens of agents in parallel without drowning in ops overhead.
+Second, **Modal** just closed a **$355 M Series C** and is positioning itself as the “agent cloud.” Their CTO, Akshat Bubna, explained that traditional web‑app stacks weren’t built for the bursty, GPU‑heavy workloads agents generate. Modal’s platform now offers elastic inference, sandboxed execution environments, and GPU burst on demand, features that let an agent spin up a sandbox, run a heavy inference job, and tear it down in seconds. The shift from “developer‑centric” to “agent‑centric” infrastructure feels like the missing piece that will let teams run dozens of agents in parallel without drowning in ops overhead.
 
 Third, **DeepSeek** open‑sourced a speculative decoding module that speeds up text generation by **over 50 %** without sacrificing accuracy. The technique, which predicts the next token and validates it in a single pass, is already being folded into production pipelines. When you combine that speed boost with the GPT‑5.6 family’s higher token throughput, the cost per agent interaction drops dramatically.
 
@@ -33,11 +33,11 @@ If you’re building with agents today, you can start treating them like micro�
 
 ### Looking ahead
 
-I expect we’ll see more “agent‑first” services—platforms that expose an API for an autonomous worker rather than a static model. The recent buzz around **new frontier model releases** and **Gemini’s video dev engine** shows that model providers are also racing to make their outputs cheaper and faster. The next wave will be less about raw model size and more about how quickly an agent can close the loop between perception, reasoning, and action.
+I expect we’ll see more “agent‑first” services, platforms that expose an API for an autonomous worker rather than a static model. The recent buzz around **new frontier model releases** and **Gemini’s video dev engine** shows that model providers are also racing to make their outputs cheaper and faster. The next wave will be less about raw model size and more about how quickly an agent can close the loop between perception, reasoning, and action.
 
 ### Gritsa’s take
 
-At **Gritsa Technologies**, we’re already integrating these ideas into **Jiva**, our open‑source autonomous agent framework. By leveraging fast inference back‑ends and cloud‑native sandboxing, Jiva can orchestrate multi‑agent workflows that run at production scale. We’re excited to see the community push the envelope—and we’ll keep building the tools that make it possible.
+At **Gritsa Technologies**, we’re already integrating these ideas into **Jiva**, our open‑source autonomous agent framework. By leveraging fast inference back‑ends and cloud‑native sandboxing, Jiva can orchestrate multi‑agent workflows that run at production scale. We’re excited to see the community push the envelope, and we’ll keep building the tools that make it possible.
 
 If you want to try it yourself, check out the latest Jiva release on GitHub: [Jiva on GitHub](https://github.com/KarmaloopAI/Jiva). And for a deeper dive into the infrastructure side, read Modal’s announcement: [Modal’s Agent Cloud](https://www.latent.space/p/modal2026).
 

@@ -18,9 +18,9 @@ I’ve been watching the agentic AI landscape for a while, and the past week fee
 
 ### Meta ships a coding‑first agent stack
 
-On August 5, Meta announced **Muse Spark 1.2** and **Muse Code**. Muse Spark 1.2 is a 1‑million‑token context model tuned for long‑horizon coding tasks—multi‑file refactors, whole‑repository generation, and complex debugging. What sets it apart is the tight coupling with **Muse Code**, a purpose‑built coding agent that fans out work to parallel sub‑agents, each living in its own git worktree. Every tool call, every sub‑agent spawn, and every decision is logged in an immutable event log, giving developers a full audit trail.
+On August 5, Meta announced **Muse Spark 1.2** and **Muse Code**. Muse Spark 1.2 is a 1‑million‑token context model tuned for long‑horizon coding tasks, multi‑file refactors, whole‑repository generation, and complex debugging. What sets it apart is the tight coupling with **Muse Code**, a purpose‑built coding agent that fans out work to parallel sub‑agents, each living in its own git worktree. Every tool call, every sub‑agent spawn, and every decision is logged in an immutable event log, giving developers a full audit trail.
 
-The benchmarks back the hype: Muse Spark 1.2 scores **54 on the Artificial Analysis Intelligence Index**, 80 % on Terminal‑Bench v2.1, and 1 631 Elo on GDPval‑AA v2, putting it on par with GPT‑5.6 Sol and other frontier models. Pricing is competitive—$1.25/$4.25 per 1 M tokens for the standard tier, with a contributor tier at $0.10/$0.20 for those willing to share data for improvement.
+The benchmarks back the hype: Muse Spark 1.2 scores **54 on the Artificial Analysis Intelligence Index**, 80 % on Terminal‑Bench v2.1, and 1 631 Elo on GDPval‑AA v2, putting it on par with GPT‑5.6 Sol and other frontier models. Pricing is competitive, $1.25/$4.25 per 1 M tokens for the standard tier, with a contributor tier at $0.10/$0.20 for those willing to share data for improvement.
 
 ### A leading provider tightens biology safeguards
 
@@ -40,7 +40,7 @@ The piece also stresses continuous governance: agents accumulate integrations an
 
 ### Academia formalizes evaluation
 
-Finally, the **KDD Workshop on Evaluation and Trustworthiness of Agentic AI** (August 9, 2026) signals that the research community is catching up. Sessions cover reproducibility, benchmark design, and the “Trusted Agentic AI Landscape” for enterprise vendor selection. The workshop’s keynote highlighted the need for **transparent safety governance, data handling rules, and architectures that avoid vendor lock‑in**—the same themes echoing in the industry releases.
+Finally, the **KDD Workshop on Evaluation and Trustworthiness of Agentic AI** (August 9, 2026) signals that the research community is catching up. Sessions cover reproducibility, benchmark design, and the “Trusted Agentic AI Landscape” for enterprise vendor selection. The workshop’s keynote highlighted the need for **transparent safety governance, data handling rules, and architectures that avoid vendor lock‑in**, the same themes echoing in the industry releases.
 
 ### The thread that ties it all together
 

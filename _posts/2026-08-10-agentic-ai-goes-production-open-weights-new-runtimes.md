@@ -16,7 +16,7 @@ keywords: "agentic AI, autonomous agents, open-weight models, runtime, LLM, prod
 featured_image: "/assets/img/posts/2026-08-10-agentic-ai-goes-production-open-weights-new-runtimes.jpg"
 ---
 
-I’ve been watching the agentic AI landscape for months, and the past week feels like a turning point. Three independent signals—Simon Willison’s LLM 0.32 release, Hugging Face’s LFM2.5‑2.6B “Deploy Agents Everywhere” blog, and the flurry of production‑focused announcements from Latent Space and Vellum—converge on the same idea: agents are finally graduating from research demos to real‑world workloads.
+I’ve been watching the agentic AI landscape for months, and the past week feels like a turning point. Three independent signals, Simon Willison’s LLM 0.32 release, Hugging Face’s LFM2.5‑2.6B “Deploy Agents Everywhere” blog, and the flurry of production‑focused announcements from Latent Space and Vellum, converge on the same idea: agents are finally graduating from research demos to real‑world workloads.
 
 **Reasoning traces baked into the core**
 
@@ -32,7 +32,7 @@ Latent Space’s AINews roundup from August 7 paints a broader picture. Lang
 
 **Benchmarks that matter**
 
-Finally, Vellum’s “Best AI Employees in 2026” article provides hard numbers. OpenAI’s GPT‑5.6 tiers scored 53.6 on the Agents’ Last Exam, while another frontier model lagged at 40.5. More telling, the article notes a 15 % month‑over‑month growth in the action‑to‑output ratio for agents deployed through Vellum’s platform. In other words, agents are not only talking; they’re taking more concrete actions—triggering workflows, updating databases, and even negotiating inventory in simulated e‑commerce environments.
+Finally, Vellum’s “Best AI Employees in 2026” article provides hard numbers. OpenAI’s GPT‑5.6 tiers scored 53.6 on the Agents’ Last Exam, while another frontier model lagged at 40.5. More telling, the article notes a 15 % month‑over‑month growth in the action‑to‑output ratio for agents deployed through Vellum’s platform. In other words, agents are not only talking; they’re taking more concrete actions, triggering workflows, updating databases, and even negotiating inventory in simulated e‑commerce environments.
 
 **Why this matters for Gritsa**
 

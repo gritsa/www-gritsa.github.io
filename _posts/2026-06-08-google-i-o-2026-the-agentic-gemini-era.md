@@ -26,7 +26,7 @@ Google unveiled **Gemini 3.5 Flash**, the first model in a new series that blend
 
 ## Information Agents and Generative UI
 
-The most visible change for end users is the replacement of the classic search box with **information agents**. These agents continuously crawl the web, synthesize fresh data, and surface it as interactive widgets—think live price trackers, dynamic maps, or custom calculators—all generated on demand. Google calls this **generative UI**: Gemini 3.5 Flash builds bespoke visual tools that match the user’s intent, eliminating the need for developers to pre‑design every possible interface. Early demos showed a travel planner that assembled flight options, hotel availability, and local attractions into a single, manipulable timeline, all assembled in seconds.
+The most visible change for end users is the replacement of the classic search box with **information agents**. These agents continuously crawl the web, synthesize fresh data, and surface it as interactive widgets, think live price trackers, dynamic maps, or custom calculators, all generated on demand. Google calls this **generative UI**: Gemini 3.5 Flash builds bespoke visual tools that match the user’s intent, eliminating the need for developers to pre‑design every possible interface. Early demos showed a travel planner that assembled flight options, hotel availability, and local attractions into a single, manipulable timeline, all assembled in seconds.
 
 ## Gemini Spark and Personal AI
 

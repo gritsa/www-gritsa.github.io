@@ -20,15 +20,15 @@ What makes this interesting isn’t just the headline number. It’s the fact th
 
 ### The policy win
 
-DeepSeek’s post‑training focused on the *policy* layer—how the model decides when to call a tool, when to stop reading, and how to structure multi‑step trajectories. By reshaping that policy while keeping the 284 B backbone untouched, they nudged the model up by 10‑15 points on benchmarks like Terminal‑Bench 2.1 and DeepSWE. In plain English: the model now knows *when* to use its tools, not just *what* to say.
+DeepSeek’s post‑training focused on the *policy* layer, how the model decides when to call a tool, when to stop reading, and how to structure multi‑step trajectories. By reshaping that policy while keeping the 284 B backbone untouched, they nudged the model up by 10‑15 points on benchmarks like Terminal‑Bench 2.1 and DeepSWE. In plain English: the model now knows *when* to use its tools, not just *what* to say.
 
-That shift matters for anyone building production agents. A tighter policy reduces hallucinations, cuts token waste, and—crucially—lowers cost. DeepSeek’s pricing shows a 98 % cache‑hit discount on input tokens, making the already cheap $0.14 / M tokens even cheaper for long‑running agents that repeatedly send the same system prompt.
+That shift matters for anyone building production agents. A tighter policy reduces hallucinations, cuts token waste, and, crucially, lowers cost. DeepSeek’s pricing shows a 98 % cache‑hit discount on input tokens, making the already cheap $0.14 / M tokens even cheaper for long‑running agents that repeatedly send the same system prompt.
 
 ### Open weights, real‑world testing
 
 Because the weights landed on Hugging Face the same day, the community can verify the claims instantly. The model card lists the exact benchmark numbers, and the repo even includes a vLLM recipe for a single 4×GB300 node. If you’ve been waiting for a “small‑but‑smart” agent model that you can self‑host, this is the one.
 
-For teams already using the **Jiva** framework, the new model plugs straight into the existing tool‑calling hooks. The only change is swapping the model identifier to `deepseek-v4-flash`—no code rewrite, just a new endpoint. That simplicity is rare in the agentic world, where most upgrades demand a full pipeline overhaul.
+For teams already using the **Jiva** framework, the new model plugs straight into the existing tool‑calling hooks. The only change is swapping the model identifier to `deepseek-v4-flash`, no code rewrite, just a new endpoint. That simplicity is rare in the agentic world, where most upgrades demand a full pipeline overhaul.
 
 ### What this means for builders
 

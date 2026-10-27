@@ -28,7 +28,7 @@ What matters most is not the raw score but the **throughput**. When you can spin
 
 ### Antigravity: an agent OS, not just a chat wrapper
 
-Alongside the model, Google introduced **Antigravity 2.0**—a full‑stack agent platform that includes a desktop app, CLI, SDK, and **managed agents** in the Gemini API. The demo that stole the show:
+Alongside the model, Google introduced **Antigravity 2.0**, a full‑stack agent platform that includes a desktop app, CLI, SDK, and **managed agents** in the Gemini API. The demo that stole the show:
 
 * Built a functional OS in **12 hours** using **93 parallel sub‑agents**, **15 k+ model requests**, **2.6 B tokens**, and **under $1 K** in API credits.
 
@@ -55,7 +55,7 @@ Google’s 3.5 Flash and Antigravity are built around these realities. The open�
 
 ### The market is exploding
 
-The buzz isn’t just technical. Analysts project the **agentic AI market** to grow from **$5.2 B in 2024 to $200 B by 2034**—a 38× expansion driven by enterprise automation and autonomous decision‑making. Companies are moving beyond simple assistants to systems that can plan, use tools, coordinate steps, and complete work with limited human supervision.
+The buzz isn’t just technical. Analysts project the **agentic AI market** to grow from **$5.2 B in 2024 to $200 B by 2034**, a 38× expansion driven by enterprise automation and autonomous decision‑making. Companies are moving beyond simple assistants to systems that can plan, use tools, coordinate steps, and complete work with limited human supervision.
 
 ### What this means for builders
 
@@ -64,13 +64,13 @@ If you’re building with agents today, consider these practical take‑aways:
 * **Prioritize speed and orchestration** over chasing the highest benchmark score.
 * **Leverage managed agents** (Antigravity) for long‑running, multi‑step tasks.
 * **Mix proprietary and open‑source models**: run the bulk locally, call the frontier only when you need the extra horsepower.
-* **Design for parallelism**—structure your workflow so many agents can work at once.
+* **Design for parallelism**: structure your workflow so many agents can work at once.
 
 ### Closing thoughts
 
 The AI landscape is entering a **speed‑first era**. Google’s Gemini 3.5 Flash and Antigravity platform show what’s possible when you put throughput and orchestration at the core. At the same time, open‑source models give you a viable, cheaper path to build powerful agentic systems without locking into a single vendor.
 
-For teams at Gritsa, this means we can ship **more capable, faster, and cost‑effective AI products**—exactly the kind of edge that matters in a market that’s rapidly moving from “AI as a feature” to “AI as the product.”
+For teams at Gritsa, this means we can ship **more capable, faster, and cost‑effective AI products**, exactly the kind of edge that matters in a market that’s rapidly moving from “AI as a feature” to “AI as the product.”
 
 ---
 

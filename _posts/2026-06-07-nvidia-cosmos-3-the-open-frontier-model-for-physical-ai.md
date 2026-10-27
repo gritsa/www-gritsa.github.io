@@ -49,7 +49,7 @@ The model weights are already available on **Hugging Face**, and a lightweight i
 
 ## Looking Ahead
 
-Cosmos 3 sets a new standard for open, multimodal foundation models. As the ecosystem matures, we expect rapid advances in robot autonomy, synthetic data pipelines, and AI‑driven simulation—areas where Gritsa’s expertise can deliver immediate value to our clients.
+Cosmos 3 sets a new standard for open, multimodal foundation models. As the ecosystem matures, we expect rapid advances in robot autonomy, synthetic data pipelines, and AI‑driven simulation, areas where Gritsa’s expertise can deliver immediate value to our clients.
 
 ---
 

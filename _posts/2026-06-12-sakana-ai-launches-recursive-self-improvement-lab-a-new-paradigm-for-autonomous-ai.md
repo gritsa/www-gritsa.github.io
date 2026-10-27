@@ -15,7 +15,7 @@ keywords: "recursive self‑improvement, autonomous AI, Sakana AI, sovereign AI,
 
 ## Introduction
 
-In a bold move that could reshape how AI systems evolve, **Sakana AI** has announced the creation of a dedicated **Recursive Self‑Improvement (RSI) Lab**. The new research group, based in Tokyo, is tasked with redesigning the AI development process itself using AI—turning the traditional, human‑driven R&D cycle into an autonomous, self‑improving loop. This initiative arrives at a time when the industry is hitting diminishing returns from sheer scale, and it offers a compelling vision for compute‑efficient, sovereign AI.
+In a bold move that could reshape how AI systems evolve, **Sakana AI** has announced the creation of a dedicated **Recursive Self‑Improvement (RSI) Lab**. The new research group, based in Tokyo, is tasked with redesigning the AI development process itself using AI, turning the traditional, human‑driven R&D cycle into an autonomous, self‑improving loop. This initiative arrives at a time when the industry is hitting diminishing returns from sheer scale, and it offers a compelling vision for compute‑efficient, sovereign AI.
 
 ## What Is Recursive Self‑Improvement?
 
