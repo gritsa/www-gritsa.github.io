@@ -44,11 +44,11 @@ These improvements stem from agents that continuously monitor vibration, tempera
 
 ## How It Works
 
-1. **Data Ingestion** – Edge devices stream high‑frequency sensor data to a central lake.
-2. **Anomaly Detection** – An LLM‑powered model identifies patterns that deviate from normal operation.
-3. **Root‑Cause Reasoning** – The agent queries historical maintenance records and technical manuals to pinpoint likely causes.
-4. **Action Orchestration** – Using integrated APIs, the agent creates a work order, orders spare parts, and notifies the maintenance crew.
-5. **Feedback Loop** – After repair, the agent logs outcomes, refining its reasoning for future incidents.
+1. **Data Ingestion**: Edge devices stream high‑frequency sensor data to a central lake.
+2. **Anomaly Detection**: An LLM‑powered model identifies patterns that deviate from normal operation.
+3. **Root‑Cause Reasoning**: The agent queries historical maintenance records and technical manuals to pinpoint likely causes.
+4. **Action Orchestration**: Using integrated APIs, the agent creates a work order, orders spare parts, and notifies the maintenance crew.
+5. **Feedback Loop**: After repair, the agent logs outcomes, refining its reasoning for future incidents.
 
 ## Future Outlook
 

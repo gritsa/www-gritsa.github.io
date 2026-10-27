@@ -33,9 +33,9 @@ Latent.Space reported that the model’s performance on the Arena.ai leaderboard
 
 The common thread here is **scale**. When you combine massive parameter counts, massive context, and open access, you get a new class of agents that can:
 
-* **Plan across long horizons** – keep track of months‑long projects without losing the big picture.
-* **Reason multimodally** – understand diagrams, screenshots, and even short video clips.
-* **Iterate instantly** – fine‑tune on the fly without waiting for a proprietary API.
+* **Plan across long horizons**: keep track of months‑long projects without losing the big picture.
+* **Reason multimodally**: understand diagrams, screenshots, and even short video clips.
+* **Iterate instantly**: fine‑tune on the fly without waiting for a proprietary API.
 
 For teams building autonomous systems, this means less engineering overhead and more time spent on product logic. At Gritsa, we’re already prototyping a Jiva‑based workflow that uses Kimi K3 to ingest a full codebase, generate documentation, and run unit tests, all in a single prompt. The results have been striking: fewer bugs, faster onboarding, and a noticeable drop in manual debugging.
 

@@ -40,17 +40,17 @@ Leveraging the **Pixtral** heritage, the model accepts image inputs and can desc
 
 ## Why This Matters for Teams
 
-1. **Cost Efficiency** – Running a single MoE model reduces GPU memory footprints and inference latency compared to stitching together three separate services.
-2. **Simplified Integration** – One API endpoint, one authentication token, one SDK. Teams can drop the model into existing pipelines with minimal refactoring.
-3. **Flexibility** – The `reasoning_effort` knob lets product managers tune the trade‑off between speed and depth per feature, without redeploying infrastructure.
-4. **Open‑Source Freedom** – Licensed under Apache 2, developers can fine‑tune, audit, and host the model on‑premise, satisfying data‑sovereignty requirements common in Europe and regulated industries.
+1. **Cost Efficiency**: Running a single MoE model reduces GPU memory footprints and inference latency compared to stitching together three separate services.
+2. **Simplified Integration**: One API endpoint, one authentication token, one SDK. Teams can drop the model into existing pipelines with minimal refactoring.
+3. **Flexibility**: The `reasoning_effort` knob lets product managers tune the trade‑off between speed and depth per feature, without redeploying infrastructure.
+4. **Open‑Source Freedom**: Licensed under Apache 2, developers can fine‑tune, audit, and host the model on‑premise, satisfying data‑sovereignty requirements common in Europe and regulated industries.
 
 ## Real‑World Use Cases
 
-- **Enterprise Chatbots** – Deploy a single model that can answer questions, reason over internal docs, and generate code snippets for developers.
-- **AI‑Assisted IDEs** – Provide inline code suggestions, refactorings, and visual explanations of UI mockups within the same assistant.
-- **Multimodal Content Creation** – Generate blog post drafts, accompany them with custom illustrations, and iterate based on visual feedback, all in one workflow.
-- **Research Prototyping** – Quickly prototype agents that need to parse scientific papers (text + figures) and produce reproducible code.
+- **Enterprise Chatbots**: Deploy a single model that can answer questions, reason over internal docs, and generate code snippets for developers.
+- **AI‑Assisted IDEs**: Provide inline code suggestions, refactorings, and visual explanations of UI mockups within the same assistant.
+- **Multimodal Content Creation**: Generate blog post drafts, accompany them with custom illustrations, and iterate based on visual feedback, all in one workflow.
+- **Research Prototyping**: Quickly prototype agents that need to parse scientific papers (text + figures) and produce reproducible code.
 
 ## Comparison Snapshot
 

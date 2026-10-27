@@ -50,7 +50,7 @@ Together, these capabilities let teams build **secure, observable, and scalable 
 ## Getting Started in Minutes
 
 1. **Access the model** via Databricks Model Serving or the AI Playground.
-2. **Choose a serving mode** – pay‑per‑token for bursty workloads or provisioned throughput for steady traffic.
+2. **Choose a serving mode**: pay‑per‑token for bursty workloads or provisioned throughput for steady traffic.
 3. **Deploy an agent** using the Agent Framework; Databricks provides starter notebooks for chat, retrieval‑augmented generation (RAG), and batch inference.
 4. **Monitor & iterate** with the AI Gateway and built‑in evaluation dashboards.
 

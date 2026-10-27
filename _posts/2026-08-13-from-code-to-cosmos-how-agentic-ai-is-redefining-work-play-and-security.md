@@ -46,10 +46,10 @@ All three stories point to the same emerging reality: **autonomous agents are be
 
 For Gritsa, this means our mission is clearer than ever. We must provide a runtime that is:
 
-* **Agent‑first** – designed around the lifecycle of autonomous agents, not just function calls.
-* **Observable** – detailed logging and status endpoints so operators can audit decisions in real time.
-* **Secure by default** – built‑in guardrails, sandboxing, and the ability to roll back or halt an agent mid‑task.
-* **Cross‑domain** – capable of orchestrating code, knowledge work, and even physical robot commands from a single framework.
+* **Agent‑first**: designed around the lifecycle of autonomous agents, not just function calls.
+* **Observable**: detailed logging and status endpoints so operators can audit decisions in real time.
+* **Secure by default**: built‑in guardrails, sandboxing, and the ability to roll back or halt an agent mid‑task.
+* **Cross‑domain**: capable of orchestrating code, knowledge work, and even physical robot commands from a single framework.
 
 ### Where do we go from here?
 

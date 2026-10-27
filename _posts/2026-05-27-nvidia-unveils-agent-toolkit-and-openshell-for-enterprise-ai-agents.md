@@ -42,15 +42,15 @@ OpenShell’s design mirrors the principles of zero‑trust networking, extendin
 
 ## Why This Matters for Enterprises
 
-1. **Scalable Autonomy** – Companies can now spin up thousands of agents for tasks ranging from customer support to supply‑chain optimization, confident that each agent respects corporate policies.
-2. **Compliance by Design** – With built‑in audit trails and policy enforcement, organizations meet compliance mandates without retrofitting security layers.
-3. **Performance at Scale** – Leveraging NVIDIA’s GPU‑native stack, agents achieve sub‑second latency even when chaining multiple reasoning steps.
+1. **Scalable Autonomy**: Companies can now spin up thousands of agents for tasks ranging from customer support to supply‑chain optimization, confident that each agent respects corporate policies.
+2. **Compliance by Design**: With built‑in audit trails and policy enforcement, organizations meet compliance mandates without retrofitting security layers.
+3. **Performance at Scale**: Leveraging NVIDIA’s GPU‑native stack, agents achieve sub‑second latency even when chaining multiple reasoning steps.
 
 ## Real‑World Use Cases
 
-- **Financial Services** – Agents that monitor transaction streams, flag anomalies, and auto‑remediate fraud while staying within strict data‑privacy rules.
-- **Healthcare** – Clinical decision support agents that query patient records, suggest treatment pathways, and log every interaction for audit.
-- **Manufacturing** – Predictive‑maintenance agents that ingest sensor data, run diagnostics, and trigger maintenance orders without exposing raw data to external services.
+- **Financial Services**: Agents that monitor transaction streams, flag anomalies, and auto‑remediate fraud while staying within strict data‑privacy rules.
+- **Healthcare**: Clinical decision support agents that query patient records, suggest treatment pathways, and log every interaction for audit.
+- **Manufacturing**: Predictive‑maintenance agents that ingest sensor data, run diagnostics, and trigger maintenance orders without exposing raw data to external services.
 
 ## The Road Ahead
 

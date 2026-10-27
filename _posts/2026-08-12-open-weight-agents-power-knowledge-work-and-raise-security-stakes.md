@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Open‑Weight Agents Power Knowledge Work – And Raise Security Stakes"
+title: "Open‑Weight Agents Power Knowledge Work and Raise Security Stakes"
 date: 2026-08-11 18:33:09 +0000
 author: "Gritsa"
 categories: "AI Technology"

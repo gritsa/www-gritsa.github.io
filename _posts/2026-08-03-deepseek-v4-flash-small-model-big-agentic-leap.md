@@ -32,9 +32,9 @@ For teams already using the **Jiva** framework, the new model plugs straight int
 
 ### What this means for builders
 
-1. **Cost‑effective scaling** – The 98 % cache‑hit discount means long‑running agents can stay under budget while still getting top‑tier reasoning.
-2. **Rapid iteration** – Open weights let you fine‑tune the policy layer on your own data without waiting for a vendor release.
-3. **Lower hardware bar** – A 4×A100‑80 GB setup is enough for inference, opening the door for startups that can’t afford an 8×H100 cluster.
+1. **Cost‑effective scaling**: The 98 % cache‑hit discount means long‑running agents can stay under budget while still getting top‑tier reasoning.
+2. **Rapid iteration**: Open weights let you fine‑tune the policy layer on your own data without waiting for a vendor release.
+3. **Lower hardware bar**: A 4×A100‑80 GB setup is enough for inference, opening the door for startups that can’t afford an 8×H100 cluster.
 
 ### A quick test you can run today
 

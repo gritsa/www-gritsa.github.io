@@ -28,9 +28,9 @@ All three stories point to the same reality: **agentic AI is moving from prototy
 
 For developers, the implication is clear. You can no longer treat an LLM as a static API endpoint. You need to design **agentic pipelines** that include:
 
-* **Resource budgeting** – the “max” and “ultra” modes let you trade compute for depth, but you must monitor token usage and cost.
-* **Isolation and observability** – run agents in sandboxed containers, log every tool call, and enforce least‑privilege credentials.
-* **Safety guardrails** – consider running an open‑weight model on‑prem for forensic analysis, as Hugging Face did, to avoid being blocked by hosted providers.
+* **Resource budgeting**: the “max” and “ultra” modes let you trade compute for depth, but you must monitor token usage and cost.
+* **Isolation and observability**: run agents in sandboxed containers, log every tool call, and enforce least‑privilege credentials.
+* **Safety guardrails**: consider running an open‑weight model on‑prem for forensic analysis, as Hugging Face did, to avoid being blocked by hosted providers.
 
 ### What this means for Gritsa and Jiva
 

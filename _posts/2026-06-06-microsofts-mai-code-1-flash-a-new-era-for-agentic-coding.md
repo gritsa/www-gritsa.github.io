@@ -26,9 +26,9 @@ MAI‑Code‑1‑Flash is a 5‑billion‑parameter model engineered from the gr
 
 Key design goals include:
 
-* **Agentic coding in real environments** – the model works seamlessly inside VS Code, responding to the same prompts and tool calls that developers already use.
-* **Adaptive thinking** – it stays concise for simple requests while allocating more reasoning budget for intricate problems.
-* **Strong instruction following** – both single‑turn and multi‑turn scenarios are handled with high fidelity.
+* **Agentic coding in real environments**: the model works seamlessly inside VS Code, responding to the same prompts and tool calls that developers already use.
+* **Adaptive thinking**: it stays concise for simple requests while allocating more reasoning budget for intricate problems.
+* **Strong instruction following**: both single‑turn and multi‑turn scenarios are handled with high fidelity.
 
 ## Performance That Matters
 
@@ -47,17 +47,17 @@ Beyond raw accuracy, the model shines in efficiency. It solves harder problems w
 
 Traditional coding assistants often act as passive autocomplete engines. **Agentic coding** elevates the relationship: the AI can plan, iterate, and even invoke external tools (e.g., linters, test runners) as part of its reasoning loop. This capability translates into:
 
-* **Higher developer velocity** – fewer context switches and less manual stitching of code fragments.
-* **Improved code quality** – the model’s deeper reasoning catches subtle bugs and suggests refactorings that align with project conventions.
-* **Scalable productivity** – teams can onboard junior developers faster, as the AI handles routine scaffolding while humans focus on architecture.
+* **Higher developer velocity**: fewer context switches and less manual stitching of code fragments.
+* **Improved code quality**: the model’s deeper reasoning catches subtle bugs and suggests refactorings that align with project conventions.
+* **Scalable productivity**: teams can onboard junior developers faster, as the AI handles routine scaffolding while humans focus on architecture.
 
 ## Real‑World Impact
 
 Early adopters report measurable gains:
 
-* **Reduced onboarding time** – new hires become productive within days rather than weeks.
-* **Lower cloud spend** – the token‑efficiency of MAI‑Code‑1‑Flash cuts monthly Copilot usage costs by roughly a third.
-* **Higher satisfaction** – developers cite the model’s “conversational” feel as a key factor in adopting AI‑assisted workflows.
+* **Reduced onboarding time**: new hires become productive within days rather than weeks.
+* **Lower cloud spend**: the token‑efficiency of MAI‑Code‑1‑Flash cuts monthly Copilot usage costs by roughly a third.
+* **Higher satisfaction**: developers cite the model’s “conversational” feel as a key factor in adopting AI‑assisted workflows.
 
 These outcomes echo the broader industry trend where **agentic AI** moves from experimental labs into production pipelines, delivering tangible ROI.
 
@@ -65,9 +65,9 @@ These outcomes echo the broader industry trend where **agentic AI** moves from e
 
 Microsoft’s MAI family doesn’t stop at coding. The same architecture underpins reasoning, image, voice, and transcription models, all designed to work together in a unified ecosystem. As the rollout continues to GitHub Copilot users, we can expect:
 
-* **Broader language support** – multilingual coding assistance will become standard.
-* **Custom fine‑tuning** – enterprises will be able to tailor the model to proprietary codebases.
-* **Integration with other Microsoft services** – Azure AI, Power Platform, and Teams will surface the model’s capabilities across the productivity suite.
+* **Broader language support**: multilingual coding assistance will become standard.
+* **Custom fine‑tuning**: enterprises will be able to tailor the model to proprietary codebases.
+* **Integration with other Microsoft services**: Azure AI, Power Platform, and Teams will surface the model’s capabilities across the productivity suite.
 
 For teams exploring **agentic coding**, the message is clear: the tools are now production‑ready, and the competitive advantage they confer is immediate.
 

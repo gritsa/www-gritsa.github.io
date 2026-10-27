@@ -24,28 +24,28 @@ The AI landscape is shifting from pure code generation to full‑blown knowledge
 
 Replit Agent 4, launched in March 2026, is a sibling to Replit’s well‑known coding agents. While its predecessors focused on writing, testing, and debugging code, Agent 4 expands its remit to **knowledge work**:
 
-* **Research synthesis** – pulls information from multiple sources, summarises findings, and produces concise briefs.
-* **Document generation** – drafts reports, whitepapers, and presentations with proper citations.
-* **Interactive knowledge graphs** – builds visual maps of concepts, linking code snippets, data sources, and explanatory text.
-* **Multi‑modal output** – combines text, code, and simple visualisations in a single, shareable workspace.
+* **Research synthesis**: pulls information from multiple sources, summarises findings, and produces concise briefs.
+* **Document generation**: drafts reports, whitepapers, and presentations with proper citations.
+* **Interactive knowledge graphs**: builds visual maps of concepts, linking code snippets, data sources, and explanatory text.
+* **Multi‑modal output**: combines text, code, and simple visualisations in a single, shareable workspace.
 
 The agent operates within Replit’s collaborative environment, allowing teams to iterate on both code and knowledge artifacts side‑by‑side.
 
 ## Why It Matters for Agentic AI
 
-1. **Unified Agent Architecture** – Agent 4 demonstrates that a single LLM‑driven agent can handle heterogeneous tasks without hand‑crafted pipelines. This reduces integration overhead and opens the door to more **self‑organising** systems.
-2. **Reduced Context Switching** – Developers no longer need to switch between a coding IDE and a separate research tool. Agent 4 keeps the entire workflow in one context, preserving the reasoning chain and minimizing error propagation.
-3. **Scalable Knowledge Bases** – By automatically generating knowledge graphs, Agent 4 creates living documentation that evolves with the codebase, a boon for large, multi‑tenant deployments.
-4. **Security‑First Design** – Replit embeds sandboxed execution and fine‑grained permission controls, addressing the growing concerns around autonomous agents accessing external APIs.
+1. **Unified Agent Architecture**: Agent 4 demonstrates that a single LLM‑driven agent can handle heterogeneous tasks without hand‑crafted pipelines. This reduces integration overhead and opens the door to more **self‑organising** systems.
+2. **Reduced Context Switching**: Developers no longer need to switch between a coding IDE and a separate research tool. Agent 4 keeps the entire workflow in one context, preserving the reasoning chain and minimizing error propagation.
+3. **Scalable Knowledge Bases**: By automatically generating knowledge graphs, Agent 4 creates living documentation that evolves with the codebase, a boon for large, multi‑tenant deployments.
+4. **Security‑First Design**: Replit embeds sandboxed execution and fine‑grained permission controls, addressing the growing concerns around autonomous agents accessing external APIs.
 
 For organisations already using **Jiva**, Replit’s approach offers a reference implementation for extending agent capabilities beyond pure software development.
 
 ## Practical Takeaways
 
-* **Adopt a “single‑agent” mindset** – When designing new autonomous systems, consider whether a single, well‑prompted agent can cover multiple domains rather than stitching together specialised micro‑agents.
-* **Leverage built‑in observability** – Agent 4 logs each reasoning step, making it easier to audit decisions, a practice that aligns with the security‑first patterns highlighted in recent Jiva releases.
-* **Integrate knowledge graphs early** – Embedding a graph of concepts from day one helps future agents (including Jiva) retrieve relevant context faster, improving latency and relevance.
-* **Stay vigilant on permissions** – Even with sandboxing, ensure agents only access the data they truly need; adopt the principle of least privilege as a default.
+* **Adopt a “single‑agent” mindset**: When designing new autonomous systems, consider whether a single, well‑prompted agent can cover multiple domains rather than stitching together specialised micro‑agents.
+* **Leverage built‑in observability**: Agent 4 logs each reasoning step, making it easier to audit decisions, a practice that aligns with the security‑first patterns highlighted in recent Jiva releases.
+* **Integrate knowledge graphs early**: Embedding a graph of concepts from day one helps future agents (including Jiva) retrieve relevant context faster, improving latency and relevance.
+* **Stay vigilant on permissions**: Even with sandboxing, ensure agents only access the data they truly need; adopt the principle of least privilege as a default.
 
 ## Looking Ahead
 

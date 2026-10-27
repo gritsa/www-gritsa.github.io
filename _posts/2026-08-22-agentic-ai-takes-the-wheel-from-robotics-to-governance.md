@@ -19,7 +19,7 @@ I keep seeing the same pattern everywhere I look: AI is no longer just a tool th
 
 First, DeepMind dropped **Gemini Robotics 1.5**. It’s a pair of models that let robots think before they move. One model, Gemini Robotics‑ER 1.5, reasons about the world, calls tools like Google Search, and builds multi‑step plans. The other, Gemini Robotics 1.5, turns those plans into precise motor actions while explaining its reasoning in natural language. The result is a robot that can sort waste, pick up a red sweater, and even transfer skills learned on one robot to a completely different embodiment without retraining. The paper shows state‑of‑the‑art scores on 15 embodied‑reasoning benchmarks, and the safety team has upgraded the ASIMOV benchmark to keep pace.
 
-Second, the **Agentic AI Summit** at UC Berkeley (August 1‑2) gathered researchers, builders, and policymakers to discuss exactly this shift. The agenda was heavy on “agentic design patterns” – planning, reflection, tool use, and multi‑agent coordination. Speakers highlighted how enterprises are moving from isolated coding assistants to full‑stack agent ecosystems that can orchestrate workflows across services. The summit’s closing panel called for a new governance layer, echoing an announcement made just days later.
+Second, the **Agentic AI Summit** at UC Berkeley (August 1‑2) gathered researchers, builders, and policymakers to discuss exactly this shift. The agenda was heavy on “agentic design patterns”, planning, reflection, tool use, and multi‑agent coordination. Speakers highlighted how enterprises are moving from isolated coding assistants to full‑stack agent ecosystems that can orchestrate workflows across services. The summit’s closing panel called for a new governance layer, echoing an announcement made just days later.
 
 Third, the protocol’s original author **donated the Model Context Protocol (MCP)** to the Linux Foundation’s new **Agentic AI Foundation**. MCP is a lightweight standard for agents to share context across tools and services. By placing it under the AAIF, the original author hopes to keep the protocol open, community‑driven, and interoperable with other emerging standards like Goose (Block) and AGENTS.md (OpenAI). The move signals a industry‑wide push for a common “agentic OS” that can run on any cloud or edge device.
 
@@ -33,9 +33,9 @@ In other words, we’re moving from isolated AI tools to a **networked agentic l
 
 At Gritsa we’re building **Jiva**, an open‑source framework for autonomous agents. Seeing the industry rally around shared protocols and safety benchmarks validates the direction we’ve taken. It also gives us concrete hooks to integrate with:
 
-* **Gemini Robotics‑ER** – we can expose Jiva agents as tool‑calling functions for robots, letting them plan and execute physical tasks.
-* **MCP** – by adopting the Model Context Protocol, Jiva agents can interoperate with any MCP‑compatible service, from data pipelines to compliance checks.
-* **Agentic design patterns** – the summit’s best‑practice checklist (planning, reflection, verification) is already baked into Jiva’s runtime.
+* **Gemini Robotics‑ER**: we can expose Jiva agents as tool‑calling functions for robots, letting them plan and execute physical tasks.
+* **MCP**: by adopting the Model Context Protocol, Jiva agents can interoperate with any MCP‑compatible service, from data pipelines to compliance checks.
+* **Agentic design patterns**: the summit’s best‑practice checklist (planning, reflection, verification) is already baked into Jiva’s runtime.
 
 ### A question for you
 

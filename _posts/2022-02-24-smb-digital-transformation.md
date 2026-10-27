@@ -21,7 +21,7 @@ Digital transformation, in simple terms, is the creation of a digital version of
 
 ### 1. Digital Transformation provides a competitive advantage to small and medium businesses
 
-Digital transformation provides small and medium enterprises with a competitive edge. It helps streamline processes and ensure quality. From finding extraordinary talent to completely unexpected customer segments – new digital strategies and practices open doors to new perspectives. It makes the business leaner and likely to survive trials than its digitally challenged counterparts. Digital transformation is the only way to future proof a business.
+Digital transformation provides small and medium enterprises with a competitive edge. It helps streamline processes and ensure quality. From finding extraordinary talent to completely unexpected customer segments, new digital strategies and practices open doors to new perspectives. It makes the business leaner and likely to survive trials than its digitally challenged counterparts. Digital transformation is the only way to future proof a business.
 
 ### 2. Global Markets could be tapped into with the use of digital business transformation
 

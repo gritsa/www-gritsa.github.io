@@ -26,9 +26,9 @@ Speed is another win. GPT‑5.5 Instant is optimized for “speed and efficiency
 
 OpenAI describes GPT‑5.5 Instant as a **foundation model tuned for daily‑driver workloads**. The architecture retains the core transformer stack but incorporates several refinements:
 
-* **Enhanced factual grounding** – additional retrieval‑augmented training data and a tighter fact‑checking loop reduce the chance of fabricated citations.
-* **Improved token‑level pruning** – the model discards low‑impact tokens early, cutting compute cycles and latency.
-* **Personalization knobs** – users can now toggle a “concise mode” that further trims verbosity, a feature that was previously only available in the API.
+* **Enhanced factual grounding**: additional retrieval‑augmented training data and a tighter fact‑checking loop reduce the chance of fabricated citations.
+* **Improved token‑level pruning**: the model discards low‑impact tokens early, cutting compute cycles and latency.
+* **Personalization knobs**: users can now toggle a “concise mode” that further trims verbosity, a feature that was previously only available in the API.
 
 The model is also exposed via the API as `chat-latest`, allowing developers to opt‑in to the same safety and speed gains without migrating to a new endpoint.
 

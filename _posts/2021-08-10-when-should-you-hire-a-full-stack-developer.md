@@ -11,7 +11,7 @@ Need to [hire a full-stack developer](/services/fullstack-development/)? Is ther
 
 ## **Who is a full-stack developer?**
 
-I’m sure you’ve heard the phrase – Jack of all, master of none. A good full stack developer is like a jack of all but you surely can’t call him master of none. He or she can develop full-fledged applications for all platforms – web, mobile, or desktop. A full-stack developer understands both the front-end and back-end. They can work their way around servers, APIs, MVC, databases, and hosting environments among others. A good full-stack developer is always in demand. Go to any job portal and you will find thousands of job postings there.
+I’m sure you’ve heard the phrase, Jack of all, master of none. A good full stack developer is like a jack of all but you surely can’t call him master of none. He or she can develop full-fledged applications for all platforms, web, mobile, or desktop. A full-stack developer understands both the front-end and back-end. They can work their way around servers, APIs, MVC, databases, and hosting environments among others. A good full-stack developer is always in demand. Go to any job portal and you will find thousands of job postings there.
 
 ## **When to hire a full stack developer**
 
@@ -51,10 +51,10 @@ As much as it is important to know when to hire, you must also know when not to 
 
 Make sure you are clear about your requirements and that your developer has the following qualities:
 
-- **Keen learner** – he should be interested and passionate about learning new things
-- **Versatile** – understands not only the stacks but also different technologies
-- **Honest and clear** – can point you in the right direction for a solution even if they cannot solve it
-- **Knowledgeable**– is aware of the latest trends and developments
-- **Matured** – can see the big picture, the vision of the business, and understands the customer’s requirements
+- **Keen learner**: he should be interested and passionate about learning new things
+- **Versatile**: understands not only the stacks but also different technologies
+- **Honest and clear**: can point you in the right direction for a solution even if they cannot solve it
+- **Knowledgeable**: is aware of the latest trends and developments
+- **Matured**: can see the big picture, the vision of the business, and understands the customer’s requirements
 
 So, once you are clear that it is time to hire a full-stack developer, ensure that you look for inherent qualities along with technical skills. Ready to move forward? [Talk to Gritsa](/contact/) and we can have the right engineer on your project within days.

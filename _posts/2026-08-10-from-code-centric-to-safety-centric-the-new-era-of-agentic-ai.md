@@ -30,11 +30,11 @@ Around the same time, one leading model provider rolled out **updates to a flags
 
 Forcepoint’s new guide, *“Treat Every AI Agent Like a Privileged Human Account,”* makes the shift concrete. The article argues that **agentic AI risk is action risk**, not just output risk. An agent can query a database, call an API, or trigger a workflow before a human ever sees the result. The recommended controls read like a checklist for any privileged identity:
 
-* **Broker credentials** – agents request short‑lived tokens rather than holding standing credentials.
-* **Scope data access first** – classify and limit the data environment before granting agent permissions.
-* **Gate high‑impact actions** – require human approval for irreversible operations.
-* **Correlate actions with data classification** – turn isolated log entries into detectable incidents.
-* **Apply NIST AI RMF and OWASP Top 10 for Agentic Applications** – align with existing compliance frameworks.
+* **Broker credentials**: agents request short‑lived tokens rather than holding standing credentials.
+* **Scope data access first**: classify and limit the data environment before granting agent permissions.
+* **Gate high‑impact actions**: require human approval for irreversible operations.
+* **Correlate actions with data classification**: turn isolated log entries into detectable incidents.
+* **Apply NIST AI RMF and OWASP Top 10 for Agentic Applications**: align with existing compliance frameworks.
 
 The piece also stresses continuous governance: agents accumulate integrations and data access over time, so periodic reviews and automated alerts are essential.
 
@@ -52,10 +52,10 @@ For teams building with Jiva, this shift matters. Jiva’s autonomous agent fram
 
 If you’re experimenting with agents today, ask yourself:
 
-* **Can I see every tool call and decision?** – Look for built‑in event logs like Muse Code’s.
-* **Are my agents scoped to the right data?** – Follow the “scope data first” principle.
-* **Do I have a process for high‑impact actions?** – Implement human‑in‑the‑loop gates.
-* **Am I measuring safety and performance?** – Adopt emerging benchmarks and evaluation frameworks.
+* **Can I see every tool call and decision?**: Look for built‑in event logs like Muse Code’s.
+* **Are my agents scoped to the right data?**: Follow the “scope data first” principle.
+* **Do I have a process for high‑impact actions?**: Implement human‑in‑the‑loop gates.
+* **Am I measuring safety and performance?**: Adopt emerging benchmarks and evaluation frameworks.
 
 The next wave of agentic AI will be defined not just by what models can do, but by how safely and transparently they can do it.
 

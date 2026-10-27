@@ -20,16 +20,16 @@ On June 1, 2026, NVIDIA unveiled **Cosmos 3**, the first fully open omnimo
 
 ## What Makes Cosmos 3 Different?
 
-- **Omnimodal Capabilities** – One model handles text, image, video, audio, and action outputs, eliminating the need to stitch together separate vision and language components.
-- **Two‑Tower Mixture‑of‑Transformers** – A novel architecture that blends world‑generation with action prediction, delivering state‑of‑the‑art physics accuracy.
-- **OpenMDW‑1.1 License** – Fully open weights and training tools, enabling commercial use without restrictive licensing.
-- **Leaderboard Dominance** – Claims top‑rank positions on more than eight benchmarks for vision reasoning, text‑to‑image, image‑to‑world, and world‑action generation.
+- **Omnimodal Capabilities**: One model handles text, image, video, audio, and action outputs, eliminating the need to stitch together separate vision and language components.
+- **Two‑Tower Mixture‑of‑Transformers**: A novel architecture that blends world‑generation with action prediction, delivering state‑of‑the‑art physics accuracy.
+- **OpenMDW‑1.1 License**: Fully open weights and training tools, enabling commercial use without restrictive licensing.
+- **Leaderboard Dominance**: Claims top‑rank positions on more than eight benchmarks for vision reasoning, text‑to‑image, image‑to‑world, and world‑action generation.
 
 ## Real‑World Use Cases
 
-- **Robotics** – Pick‑and‑place tasks, warehouse safety monitoring, and closed‑loop simulation for robot control.
-- **Autonomous Vehicles** – Synthetic data generation and perception pipelines that improve navigation in complex environments.
-- **Vision AI** – High‑fidelity video generation for training perception models and augmenting scarce datasets.
+- **Robotics**: Pick‑and‑place tasks, warehouse safety monitoring, and closed‑loop simulation for robot control.
+- **Autonomous Vehicles**: Synthetic data generation and perception pipelines that improve navigation in complex environments.
+- **Vision AI**: High‑fidelity video generation for training perception models and augmenting scarce datasets.
 
 ## The Ecosystem Behind Cosmos 3
 
@@ -39,9 +39,9 @@ NVIDIA has assembled the **Cosmos Coalition**, a global collaboration that inclu
 
 At Gritsa Technologies, we specialize in autonomous agents and LLM‑powered data pipelines. Cosmos 3 aligns perfectly with our mission:
 
-- **Multimodal Agents** – Jiva can now ingest vision, audio, and action streams natively, expanding the scope of what agents can accomplish.
-- **Open‑Source Advantage** – The permissive license lets us integrate Cosmos 3 into commercial products without legal friction.
-- **Performance Boost** – The model’s physics‑accurate world generation reduces the engineering effort needed for simulation‑based training.
+- **Multimodal Agents**: Jiva can now ingest vision, audio, and action streams natively, expanding the scope of what agents can accomplish.
+- **Open‑Source Advantage**: The permissive license lets us integrate Cosmos 3 into commercial products without legal friction.
+- **Performance Boost**: The model’s physics‑accurate world generation reduces the engineering effort needed for simulation‑based training.
 
 ## Getting Started
 

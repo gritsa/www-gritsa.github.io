@@ -21,10 +21,10 @@ The open‑source landscape just got a serious upgrade. Alibaba’s **Qwen 3�
 
 ## What Makes Qwen 3 235B‑A22B Stand Out
 
-- **MoE Efficiency** – 235 B total parameters, 22 B active, cutting compute by ~90 % compared with dense models.
-- **Dual‑Mode Thinking** – Toggle between a “thinking” mode for deep chain‑of‑thought and a fast “non‑thinking” mode for chat.
-- **Multilingual Mastery** – Native support for 100+ languages and a 256 K token context window.
-- **Open‑Source Freedom** – Apache 2.0 license removes commercial restrictions, encouraging community extensions.
+- **MoE Efficiency**: 235 B total parameters, 22 B active, cutting compute by ~90 % compared with dense models.
+- **Dual‑Mode Thinking**: Toggle between a “thinking” mode for deep chain‑of‑thought and a fast “non‑thinking” mode for chat.
+- **Multilingual Mastery**: Native support for 100+ languages and a 256 K token context window.
+- **Open‑Source Freedom**: Apache 2.0 license removes commercial restrictions, encouraging community extensions.
 
 These design choices directly address the pain points of deploying agentic AI at scale: cost, latency, and legal clarity.
 
@@ -42,9 +42,9 @@ The numbers place Qwen 3 235B‑A22B in the same tier as DeepSeek R1 and O
 
 ## Practical Deployment Considerations
 
-- **Hardware** – Full‑precision needs ~132 GB VRAM (Q4 quantization). A multi‑GPU rig (e.g., five RTX 3090s) suffices. Smaller variants (32 B, 14 B, 8 B) run on a single consumer GPU.
-- **Quantization** – Q4 reduces memory to ~132 GB while preserving most of the performance.
-- **Tooling** – Available on Hugging Face, Ollama, and vLLM, making integration straightforward for existing pipelines.
+- **Hardware**: Full‑precision needs ~132 GB VRAM (Q4 quantization). A multi‑GPU rig (e.g., five RTX 3090s) suffices. Smaller variants (32 B, 14 B, 8 B) run on a single consumer GPU.
+- **Quantization**: Q4 reduces memory to ~132 GB while preserving most of the performance.
+- **Tooling**: Available on Hugging Face, Ollama, and vLLM, making integration straightforward for existing pipelines.
 
 For teams without a GPU farm, the distilled 32 B version still outperforms many larger models on reasoning tasks and fits on a single RTX 4090.
 
@@ -52,9 +52,9 @@ For teams without a GPU farm, the distilled 32 B version still outperforms man
 
 Agentic systems rely on three pillars: **reasoning**, **tool use**, and **context**. Qwen 3 235B‑A22B excels at all three:
 
-1. **Reasoning** – Dual‑mode thinking lets agents decide when to invoke deep chain‑of‑thought.
-2. **Tool Use** – High function‑calling scores (BFCL v3 70.8 %) indicate reliable API integration.
-3. **Context** – 256 K token window supports long‑running dialogues and document‑level reasoning.
+1. **Reasoning**: Dual‑mode thinking lets agents decide when to invoke deep chain‑of‑thought.
+2. **Tool Use**: High function‑calling scores (BFCL v3 70.8 %) indicate reliable API integration.
+3. **Context**: 256 K token window supports long‑running dialogues and document‑level reasoning.
 
 By providing these capabilities under an open license, Alibaba lowers the barrier for startups and research labs to experiment with production‑grade agents without vendor lock‑in.
 

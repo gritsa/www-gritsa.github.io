@@ -33,19 +33,19 @@ Because the vision models share the same tokenizer and architecture as the text 
 
 Meta is bundling the first official **Llama Stack** distributions, which simplify deployment across four environments:
 
-1. **Single‑node** – ideal for quick experiments on a laptop.
-2. **On‑premise** – for enterprises that need full data control.
-3. **Cloud** – ready for serverless or containerized services.
-4. **On‑device** – optimized binaries for mobile and edge hardware.
+1. **Single‑node**: ideal for quick experiments on a laptop.
+2. **On‑premise**: for enterprises that need full data control.
+3. **Cloud**: ready for serverless or containerized services.
+4. **On‑device**: optimized binaries for mobile and edge hardware.
 
 The stack also ships with built‑in support for **retrieval‑augmented generation (RAG)** and tool‑use patterns, letting agents fetch external data or invoke APIs while keeping the core model on‑device.
 
 ## What this means for the industry
 
-* **Privacy‑first AI** – Sensitive data never leaves the device, opening doors for healthcare, finance, and personal assistants.
-* **Lower latency** – No round‑trip to a remote API means sub‑second responses, crucial for real‑time interactions.
-* **Cost efficiency** – Developers can avoid per‑token fees, scaling without worrying about usage caps.
-* **New product categories** – Imagine a camera app that can describe scenes in real time, or a wearable that drafts emails based on spoken notes.
+* **Privacy‑first AI**: Sensitive data never leaves the device, opening doors for healthcare, finance, and personal assistants.
+* **Lower latency**: No round‑trip to a remote API means sub‑second responses, crucial for real‑time interactions.
+* **Cost efficiency**: Developers can avoid per‑token fees, scaling without worrying about usage caps.
+* **New product categories**: Imagine a camera app that can describe scenes in real time, or a wearable that drafts emails based on spoken notes.
 
 For teams building **agentic AI**, Llama 3.2 provides a lightweight yet capable foundation. Agents can now run locally, combine language and vision, and still leverage the same safety guardrails that Meta baked into the larger Llama 3 family.
 

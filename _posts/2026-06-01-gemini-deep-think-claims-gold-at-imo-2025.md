@@ -24,9 +24,9 @@ In a stunning display of artificial intelligence prowess, Google DeepMind's **Ge
 
 Gemini Deep Think builds on the Gemini family of large language models, augmenting them with a specialized **Deep Think** reasoning mode. The mode employs parallel thinking and iterative self‑critique, allowing the model to generate multiple solution paths, evaluate their validity, and refine them until a correct answer emerges. Unlike traditional LLMs that rely on a single forward pass, Deep Think orchestrates a multi‑agent debate:
 
-1. **Hypothesis Generation** – Several specialized agents propose distinct solution strategies.
-2. **Cross‑Examination** – Agents critique each other's reasoning, exposing logical gaps.
-3. **Synthesis** – The strongest arguments are merged into a final proof.
+1. **Hypothesis Generation**: Several specialized agents propose distinct solution strategies.
+2. **Cross‑Examination**: Agents critique each other's reasoning, exposing logical gaps.
+3. **Synthesis**: The strongest arguments are merged into a final proof.
 
 This architecture mirrors the collaborative process of human mathematicians and exemplifies the **agentic design pattern** of planning, reflection, and tool use.
 
@@ -34,9 +34,9 @@ This architecture mirrors the collaborative process of human mathematicians and 
 
 The IMO victory illustrates several key trends for the broader agentic AI landscape:
 
-- **Scalable Reasoning** – By chaining multiple reasoning steps, Deep Think shows that LLMs can handle tasks requiring deep logical chains, a prerequisite for autonomous scientific discovery.
-- **Self‑Correction** – The built‑in critique loop reduces hallucinations and improves reliability, addressing a major pain point for production AI systems.
-- **Domain‑Specific Specialization** – The model’s success in mathematics suggests that similar multi‑agent frameworks could be adapted for chemistry, physics, or engineering problems.
+- **Scalable Reasoning**: By chaining multiple reasoning steps, Deep Think shows that LLMs can handle tasks requiring deep logical chains, a prerequisite for autonomous scientific discovery.
+- **Self‑Correction**: The built‑in critique loop reduces hallucinations and improves reliability, addressing a major pain point for production AI systems.
+- **Domain‑Specific Specialization**: The model’s success in mathematics suggests that similar multi‑agent frameworks could be adapted for chemistry, physics, or engineering problems.
 
 For teams building autonomous agents, the takeaway is clear: embedding **reflection** and **debate** mechanisms dramatically boosts performance on high‑stakes tasks.
 

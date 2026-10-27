@@ -32,9 +32,9 @@ Replit’s **Agent 4** (introduced July 29) takes the same idea a step furth
 
 Open‑weight releases have been around for a while, but the combination of three trends makes this moment special:
 
-1. **Cost‑effective inference** – Flash’s pricing and Glimmer’s local‑run capability mean you no longer need a $10 k GPU cluster to experiment with agents.
-2. **Tool‑use maturity** – Both models expose native function‑calling APIs and support speculative decoding, which reduces latency and makes multi‑step reasoning reliable.
-3. **Knowledge‑work focus** – The demos and documentation explicitly target spreadsheets, slides, and research summarization, not just code generation.
+1. **Cost‑effective inference**: Flash’s pricing and Glimmer’s local‑run capability mean you no longer need a $10 k GPU cluster to experiment with agents.
+2. **Tool‑use maturity**: Both models expose native function‑calling APIs and support speculative decoding, which reduces latency and makes multi‑step reasoning reliable.
+3. **Knowledge‑work focus**: The demos and documentation explicitly target spreadsheets, slides, and research summarization, not just code generation.
 
 Together, they lower the barrier for anyone, students, analysts, product managers, to embed autonomous reasoning into their daily tools.
 
@@ -54,7 +54,7 @@ For Gritsa, this reinforces our mission: building autonomous agents that can ope
 
 *If you’re curious to try these models, the links below are a good start:*
 
-- DeepSeek V4 Flash – official release notes: <https://huggingface.co/blog/ResterChed/deepseek-v4-flash-official-release>
+- DeepSeek V4 Flash, official release notes: <https://huggingface.co/blog/ResterChed/deepseek-v4-flash-official-release>
 - Muse Glimmer model card: <https://huggingface.co/meta-models/Muse-Glimmer-30B>
 - Replit Agent 4 demo: <https://replit.com/blog/introducing-agent-4-built-for-creativity>
 

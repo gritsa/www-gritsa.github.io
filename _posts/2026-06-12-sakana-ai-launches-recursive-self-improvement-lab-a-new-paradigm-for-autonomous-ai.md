@@ -23,17 +23,17 @@ Recursive Self‑Improvement refers to a system where an AI model not only perfo
 
 ## Why Sakana AI’s RSI Lab Matters
 
-1. **Compute Efficiency** – By emphasizing ideas over raw compute, the lab aims to deliver performance gains that are sustainable for nations without hyperscale data centers.
-2. **Sovereign AI** – Japan’s national strategy for sovereign AI aligns with the lab’s mission, providing institutional support and a clear geopolitical incentive.
-3. **Open Research** – Sakana commits to publishing both successes and failures, fostering a transparent ecosystem that can accelerate collective progress.
-4. **Safety & Responsibility** – The lab explicitly addresses failure modes such as drift and shortcut‑finding, embedding safeguards from the outset.
+1. **Compute Efficiency**: By emphasizing ideas over raw compute, the lab aims to deliver performance gains that are sustainable for nations without hyperscale data centers.
+2. **Sovereign AI**: Japan’s national strategy for sovereign AI aligns with the lab’s mission, providing institutional support and a clear geopolitical incentive.
+3. **Open Research**: Sakana commits to publishing both successes and failures, fostering a transparent ecosystem that can accelerate collective progress.
+4. **Safety & Responsibility**: The lab explicitly addresses failure modes such as drift and shortcut‑finding, embedding safeguards from the outset.
 
 ## Sakana’s Evolutionary Portfolio
 
 The RSI Lab builds on two years of pioneering work:
 
-- **ShinkaEvolve** – solved hard combinatorial problems in just 150 samples, demonstrating that clever search can replace massive brute‑force attempts.
-- **ALE‑Agent** – outperformed 804 human heuristics specialists by learning from its own failures, proving that self‑reflection can beat human‑crafted rules.
+- **ShinkaEvolve**: solved hard combinatorial problems in just 150 samples, demonstrating that clever search can replace massive brute‑force attempts.
+- **ALE‑Agent**: outperformed 804 human heuristics specialists by learning from its own failures, proving that self‑reflection can beat human‑crafted rules.
 
 These milestones illustrate Sakana’s philosophy: **progress through ideas, not just compute**. The RSI Lab now scales this philosophy to the entire model‑building pipeline.
 

@@ -57,7 +57,7 @@ Operations, logistics, warehousing and complete supply chain management have a h
 
 ### Marketing: Customer behaviour and demand can be predicted using data analytics
 
-Digital Marketing is one of the first steps an organization takes on its journey to digitalization.  From content engagement to the cost of customer acquisition – all metrics can be measured by advertising tools. Data analytics helps make sense of the customer’s behaviour and even predict consumer behaviour by analyzing previous patterns. It helps determine the ROI for every dollar spent on marketing and advertising. It also helps in conducting thorough market research and understanding the threats from competition.
+Digital Marketing is one of the first steps an organization takes on its journey to digitalization.  From content engagement to the cost of customer acquisition, all metrics can be measured by advertising tools. Data analytics helps make sense of the customer’s behaviour and even predict consumer behaviour by analyzing previous patterns. It helps determine the ROI for every dollar spent on marketing and advertising. It also helps in conducting thorough market research and understanding the threats from competition.
 
 ### Customer Service: User experience can be enhanced using data analytics
 

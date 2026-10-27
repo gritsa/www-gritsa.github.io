@@ -23,9 +23,9 @@ When you ask an AI to find the right piece of information in a sea of documents,
 
 Harness‑1 is built on OpenAI’s **gpt‑oss‑20B** model, a 20‑billion‑parameter foundation that already packs impressive reasoning power. The breakthrough lies in its architecture:
 
-* **Off‑model bookkeeping** – Instead of stuffing every step of a search into the model’s limited context, Harness‑1 delegates session management to a dedicated software layer. This prevents “search amnesia” and lets the model focus purely on relevance scoring.
-* **Structured retrieval pipeline** – The agent orchestrates vector look‑ups, re‑ranking, and citation generation in a deterministic flow, ensuring each answer can be traced back to source documents.
-* **Open‑source licensing** – Released under Apache 2.0, Harness‑1 can be customized, audited, and deployed on‑premise without the licensing constraints that accompany proprietary models.
+* **Off‑model bookkeeping**: Instead of stuffing every step of a search into the model’s limited context, Harness‑1 delegates session management to a dedicated software layer. This prevents “search amnesia” and lets the model focus purely on relevance scoring.
+* **Structured retrieval pipeline**: The agent orchestrates vector look‑ups, re‑ranking, and citation generation in a deterministic flow, ensuring each answer can be traced back to source documents.
+* **Open‑source licensing**: Released under Apache 2.0, Harness‑1 can be customized, audited, and deployed on‑premise without the licensing constraints that accompany proprietary models.
 
 ### Real‑World Impact
 

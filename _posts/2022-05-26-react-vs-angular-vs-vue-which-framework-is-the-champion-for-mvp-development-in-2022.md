@@ -63,7 +63,7 @@ Over the years Vue has earned the reputation of being a ‘progressive framework
 - Vue is incredibly small and lightweight. Its file size is merely 18-21 KB, which is four times less than JQuery. Having such a lightweight frontend framework means that developers can quickly download it and start working on their projects in no time. Vue’s lightweight and small file size also mean that it has a fast load time.
 - This framework doesn’t force developers to go through steep learning. Basic knowledge of JavaScript, CSS and HTML is enough to work with Vue.
 - This framework comes with extensive documentation. The good documentation not only makes this framework easy to use but also easy to find the bugs in the application.
-- It offers the best features of both worlds – Angular & React. Therefore, this framework can offer a balanced and holistic outlook to your project.
+- It offers the best features of both worlds, Angular & React. Therefore, this framework can offer a balanced and holistic outlook to your project.
 - It offers a list of useful tools and libraries including CLI, Development tools, Vue Loader and Vue Router.
 - Like Angular, Vue also offers two-way data binding.
 

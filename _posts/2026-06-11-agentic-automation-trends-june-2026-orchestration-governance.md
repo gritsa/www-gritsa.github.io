@@ -38,9 +38,9 @@ In 2026, governance is no longer a slide deck; it is an **operating model** embe
 
 Redwood’s latest guidance outlines three pillars of modern AI governance:
 
-1. **Boundaries** – explicit limits on what agents can do autonomously.
-2. **Transparency** – real‑time logs and explainable decisions.
-3. **Human checkpoints** – mandatory reviews for high‑risk actions.
+1. **Boundaries**: explicit limits on what agents can do autonomously.
+2. **Transparency**: real‑time logs and explainable decisions.
+3. **Human checkpoints**: mandatory reviews for high‑risk actions.
 
 Implementing these pillars reduces compliance risk by up to 50% and builds trust with customers and regulators alike.
 
