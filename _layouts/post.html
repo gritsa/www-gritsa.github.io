@@ -57,7 +57,7 @@ layout: default
                                     <span class="tag-links">
                                         Tags:
                                         {% for tag in page.tags %}
-                                        <a href="{{ site.baseurl }}/blog/#{{ tag | slugify }}">{{ tag }}</a>
+                                        <span class="tag">{{ tag }}</span>
                                         {% endfor %}
                                     </span>
                                 </div>
