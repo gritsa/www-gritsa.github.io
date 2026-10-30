@@ -5,7 +5,7 @@ layout: post
 title: "Top 5 Business Areas where Data Analytics can help Small and Medium Businesses "
 date: 2022-04-01 11:33:31 +0000
 author: "Abi"
-featured_image: "https://static.wixstatic.com/media/1854f5_f4c9c215683e4d24b82064763c650e19~mv2.jpg/v1/fit/w_800,h_240,al_c,q_80/file.png"
+featured_image: "/assets/img/posts/legacy/1854f5_f4c9c215683e4d24b82064763c650e19-403f1aa6b2.jpg"
 excerpt: "Businesses today function around data. It has become easy and convenient to collect and store data at all levels of business operations...."
 ---
 
@@ -15,7 +15,7 @@ Most small and medium businesses do not realize the importance of the data that 
 
 According to a [survey by the Singapore Institute of Technology, RSM Singapore and the Institute of Singapore Chartered Accountants about 70% of Small and Medium Businesses do not make use of data analytics, and 50% have no intention to do so in the near future as well.](https://www.straitstimes.com/business/economy/70-of-smes-have-not-adopted-data-analytics-just-know-spreadsheets-databases-survey)
 
-![laptop showing data analytics](https://static.wixstatic.com/media/1854f5_68407547a7b44cb8bc5a7cb221033d56~mv2.jpg/v1/fill/w_720,h_392,al_c,lg_1,q_80/1854f5_68407547a7b44cb8bc5a7cb221033d56~mv2.jpg)
+![laptop showing data analytics](/assets/img/posts/legacy/1854f5_68407547a7b44cb8bc5a7cb221033d56-72e6f20670.jpg)
 
 ## What is data analytics for small and medium businesses?
 
@@ -41,7 +41,7 @@ Some major benefits of using data analytics for small and medium businesses are:
 
 ## Top 5 business areas where data analytics can play an important part:
 
-![Finance: Data Analytics is helpful in analyzing cross-departmental finances](https://static.wixstatic.com/media/1854f5_9e525f6c0a7c47278aa50c523549695c~mv2.jpg/v1/fill/w_420,h_339,al_c,lg_1,q_80/1854f5_9e525f6c0a7c47278aa50c523549695c~mv2.jpg)
+![Finance: Data Analytics is helpful in analyzing cross-departmental finances](/assets/img/posts/legacy/1854f5_9e525f6c0a7c47278aa50c523549695c-76569bea49.jpg)
 
 ### Finance: Data Analytics is helpful in analyzing cross-departmental finances
 
@@ -49,11 +49,11 @@ Continual reporting and adjusting of financial reports make sense from a financi
 
 ### Operations: Stock levels can be optimized using data analytics
 
-![Operations: Stock levels can be optimized using data analytics ](https://static.wixstatic.com/media/1854f5_e7f7da9eabbc4647a1bc0f208e67fd39~mv2.jpg/v1/fill/w_416,h_339,al_c,lg_1,q_80/1854f5_e7f7da9eabbc4647a1bc0f208e67fd39~mv2.jpg)
+![Operations: Stock levels can be optimized using data analytics ](/assets/img/posts/legacy/1854f5_e7f7da9eabbc4647a1bc0f208e67fd39-8752bacb40.jpg)
 
 Operations, logistics, warehousing and complete supply chain management have a huge use case for data analytics. Implementing data analytics to comply with customer demands through planning, monitoring, and application of information about products and services from the source to the destination. Operational efficiency and inventory can be optimized with the help of data analytics to reduce the chances of products running out of stock and maintenance of optimal stock levels. It can help in predicting customer habits, for e.g., seasonal increase in demand and by how much.
 
-![Marketing: Customer behaviour and demand can be predicted using data analytics](https://static.wixstatic.com/media/1854f5_9697647f962f4eb6a6892090de0c65bd~mv2.jpg/v1/fill/w_420,h_337,al_c,lg_1,q_80/1854f5_9697647f962f4eb6a6892090de0c65bd~mv2.jpg)
+![Marketing: Customer behaviour and demand can be predicted using data analytics](/assets/img/posts/legacy/1854f5_9697647f962f4eb6a6892090de0c65bd-3ce1b5f6ff.jpg)
 
 ### Marketing: Customer behaviour and demand can be predicted using data analytics
 
@@ -61,11 +61,11 @@ Digital Marketing is one of the first steps an organization takes on its journey
 
 ### Customer Service: User experience can be enhanced using data analytics
 
-![Customer Service: User experience can be enhanced using data analytics ](https://static.wixstatic.com/media/1854f5_fa1a7b40d78e446f8b38211cff91e1ae~mv2.jpg/v1/fill/w_420,h_337,al_c,lg_1,q_80/1854f5_fa1a7b40d78e446f8b38211cff91e1ae~mv2.jpg)
+![Customer Service: User experience can be enhanced using data analytics ](/assets/img/posts/legacy/1854f5_fa1a7b40d78e446f8b38211cff91e1ae-fa905c36ec.jpg)
 
 There could be hundreds of businesses with the same service offering, but the differentiator most crucial to a business's success is customer experience. [80% of customers say that the experience a company provides is as fundamental to them as a brand’s products or services according to salesforce](https://www.salesforce.com/news/stories/state-of-the-connected-customer-report-outlines-changing-standards-for-customer-engagement/). Data analytics can help improve customer experience. By tracking metrics like customer response time, customer satisfaction score, the average time of resolution etc. businesses can analyze what the customer likes. This helps in building a seamless user experience in the short run and customer loyalty in the long run.
 
-![Human Resources: Strategic decisions about the workforce can be made using data analytics](https://static.wixstatic.com/media/1854f5_a26764d441164bf29429d1230cd117b4~mv2.jpg/v1/fill/w_1200,h_969,al_c,q_85/1854f5_a26764d441164bf29429d1230cd117b4~mv2.jpg)
+![Human Resources: Strategic decisions about the workforce can be made using data analytics](/assets/img/posts/legacy/1854f5_a26764d441164bf29429d1230cd117b4-f9c68df730.jpg)
 
 ### Human Resources: Strategic decisions about the workforce can be made using data analytics
 

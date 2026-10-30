@@ -3,7 +3,7 @@ layout: post
 title: "How will Artificial Intelligence and Machine Learning impact your business?"
 date: 2023-11-02 11:59:54 +0000
 author: "Abi"
-featured_image: "https://static.wixstatic.com/media/1854f5_d552daaee3c843f98a7a95ace83cda43~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png"
+featured_image: "/assets/img/posts/legacy/1854f5_d552daaee3c843f98a7a95ace83cda43-8401631853.jpg"
 excerpt: "The AI and ML revolution is sweeping across almost all businesses. Is your impacted yet?"
 ---
 
@@ -15,7 +15,7 @@ Let us shed light on the basic definition of Artificial intelligence & Machine L
 
 ## What are Artificial Intelligence and Machine Learning?
 
-![What are the impacts of artificial intelligence and machine learning](https://static.wixstatic.com/media/1854f5_58c017e750b14334b4f77eaa4d422118~mv2.jpg/v1/fill/w_5000,h_3338,al_c,q_90,usm_0.66_1.00_0.01/1854f5_58c017e750b14334b4f77eaa4d422118~mv2.jpg)
+![What are the impacts of artificial intelligence and machine learning](/assets/img/posts/legacy/1854f5_58c017e750b14334b4f77eaa4d422118-48ceb244e2.jpg)
 
 Artificial intelligence is a process of exploiting computer applications' robust datasets that enable solving complex problems or performing complex tasks. AI basically seeks to imitate human intelligence but without any human intervention. Harnessing human-like intelligence, it seeks to find solutions to some of the most complex problems confronting human society.
 
@@ -23,7 +23,7 @@ Machine learning, on the other hand, is a subset or subfield of Artificial Intel
 
 ## How will artificial intelligence and machine learning improve business performance?
 
-![How artificial intelligence and machine learning will impact business](https://static.wixstatic.com/media/1854f5_25c5078f2be84ede8580ffa999ed52b2~mv2.jpg/v1/fill/w_3840,h_2160,al_c,q_90/1854f5_25c5078f2be84ede8580ffa999ed52b2~mv2.jpg)
+![How artificial intelligence and machine learning will impact business](/assets/img/posts/legacy/1854f5_25c5078f2be84ede8580ffa999ed52b2-ee33fca886.jpg)
 
 ### A better understanding of the Target Customer
 
@@ -33,7 +33,7 @@ In the future, we can expect companies to be in a much more advantageous positio
 
 ### Real-time decision-making with near-zero latency
 
-![Decision making with AI and ML](https://static.wixstatic.com/media/1854f5_ec44a1e5e2e249638a8f37a96be79caa~mv2.jpg/v1/fill/w_5000,h_3333,al_c,q_90,usm_0.66_1.00_0.01/1854f5_ec44a1e5e2e249638a8f37a96be79caa~mv2.jpg)
+![Decision making with AI and ML](/assets/img/posts/legacy/1854f5_ec44a1e5e2e249638a8f37a96be79caa-6d069cb89d.jpg)
 
 In today’s time of hyper-competition, companies earnestly want to make real-time decisions in a bid to get better off their competitors. However, more often than not most companies feel handicapped due to the absence of accurate data. Such companies are missing the ability of Artificial Intelligence and Machine Learning to precisely analyze and churn out large data sets in real-time. Companies that are able to leverage this capability are surely better off in today’s hyper-competitive world. They are able to make big and bold decisions instantaneously, much before their competitors do.
 
@@ -41,7 +41,7 @@ It is again pertinent to note that AI and ML’s proficiency in producing real-t
 
 ### Chatbots will come of age
 
-![Role of AI and ML in Chatbots](https://static.wixstatic.com/media/1854f5_dcbf78653a98495884b4308cc5e60bdb~mv2.jpg/v1/fill/w_1920,h_964,al_c,q_85/1854f5_dcbf78653a98495884b4308cc5e60bdb~mv2.jpg)
+![Role of AI and ML in Chatbots](/assets/img/posts/legacy/1854f5_dcbf78653a98495884b4308cc5e60bdb-b1270f9cae.jpg)
 
 Today many businesses already use AI-powered chatbots to resolve the complaints of their customers. According to a rough estimate, around 3 Billion voice assistants are currently being used across different industries and this figure is likely to reach 8 Billion by 2023.
 
@@ -57,7 +57,7 @@ Today both these cutting-edge technologies have proficiently demonstrated the ab
 
 ## Conclusion
 
-![Role of AI and ML in business](https://static.wixstatic.com/media/1854f5_35d1612331f5484b8435d47ad8f27bb5~mv2.jpg/v1/fill/w_1920,h_1275,al_c,q_90/1854f5_35d1612331f5484b8435d47ad8f27bb5~mv2.jpg)
+![Role of AI and ML in business](/assets/img/posts/legacy/1854f5_35d1612331f5484b8435d47ad8f27bb5-be93433905.jpg)
 
 Given the unfettered technological capabilities of AI and ML, their positive contribution to business in the ensuing years is a foregone conclusion. Companies can expect to reach out to their stakeholders and resolve their problems in a more immersive and riveting manner. It also must be duly noted that both these technologies are still in the nascent stage. Despite this fact, their impact on all business areas has been stupendous. As these two nascent technologies continue to evolve and improve further, we can expect several revolutionary changes in the near future.
 

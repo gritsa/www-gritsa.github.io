@@ -3,7 +3,7 @@ layout: post
 title: "The Foundational Full Stack Developer"
 date: 2020-10-22 09:09:04 +0000
 author: "Abi"
-featured_image: "https://static.wixstatic.com/media/5fdde1_4a112b5d91eb4022b3b78b35c57adfec~mv2.png/v1/fit/w_1000,h_627,al_c,q_80/file.png"
+featured_image: "/assets/img/posts/legacy/5fdde1_4a112b5d91eb4022b3b78b35c57adfec-bc50a28b71.jpg"
 excerpt: "Full Stack Developers are all the hype, but is the hype worth it?"
 ---
 

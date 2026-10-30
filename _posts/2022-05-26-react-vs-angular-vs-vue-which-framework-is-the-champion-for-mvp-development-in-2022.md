@@ -3,7 +3,7 @@ layout: post
 title: "React vs Angular vs Vue: Which framework is the champion for MVP development in 2022?"
 date: 2022-05-26 05:18:50 +0000
 author: "Abi"
-featured_image: "https://static.wixstatic.com/media/1854f5_113d38e3497c41afb98f12d8ce316680~mv2.png/v1/fit/w_1000,h_600,al_c,q_80/file.png"
+featured_image: "/assets/img/posts/legacy/1854f5_113d38e3497c41afb98f12d8ce316680-27adabd6fc.jpg"
 excerpt: "Today React, Angular and Vue are among the most widely used and popular JavaScript frontend frameworks. They are mostly used for building..."
 ---
 

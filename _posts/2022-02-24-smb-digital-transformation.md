@@ -3,13 +3,13 @@ layout: post
 title: "6 reasons why small and medium businesses should invest in digital transformation in 2022"
 date: 2022-02-24 09:28:03 +0000
 author: "Abi"
-featured_image: "https://static.wixstatic.com/media/1854f5_5b6b24e297cd47a8805df646efe24157~mv2.png/v1/fit/w_1000,h_1000,al_c,q_80/file.png"
+featured_image: "/assets/img/posts/legacy/1854f5_5b6b24e297cd47a8805df646efe24157-67765a7919.jpg"
 excerpt: "As the world returns to “normal,” should your business too?"
 ---
 
 ##### *The pandemic has coerced small and medium businesses (SMBs) to adopt digital practices into their workflows. Now, as the world returns to “normal,” should your business too?*
 
-![6 reasons why SMBs should invest in digital transformation and future-proof themselves.](https://static.wixstatic.com/media/1854f5_11809ea49b0b4e30a0610a899ed1b9fa~mv2.jpg/v1/fill/w_924,h_520,al_c,lg_1,q_85/1854f5_11809ea49b0b4e30a0610a899ed1b9fa~mv2.jpg)
+![6 reasons why SMBs should invest in digital transformation and future-proof themselves.](/assets/img/posts/legacy/1854f5_11809ea49b0b4e30a0610a899ed1b9fa-941f7cafb1.jpg)
 
 With the COVID-19 pandemic, businesses had to radically adapt to alternative methods, mostly digitalization, to survive. Today, 65% of decision-makers agree that the business must digitize in the coming years or face “doom”. Hence, it is not surprising that 70% of companies either have a digital transformation strategy or are on the roadmap to one. Digital investments when aligned with business strategy and visions help improve overall efficiency, decrease costs and increase revenues. In fact, digitally mature organizations not only faced the pandemic resiliently but also earned higher net revenues than the industry average.
 
@@ -57,7 +57,7 @@ Some critical issues faced by small businesses on the digital transformation roa
 - Lack of digital mindset
 - Lack of a proper digital roadmap
 
-![Female led businesses are unlikely to complete the digital transformation process.](https://static.wixstatic.com/media/1854f5_84eee7228a564a4b85e6f0f8d490147a~mv2.jpg/v1/fill/w_600,h_396,al_c,lg_1,q_80/1854f5_84eee7228a564a4b85e6f0f8d490147a~mv2.jpg)
+![Female led businesses are unlikely to complete the digital transformation process.](/assets/img/posts/legacy/1854f5_84eee7228a564a4b85e6f0f8d490147a-adaaf9eeae.jpg)
 
 ## Conclusion
 

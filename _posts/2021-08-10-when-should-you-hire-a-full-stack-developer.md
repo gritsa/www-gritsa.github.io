@@ -3,7 +3,7 @@ layout: post
 title: "When Should You Hire a Full-stack Developer?"
 date: 2021-08-10 06:30:04 +0000
 author: "Abi"
-featured_image: "https://static.wixstatic.com/media/5fdde1_0b405c89421c4975b2322374a272a2ba~mv2.jpg/v1/fit/w_1000,h_854,al_c,q_80/file.png"
+featured_image: "/assets/img/posts/legacy/5fdde1_0b405c89421c4975b2322374a272a2ba-ba15c12ba1.jpg"
 excerpt: "Full-stack development is in vogue but does that mean you should hire one? Is there a method you can follow or should you go by your..."
 ---
 
@@ -15,7 +15,7 @@ I’m sure you’ve heard the phrase, Jack of all, master of none. A good full s
 
 ## **When to hire a full stack developer**
 
-![When not to hire a full-stack developer](https://static.wixstatic.com/media/5fdde1_11db2852c58240dab7a57d287477e354~mv2.jpg/v1/fill/w_1280,h_768,al_c,q_85/5fdde1_11db2852c58240dab7a57d287477e354~mv2.jpg)
+![When not to hire a full-stack developer](/assets/img/posts/legacy/5fdde1_11db2852c58240dab7a57d287477e354-c05ac888b6.jpg)
 
 Requirements of the developer’s role often drive the need for a full-stack engineer. However, one must think through and hire a full stack developer in the following instances:
 
@@ -41,13 +41,13 @@ In ideal cases, full-stack developers are aware of a diverse range of technologi
 
 ## **When not to hire a full-stack developer**
 
-![when should you hire a full stack developer](https://static.wixstatic.com/media/5fdde1_19e1cfec00e749ae83d5a3d219f6b0a6~mv2.jpg/v1/fill/w_1280,h_719,al_c,q_85/5fdde1_19e1cfec00e749ae83d5a3d219f6b0a6~mv2.jpg)
+![when should you hire a full stack developer](/assets/img/posts/legacy/5fdde1_19e1cfec00e749ae83d5a3d219f6b0a6-4c3c2d7d19.jpg)
 
 As much as it is important to know when to hire, you must also know when not to hire a full-stack developer. Do not hire one, when you cannot see a clear value-add. For example, a full-stack engineer can be an asset when you are trying to optimize your application for 10,000 users. However, it won’t always be the case. If you have already crossed that milestone and you are looking to scale up to serve millions of active users every day, you will need a specialist. In most cases, you will need a team for each layer such as a data, security, infrastructure etc. In such cases, a full-stack developer will not add as much value as a specialist will.
 
 ## **Qualities of a full-stack developer**
 
-![qualities of a full stack developer](https://static.wixstatic.com/media/5fdde1_251164eefba6402696c73e4756a74094~mv2.jpg/v1/fill/w_1280,h_853,al_c,q_85/5fdde1_251164eefba6402696c73e4756a74094~mv2.jpg)
+![qualities of a full stack developer](/assets/img/posts/legacy/5fdde1_251164eefba6402696c73e4756a74094-b2b33c238d.jpg)
 
 Make sure you are clear about your requirements and that your developer has the following qualities:
 

@@ -3,7 +3,7 @@ layout: post
 title: "REST APIs, .NET Core Web API 2 versus SailsJS versus Express / TypeORM"
 date: 2020-10-12 12:29:26 +0000
 author: "Abi"
-featured_image: "https://static.wixstatic.com/media/5fdde1_ae9747f97e0a48ba961a888a3e345974~mv2.jpeg/v1/fit/w_700,h_368,al_c,q_80/file.png"
+featured_image: "/assets/img/posts/legacy/5fdde1_ae9747f97e0a48ba961a888a3e345974-4456fe7586.jpg"
 excerpt: "Building a REST API driven application? You are certainly spoilt for choices with the numerous frameworks in all kinds of tech stacks..."
 ---
 

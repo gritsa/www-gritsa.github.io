@@ -3,7 +3,7 @@ layout: post
 title: "A guide to building an MVP in Agile Methodology"
 date: 2022-05-05 11:21:46 +0000
 author: "Abi"
-featured_image: "https://static.wixstatic.com/media/1854f5_dd83a3f9bdf14455b71c8d9cc9697fed~mv2.jpg/v1/fit/w_700,h_175,al_c,q_80/file.png"
+featured_image: "/assets/img/posts/legacy/1854f5_dd83a3f9bdf14455b71c8d9cc9697fed-89392f5419.jpg"
 excerpt: "Over the years the MVP concept has become an integral part of product development strategy. Even for companies that work outside the IT..."
 ---
 
@@ -13,7 +13,7 @@ Over the years the MVP concept has become an integral part of product developmen
 
 ## What is MVP?
 
-![What is MVP?](https://static.wixstatic.com/media/1854f5_fa8999331fd748be9d559fb5f80d0c76~mv2.jpg/v1/fill/w_420,h_280,al_c,lg_1,q_80/1854f5_fa8999331fd748be9d559fb5f80d0c76~mv2.jpg)
+![What is MVP?](/assets/img/posts/legacy/1854f5_fa8999331fd748be9d559fb5f80d0c76-7dd784dc76.jpg)
 
 MVP stands for Minimum Viable Product. It is essentially a rough version of the digital product (mobile apps & software) that is laced with bare minimum functionality. It is certainly not a fully functional product. It is an experimentation that needs constant validation.
 
@@ -21,7 +21,7 @@ Conventionally, the bare minimum functionality is enough to get the product test
 
 ## What is Agile Methodology?
 
-![How Agile methodology benefits MVP development?](https://static.wixstatic.com/media/1854f5_0f7716cf93474f8ca61e1bca76f2c6db~mv2.jpg/v1/fill/w_840,h_530,al_c,lg_1,q_85/1854f5_0f7716cf93474f8ca61e1bca76f2c6db~mv2.jpg)
+![How Agile methodology benefits MVP development?](/assets/img/posts/legacy/1854f5_0f7716cf93474f8ca61e1bca76f2c6db-0c3e008d28.jpg)
 
 The agile way is to efficiently manage a business project essentially by breaking the project into several different phases. However, speaking strictly in the context of MVP, Agile Methodology is considered the most effective process to turn a rough vision or experimental product into a final digital product. Just like in other business projects, Agile in MVP necessitates employing constant learning, continuous product enhancement, taking feedback, pivoting and team collaboration.
 
@@ -71,7 +71,7 @@ After the end of each sprint, the team needs to sit down and review the progress
 
 ## Conclusion
 
-![Conclusion - A guide to building an MVP in Agile Methodology](https://static.wixstatic.com/media/1854f5_ce1731da48e142c59bdd09ea0856f0bc~mv2.png/v1/fill/w_179,h_176,al_c,lg_1,q_85/1854f5_ce1731da48e142c59bdd09ea0856f0bc~mv2.png)
+![Conclusion - A guide to building an MVP in Agile Methodology](/assets/img/posts/legacy/1854f5_ce1731da48e142c59bdd09ea0856f0bc-e91f5144ce.jpg)
 
 Building a minimum viable product through Agile methodology offers overwhelming advantages to companies across the board. The biggest benefit is that it helps companies to launch a product without investing large capital. This invariably helps companies in reducing their risk capital and prevents them from putting undue stress on their balance sheet. Due to such intrinsic advantages, most companies will continue to use MVP and Agile methodology in the foreseeable future.
 

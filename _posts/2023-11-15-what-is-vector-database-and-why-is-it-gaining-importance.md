@@ -3,7 +3,7 @@ layout: post
 title: "What is Vector Database and Why is it gaining Importance?"
 date: 2023-11-15 10:23:06 +0000
 author: "Abi"
-featured_image: "https://static.wixstatic.com/media/1854f5_bbbd147d97de4f67a69a54c1e8d6ccbe~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png"
+featured_image: "/assets/img/posts/legacy/1854f5_bbbd147d97de4f67a69a54c1e8d6ccbe-a98d66edc8.jpg"
 excerpt: "A vector database is a specialized type of database that is solely designed to store, manage, and retrieve vector data. Simply put, it is..."
 ---
 
@@ -17,7 +17,7 @@ Pinecone, Milvus, Weaviate, Faiss, and Qdrant are some of the popular forms of v
 
 ## Why is the vector database growing in significance?
 
-![What a vector database example](https://static.wixstatic.com/media/1854f5_811182592dd941a9b827343197ccc788~mv2.jpg/v1/fill/w_4833,h_3598,al_c,q_90/1854f5_811182592dd941a9b827343197ccc788~mv2.jpg)
+![What a vector database example](/assets/img/posts/legacy/1854f5_811182592dd941a9b827343197ccc788-b8be5a01b0.jpg)
 
 A vector database offers many advantages that are otherwise not available in traditional databases. Below, we’ve listed some of the reasons and exceptional features behind its surging popularity.
 

@@ -3,7 +3,7 @@ layout: post
 title: "The Rise of Vector Databases for AI Applications"
 date: 2023-11-23 09:30:20 +0000
 author: "Abi"
-featured_image: "https://static.wixstatic.com/media/1854f5_915cdc88420d4a53ab70f0fdc5b25bfc~mv2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png"
+featured_image: "/assets/img/posts/legacy/1854f5_915cdc88420d4a53ab70f0fdc5b25bfc-0fbe1e6d12.jpg"
 excerpt: "With artificial intelligence applications becoming more complex and multifaceted, the critical role played by an efficient database..."
 ---
 
@@ -21,7 +21,7 @@ Vector databases are especially capable of employing many advanced techniques th
 
 ## Key Advantages of Vector Databases for AI Applications
 
-![Vector database for AI applications](https://static.wixstatic.com/media/1854f5_25c5078f2be84ede8580ffa999ed52b2~mv2.jpg/v1/fill/w_3840,h_2160,al_c,q_90/1854f5_25c5078f2be84ede8580ffa999ed52b2~mv2.jpg)
+![Vector database for AI applications](/assets/img/posts/legacy/1854f5_25c5078f2be84ede8580ffa999ed52b2-ee33fca886.jpg)
 
 Traditional databases have been found to be lethargic and cumbersome when it comes to handling high-dimensional data, making them unreliable and incompetent for AI applications. [Vector databases](/blog/2023/11/15/what-is-vector-database-and-why-is-it-gaining-importance/), on the other hand, leverage several advanced indexing techniques like approximate nearest neighbors (ANN) and similarity search, which sharply increase the speed of data retrieval. Above all, it makes them efficient at handling the inherent complexity of high-dimensional data.
 
