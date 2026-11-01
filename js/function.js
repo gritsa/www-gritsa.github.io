@@ -455,6 +455,11 @@
 			}
 		});
 	}
-	flowmap_deformation();
+	/* The WebGL effect only responds to a mouse and costs seconds of main-thread time on phones.
+	   Keep the static hero image (inline background) for touch devices and reduced-motion users. */
+	if (window.matchMedia('(hover: hover) and (pointer: fine)').matches &&
+		!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+		flowmap_deformation();
+	}
 	
 })(jQuery);
