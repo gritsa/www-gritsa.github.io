@@ -5,7 +5,9 @@
 	var $body = $('body'); 
 
 	/* Preloader Effect */
-	$window.on('load', function(){
+	/* Dismiss on DOM ready, not window load: load waits for every image (3 MB on the home page),
+	   which held the preloader, and so the largest contentful paint, for 13 s on a throttled phone. */
+	$(function(){
 		$(".preloader").fadeOut(600);
 	});
 
