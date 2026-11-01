@@ -302,6 +302,15 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/* Safety net: hide after 1.2 s even if the scripts are still downloading on a slow connection. */
+	animation: preloader-out 0.4s ease 1.2s forwards;
+}
+
+@keyframes preloader-out{
+	to{
+		opacity: 0;
+		visibility: hidden;
+	}
 }
 
 .loading-container,
