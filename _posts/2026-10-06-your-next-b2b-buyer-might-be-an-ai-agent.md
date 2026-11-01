@@ -8,8 +8,8 @@ tags:
   - AI agents
   - AI search
   - Future readiness
-excerpt: "Half of B2B software buyers now start research in an AI chatbot. Your most careful reader may not be a person."
-description: "Half of B2B buyers now start research in an AI chatbot. What an AI agent looks for on your website, and how to become the vendor it recommends."
+excerpt: "Half of B2B software buyers start research in an AI chatbot more often than in Google. Your most careful reader may not be a person."
+description: "Half of B2B software buyers start research in an AI chatbot more often than in Google. What an agent looks for on your site, and how to get recommended."
 keywords: "B2B buyer AI agent, AI search for B2B, llms.txt, agentic commerce, MCP server, AI readiness"
 featured_image: "/assets/img/posts/2026-10-06-your-next-b2b-buyer-might-be-an-ai-agent.jpg"
 ---
@@ -20,7 +20,7 @@ That's fine. It was written for a different reader: the language models that now
 
 Most of the AI conversation in business points inward. Which jobs can agents take over? Which model? Build or buy? Good questions, all of them. But I think there's a more urgent one that gets far less airtime: what happens when the agent is sitting on the other side of the table?
 
-It's already sitting there. In [G2's March 2026 survey](https://learn.g2.com/g2-2026-ai-search-insight-report) of 1,076 B2B decision makers, 51% said they start software research in an AI chatbot more often than in Google. And 69% said a chatbot had surfaced something that sent them to a different vendor than the one they expected. Your shortlist is increasingly written by something that has never seen your logo.
+It's already sitting there. In [G2's March 2026 survey](https://learn.g2.com/g2-2026-ai-search-insight-report) of 1,076 B2B decision makers, 51% said they start software research in an AI chatbot more often than in Google. And 69% said an AI chatbot had led them to choose a different software vendor. Your shortlist is increasingly written by something that has never seen your logo.
 
 ## What the agent actually sees
 
@@ -38,7 +38,7 @@ None of that is new. It's the work good marketers always meant to get around to.
 
 ## Reading is only the first step
 
-Today most of these agents read. More of them will soon act. Last year Stripe and OpenAI released the [Agentic Commerce Protocol](https://stripe.com/newsroom/news/stripe-openai-instant-checkout), an open standard that lets an assistant complete a purchase inside the chat. The Model Context Protocol already gives any agent a standard way to call into a company's systems: check stock, request a quote, book a meeting.
+Today most of these agents read. More of them will soon act. In September 2025 Stripe and OpenAI released the [Agentic Commerce Protocol](https://stripe.com/newsroom/news/stripe-openai-instant-checkout), an open standard that lets an assistant complete a purchase inside the chat. The Model Context Protocol already gives any agent a standard way to call into a company's systems: check stock, request a quote, book a meeting.
 
 Follow that line and a company's MCP server starts to look like its storefront for machines. Not a chatbot bolted onto the homepage. A real interface, with rules about what an outside agent may see and do (I wrote up [what tends to break first](/blog/2026/10/07/mcp-servers-in-production-what-breaks-first/) when you build one), sitting on data that is accurate at the moment it's asked. For a B2B services firm it will start small. An agent that can pull your case studies, check when a team is free, ask for a ballpark. I suspect that's closer than most roadmaps assume.
 
