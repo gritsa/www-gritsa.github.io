@@ -72,7 +72,7 @@ The spec's own example is a good standard: "Invalid departure date: must be in t
 
 ## 5. State that anyone can guess
 
-The current version of the protocol has no sessions. If your tools need to remember something between calls, like a cart or an open workflow, you return a handle and the model passes it back as an argument. The spec's security page names the risk: state handle hijacking, where a guessed or leaked handle lets someone operate on another user's state.
+The current version of the protocol (2026-07-28) has no sessions. Earlier revisions did, so a client on an older version may still expect one. If your tools need to remember something between calls, like a cart or an open workflow, you return a handle and the model passes it back as an argument. The spec's security page names the risk: state handle hijacking, where a guessed or leaked handle lets someone operate on another user's state.
 
 Two rules from the spec cover most of it. Never treat possession of a handle as authentication, and bind each handle to the authenticated user on the server, keyed from the verified token rather than anything the client supplies. Make handles random and let them expire.
 
