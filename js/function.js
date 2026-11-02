@@ -35,6 +35,9 @@
 		label : '',
 		prependTo : '.responsive-menu'
 	});
+	$('.slicknav_btn').attr({'aria-label': 'Menu', 'aria-expanded': 'false'}).on('click', function() {
+		$(this).attr('aria-expanded', $(this).hasClass('slicknav_open') ? 'true' : 'false');
+	});
 
 	if($("a[href='#top']").length){
 		$(document).on("click", "a[href='#top']", function() {
