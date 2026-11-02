@@ -94,4 +94,6 @@ I hold a position that the model is the least defensible part of an AI stack, an
 
 If you are building agents on top of pipelines that have no gate, that is usually where we start: the [data engineering work](/services/data-engineering/) comes before the [agent](/services/ai-agents/), because the agent is only as good as what it reads.
 
+A gate can only enforce a definition somebody wrote down. If your teams still disagree on what counts as an active customer, start with [that question](/blog/2026/11/02/what-is-an-active-customer/).
+
 A pipeline that publishes unchecked data to a reader that never doubts it is an accident with a schedule.
