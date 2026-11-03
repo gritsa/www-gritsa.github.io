@@ -2578,8 +2578,13 @@ header.main-header .header-sticky.active{
 	padding: 30px;
 }
 
-.page-category-list h3{
+.page-category-list h3,
+.page-category-list .page-category-title{
+    margin-top: 0;
     font-size: 20px;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: var(--primary-color);
     text-transform: capitalize;
 	margin-bottom: 30px;
 }
