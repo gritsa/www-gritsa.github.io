@@ -79,7 +79,7 @@ Write constraints as things a stranger could check. "Be careful with customer da
 - **Money and messages.** Whether it can spend, send an email or contact a customer. Default to no.
 - **Stopping conditions.** When it must hand back to a person: low confidence, a missing field, an amount over a limit.
 
-The data scope is also where upstream quality shows up. If the agent reads a table, that table needs checks before the agent sees it, which is the argument in [Write-Audit-Publish](/blog/2026/10/13/write-audit-publish-for-agents/). If it calls tools, each tool is a permission, which is what breaks first in [MCP servers in production](/blog/2026/10/07/mcp-servers-in-production-what-breaks-first/).
+The data scope is also where upstream quality shows up. If the agent reads a table, that table needs checks before the agent sees it, which is the argument in [Write-Audit-Publish](/blog/2026/10/13/write-audit-publish-for-agents/). If it calls tools, each tool is a permission, which is what breaks first in [MCP servers in production](/blog/2026/10/07/mcp-servers-in-production-what-breaks-first/). If you are not sure an MCP server is even the right way to hand it those tools, start with [what an MCP server is and when you don't need one](/blog/2026/11/04/what-is-an-mcp-server-and-when-you-dont-need-one/).
 
 ## Does writing a constraint actually enforce it?
 
