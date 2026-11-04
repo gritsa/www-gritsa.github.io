@@ -26,6 +26,8 @@ An MCP server is a small program that exposes tools, data and prompts to an AI m
 
 I haven't run a fleet of MCP servers for a client, and I won't pretend to. What follows is built from the protocol's own specification and security guidance, plus how [Jiva](https://github.com/KarmaloopAI/Jiva), the open-source agent framework we build with, handles the same problems. The ordering, what breaks *first*, is my opinion. The failure modes themselves are documented.
 
+New to MCP? Start with [what an MCP server is, and when you don't need one](/blog/2026/11/04/what-is-an-mcp-server-and-when-you-dont-need-one/).
+
 ## What breaks first when an MCP server meets real use?
 
 In my reading, the order is: the model gets buried in tools, the tools are too broad, the credentials are borrowed, the errors don't help, and nobody can say afterward who did what. Each one is a design decision made in the first week and discovered in the fourth month.
