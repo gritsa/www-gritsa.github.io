@@ -31,7 +31,7 @@ Here is a quick test. Take the document and delete every product name. What is l
 
 A strategy is a set of choices that excludes something. "We will use AI across the business" excludes nothing, so it decides nothing. Compare it with "We will have an agent produce the first draft of every vendor invoice reconciliation by March, and we will stop paying two contractors to do it by hand." One of those you can fail at. That's how you know it's the strategy.
 
-So start with jobs, not departments. Pick three. Not thirty, because thirty is how you end up with thirty pilots and no owner for any of them. A job is something with an input, an output and someone who currently does it: coding inbound tickets, chasing late purchase orders, preparing the monthly variance commentary. Smaller than a function, bigger than a task.
+So start with jobs, not departments. Pick three. Not thirty, because thirty is how you end up with thirty pilots and no owner for any of them. A job is something with an input, an output and someone who currently does it: coding inbound tickets, chasing late purchase orders, preparing the monthly variance commentary. Smaller than a function, bigger than a task. Once you have picked one, [write its job description](/blog/2026/10/21/how-to-scope-an-ai-agent/) before anything else.
 
 Then write down how you will know. This is the part that gets skipped, and it's the same discipline as [writing the test before you hire the agent](/blog/2026/10/12/write-the-test-before-you-hire-the-agent/). If you can't say what a correct result looks like, you can't measure whether the change worked, and the quarterly review becomes a vote on vibes.
 
