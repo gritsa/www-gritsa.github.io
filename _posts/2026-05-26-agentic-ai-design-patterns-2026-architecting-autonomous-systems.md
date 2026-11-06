@@ -34,7 +34,7 @@ None of these is wrong. All of them assume you have already decided the model sh
 
 ## Which work should the model not do?
 
-Anything where a junior developer could write the code in ten minutes. That is the rule of thumb in Jiva's own [agentic pipeline playbook](https://github.com/KarmaloopAI/Jiva/blob/main/docs/guides/agentic-pipeline-playbook.md), and I think it is the right one.
+Anything where a junior developer could write the code in ten minutes. That is the rule of thumb in Jiva's own [agentic pipeline playbook](https://github.com/KarmaloopAI/Jiva/blob/main/docs/reference/AGENTIC_PIPELINE.md), and I think it is the right one.
 
 The playbook describes a three-layer pipeline:
 
