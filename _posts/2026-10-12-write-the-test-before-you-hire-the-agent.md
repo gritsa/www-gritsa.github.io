@@ -42,3 +42,5 @@ If you're stuck at that point, [our AI agents service](/services/ai-agents/) is 
 This is also where an AI plan usually goes wrong one level up: [most AI strategy is a procurement plan](/blog/2026/10/19/most-ai-strategy-is-a-procurement-plan/), a list of tools with no jobs and no measures behind it.
 
 The test only makes sense once the job is written down. [How to scope an AI agent](/blog/2026/10/21/how-to-scope-an-ai-agent/) covers the one-page job description that comes before the answer key.
+
+And the test needs a date as well as a number. [Why AI pilots never end](/blog/2026/11/10/why-ai-pilots-never-end/) is about writing the stopping rule before kickoff.
