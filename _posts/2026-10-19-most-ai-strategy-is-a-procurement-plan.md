@@ -39,6 +39,6 @@ Then the uncomfortable one: what stops. Every job you hand to an agent leaves a 
 
 Notice what's missing from all this: the model. I'd argue that's correct. Models change every few months and anyone can rent the same ones. The parts that last are your data, your process, and your decisions about who may do what. A strategy built on a specific vendor's roadmap expires when the roadmap does. One built on jobs, measures and stopping rules survives a model swap, provided you can [tell whether the swap worked](/blog/2026/10/26/llm-lock-in-is-not-where-you-think-it-is/).
 
-None of this means buying tools is silly. You will buy tools. But decide the jobs first and the tools become an easy question with a short answer, instead of a long one with a slide deck.
+None of this means buying tools is silly. You will buy tools, and more and more of the shopping will be done by software, which changes [what your own website has to say to a buyer's agent](/blog/2026/10/06/your-next-b2b-buyer-might-be-an-ai-agent/). But decide the jobs first and the tools become an easy question with a short answer, instead of a long one with a slide deck.
 
 If you want a second opinion on which three jobs to pick, that is the first conversation we have at Gritsa, and it usually happens before anyone mentions a framework. [Start here](/contact/), or read how we [scope agents as a job description](/services/ai-agents/).
