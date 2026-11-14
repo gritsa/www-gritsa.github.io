@@ -103,6 +103,6 @@ If any answer is "it depends" or a shrug, the description isn't finished. Fix th
 
 Three things. Put it in the repo next to the agent so it gets reviewed like code. Give one named person ownership of it, the way a manager owns a role. And revisit it when the agent's tools change, because a new tool is a new permission and the page should say so.
 
-Frameworks come after that, and they matter less than people think. Whether you use Jiva or something else, the page is what makes the agent safe to run.
+If the page describes more than one agent can safely do, [splitting the task](/blog/2026/11/11/split-a-task-for-an-ai-agent/) is the next decision. Frameworks come after that, and they matter less than people think. Whether you use Jiva or something else, the page is what makes the agent safe to run.
 
 If you're about to approve a first agent project and want a second pair of eyes on the scope, that is the work on our [AI agents service page](/services/ai-agents/).
