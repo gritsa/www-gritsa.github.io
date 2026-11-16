@@ -60,7 +60,7 @@ After each subtask the Manager decides whether to accept the Worker's output. In
 
 The middle row is the one I like most. A Worker that answers a data question without touching a single tool has produced text from memory, and the code treats that as the failure it is. It costs nothing to check and it catches a whole class of confident nonsense.
 
-The first row is the one to understand before you copy the idea. "Used a tool and wrote a decent amount" says the agent did something. It does not say the thing is right. A 400-character answer built on the wrong table passes. So does a summary of a query that returned an error page.
+The first row is the one to understand before you copy the idea. "Used a tool and wrote a decent amount" says the agent did something. It does not say the thing is right. A 400-character answer built on the wrong table passes. So does a summary of a query that returned an error page. The third row raises its own question: the model that judges does not have to be the model that worked. I wrote about [giving each job its own model](/blog/2026/11/16/pick-a-model-for-each-job/).
 
 That is the answer to my doubt about "don't create verify steps". A fast-path check is fine as a floor. It is not a verifier. For anything that matters, the check has to be something you can compute: row counts that match, a total that reconciles, a file that parses. I made the argument at length in [write the test before you hire the agent](/blog/2026/10/12/write-the-test-before-you-hire-the-agent/), and this is the place it bites. The planner's review is a tripwire for the lazy failure. It will not find the subtle one.
 
