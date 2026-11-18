@@ -9,13 +9,13 @@ title: Our Blog
             {% for post in site.posts %}
             <div class="col-lg-4 col-md-6">
                 <!-- Post Item Start -->
-                <div class="post-item wow fadeInUp" {% if forloop.index > 1 %}data-wow-delay="{{ forloop.index | minus: 1 | times: 0.2 }}s"{% endif %}>
+                <div class="post-item wow fadeInUp" {% assign col = forloop.index0 | modulo: 3 %}{% if col > 0 %}data-wow-delay="{{ col | times: 0.2 }}s"{% endif %}>
                     <!-- Post Featured Image Start-->
                     {% if post.featured_image %}
                     <div class="post-featured-image">
                         <a href="{{ post.url | relative_url }}" data-cursor-text="View">
                             <figure class="image-anime">
-                                <img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
+                                <img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}"{% if forloop.index > 6 %} loading="lazy" decoding="async"{% endif %}>
                             </figure>
                         </a>
                     </div>
