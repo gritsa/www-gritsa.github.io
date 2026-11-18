@@ -35,3 +35,5 @@ Once the definitions exist, the engineering is ordinary. Put them where the agen
 [Jiva](https://github.com/KarmaloopAI/Jiva), the open-source agent framework we build on, shows how small the first step can be. It reads a plain markdown directive file from the project root, with sections for purpose, tasks, constraints and context. That file is a fine place for "active customer means invoiced in the last twelve months, and here is the table." It will not write the sentence for you. Nothing will.
 
 So skip the readiness audit for a week and try the smaller experiment. Write one definition of "active customer" that sales, finance and product will all sign. If that takes a month, you have just learned how long the real project will take, and what your first agent would have been guessing.
+
+Once you have that sentence, the next question is where it lives so an agent cannot route around it. I answered that in [how to give an AI agent a metric instead of a table](/blog/2026/11/18/give-an-agent-a-metric/).
