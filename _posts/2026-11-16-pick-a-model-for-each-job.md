@@ -26,6 +26,8 @@ Here is a failure that looks too silly to be real. A model reasons well. It plan
 
 That failure is written into the code of Jiva, our open-source agent framework. [Jiva's model orchestrator](https://github.com/KarmaloopAI/Jiva) can hold three models at once: one to reason, one to read images, and one dedicated to making tool calls. The comment on that last slot says why it exists: for the times the reasoning model produces invalid JSON in its tool-call arguments and the call gets rejected. The framework's own description of the dedicated model is that it serializes those arguments reliably.
 
+Models fail the boring part in different ways. Jiva's release notes record that Sarvam-105B emits its tool calls as XML inside the message text instead of in the structured field, so an agent that only reads the structured field sees a model that never uses its tools. I wrote up [what a coding agent has to do about that and about the model's output cap](/blog/2026/10/28/run-a-coding-agent-on-sarvam-105b/).
+
 Nobody designs a slot like that because they enjoy complexity. Somebody watched a capable model trip on the boring part and decided the boring part deserved its own hire.
 
 ## Roles, not rankings
