@@ -9,11 +9,11 @@ excerpt: "This has been a question asked to us by a lot of our prospective emplo
 
 This has been a question asked to us by a lot of our prospective employees and clients alike. While during the pandemic, we have all been mostly at home, it does become important for all our stakeholders to know where is Gritsa physically located as a company.
 
-Gritsa Technologies is located in Logix Technova IT Park, Sector-132 NOIDA, and as you may notice in the picture above, we have cleverly taken the picture of our building while showing off the building next to ours - Adobe Systems Research Center. Well, it is easier to find us that way.
+Gritsa Technologies is located in Logix Technova IT Park, Sector-132 NOIDA, and as you may notice in the picture above, we have cleverly taken the picture of our building while showing off the building next to ours: Adobe Systems Research Center. Well, it is easier to find us that way.
 
 ![](/assets/img/posts/legacy/5fdde1_ef5a79d008f34673b80ae100e2f6fbcb-7327f107f0.jpg)
 
-And this is how you will be greeted when you visit us at our office - with a smile 😊
+And this is how you will be greeted when you visit us at our office: with a smile 😊
 
 This is our development center, equipped with leased line connection, a server room, pantry, gaming lounge area, conference room and directors room.
 
