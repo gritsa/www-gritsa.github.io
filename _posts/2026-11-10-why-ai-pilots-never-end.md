@@ -14,8 +14,6 @@ keywords: "why AI pilots fail, AI pilot success criteria, AI proof of concept"
 featured_image: "/assets/img/posts/2026-11-09-ai-pilot-with-no-end-date.jpg"
 ---
 
-# Why AI pilots never end
-
 An experiment is a thing that can fail. That is what separates it from a hobby with a budget.
 
 Most AI pilots are written so they can't. Nobody names the number the pilot has to hit. Nobody sets the date it has to hit it by. So the pilot never fails, which means it never succeeds either. It just continues. Six months in, it has a steering committee, a Slack channel and a monthly demo. What it doesn't have is a verdict.

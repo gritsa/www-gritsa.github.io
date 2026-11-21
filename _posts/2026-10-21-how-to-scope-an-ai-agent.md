@@ -18,8 +18,6 @@ redirect_from:
   - /blog/2026/08/02/agentic-ai-beyond-code-knowledge-work-agents-arrive/
 ---
 
-# How to scope an AI agent: write the job description first
-
 To scope an AI agent, write it a one-page job description before anyone chooses a framework: one purpose, a short list of tasks, a list of things it must never do, and the context it needs. If you can't fit the job on a page, you don't have an agent. You have a hope.
 
 I haven't run a scoping workshop for a client and I won't invent one. This is built from how directive files work in Jiva, Gritsa's open agent framework, plus my own view of where agent projects go wrong.

@@ -14,8 +14,6 @@ keywords: "LLM vendor lock-in, switch LLM provider, model agnostic AI"
 featured_image: "/assets/img/posts/2026-10-26-llm-lock-in-quirks.jpg"
 ---
 
-# LLM lock-in is not where you think it is
-
 When someone says "we can always swap the model," they are usually right about the swap and wrong about the cost. Changing the model name in a config file takes a minute. Finding out whether everything around it still works is the project, and that is where lock-in actually lives: in the quirks your code quietly absorbed, and in the test you never wrote.
 
 I find it useful to look at software that was built specifically to avoid lock-in, because the scar tissue shows. [Jiva](https://github.com/KarmaloopAI/Jiva), the open-source agent framework we build at Gritsa, talks to any provider that exposes an OpenAI-style chat endpoint. On paper, that is the whole story. Point it somewhere else and go.

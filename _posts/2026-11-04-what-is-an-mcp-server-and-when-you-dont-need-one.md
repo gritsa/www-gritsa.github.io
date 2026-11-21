@@ -14,8 +14,6 @@ keywords: "what is an MCP server, MCP vs API, when to use MCP, MCP server explai
 featured_image: "/assets/img/posts/2026-11-04-what-is-an-mcp-server.jpg"
 ---
 
-# What is an MCP server, and when you don't need one
-
 An MCP server is a program that tells an AI application what it can do and then does it on request. It publishes a list of tools, each with a name, a plain-language description and a schema for its inputs, so a model can pick one and call it without anyone writing glue code for that pairing. MCP stands for Model Context Protocol, and the protocol is the standard way to have that conversation.
 
 That is the whole idea. Here is the part that gets lost: the standard covers the conversation, not what is said in it. If the thing calling your system is code you wrote, one that always makes the same three calls in the same order, you do not need an MCP server. You need an API call.

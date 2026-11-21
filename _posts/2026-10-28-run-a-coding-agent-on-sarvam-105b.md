@@ -15,8 +15,6 @@ keywords: "Sarvam-105B coding agent, run coding agent on Sarvam, Sarvam-105B too
 featured_image: "/assets/img/posts/2026-10-28-run-a-coding-agent-on-sarvam-105b.jpg"
 ---
 
-# How to run a coding agent on Sarvam-105B
-
 You can run an autonomous coding agent on Sarvam-105B if the agent is built around the model's limits. The one that matters most is the output cap: on Sarvam's Starter plan the API stops a reply at 4096 tokens, and part of that budget goes to the model's own reasoning before it writes a word of code. An agent that tries to write a whole file in one call will cut it off halfway and leave a broken file behind.
 
 I read the source and release notes of [Jiva](https://github.com/KarmaloopAI/Jiva), the open-source agent Gritsa builds on, to see how it deals with this. As far as I know it is the only autonomous agent with first-class coding support that runs with Sarvam-105B. I can't prove a negative, so treat "only" as "the only one I could find." Sarvam has its own coding product, Sarvam Code, in early beta; its launch post says it routes work across 100B, 700B and 3T-scale models and builds on Codex, so it is not a coding agent you can point at Sarvam-105B today. What follows is what I checked, what it does, and where it still hurts.

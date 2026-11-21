@@ -23,8 +23,6 @@ redirect_from:
   - /blog/2026/08/04/agentic-ai-goes-mainstream-the-year-autonomous-systems-became-a-utility/
 ---
 
-# Most AI strategy is a procurement plan
-
 A real AI strategy names three things: the jobs you will change, how you will know each change worked, and what you will stop doing to make room. Most documents called an AI strategy name none of them. They name tools. Which assistant every employee gets, which platform the data goes into, which vendor is "preferred." That is a procurement plan, and a procurement plan is not wrong, it's just not the thing you needed.
 
 Here is a quick test. Take the document and delete every product name. What is left? If the answer is a page of adjectives like "bold" and "responsible," you were holding a shopping list.

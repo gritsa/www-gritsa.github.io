@@ -14,8 +14,6 @@ keywords: "AI ready data, data readiness for AI agents, why AI projects fail dat
 featured_image: "/assets/img/posts/2026-11-02-what-is-an-active-customer.jpg"
 ---
 
-# What is an active customer?
-
 Before an AI agent can answer a question about your business, somebody has to write down what your words mean. That sounds like a small chore. It is the reason a large share of AI projects stall, and it has very little to do with how clean your data is.
 
 Here is the test I would run before buying anything. Ask three people in your company how many active customers you have. Picture the answers: sales counts anyone with an open contract. Finance counts anyone invoiced in the last twelve months. Product counts anyone who logged in this quarter. Three numbers, each correct, each living in a different table, and nobody has ever needed them to agree because a human always knew which one they meant.

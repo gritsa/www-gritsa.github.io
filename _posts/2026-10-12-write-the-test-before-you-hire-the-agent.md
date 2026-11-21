@@ -17,8 +17,6 @@ redirect_from:
   - /blog/2026/06/08/claude-opus-4-8-dynamic-workflows-and-fast-mode-power-up-agentic-ai/
 ---
 
-# Write the test before you hire the agent
-
 Most AI pilots run forever because nobody can say what "good enough" means, whatever the model can do. If you can't score an agent's output automatically, you can't delegate the job to it, because every run needs a person to look at the result. That person is the cost you were trying to remove.
 
 Think about how you'd hand a job to a new employee. You'd say what done looks like. Invoices are coded to the right account. Support tickets get the correct category. The migration script leaves row counts matching. Then you'd check the first few, relax, and check a sample after that. Delegation is the moment checking gets cheaper than doing.

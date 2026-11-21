@@ -14,8 +14,6 @@ keywords: "how to break down tasks for AI agents, agent task decomposition, plan
 featured_image: "/assets/img/posts/2026-11-11-split-a-task-for-an-ai-agent.jpg"
 ---
 
-# How to split a task for an AI agent without losing the data in the gap
-
 Split a task for an AI agent along its data dependencies, not along its topics. If step two needs something step one found, and nothing saves it between them, put both in one step or write the result somewhere durable first. Most "the agent did every step and the output is empty" failures come from a cut in the wrong place.
 
 I haven't run agent projects for a client and won't pretend to. This guide comes from the planner prompts and the execution loop in Jiva, Gritsa's open-source agent framework, which I read in the source. One of its prompts describes this exact failure, in capital letters.
