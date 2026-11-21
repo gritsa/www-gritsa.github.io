@@ -38,4 +38,4 @@ If you’re building agents today, ask yourself: are you ready for a world where
 
 ---
 
-*Read more about the GPT‑5.6 family on [Simon Willison’s blog](https://simonwillison.net/2026/Jul/09/gpt-5-6-family). The Hugging Face security disclosure is available [here](https://huggingface.co/blog/security-incident-july-2026). Details on the MCP 2026‑07‑28 release can be found on [Latent.Space](https://www.latent.space/p/ainews-all-model-labs-are-now-agent).*
+*The Hugging Face security disclosure is available [here](https://huggingface.co/blog/security-incident-july-2026). Details on the MCP 2026‑07‑28 release can be found on [Latent.Space](https://www.latent.space/p/ainews-all-model-labs-are-now-agent).*
