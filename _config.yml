@@ -12,7 +12,6 @@ address: "Unit A-132, Logix Technova, Sector-132, NOIDA (UP) 201301, India"
 # Social media
 facebook_url: "https://www.facebook.com/GritsaTech/"
 linkedin_url: "https://in.linkedin.com/company/gritsa-technologies"
-twitter_url: "https://x.com/gritsa"
 
 # Build settings
 markdown: kramdown
