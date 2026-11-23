@@ -86,7 +86,7 @@ Holding the line has a cost: staleness. Whether stale beats wrong is a business 
 
 ## Does the agent's own tool access need this too?
 
-Yes, and this is where it connects to the rest of the stack. If your agent reads through an MCP server, as I wrote in [what breaks first in production](/blog/2026/10/07/mcp-servers-in-production-what-breaks-first/), point the tools at the published tables only. Never give an agent a tool that can read staging. The audit gate is worthless if there is a side door.
+Yes, and this is where it connects to the rest of the stack. If your agent reads through an MCP server, as I wrote in [what breaks first in production](/blog/2026/10/07/mcp-servers-in-production-what-breaks-first/), point the tools at the published tables only. Never give an agent a tool that can read staging. The audit gate is worthless if there is a side door. The same goes for what the agent is allowed to ask for: a table invites it to invent its own definitions, so I'd rather [hand it named metrics](/blog/2026/11/18/give-an-agent-a-metric/).
 
 ## Where this fits
 

@@ -68,6 +68,8 @@ Sort every task into one of three bins before you build anything.
 
 Start every task in bin one or two. Move a task to bin three only when you can measure the agent's output against a test you wrote in advance. That test is its own subject; I made the case in [Write the test before you hire the agent](/blog/2026/10/12/write-the-test-before-you-hire-the-agent/). The short version: if you can't score the work, you can't delegate the work.
 
+Which task goes first is a separate call. I'd rank them by how cheaply a mistake can be undone, and I argued that in [Automate the job you can undo](/blog/2026/11/23/automate-the-job-you-can-undo/).
+
 ## What should the constraints cover?
 
 Write constraints as things a stranger could check. "Be careful with customer data" is a mood. These are rules:
