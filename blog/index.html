@@ -6,6 +6,46 @@ title: Our Blog
 <div class="page-blog">
     <div class="container">
         <div class="row">
+            <div class="col-lg-12">
+                <section class="blog-start-here" aria-labelledby="start-here" style="margin-bottom:60px;">
+                    <h2 id="start-here">Start here</h2>
+                    <p>The full archive is below, newest first. If you are short on time, these are the posts worth reading first, grouped by the problem they help with. If you are deciding whether to build an agent at all, begin with the first group. The work behind them is on the <a href="{{ '/services/ai-agents/' | relative_url }}">AI agents service page</a>.</p>
+
+                    <h3>Getting an agent to do real work</h3>
+                    <ul>
+                        <li><a href="{% post_url 2026-10-21-how-to-scope-an-ai-agent %}">How to scope an AI agent: write the job description first</a></li>
+                        <li><a href="{% post_url 2026-10-12-write-the-test-before-you-hire-the-agent %}">Write the test before you hire the agent</a></li>
+                        <li><a href="{% post_url 2026-11-11-split-a-task-for-an-ai-agent %}">How to split a task for an AI agent without losing the data in the gap</a></li>
+                        <li><a href="{% post_url 2026-11-18-give-an-agent-a-metric %}">How to give an AI agent a metric instead of a table</a></li>
+                        <li><a href="{% post_url 2026-11-23-automate-the-job-you-can-undo %}">Automate the job you can undo</a></li>
+                        <li><a href="{% post_url 2026-11-10-why-ai-pilots-never-end %}">Why AI pilots never end</a></li>
+                    </ul>
+
+                    <h3>Models, tools and open-source agents</h3>
+                    <ul>
+                        <li><a href="{% post_url 2026-11-16-pick-a-model-for-each-job %}">Pick a model for each job, not each agent</a></li>
+                        <li><a href="{% post_url 2026-10-26-llm-lock-in-is-not-where-you-think-it-is %}">LLM lock-in is not where you think it is</a></li>
+                        <li><a href="{% post_url 2026-10-28-run-a-coding-agent-on-sarvam-105b %}">How to run a coding agent on Sarvam-105B</a></li>
+                        <li><a href="{% post_url 2026-11-04-what-is-an-mcp-server-and-when-you-dont-need-one %}">What is an MCP server, and when you don't need one</a></li>
+                        <li><a href="{% post_url 2026-10-07-mcp-servers-in-production-what-breaks-first %}">MCP servers in production: what breaks first</a></li>
+                    </ul>
+
+                    <h3>Data your agents can trust</h3>
+                    <ul>
+                        <li><a href="{% post_url 2026-10-13-write-audit-publish-for-agents %}">Write-Audit-Publish: how to stop bad data reaching your agents</a></li>
+                        <li><a href="{% post_url 2026-11-02-what-is-an-active-customer %}">What is an active customer?</a></li>
+                    </ul>
+
+                    <h3>Strategy and buying</h3>
+                    <ul>
+                        <li><a href="{% post_url 2026-10-19-most-ai-strategy-is-a-procurement-plan %}">Most AI strategy is a procurement plan</a></li>
+                        <li><a href="{% post_url 2026-10-06-your-next-b2b-buyer-might-be-an-ai-agent %}">Your next B2B buyer might be an AI agent</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12"><h2 id="all-posts" style="margin-bottom:30px;">All posts</h2></div>
             {% for post in site.posts %}
             <div class="col-lg-4 col-md-6">
                 <!-- Post Item Start -->
