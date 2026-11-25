@@ -54,7 +54,7 @@ This is the one I'd lose sleep over. The tempting design is a server that takes 
 
 The reason is practical, not bureaucratic. If the server forwards tokens untouched, rate limits and monitoring that depend on who the token was issued to are bypassed. The downstream logs show a different identity than the one actually calling. And a stolen token can use your server as a pipe.
 
-If your server proxies a third-party API, there is a second trap, the confused deputy problem. A proxy that uses one static OAuth client ID, lets clients register dynamically, and relies on a consent cookie can be tricked into handing an authorization code to an attacker without the user ever seeing a consent screen. The spec's fix is per-client consent that the MCP server itself enforces, with exact-match redirect URIs. If you're buying or building an MCP server that fronts a SaaS product, ask the vendor how they handle this. A blank look is an answer.
+If your server proxies a third-party API, there is a second trap, the confused deputy problem. A proxy that uses one static OAuth client ID, lets clients register dynamically, and relies on a consent cookie can be tricked into handing an authorization code to an attacker without the user ever seeing a consent screen. Dynamic client registration is deprecated as of the 2026-07-28 spec, but the page says the attack still applies to any proxy that supports it. The spec's fix is per-client consent that the MCP server itself enforces, with exact-match redirect URIs. If you're buying or building an MCP server that fronts a SaaS product, ask the vendor how they handle this. A blank look is an answer.
 
 ## 4. Errors the model can't use
 
@@ -104,7 +104,7 @@ One more caution from the spec: clients must treat tool annotations such as "rea
 
 None of this is exotic. It's the same discipline you'd apply to giving a new hire system access: decide the job, then grant the minimum. It's also the first conversation in every [production agent project we take on](/services/ai-agents/), before anyone writes a prompt, and it usually leads straight to the data underneath, which is where [the real work tends to be](/services/data-engineering/). If you read my [earlier piece on AI buyers](/blog/2026/10/06/your-next-b2b-buyer-might-be-an-ai-agent/), this is the other side of that table: once agents can act on your systems, the question stops being "can they reach us" and becomes "what should they touch." Before you connect anything, [write the test that defines a correct call](/blog/2026/10/12/write-the-test-before-you-hire-the-agent/).
 
-*Sources: the Model Context Protocol specification (the [tools](https://modelcontextprotocol.io/specification/latest/server/tools) and [security best practices](https://modelcontextprotocol.io/specification/latest/basic/security_best_practices) pages, read 2026-10-07 and re-read 2026-10-28 with no changes to the claims above), and the Jiva README.*
+*Sources: the Model Context Protocol specification (the [tools](https://modelcontextprotocol.io/specification/latest/server/tools) and [security best practices](https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices) pages, read 2026-10-07, re-read 2026-10-28 and again 2026-11-24; the only change is the deprecation note above), and the Jiva README.*
 
 One more layer sits behind the tools: the data they return. [Write-Audit-Publish](/blog/2026/10/13/write-audit-publish-for-agents/) covers how to keep unchecked tables out of an agent's reach.
 
